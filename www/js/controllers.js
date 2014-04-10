@@ -53,6 +53,12 @@
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CreateController", arguments);
 		}])
+		.controller("CheckinController", ["$scope", "$log", function ($scope, $log) {
+			$log.info("CheckinController", arguments);
+		}])
+		.controller("AuthController", ["$scope", "$log", function ($scope, $log) {
+			$log.info("CheckinController", arguments);
+		}])
 		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("ShopController", arguments);
 		}])

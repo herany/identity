@@ -42,6 +42,8 @@ var AccessLevel = {
 			addBoilerplateRoute("id", AccessLevel.PUBLIC, [":id"]);
 			addBoilerplateRoute("create");
 			addBoilerplateRoute("shop");
+			addBoilerplateRoute("auth");
+			addBoilerplateRoute("checkin", AccessLevel.PRIVATE);
 			addBoilerplateRoute("settings", AccessLevel.PRIVATE);
 
 			$routeProvider.otherwise({

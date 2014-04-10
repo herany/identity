@@ -26,7 +26,7 @@ $color-scheme-scan: $green;
 $color-scheme-scan-primary:   nth($color-scheme-scan, 1);
 $color-scheme-scan-secondary: nth($green, 2);
 
-$color-scheme-create: $red;
+$color-scheme-create: $orange;
 $color-scheme-create-primary:   nth($color-scheme-create, 1);
 $color-scheme-create-secondary: nth($color-scheme-create, 2);
 
@@ -38,7 +38,15 @@ $color-scheme-settings: $yellow;
 $color-scheme-settings-primary:   nth($color-scheme-settings, 1);
 $color-scheme-settings-secondary: nth($color-scheme-settings, 2);
 
-$color-scheme-id: $grey;
+$color-scheme-auth: $grey;
+$color-scheme-auth-primary:   nth($color-scheme-auth, 1);
+$color-scheme-auth-secondary: nth($color-scheme-auth, 2);
+
+$color-scheme-checkin: $purple;
+$color-scheme-checkin-primary:   nth($color-scheme-checkin, 1);
+$color-scheme-checkin-secondary: nth($color-scheme-checkin, 2);
+
+$color-scheme-id: $red;
 $color-scheme-id-primary:   nth($color-scheme-id, 1);
 $color-scheme-id-secondary: nth($color-scheme-id, 2);
 

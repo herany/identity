@@ -46,7 +46,9 @@ body.home-screen {
 			           'scan' $color-scheme-scan-primary,
 			           'settings' $color-scheme-settings-primary,
 			           'shop' $color-scheme-shop-primary,
-			           'id' $color-scheme-id-primary;
+			           'id' $color-scheme-id-primary,
+			           'auth' $color-scheme-auth-primary,
+			           'checkin' $color-scheme-checkin-primary;
 			@each $feature in $features {
 				$class: nth($feature, 1);
 				$color: nth($feature, 2);
