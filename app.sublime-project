@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/pmn/code/personal/sprtid/identity",
+			"file_exclude_patterns": [
+				"*.css",     // we write scss, not css
+				"*.scssc"    // sass cache
+			]
+		}
+	]
+}

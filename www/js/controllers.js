@@ -3,14 +3,11 @@
 
 	angular.module(APP_NAME + ".controllers", [])
 		.controller("HomeController", ["$scope", "$log", "CordovaService", function($scope, $log, CordovaService) {
-			CordovaService.ready.then(function () {
-				console.log("HomeController");
-				alert("HomeController");
+			// CordovaService.ready.then(function () {
 				$log.info("HomeController", arguments);
-			});
+			// });
 		}])
 		.controller("ScanController", ["$scope", "$log", "$location", function($scope, $log, $location) {
-			alert("ScanController");
 			$log.info("ScanController", arguments);
 
 			$scope.title = "Scanning";
@@ -41,7 +38,6 @@
 			};
 		}])
 		.controller("IdController", ["$scope", "$log", "$routeParams", "$identityFactory", function ($scope, $log, $routeParams, $identityFactory) {
-			alert("IdController");
 			$log.info("IdController", arguments);
 
 			$identityFactory.fetch($routeParams.id, function(success, identity) {
@@ -55,15 +51,12 @@
 			});
 		}])
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
-			alert("CreateController");
 			$log.info("CreateController", arguments);
 		}])
 		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
-			alert("ShopController");
 			$log.info("ShopController", arguments);
 		}])
 		.controller("SettingsController", ["$scope", "$log", function ($scope, $log) {
-			alert("SettingsController");
 			$log.info("SettingsController", arguments);
 		}])
 		;

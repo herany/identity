@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DCFD98FB-0E7A-4B3F-B978-E4B0EAB12767</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SprtidIdentity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19BE5D85-D1A6-4ED7-89DF-5B8259093F16</key>
+		<string>ssh://github.com/pmn4/identity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/SprtidIdentity.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19BE5D85-D1A6-4ED7-89DF-5B8259093F16</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pmn4/identity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19BE5D85-D1A6-4ED7-89DF-5B8259093F16</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19BE5D85-D1A6-4ED7-89DF-5B8259093F16</string>
+			<key>IDESourceControlWCCName</key>
+			<string>identity</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -9,4 +9,4 @@
 		}])
 		.directive('cordovaBarcodeScanner', ['$log', ScannerClass])
 	;
-})(sprtidApp, angular, AngularCordova.Plugins.BarcodeScanner);
+})("sprtidApp", angular, AngularCordova.Plugins.BarcodeScanner);

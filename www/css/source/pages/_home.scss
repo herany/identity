@@ -4,22 +4,22 @@ body.home-screen {
 	min-height: 100%;
 	@include clearfix;
 
-	$navigation-tile-height: 200px;
-	$navigation-tile-width: 200px;
-	$navigation-tile-spacing: $default-spacing;
+	$navigation-tile-width: 48%;
+	$navigation-tile-spacing: 4%;
 
 	.home-navigation {
 		margin: 0 auto;
-		height: 2 * $navigation-tile-height + $navigation-tile-spacing;
-		width: 2 * $navigation-tile-width + $navigation-tile-spacing;
+		width: 95%;
 		list-style-type: none;
 
 		@include clearfix;
 	}
 
 	.navigation-link {
-		height: $navigation-tile-height;
+		position: relative;
 		width: $navigation-tile-width;
+		padding-bottom: $navigation-tile-width; // make it a square
+		box-sizing: border-box;
 		display: block;
 		float: left;
 
@@ -31,7 +31,9 @@ body.home-screen {
 		}
 
 		a {
-			position: relative;
+			position: absolute;
+			top: 0;
+			left: 0;
 			display: block;
 			height: 100%;
 			width: 100%;
@@ -56,16 +58,21 @@ body.home-screen {
 
 			.icon {
 				&:before {
+					$font-size: 100px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-top: $font-size / -2;
+					margin-left: $font-size / -2;
 					display: block;
-					font-size: $navigation-tile-height / 2;
+					font-size: $font-size;
 					color: $color-scheme-foreground-primary;
-					line-height: $navigation-tile-height;
 				}
 			}
 			.navigation-label {
 				position: absolute;
-				right: $navigation-tile-width / 20;
-				bottom: $navigation-tile-height / 20;
+				right: 5%;
+				bottom: 5%;
 			}
 		}
 	}
