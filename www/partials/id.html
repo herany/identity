@@ -1,0 +1,53 @@
+<!--
+_id: "5317ed3ebcd7ac7263000002"
+_type: "Sprtid::Models::FullIdentity"
+birthdate: "1980-05-04T00:00:00Z"
+created_at: "2014-03-06T03:36:31Z"
+disclaimer: "false"
+external_id: "abcd1234"
+graduation_year: 2020
+image: Object
+	_id: "5317ed3ebcd7ac7263000003"
+	_type: "Sprtid::Models::CloudinaryImage"
+	bytes: 2791
+	created_at: "2014-03-06T00:00:00Z"
+	etag: "8d03b04d04e4e6c9115c873a1dd03aa8"
+	format: "png"
+	height: 480
+	public_id: "e2dn4010aurui3wkm5q9"
+	resource_type: "image"
+	secure_url: "https://res.cloudinary.com/sprtid/image/upload/v1394076986/e2dn4010aurui3wkm5q9.png"
+	signature: "f7fa1b2e05f55ab9187350ecd9fa0102f3b4d4d5"
+	type: "upload"
+	url: "http://res.cloudinary.com/sprtid/image/upload/v1394076986/e2dn4010aurui3wkm5q9.png"
+	version: 1394076986
+	width: 480
+	__proto__: Object
+name: "Patrick Newell"
+sport: "Hockey"
+team: "Bears"
+updated_at: "2014-03-06T03:36:31Z"
+version: "1.0"
+-->
+
+<div ng-controller="IdController">
+	<div id="top-banner">
+		<a href="/" class="navigation-back icon-home"></a>
+		<span class="location-icon icon-user2"></span>
+		<h1 class="navigation-location">view an id</h1>
+	</div>
+
+	<div class="page-content">
+		<div class="id-image" style="background-image: url('{{ identity.image.secure_url }}'); height: {{identity.image.height}}px;">
+			<!-- {{ image.secure_url || NO_IMAGE }} -->
+		</div>
+		<div class="id-name h1">
+			{{ identity.name }}
+		</div>
+		<div class="id-birthday">
+			Age: {{ identity.birthdate | ageFormatter }}
+		</div>
+		<hr />
+		<pre>{{ identity | jsonFormatter }}</pre>
+	</div>
+</div>

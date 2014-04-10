@@ -1,0 +1,31 @@
+@import 'compass/css3/opacity';
+
+@import '_mixins';
+
+$color-scheme-primary: $color-scheme-id-primary;
+$color-scheme-secondary: $color-scheme-id-secondary;
+
+body.id-screen {
+	background-color: $color-scheme-primary;
+
+	#top-banner {
+		background-color: $color-scheme-secondary;
+
+		.location-icon {
+			color: $color-scheme-primary;
+		}
+	}
+
+	.page-content {
+		position: relative;
+
+		.id-image {
+			@include opacity(0.1);
+		}
+
+		.id-name {
+			font-size: 5em;
+			line-height: 1em;
+		}
+	}
+}
