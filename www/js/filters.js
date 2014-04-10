@@ -1,9 +1,9 @@
 /*jshint smarttabs:true */
 
-;(function (angular, undefined) {
+;(function (APP_NAME, angular, undefined) {
 	'use strict';
 
-	angular.module('sprtidApp.filters', [])
+	angular.module(APP_NAME + '.filters', [])
 		.filter('interpolate', ['version', function(version) {
 			return function(text) {
 				return String(text).replace(/\%VERSION\%/mg, version);
@@ -25,4 +25,4 @@
 			};
 		})
 	;
-})(angular);
+})("sprtidApp", angular);

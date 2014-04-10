@@ -4,21 +4,18 @@ var AccessLevel = {
 	PRIVATE: 0x4
 };
 
-setTimeout(function() {
-alert("c'mon!!");
-;(function (angular, undefined) {
+;(function (APP_NAME, angular, cordova, undefined) {
 	"use strict";
 
-	// Declare app level module which depends on filters, and services
 	angular
-		.module("sprtidApp", [
+		.module(APP_NAME, [
 			"ngRoute",
 			"ngTouch",
-			"sprtidApp.factories",
-			"sprtidApp.filters",
-			"sprtidApp.services",
-			"sprtidApp.directives",
-			"sprtidApp.controllers"
+			APP_NAME + ".factories",
+			APP_NAME + ".filters",
+			APP_NAME + ".services",
+			APP_NAME + ".directives",
+			APP_NAME + ".controllers"
 		])
 		.config(["$locationProvider", "$routeProvider", function($locationProvider, $routeProvider) {
 			$locationProvider.html5Mode(false).hashPrefix('!');
@@ -32,7 +29,7 @@ alert("c'mon!!");
 				}
 
 				$routeProvider.when(url, {
-					templateUrl: "/partials/" + name + ".html",
+					templateUrl: "partials/" + name + ".html",
 					controller: name.charAt(0).toUpperCase() + name.slice(1) + "Controller",
 					access: access,
 					bodyClassname: name + "-screen"
@@ -99,15 +96,18 @@ alert("c'mon!!");
 		}]);
 
 	// var bootstrap = function () {
-		angular.bootstrap(document, ["sprtidApp"]);
+	// 	console.log("bootstrapping!");
+	//	angular.bootstrap(document, [APP_NAME]);
 	// };
-	// angular.element(document).ready(function() {
-	// 	if (window.cordova) {
-	// 		document.addEventListener('deviceready', bootstrap, false);
-	// 	} else {
-	// 		bootstrap();
+	// if (cordova) {
+	// 	if (cordova.logger) {
+	// 		cordova.logger.__onDeviceReady();
 	// 	}
-	// });
-})(angular);
+	// 	alert("have cordova. going to wait for device ready");
+	// 	document.addEventListener('deviceready', bootstrap, false);
+	// } else {
+	// 	alert("no cordova. let's rock.");
+	// 	bootstrap();
+	// }
+})("sprtidApp", angular, window.cordova);
 
-}, 5000);

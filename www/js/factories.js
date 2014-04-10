@@ -1,9 +1,9 @@
 /*jshint smarttabs:true */
 
-;(function (angular, apiBaseUrl, undefined) {
+;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
 
-	angular.module("sprtidApp.factories", [])
+	angular.module(APP_NAME + ".factories", [])
 		// .factory('cordovaReady', function() {
 		// 	return function (fn) {
 		// 		var queue = [];
@@ -45,4 +45,4 @@
 			}
 		}])
 	;
-})(angular, "http://localhost:1212");
+})("sprtidApp", angular, "http://localhost:1212");

@@ -1,10 +1,13 @@
-;(function (angular, undefined) {
+;(function (APP_NAME, angular, undefined) {
 	"use strict";
 
-	angular.module("sprtidApp.controllers", [])
-		.controller("HomeController", ["$scope", "$log", function($scope, $log) {
-			alert("HomeController");
-			$log.info("HomeController", arguments);
+	angular.module(APP_NAME + ".controllers", [])
+		.controller("HomeController", ["$scope", "$log", "CordovaService", function($scope, $log, CordovaService) {
+			CordovaService.ready.then(function () {
+				console.log("HomeController");
+				alert("HomeController");
+				$log.info("HomeController", arguments);
+			});
 		}])
 		.controller("ScanController", ["$scope", "$log", "$location", function($scope, $log, $location) {
 			alert("ScanController");
@@ -64,4 +67,4 @@
 			$log.info("SettingsController", arguments);
 		}])
 		;
-})(angular);
+})("sprtidApp", angular);

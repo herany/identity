@@ -63,7 +63,7 @@ Workflow for creating and building example project with the plugin:
 
 1. Create and build example project:
 	```
-	cordova create hello com.example.hello "HelloWorld"
+	cordova create hello com.example.hello "SprtidIdentity"
 	cd hello
 	cordova platform add android
 	cordova build
