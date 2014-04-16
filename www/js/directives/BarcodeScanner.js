@@ -31,7 +31,7 @@ AngularCordova.Plugins.BarcodeScanner = (function (document, cordova, undefined)
 	return function ($log) {
 		return {
 			template: '<div class="barcode-scanner" ng-transclude></div>',
-			restrict: 'E',
+			restrict: 'A',
 			replace: true,
 			transclude: true,
 			scope: {

@@ -8,7 +8,18 @@
 	<div class="page-content">
 		<h2 ng-click="click()">scan stuff</h2>
 		<h3>{{ title }}</h3>
-		<pre>{{ response }}</pre>
-		<cordova-barcode-scanner on-success="onSuccess(results)" on-error="onError(results)"></cordova-barcode-scanner>
+		<div id="scan-results">
+			<div ng-show="success">
+				<pre>{{ response }}</pre>
+			</div>
+			<div ng-hide="success">
+				<form ng-submit="gotoId()">
+					<label for="barcode">Enter Code:</label>
+					<input id="barcode" name="barcode" ng-model="barcode" />
+					<button type="submit">Get Id</button>
+				</form>
+			</div>
+		</div>
+		<div cordova-barcode-scanner on-success="onSuccess(results)" on-error="onError(results)"></div>
 	</div>
 </div>

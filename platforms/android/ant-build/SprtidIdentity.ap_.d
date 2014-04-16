@@ -103,6 +103,8 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/print.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/screen.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/sprtid.scss \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_auth.scss \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_checkin.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_create.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_home.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_identity.scss \
@@ -166,6 +168,8 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular-touch/angular-touch.min.js.map \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular-touch/bower.json \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular-touch/README.md \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/auth.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/checkin.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/create.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/footer.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/home.html \

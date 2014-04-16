@@ -97,6 +97,10 @@ var AccessLevel = {
 			});
 		}]);
 
+	console.log("angular setup complete");
+	document.addEventListener("deviceready", function () {
+		console.log("deviceready: angular setup complete");
+	}, false);
 	// var bootstrap = function () {
 	// 	console.log("bootstrapping!");
 	//	angular.bootstrap(document, [APP_NAME]);

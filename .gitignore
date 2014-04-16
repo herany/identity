@@ -15,4 +15,5 @@ platforms/ios/.staging
 platforms/ios/cordova/console.log
 
 
+*.sublime-workspace
 .sass-cache/

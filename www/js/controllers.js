@@ -12,16 +12,20 @@
 
 			$scope.title = "Scanning";
 			$scope.response = "";
+			$scope.success = null;
+			$scope.barcode = null;
 
 			$scope.onSuccess = function (scanRespose) {
 				$log.info("ScanController :: ~ctor (success)", scanRespose);
 
-				if (scanRespose) {
+				$scope.success = !!scanRespose;
+				if ($scope.success) {
 					$scope.$apply(function() {
 						$scope.title = "Success";
 						$scope.response = JSON.stringify(scanRespose);
 
-						$location.path(scanRespose.text.replace(/^https?:\/\/[^\/]+([^?#]*)/i, "$1")).replace();
+						$scope.barcode = scanRespose.text.replace(/^.*\/([^?#]+).*/i, "$1");
+						$scope.gotoId();
 					});
 				} else {
 					// todo: handle error
@@ -31,10 +35,17 @@
 			$scope.onError = function (scanRespose) {
 				$log.info("ScanController :: ~ctor (error)", scanRespose);
 
+				$scope.success = false;
 				$scope.$apply(function() {
 					$scope.title = "Failure";
 					$scope.response = JSON.stringify(scanRespose);
 				});
+			};
+
+			$scope.gotoId = function (e) {
+				if (e) e.preventDefault();
+
+				$location.path("/id/" + $scope.barcode).replace();
 			};
 		}])
 		.controller("IdController", ["$scope", "$log", "$routeParams", "$identityFactory", function ($scope, $log, $routeParams, $identityFactory) {
