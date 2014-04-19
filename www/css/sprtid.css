@@ -475,6 +475,22 @@ body.id-screen .page-content .id-name {
   line-height: 1em;
 }
 
+/* line 7, source/pages/_login.scss */
+body.login-screen,
+body.signup-screen {
+  background-color: #95a5a6;
+}
+/* line 10, source/pages/_login.scss */
+body.login-screen #top-banner,
+body.signup-screen #top-banner {
+  background-color: #7f8c8d;
+}
+/* line 13, source/pages/_login.scss */
+body.login-screen #top-banner .location-icon,
+body.signup-screen #top-banner .location-icon {
+  color: #95a5a6;
+}
+
 /* line 6, source/pages/_scan.scss */
 body.scan-screen {
   background-color: #2ecc71;
@@ -514,7 +530,7 @@ body.shop-screen #top-banner .location-icon {
   color: #3498db;
 }
 
-/* line 18, source/sprtid.scss */
+/* line 19, source/sprtid.scss */
 html,
 body {
   min-height: 100%;
@@ -526,82 +542,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, source/sprtid.scss */
+/* line 29, source/sprtid.scss */
 html {
   height: 100%;
 }
 
-/* line 33, source/sprtid.scss */
+/* line 34, source/sprtid.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Matchbook, Impact, sans-serif;
   text-transform: uppercase;
   color: #ecf0f1;
 }
-/* line 38, source/sprtid.scss */
+/* line 39, source/sprtid.scss */
 h1.default, h2.default, h3.default, h4.default, h5.default, h6.default,
 .h1.default, .h2.default, .h3.default, .h4.default, .h5.default, .h6.default {
   color: #ecf0f1, #bdc3c7 !important;
 }
-/* line 42, source/sprtid.scss */
+/* line 43, source/sprtid.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
 .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span {
   font-weight: normal;
 }
-/* line 46, source/sprtid.scss */
+/* line 47, source/sprtid.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 51, source/sprtid.scss */
+/* line 52, source/sprtid.scss */
 h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 .h1 em, .h2 em, .h3 em, .h4 em, .h5 em, .h6 em {
   color: #ecf0f1;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h1, .h1 {
   line-height: 32px;
   font-size: 32px;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h2, .h2 {
   line-height: 29px;
   font-size: 29px;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h3, .h3 {
   line-height: 26px;
   font-size: 26px;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h4, .h4 {
   line-height: 22px;
   font-size: 22px;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h5, .h5 {
   line-height: 19px;
   font-size: 19px;
 }
 
-/* line 61, source/sprtid.scss */
+/* line 62, source/sprtid.scss */
 h6, .h6 {
   line-height: 16px;
   font-size: 16px;
 }
 
-/* line 67, source/sprtid.scss */
+/* line 68, source/sprtid.scss */
 #viewport {
   min-height: 100%;
 }
 
-/* line 72, source/sprtid.scss */
+/* line 73, source/sprtid.scss */
 #top-banner {
   position: relative;
   border-bottom: 1px solid #ecf0f1;
@@ -611,7 +627,7 @@ h6, .h6 {
   font-size: 24px;
   text-align: center;
 }
-/* line 82, source/sprtid.scss */
+/* line 83, source/sprtid.scss */
 #top-banner .navigation-back {
   position: absolute;
   left: 10px;
@@ -623,7 +639,7 @@ h6, .h6 {
   text-align: center;
   z-index: 1;
 }
-/* line 94, source/sprtid.scss */
+/* line 95, source/sprtid.scss */
 #top-banner .location-icon {
   position: absolute;
   top: -10px;
@@ -637,7 +653,7 @@ h6, .h6 {
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-/* line 105, source/sprtid.scss */
+/* line 106, source/sprtid.scss */
 #top-banner .navigation-location {
   display: block;
   font-size: 60px;
@@ -645,12 +661,12 @@ h6, .h6 {
   padding-top: 10px;
 }
 
-/* line 112, source/sprtid.scss */
+/* line 113, source/sprtid.scss */
 .page-content {
   padding: 10px;
 }
 
-/* line 116, source/sprtid.scss */
+/* line 117, source/sprtid.scss */
 #footer-navigation {
   zoom: 1;
 }
@@ -663,7 +679,7 @@ h6, .h6 {
   font-size: 0;
   visibility: hidden;
 }
-/* line 119, source/sprtid.scss */
+/* line 120, source/sprtid.scss */
 #footer-navigation .navigation-link {
   float: left;
 }

@@ -43,7 +43,9 @@
 			};
 
 			$scope.gotoId = function (e) {
-				if (e) e.preventDefault();
+				if (e) {
+					e.preventDefault();
+				}
 
 				$location.path("/id/" + $scope.barcode).replace();
 			};
@@ -67,8 +69,42 @@
 		.controller("CheckinController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CheckinController", arguments);
 		}])
-		.controller("AuthController", ["$scope", "$log", function ($scope, $log) {
-			$log.info("CheckinController", arguments);
+		.controller("LoginController", ["$scope", "$log", "$http", "UserService", "AccessLevel", function ($scope, $log, $http, UserService, AccessLevel) {
+			$log.info("LoginController", arguments);
+
+			$scope.success = true;
+			$scope.error = "";
+			$scope.username = ""; // load from local storage?
+			$scope.password = "";
+
+			$scope.login = function () {
+				var config = {
+					url: "http://localhost:1212/v1/auth/login",
+					params: {
+						username: $scope.username,
+						password: $scope.password
+					},
+					method: "POST"
+				};
+
+				$http(config)
+					.success(function (data, status, headers, config) {
+						$scope.success = true;
+						$scope.error = "";
+						UserService.state = AccessLevel.PRIVATE;
+						UserService.username = data.username;
+					})
+					.error(function (data, status, headers, config) {
+						$scope.success = true;
+						$scope.error = "";
+						UserService.state = AccessLevel.PUBLIC;
+						UserService.username = "";
+					})
+					// .done(function () {
+					// 	// fire event
+					// })
+				;
+			};
 		}])
 		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("ShopController", arguments);

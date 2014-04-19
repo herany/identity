@@ -1,9 +1,3 @@
-var AccessLevel = {
-	PUBLIC: 0x1,
-	PROTECTED: 0x2,
-	PRIVATE: 0x4
-};
-
 ;(function (APP_NAME, angular, cordova, undefined) {
 	"use strict";
 
@@ -11,17 +5,19 @@ var AccessLevel = {
 		.module(APP_NAME, [
 			"ngRoute",
 			"ngTouch",
-			APP_NAME + ".factories",
 			APP_NAME + ".filters",
 			APP_NAME + ".services",
+			APP_NAME + ".factories",
 			APP_NAME + ".directives",
 			APP_NAME + ".controllers"
 		])
-		.config(["$locationProvider", "$routeProvider", function($locationProvider, $routeProvider) {
+		/* RoutingAccess: home-made services are not available in the config stage,
+		   but thankfully it's just a class and is globally accessible */
+		.config(["$locationProvider", "$routeProvider", /*"RoutingAccess",*/ function ($locationProvider, $routeProvider/*, RoutingAccess*/) {
 			$locationProvider.html5Mode(false).hashPrefix('!');
 
 			function addBoilerplateRoute (name, access, urlTokens) {
-				access = access || AccessLevel.PUBLIC;
+				access = access || RoutingAccess.PUBLIC;
 
 				var url = "/" + name;
 				if(urlTokens && urlTokens.length) {
@@ -39,12 +35,13 @@ var AccessLevel = {
 			addBoilerplateRoute("home");
 			addBoilerplateRoute("login");
 			addBoilerplateRoute("scan");
-			addBoilerplateRoute("id", AccessLevel.PUBLIC, [":id"]);
+			addBoilerplateRoute("id", RoutingAccess.PUBLIC, [":id"]);
 			addBoilerplateRoute("create");
 			addBoilerplateRoute("shop");
-			addBoilerplateRoute("auth");
-			addBoilerplateRoute("checkin", AccessLevel.PRIVATE);
-			addBoilerplateRoute("settings", AccessLevel.PRIVATE);
+			addBoilerplateRoute("signup");
+			addBoilerplateRoute("logout");
+			addBoilerplateRoute("checkin", RoutingAccess.PRIVATE);
+			addBoilerplateRoute("settings", RoutingAccess.PRIVATE);
 
 			$routeProvider.otherwise({
 				redirectTo: "/home"
@@ -71,18 +68,17 @@ var AccessLevel = {
 			// 	};
 			// }]);
 		}])
-		// .run(["$location", "$rootScope", "$log", "UserService", function ($location, $rootScope, $log, UserService) {
-		.run(["$location", "$rootScope", "$log", function ($location, $rootScope, $log) {
+		.run(["$location", "$rootScope", "$log", "UserService", "RoutingAccess", function ($location, $rootScope, $log, UserService, RoutingAccess) {
 			$rootScope.$on("$locationChangeStart", function () {
 				$log.debug("$locationChangeStart", arguments);
 			});
 
-			// $rootScope.$on("$routeChangeStart", function (event, current, previous) {
-			// 	if (current.$$route !== AccessLevel.PUBLIC && !UserService.isLoggedIn()) {
-			// 		// redirect back to login
-			// 		$location.path('/login');
-			// 	}
-			// });
+			$rootScope.$on("$routeChangeStart", function (event, current, previous) {
+				var access = current && current.$$route ? current.$$route.access : RoutingAccess.PUBLIC;
+				if (!UserService.canAccess(access)) {
+					$location.path('/login').replace();
+				}
+			});
 
 			$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
 				if (current && current.$$route) {

@@ -108,6 +108,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_create.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_home.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_identity.scss \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_login.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_scan.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_settings.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/source/pages/_shop.scss \
@@ -174,6 +175,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/footer.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/home.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/id.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/login.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/scan.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/settings.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/partials/shop.html \

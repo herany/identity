@@ -1,0 +1,17 @@
+@import '_mixins';
+
+$color-scheme-primary: $color-scheme-auth-primary;
+$color-scheme-secondary: $color-scheme-auth-secondary;
+
+body.login-screen,
+body.signup-screen {
+	background-color: $color-scheme-primary;
+
+	#top-banner {
+		background-color: $color-scheme-secondary;
+
+		.location-icon {
+			color: $color-scheme-primary;
+		}
+	}
+}

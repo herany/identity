@@ -1,5 +1,3 @@
-/*jshint smarttabs:true */
-
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
 
@@ -26,7 +24,7 @@
 		// })
 		.factory("$identityFactory", ["$http", "$log", function($http, $log) {
 			var URL_TOKEN_ID = "#{id}",
-			    APP_ID_URL_PATTERN = apiBaseUrl + "/app/id/" + URL_TOKEN_ID;
+			    APP_ID_URL_PATTERN = apiBaseUrl + "/identities/" + URL_TOKEN_ID;
 
 			return {
 				fetch: fetch
@@ -34,6 +32,13 @@
 
 			function fetch (id, fnCallback) {
 				var url = APP_ID_URL_PATTERN.replace(URL_TOKEN_ID, id);
+
+				// test to see if you can add several done methods.
+				$http.get(url).done(function () {
+					console.log("first!", arguments);
+				}).done(function () {
+					console.log("second!", arguments);
+				});
 
 				return $http.get(url).success(function(data) {
 					if(typeof(fnCallback) === 'function') {
@@ -44,5 +49,18 @@
 				});
 			}
 		}])
+		.factory('UserService', ['AccessLevel', function (AccessLevel) {
+			var user = {
+				state: AccessLevel.PUBLIC,
+				username: '',
+				isLoggedIn: function () {
+					return this.state > AccessLevel.PUBLIC;
+				},
+				canAccess: function (accessLevel) {
+					return !!(accessLevel & this.state);
+				}
+			};
+			return user;
+		}])
 	;
-})("sprtidApp", angular, "http://localhost:1212");
+})("sprtidApp", angular, "http://localhost:1212/v1");
