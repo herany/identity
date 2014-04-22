@@ -5,6 +5,7 @@
 		.module(APP_NAME, [
 			"ngRoute",
 			"ngTouch",
+			"http-auth-interceptor",
 			APP_NAME + ".filters",
 			APP_NAME + ".services",
 			APP_NAME + ".factories",
@@ -13,12 +14,10 @@
 		])
 		/* RoutingAccess: home-made services are not available in the config stage,
 		   but thankfully it's just a class and is globally accessible */
-		.config(["$locationProvider", "$routeProvider", /*"RoutingAccess",*/ function ($locationProvider, $routeProvider/*, RoutingAccess*/) {
+		.config(["$locationProvider", "$routeProvider", "$httpProvider", function ($locationProvider, $routeProvider, $httpProvider) {
 			$locationProvider.html5Mode(false).hashPrefix('!');
 
-			function addBoilerplateRoute (name, access, urlTokens) {
-				access = access || RoutingAccess.PUBLIC;
-
+			function addBoilerplateRoute (name, urlTokens) {
 				var url = "/" + name;
 				if(urlTokens && urlTokens.length) {
 					url += "/" + urlTokens.join("/");
@@ -27,7 +26,6 @@
 				$routeProvider.when(url, {
 					templateUrl: "partials/" + name + ".html",
 					controller: name.charAt(0).toUpperCase() + name.slice(1) + "Controller",
-					access: access,
 					bodyClassname: name + "-screen"
 				});
 			}
@@ -35,50 +33,28 @@
 			addBoilerplateRoute("home");
 			addBoilerplateRoute("login");
 			addBoilerplateRoute("scan");
-			addBoilerplateRoute("id", RoutingAccess.PUBLIC, [":id"]);
+			addBoilerplateRoute("id", [":id"]);
 			addBoilerplateRoute("create");
 			addBoilerplateRoute("shop");
 			addBoilerplateRoute("signup");
 			addBoilerplateRoute("logout");
-			addBoilerplateRoute("checkin", RoutingAccess.PRIVATE);
-			addBoilerplateRoute("settings", RoutingAccess.PRIVATE);
+			addBoilerplateRoute("checkin");
+			addBoilerplateRoute("settings");
 
 			$routeProvider.otherwise({
 				redirectTo: "/home"
 			});
 
-			// $httpProvider.responseInterceptors.push(['$q', '$location', function ($q, $location) {
-			// 	var success = function (response) {
-			// 		return response;
-			// 	};
-
-			// 	var error = function (response) {
-			// 		if (response.status === 401) {
-			// 			$location.path('/login');
-
-			// 			return $q.reject(response);
-			// 		}
-			// 		else {
-			// 			return $q.reject(response);
-			// 		}
-			// 	};
-
-			// 	return function (promise) {
-			// 		return promise.then(success, error);
-			// 	};
-			// }]);
+			// $httpProvider.interceptors.push("AuthInterceptor");
 		}])
-		.run(["$location", "$rootScope", "$log", "UserService", "RoutingAccess", function ($location, $rootScope, $log, UserService, RoutingAccess) {
+		.run(["$location", "$rootScope", "$log", function ($location, $rootScope, $log) {
 			$rootScope.$on("$locationChangeStart", function () {
 				$log.debug("$locationChangeStart", arguments);
 			});
 
-			$rootScope.$on("$routeChangeStart", function (event, current, previous) {
-				var access = current && current.$$route ? current.$$route.access : RoutingAccess.PUBLIC;
-				if (!UserService.canAccess(access)) {
-					$location.path('/login').replace();
-				}
-			});
+			$rootScope.$on("event:auth-loginRequired", function () {
+				$location.path("/login");
+			})
 
 			$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
 				if (current && current.$$route) {

@@ -1,16 +1,3 @@
-var AccessLevel = {
-					PUBLIC: 0x1,
-					PROTECTED: 0x2,
-					PRIVATE: 0x4,
-					ADMIN: 0x4
-				};
-var RoutingAccess = {
-					PUBLIC: AccessLevel.PUBLIC | AccessLevel.PROTECTED | AccessLevel.PRIVATE | AccessLevel.ADMIN,
-					PROTECTED: AccessLevel.PROTECTED | AccessLevel.PRIVATE | AccessLevel.ADMIN,
-					PRIVATE: AccessLevel.PRIVATE | AccessLevel.ADMIN,
-					ADMIN: AccessLevel.ADMIN,
-				};
-
 ;(function (APP_NAME, angular, undefined) {
 	'use strict';
 
@@ -36,12 +23,6 @@ var RoutingAccess = {
 					}
 				}
 			}, 1500);
-		}])
-		.service('AccessLevel', [function () {
-			return AccessLevel;
-		}])
-		.service('RoutingAccess', [function () {
-			return RoutingAccess;
 		}])
 	;
 })("sprtidApp", angular);

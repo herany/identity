@@ -6,7 +6,8 @@
 			"file_exclude_patterns": [
 				"*.css",     // we write scss, not css
 				"*.scssc"    // sass cache
-			]
+			],
+			"folder_exclude_patterns": [".git", "log", ".sass-cache", "platforms", "lib"]
 		}
 	]
 }

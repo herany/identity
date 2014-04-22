@@ -69,7 +69,7 @@
 		.controller("CheckinController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CheckinController", arguments);
 		}])
-		.controller("LoginController", ["$scope", "$log", "$http", "UserService", "AccessLevel", function ($scope, $log, $http, UserService, AccessLevel) {
+		.controller("LoginController", ["$scope", "$rootScope", "$q", "$log", "authService", "UserService", function ($scope, $rootScope, $q, $log, authService, UserService) {
 			$log.info("LoginController", arguments);
 
 			$scope.success = true;
@@ -77,33 +77,17 @@
 			$scope.username = ""; // load from local storage?
 			$scope.password = "";
 
+			// broadcast login event
 			$scope.login = function () {
-				var config = {
-					url: "http://localhost:1212/v1/auth/login",
-					params: {
-						username: $scope.username,
-						password: $scope.password
-					},
-					method: "POST"
-				};
-
-				$http(config)
-					.success(function (data, status, headers, config) {
-						$scope.success = true;
-						$scope.error = "";
-						UserService.state = AccessLevel.PRIVATE;
-						UserService.username = data.username;
-					})
-					.error(function (data, status, headers, config) {
-						$scope.success = true;
-						$scope.error = "";
-						UserService.state = AccessLevel.PUBLIC;
-						UserService.username = "";
-					})
-					// .done(function () {
-					// 	// fire event
-					// })
-				;
+				$q.when(UserService.login($scope.username, $scope.password)).then(function () {
+					console.log("LoginController::login ($q.resolve)", arguments);
+					authService.loginConfirmed();
+				}, function () {
+					console.log("LoginController::login ($q.reject)", arguments);
+					authService.loginCancelled();
+				}, function () {
+					console.log("LoginController::login ($q.notify)", arguments);
+				});
 			};
 		}])
 		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
