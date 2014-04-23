@@ -24,7 +24,7 @@
 		// })
 		.factory("$identityFactory", ["$http", "$log", function ($http, $log) {
 			var URL_TOKEN_ID = "#{id}",
-			    APP_ID_URL_PATTERN = apiBaseUrl + "/identities/" + URL_TOKEN_ID;
+			    APP_ID_URL_PATTERN = apiBaseUrl + "/v1/logins/" + URL_TOKEN_ID;
 
 			return {
 				fetch: fetch
@@ -50,7 +50,7 @@
 			}
 		}])
 		.factory("UserService", ["$window", "$http", function ($window, $http) {
-			var user = {
+			return {
 				login: function (username, password) {
 					var config,
 					    _this = this;
@@ -85,29 +85,6 @@
 					return $window.sessionStorage.getItem("token");
 				}
 			};
-			return user;
 		}])
-		// .factory("AuthInterceptor", ["$location", "$q", "UserService", function ($location, $q, UserService) {
-		// 	return {
-		// 		request: function (config) {
-		// 			// only for API requests?
-		// 			if (UserService.isLoggedIn()) {
-		// 				config.headers = config.headers || {};
-		// 				config.headers.Authorization = 'Bearer ' + UserService.getToken();
-		// 			}
-		// 			return config || $q.when(config);
-		// 		},
-		// 		requestError: function (rejection) {
-		// 			// perhaps if the request was cancelled
-		// 			return $q.reject(rejection);
-		// 		},
-		// 		responseError: function (response) {
-		// 			if (response.status === 401) {
-		// 				$location.path('/login');
-		// 			}
-		// 			return response || $q.when(response);
-		// 		}
-		// 	};
-		// }])
 	;
-})("sprtidApp", angular, "http://localhost:1212/v1");
+})("sprtidApp", angular, "http://localhost:1212");

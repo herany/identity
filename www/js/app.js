@@ -6,6 +6,7 @@
 			"ngRoute",
 			"ngTouch",
 			"http-auth-interceptor",
+			"facebook",
 			APP_NAME + ".filters",
 			APP_NAME + ".services",
 			APP_NAME + ".factories",
@@ -14,7 +15,7 @@
 		])
 		/* RoutingAccess: home-made services are not available in the config stage,
 		   but thankfully it's just a class and is globally accessible */
-		.config(["$locationProvider", "$routeProvider", "$httpProvider", function ($locationProvider, $routeProvider, $httpProvider) {
+		.config(["$locationProvider", "$routeProvider", "$httpProvider", "FacebookProvider", function ($locationProvider, $routeProvider, $httpProvider, FacebookProvider) {
 			$locationProvider.html5Mode(false).hashPrefix('!');
 
 			function addBoilerplateRoute (name, urlTokens) {
@@ -45,16 +46,16 @@
 				redirectTo: "/home"
 			});
 
-			// $httpProvider.interceptors.push("AuthInterceptor");
+			FacebookProvider.init("326477510810744");
 		}])
-		.run(["$location", "$rootScope", "$log", function ($location, $rootScope, $log) {
+		.run(["$window", "$location", "$rootScope", "$log", function ($window, $location, $rootScope, $log) {
 			$rootScope.$on("$locationChangeStart", function () {
 				$log.debug("$locationChangeStart", arguments);
 			});
 
 			$rootScope.$on("event:auth-loginRequired", function () {
 				$location.path("/login");
-			})
+			});
 
 			$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
 				if (current && current.$$route) {

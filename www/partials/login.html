@@ -6,6 +6,15 @@
 	</div>
 
 	<div class="page-content">
+		<div ng-controller="FacebookAuthController">
+			<button data-ng-show="!logged" data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()">
+				Login with Facebook
+			</button>
+			<button data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">
+				Logout
+			</button>
+		</div>
+<!--
 		<div ng-hide="success">
 			<p>{{ error }}</p>
 		</div>
@@ -16,5 +25,6 @@
 			<input id="password" name="password" type="password" ng-model="password" />
 			<button type="submit">Login</button>
 		</form>
+-->
 	</div>
 </div>
