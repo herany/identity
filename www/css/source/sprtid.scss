@@ -65,11 +65,17 @@ $hmax: 6;
 	}
 }
 
+a,
+button {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+}
+
 #viewport {
 	min-height: 100%;
 }
 
-$top-banner-height: 70px !default;
+$top-banner-height: 150px !default;
 #top-banner {
 	position: relative;
 	border-bottom: 1px solid $color-scheme-foreground-primary;
@@ -80,6 +86,30 @@ $top-banner-height: 70px !default;
 	font-size: 24px;
 	text-align: center;
 
+	$zindex: 0;
+	.location-icon {
+		position: absolute;
+		top: -$default-spacing;
+		left: -$default-spacing;
+		width: auto;
+		color: $color-scheme-background-primary;
+		font-size: $top-banner-height + 2 * $default-spacing;
+		z-index: $zindex;
+
+		@include rotate(-15deg);
+	}
+
+	.navigation-location {
+		position: relative;
+		display: block;
+		font-size: $top-banner-height - $default-spacing;
+		line-height: $top-banner-height - $default-spacing;
+		padding-top: $default-spacing;
+		padding-right: $default-spacing;
+		text-align: right;
+		z-index: $zindex + 1;
+	}
+
 	.navigation-back {
 		position: absolute;
 		left: $default-spacing;
@@ -87,27 +117,8 @@ $top-banner-height: 70px !default;
 		color: $color-scheme-foreground-primary;
 		font-size: $top-banner-height - 2 * $default-spacing;
 		text-decoration: none;
-		width: $top-banner-height;
 		text-align: center;
-		z-index: 1;
-	}
-
-	.location-icon {
-		position: absolute;
-		top: -$default-spacing;
-		left: 0;
-		font-size: $top-banner-height + 2 * $default-spacing;
-		width: auto;
-		z-index: 0;
-
-		@include rotate(-15deg);
-	}
-
-	.navigation-location {
-		display: block;
-		font-size: $top-banner-height - $default-spacing;
-		line-height: $top-banner-height - $default-spacing;
-		padding-top: $default-spacing;
+		z-index: $zindex + 2;
 	}
 }
 .page-content {

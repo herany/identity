@@ -24,7 +24,7 @@
 		// })
 		.factory("$identityFactory", ["$http", "$log", function ($http, $log) {
 			var URL_TOKEN_ID = "#{id}",
-			    APP_ID_URL_PATTERN = apiBaseUrl + "/v1/logins/" + URL_TOKEN_ID;
+			    APP_ID_URL_PATTERN = apiBaseUrl + "/v1/scans/" + URL_TOKEN_ID;
 
 			return {
 				fetch: fetch

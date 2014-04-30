@@ -612,12 +612,19 @@ h6, .h6 {
   font-size: 16px;
 }
 
-/* line 68, source/sprtid.scss */
+/* line 69, source/sprtid.scss */
+a,
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 74, source/sprtid.scss */
 #viewport {
   min-height: 100%;
 }
 
-/* line 73, source/sprtid.scss */
+/* line 79, source/sprtid.scss */
 #top-banner {
   position: relative;
   border-bottom: 1px solid #ecf0f1;
@@ -627,25 +634,14 @@ h6, .h6 {
   font-size: 24px;
   text-align: center;
 }
-/* line 83, source/sprtid.scss */
-#top-banner .navigation-back {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  color: #ecf0f1;
-  font-size: 50px;
-  text-decoration: none;
-  width: 70px;
-  text-align: center;
-  z-index: 1;
-}
-/* line 95, source/sprtid.scss */
+/* line 90, source/sprtid.scss */
 #top-banner .location-icon {
   position: absolute;
-  top: -10px;
-  left: 0;
-  font-size: 90px;
+  top: -25px;
+  left: -25px;
   width: auto;
+  color: #34495e;
+  font-size: 200px;
   z-index: 0;
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -653,20 +649,35 @@ h6, .h6 {
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-/* line 106, source/sprtid.scss */
+/* line 102, source/sprtid.scss */
 #top-banner .navigation-location {
+  position: relative;
   display: block;
-  font-size: 60px;
-  line-height: 60px;
-  padding-top: 10px;
+  font-size: 125px;
+  line-height: 125px;
+  padding-top: 25px;
+  padding-right: 25px;
+  text-align: right;
+  z-index: 1;
 }
-
 /* line 113, source/sprtid.scss */
-.page-content {
-  padding: 10px;
+#top-banner .navigation-back {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: #ecf0f1;
+  font-size: 100px;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
 }
 
-/* line 117, source/sprtid.scss */
+/* line 124, source/sprtid.scss */
+.page-content {
+  padding: 25px;
+}
+
+/* line 128, source/sprtid.scss */
 #footer-navigation {
   zoom: 1;
 }
@@ -679,7 +690,7 @@ h6, .h6 {
   font-size: 0;
   visibility: hidden;
 }
-/* line 120, source/sprtid.scss */
+/* line 131, source/sprtid.scss */
 #footer-navigation .navigation-link {
   float: left;
 }

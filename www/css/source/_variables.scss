@@ -50,7 +50,7 @@ $color-scheme-id: $red;
 $color-scheme-id-primary:   nth($color-scheme-id, 1);
 $color-scheme-id-secondary: nth($color-scheme-id, 2);
 
-$default-spacing: 10px;
+$default-spacing: 25px;
 
 $transition-on-speed: 333;
 $transition-off-speed: 2 * $transition-on-speed;
