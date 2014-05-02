@@ -46,9 +46,9 @@ $color-scheme-checkin: $purple;
 $color-scheme-checkin-primary:   nth($color-scheme-checkin, 1);
 $color-scheme-checkin-secondary: nth($color-scheme-checkin, 2);
 
-$color-scheme-id: $red;
-$color-scheme-id-primary:   nth($color-scheme-id, 1);
-$color-scheme-id-secondary: nth($color-scheme-id, 2);
+$color-scheme-user: $red;
+$color-scheme-user-primary:   nth($color-scheme-user, 1);
+$color-scheme-user-secondary: nth($color-scheme-user, 2);
 
 $default-spacing: 25px;
 

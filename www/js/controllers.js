@@ -25,7 +25,7 @@
 						$scope.response = JSON.stringify(scanRespose);
 
 						$scope.barcode = scanRespose.text.replace(/^.*\/([^?#]+).*/i, "$1");
-						$scope.gotoId();
+						$scope.gotoUser();
 					});
 				} else {
 					// todo: handle error
@@ -42,21 +42,21 @@
 				});
 			};
 
-			$scope.gotoId = function (e) {
+			$scope.gotoUser = function (e) {
 				if (e) {
 					e.preventDefault();
 				}
 
-				$location.path("/id/" + $scope.barcode).replace();
+				$location.path("/user/" + $scope.barcode).replace();
 			};
 		}])
-		.controller("IdController", ["$scope", "$log", "$routeParams", "$identityFactory", function ($scope, $log, $routeParams, $identityFactory) {
-			$log.info("IdController", arguments);
+		.controller("UserController", ["$scope", "$log", "$routeParams", "$scanFactory", function ($scope, $log, $routeParams, $scanFactory) {
+			$log.info("UserController", arguments);
 
-			$identityFactory.fetch($routeParams.id, function(success, identity) {
-				$log.info("IdController :: $identityResponse.fetch", success, identity);
+			$scanFactory.fetchByBarcode($routeParams.id).success(function(data, status, headers, config) {
+				$log.info("UserController :: $scanResponse.fetchByBarcode", data, status);
 
-				$scope.identity = identity;
+				$scope.user = data;
 
 				// if(identityResponse.success) {
 				// 	$scanDispatcher.scan(identityResponse.content);
@@ -66,8 +66,15 @@
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CreateController", arguments);
 		}])
-		.controller("CheckinController", ["$scope", "$log", function ($scope, $log) {
+		.controller("CheckinController", ["$scope", "$q", "$log", "UserService", function ($scope, $q, $log, UserService) {
 			$log.info("CheckinController", arguments);
+
+			UserService.user().success(function (data, status, headers, config) {
+				console.log("CheckinController::login (success!)", data);
+				$scope.user = data;
+			}).error(function (data, status, headers, config) {
+				console.log("CheckinController::login (error)", data, status);
+			});
 		}])
 		.controller("LoginController", ["$scope", "$rootScope", "$q", "$log", "authService", "UserService", function ($scope, $rootScope, $q, $log, authService, UserService) {
 			$log.info("LoginController", arguments);

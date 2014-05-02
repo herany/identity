@@ -419,7 +419,7 @@ body.home-screen .navigation-link a.shop {
   background-color: #3498db;
 }
 /* line 56, source/pages/_home.scss */
-body.home-screen .navigation-link a.id {
+body.home-screen .navigation-link a.user {
   background-color: #e74c3c;
 }
 /* line 56, source/pages/_home.scss */
@@ -446,33 +446,6 @@ body.home-screen .navigation-link a .navigation-label {
   position: absolute;
   right: 5%;
   bottom: 5%;
-}
-
-/* line 8, source/pages/_identity.scss */
-body.id-screen {
-  background-color: #e74c3c;
-}
-/* line 11, source/pages/_identity.scss */
-body.id-screen #top-banner {
-  background-color: #c0392b;
-}
-/* line 14, source/pages/_identity.scss */
-body.id-screen #top-banner .location-icon {
-  color: #e74c3c;
-}
-/* line 19, source/pages/_identity.scss */
-body.id-screen .page-content {
-  position: relative;
-}
-/* line 22, source/pages/_identity.scss */
-body.id-screen .page-content .id-image {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-  opacity: 0.1;
-}
-/* line 26, source/pages/_identity.scss */
-body.id-screen .page-content .id-name {
-  font-size: 5em;
-  line-height: 1em;
 }
 
 /* line 7, source/pages/_login.scss */
@@ -528,6 +501,33 @@ body.shop-screen #top-banner {
 /* line 12, source/pages/_shop.scss */
 body.shop-screen #top-banner .location-icon {
   color: #3498db;
+}
+
+/* line 8, source/pages/_user.scss */
+body.user-screen {
+  background-color: #e74c3c;
+}
+/* line 11, source/pages/_user.scss */
+body.user-screen #top-banner {
+  background-color: #c0392b;
+}
+/* line 14, source/pages/_user.scss */
+body.user-screen #top-banner .location-icon {
+  color: #e74c3c;
+}
+/* line 19, source/pages/_user.scss */
+body.user-screen .page-content {
+  position: relative;
+}
+/* line 22, source/pages/_user.scss */
+body.user-screen .page-content .user-image {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+}
+/* line 26, source/pages/_user.scss */
+body.user-screen .page-content .user-name {
+  font-size: 5em;
+  line-height: 1em;
 }
 
 /* line 19, source/sprtid.scss */

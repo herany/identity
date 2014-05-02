@@ -22,32 +22,19 @@
 		// 		};
 		// 	};
 		// })
-		.factory("$identityFactory", ["$http", "$log", function ($http, $log) {
+		.factory("$scanFactory", ["$http", "$log", function ($http, $log) {
 			var URL_TOKEN_ID = "#{id}",
 			    APP_ID_URL_PATTERN = apiBaseUrl + "/v1/scans/" + URL_TOKEN_ID;
 
-			return {
-				fetch: fetch
-			};
-
-			function fetch (id, fnCallback) {
+			function fetchByBarcode (id, fnCallback) {
 				var url = APP_ID_URL_PATTERN.replace(URL_TOKEN_ID, id);
 
-				// test to see if you can add several done methods.
-				// $http.get(url).done(function () {
-				// 	console.log("first!", arguments);
-				// }).done(function () {
-				// 	console.log("second!", arguments);
-				// });
-
-				return $http.get(url).success(function(data) {
-					if(typeof(fnCallback) === 'function') {
-						fnCallback.call(null, data.success, data.content);
-					}
-
-					$log.log("identityProvider response: ", data);
-				});
+				return $http.get(url);
 			}
+
+			return {
+				fetchByBarcode: fetchByBarcode
+			};
 		}])
 		.factory("UserService", ["$window", "$http", function ($window, $http) {
 			return {
@@ -72,6 +59,17 @@
 							_this.setToken("");
 						})
 					;
+				},
+				user: function () {
+					// cache the result...
+					var config;
+
+					config = {
+						url: apiBaseUrl + "/auth",
+						method: "GET"
+					};
+
+					return $http(config);
 				},
 				logout: function () {
 				},

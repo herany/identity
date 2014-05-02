@@ -2,10 +2,10 @@
 
 @import '_mixins';
 
-$color-scheme-primary: $color-scheme-id-primary;
-$color-scheme-secondary: $color-scheme-id-secondary;
+$color-scheme-primary: $color-scheme-user-primary;
+$color-scheme-secondary: $color-scheme-user-secondary;
 
-body.id-screen {
+body.user-screen {
 	background-color: $color-scheme-primary;
 
 	#top-banner {
@@ -19,11 +19,11 @@ body.id-screen {
 	.page-content {
 		position: relative;
 
-		.id-image {
+		.user-image {
 			@include opacity(0.1);
 		}
 
-		.id-name {
+		.user-name {
 			font-size: 5em;
 			line-height: 1em;
 		}

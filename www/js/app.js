@@ -7,6 +7,7 @@
 			"ngTouch",
 			"http-auth-interceptor",
 			"facebook",
+			"monospaced.qrcode",
 			APP_NAME + ".filters",
 			APP_NAME + ".services",
 			APP_NAME + ".factories",
@@ -34,7 +35,7 @@
 			addBoilerplateRoute("home");
 			addBoilerplateRoute("login");
 			addBoilerplateRoute("scan");
-			addBoilerplateRoute("id", [":id"]);
+			addBoilerplateRoute("user", [":id"]);
 			addBoilerplateRoute("create");
 			addBoilerplateRoute("shop");
 			addBoilerplateRoute("signup");
