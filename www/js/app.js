@@ -33,12 +33,13 @@
 			}
 
 			addBoilerplateRoute("home");
+			addBoilerplateRoute("auth");
 			addBoilerplateRoute("login");
+			addBoilerplateRoute("signup");
 			addBoilerplateRoute("scan");
 			addBoilerplateRoute("user", [":id"]);
 			addBoilerplateRoute("create");
 			addBoilerplateRoute("shop");
-			addBoilerplateRoute("signup");
 			addBoilerplateRoute("logout");
 			addBoilerplateRoute("checkin");
 			addBoilerplateRoute("settings");
@@ -49,13 +50,9 @@
 
 			FacebookProvider.init("326477510810744");
 		}])
-		.run(["$window", "$location", "$rootScope", "$log", function ($window, $location, $rootScope, $log) {
+		.run(["$window", "$location", "$rootScope", "$log", "UserService", function ($window, $location, $rootScope, $log, UserService) {
 			$rootScope.$on("$locationChangeStart", function () {
 				$log.debug("$locationChangeStart", arguments);
-			});
-
-			$rootScope.$on("event:auth-loginRequired", function () {
-				$location.path("/login");
 			});
 
 			$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
@@ -68,6 +65,15 @@
 
 			$rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
 				$log.debug("failed to change routes", arguments);
+			});
+
+			UserService.user().then(function (user) {
+				console.log("app::run (success!)", user);
+				$rootScope.user = user;
+				$rootScope.identified = !!user && !!user.username;
+			}, function (message) {
+				console.log("app::run (error)", message);
+				$rootScope.identified = false;
 			});
 		}]);
 

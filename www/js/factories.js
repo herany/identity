@@ -1,3 +1,5 @@
+var production = true;
+
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
 
@@ -36,40 +38,93 @@
 				fetchByBarcode: fetchByBarcode
 			};
 		}])
-		.factory("UserService", ["$window", "$http", function ($window, $http) {
-			return {
+		.factory("UserService", ["$window", "$http", "$q", function ($window, $http, $q) {
+			var user;
+			var methods = {
 				login: function (username, password) {
-					var config,
-					    _this = this;
+					var config, xhr;
 
 					config = {
 						url: apiBaseUrl + "/auth/login",
-						params: {
+						data: {
 							username: username,
 							password: password
 						},
 						method: "POST"
 					};
 
-					return $http(config)
+					xhr = $http(config)
 						.success(function (data, status, headers, config) {
-							_this.setToken(data.token);
+							user = data; // user a proper User object
 						})
 						.error(function (data, status, headers, config) {
-							_this.setToken("");
+							user = null;
 						})
 					;
+
+					return $q.when(xhr);
+				},
+				signup: function (username, password, passwordConfirmation, email, firstName, lastName) {
+					var config, xhr;
+
+					// if (this.user) { return; }
+
+					config = {
+						url: apiBaseUrl + "/auth/signup",
+						data: JSON.stringify({
+							firstName: firstName,
+							lastName: lastName,
+							email: email,
+							login: {
+								username: username,
+								password: password,
+								passwordConfirmation: passwordConfirmation,
+								email: email
+							}
+						}),
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"}
+					};
+
+					xhr = $http(config)
+						.success(function (data, status, headers, config) {
+							user = data; // user a proper User object
+						})
+						.error(function (data, status, headers, config) {
+							user = null;
+						})
+					;
+
+					return $q.when(xhr);
 				},
 				user: function () {
-					// cache the result...
+					// how do you force a request?
 					var config;
+
+					if (methods.user.deferred) {
+						return methods.user.deferred.promise;
+					}
+
+					// attach a property to the `user` method to store/cache the Q.
+					methods.user.deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth",
 						method: "GET"
 					};
 
-					return $http(config);
+					$http(config)
+						.success(function (data, status, headers, config) {
+							user = data; // user a proper User object
+							methods.user.deferred.resolve(user);
+						})
+						.error(function (data, status, headers, config) {
+							user = null;
+							methods.user.deferred.reject(data);
+						})
+					;
+
+					return methods.user.deferred.promise;
 				},
 				logout: function () {
 				},
@@ -83,6 +138,8 @@
 					return $window.sessionStorage.getItem("token");
 				}
 			};
+
+			return methods;
 		}])
 	;
-})("sprtidApp", angular, "http://localhost:1212");
+})("sprtidApp", angular, production ? "http://sprtid-api.herokuapp.com" : "http://localhost:1212");

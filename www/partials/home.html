@@ -13,12 +13,6 @@
 				</a>
 			</li>
 			<li class="navigation-link">
-				<a href="#!/login" class="navigation auth">
-					<span class="icon icon-lock"></span>
-					<span class="navigation-label">Login</span>
-				</a>
-			</li>
-			<li class="navigation-link">
 				<a href="#!/checkin" class="navigation checkin">
 					<span class="icon icon-compass"></span>
 					<span class="navigation-label">Check In</span>
@@ -26,26 +20,44 @@
 			</li>
 			<li class="navigation-link">
 				<a href="#!/create" class="navigation create">
-					<span class="icon icon-file"></span>
-					<span class="navigation-label">Create</span>
+					<span class="icon icon-pencil"></span>
+					<span class="navigation-label">Edit</span>
 				</a>
 			</li>
+<!--
 			<li class="navigation-link">
 				<a href="#!/shop" class="navigation shop">
 					<span class="icon icon-cart"></span>
 					<span class="navigation-label">Shop</span>
 				</a>
 			</li>
+-->
+<!--
 			<li class="navigation-link">
 				<a href="#!/settings" class="navigation settings">
 					<span class="icon icon-settings"></span>
 					<span class="navigation-label">Settings</span>
 				</a>
 			</li>
+-->
 			<li class="navigation-link">
-				<a href="#!/id/abc123" class="navigation id">
-					<span class="icon icon-user2"></span>
-					<span class="navigation-label">Identity</span>
+				<a href="#!/login" class="navigation auth" ng-hide="identified">
+					<span class="icon icon-lock"></span>
+					<span class="navigation-label">Log In/Sign Up</span>
+				</a>
+				<a href="#!/logout" class="navigation auth" ng-show="identified">
+					<span class="icon icon-unlocked"></span>
+					<span class="navigation-label">Logout</span>
+				</a>
+			</li>
+			<li class="navigation-link">
+				<a href="#!/auth" class="navigation auth" ng-hide="identified">
+					<span class="icon icon-lock"></span>
+					<span class="navigation-label">Authenticate</span>
+				</a>
+				<a href="#!/logout" class="navigation auth" ng-show="identified">
+					<span class="icon icon-unlocked"></span>
+					<span class="navigation-label">Logout</span>
 				</a>
 			</li>
 		</ul>

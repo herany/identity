@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6,
 		color: $color-scheme-foreground-primary;
 	}
 }
-$h1-font-size: 36px; // this was just for the presentaiton I did
-$h6-font-size: 16px;
+$h1-font-size: 108px; // this was just for the presentaiton I did
+$h6-font-size: 32px;
 
 $hmax: 6;
 @for $i from 1 through $hmax {
@@ -75,16 +75,14 @@ button {
 	min-height: 100%;
 }
 
-$top-banner-height: 150px !default;
+$top-banner-font-size: $h1-font-size;
+$top-banner-height: $top-banner-font-size + 2 * $default-spacing;
 #top-banner {
 	position: relative;
 	border-bottom: 1px solid $color-scheme-foreground-primary;
 	padding: $nope;
 	background: $color-scheme-background-secondary;
 	overflow: hidden;
-
-	font-size: 24px;
-	text-align: center;
 
 	$zindex: 0;
 	.location-icon {
@@ -102,8 +100,8 @@ $top-banner-height: 150px !default;
 	.navigation-location {
 		position: relative;
 		display: block;
-		font-size: $top-banner-height - $default-spacing;
-		line-height: $top-banner-height - $default-spacing;
+		font-size: $top-banner-font-size;
+		line-height: $top-banner-font-size;
 		padding-top: $default-spacing;
 		padding-right: $default-spacing;
 		text-align: right;
@@ -115,7 +113,7 @@ $top-banner-height: 150px !default;
 		left: $default-spacing;
 		top: $default-spacing;
 		color: $color-scheme-foreground-primary;
-		font-size: $top-banner-height - 2 * $default-spacing;
+		font-size: $top-banner-font-size * 2 / 3;
 		text-decoration: none;
 		text-align: center;
 		z-index: $zindex + 2;

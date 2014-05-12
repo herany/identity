@@ -578,38 +578,38 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 
 /* line 62, source/sprtid.scss */
 h1, .h1 {
-  line-height: 32px;
-  font-size: 32px;
+  line-height: 95px;
+  font-size: 95px;
 }
 
 /* line 62, source/sprtid.scss */
 h2, .h2 {
-  line-height: 29px;
-  font-size: 29px;
+  line-height: 82px;
+  font-size: 82px;
 }
 
 /* line 62, source/sprtid.scss */
 h3, .h3 {
-  line-height: 26px;
-  font-size: 26px;
+  line-height: 70px;
+  font-size: 70px;
 }
 
 /* line 62, source/sprtid.scss */
 h4, .h4 {
-  line-height: 22px;
-  font-size: 22px;
+  line-height: 57px;
+  font-size: 57px;
 }
 
 /* line 62, source/sprtid.scss */
 h5, .h5 {
-  line-height: 19px;
-  font-size: 19px;
+  line-height: 44px;
+  font-size: 44px;
 }
 
 /* line 62, source/sprtid.scss */
 h6, .h6 {
-  line-height: 16px;
-  font-size: 16px;
+  line-height: 32px;
+  font-size: 32px;
 }
 
 /* line 69, source/sprtid.scss */
@@ -624,24 +624,22 @@ button {
   min-height: 100%;
 }
 
-/* line 79, source/sprtid.scss */
+/* line 80, source/sprtid.scss */
 #top-banner {
   position: relative;
   border-bottom: 1px solid #ecf0f1;
   padding: 0;
   background: #2c3e50;
   overflow: hidden;
-  font-size: 24px;
-  text-align: center;
 }
-/* line 90, source/sprtid.scss */
+/* line 88, source/sprtid.scss */
 #top-banner .location-icon {
   position: absolute;
   top: -25px;
   left: -25px;
   width: auto;
   color: #34495e;
-  font-size: 200px;
+  font-size: 208px;
   z-index: 0;
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -649,35 +647,35 @@ button {
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-/* line 102, source/sprtid.scss */
+/* line 100, source/sprtid.scss */
 #top-banner .navigation-location {
   position: relative;
   display: block;
-  font-size: 125px;
-  line-height: 125px;
+  font-size: 108px;
+  line-height: 108px;
   padding-top: 25px;
   padding-right: 25px;
   text-align: right;
   z-index: 1;
 }
-/* line 113, source/sprtid.scss */
+/* line 111, source/sprtid.scss */
 #top-banner .navigation-back {
   position: absolute;
   left: 25px;
   top: 25px;
   color: #ecf0f1;
-  font-size: 100px;
+  font-size: 72px;
   text-decoration: none;
   text-align: center;
   z-index: 2;
 }
 
-/* line 124, source/sprtid.scss */
+/* line 122, source/sprtid.scss */
 .page-content {
   padding: 25px;
 }
 
-/* line 128, source/sprtid.scss */
+/* line 126, source/sprtid.scss */
 #footer-navigation {
   zoom: 1;
 }
@@ -690,7 +688,7 @@ button {
   font-size: 0;
   visibility: hidden;
 }
-/* line 131, source/sprtid.scss */
+/* line 129, source/sprtid.scss */
 #footer-navigation .navigation-link {
   float: left;
 }
