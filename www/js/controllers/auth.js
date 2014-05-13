@@ -12,10 +12,11 @@ var AuthControllerDefinition = [
 ];
 
 var LoginAuthControllerDefinition = [
+	"$rootScope",
 	"$scope",
 	"$log",
 	"UserService",
-	function ($scope, $log, UserService) {
+	function ($rootScope, $scope, $log, UserService) {
 		"use strict";
 		$log.info("AuthController", arguments);
 
@@ -27,6 +28,7 @@ var LoginAuthControllerDefinition = [
 			UserService.login($scope.username, $scope.password).then(function () {
 				$log.log("AuthController::login ($q.resolve)", arguments);
 				$scope.success = true;
+				$rootScope.back();
 			}, function () {
 				$log.log("AuthController::login ($q.reject)", arguments);
 				$scope.success = false;
@@ -38,10 +40,11 @@ var LoginAuthControllerDefinition = [
 ];
 
 var SignupAuthControllerDefinition = [
+	"$rootScope",
 	"$scope",
 	"$log",
 	"UserService",
-	function ($scope, $log, UserService) {
+	function ($rootScope, $scope, $log, UserService) {
 		"use strict";
 		$log.info("SignupAuthController", arguments);
 
@@ -57,7 +60,7 @@ var SignupAuthControllerDefinition = [
 			UserService.signup($scope.username, $scope.password, $scope.passwordConfirmation, $scope.email, $scope.firstName, $scope.lastName).then(function () {
 				$log.log("AuthController::login ($q.resolve)", arguments);
 
-				// redirect
+				$rootScope.back();
 			}, function (message) {
 				$log.log("AuthController::login ($q.reject)", arguments);
 

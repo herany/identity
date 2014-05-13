@@ -50,32 +50,62 @@
 
 			FacebookProvider.init("326477510810744");
 		}])
-		.run(["$window", "$location", "$rootScope", "$log", "UserService", function ($window, $location, $rootScope, $log, UserService) {
-			$rootScope.$on("$locationChangeStart", function () {
-				$log.debug("$locationChangeStart", arguments);
-			});
+		.run([
+			"$window",
+			"$location",
+			"$rootScope",
+			"$log",
+			"UserService",
+			function ($window, $location, $rootScope, $log, UserService) {
+				$rootScope.$on("$locationChangeStart", function () {
+					$log.debug("$locationChangeStart", arguments);
+				});
 
-			$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
-				if (current && current.$$route) {
-					$rootScope.bodyClassname = current.$$route.bodyClassname;
-				} else {
-					$rootScope.bodyClassname = "";
-				}
-			});
+				$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
+					if (current && current.$$route) {
+						$rootScope.bodyClassname = current.$$route.bodyClassname;
+					} else {
+						$rootScope.bodyClassname = "";
+					}
+				});
 
-			$rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
-				$log.debug("failed to change routes", arguments);
-			});
+				// managing history
+				var historyStack = [], historyStackPtr = 0;
+				$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
+					var currentRelativeUrl = current;
 
-			UserService.user().then(function (user) {
-				console.log("app::run (success!)", user);
-				$rootScope.user = user;
-				$rootScope.identified = !!user && !!user.username;
-			}, function (message) {
-				console.log("app::run (error)", message);
-				$rootScope.identified = false;
-			});
-		}]);
+					// consider the "forward" case
+					if (historyStack[historyStackPtr+1] !== currentRelativeUrl) {
+						historyStack.push(currentRelativeUrl);
+					}
+
+					historyStackPtr++;
+				});
+				$rootScope.back = function () {
+					historyStackPtr--;
+					historyStack[historyStackPtr];
+				};
+				$rootScope.forward = function () {
+					historyStackPtr = Math.min(historyStackPtr + 1, historyStack.length - 1);
+					historyStack[historyStackPtr];
+				};
+				console.log([historyStack, historyStackPtr]);
+				// (end) managing history
+
+				$rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
+					$log.debug("failed to change routes", arguments);
+				});
+
+				UserService.user().then(function (user) {
+					console.log("app::run (success!)", user);
+					$rootScope.user = user;
+					$rootScope.identified = !!user && !!user.username;
+				}, function (message) {
+					console.log("app::run (error)", message);
+					$rootScope.identified = false;
+				});
+			}
+		]);
 
 	console.log("angular setup complete");
 	document.addEventListener("deviceready", function () {
