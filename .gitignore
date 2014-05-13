@@ -46,7 +46,7 @@ platforms/android/assets/www/*
 platforms/ios/www/*
 *.apk
 *.ap_
-platforms/android/*.prop
+platforms/android/**/*.prop
 platforms/ios/SprtidIdentity.xcodeproj/*
 ###
 
