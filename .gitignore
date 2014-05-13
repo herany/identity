@@ -41,9 +41,19 @@ Desktop.ini
 .idea
 ### (end) apache cordova .gitignore
 
+### exclude bulid files
+platforms/android/assets/www/*
+platforms/ios/www/*
+*.apk
+*.ap_
+platforms/android/*.prop
+platforms/ios/SprtidIdentity.xcodeproj/*
+###
+
 # Emulator logs
 platforms/ios/cordova/console.log
 
 
 *.sublime-workspace
 .sass-cache/
+/*.zip
