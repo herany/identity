@@ -1,10 +1,15 @@
-;(function (APP_NAME, angular, cordova, undefined) {
+// Ionic Starter App
+
+// angular.module is a global place for creating, registering and retrieving Angular modules
+// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// the 2nd parameter is an array of 'requires'
+// 'starter.controllers' is found in controllers.js
+;(function (APP_NAME, angular, cordova, StatusBar, undefined) {
 	"use strict";
 
 	angular
-		.module(APP_NAME, [
-			"ngRoute",
-			"ngTouch",
+		.module('starter', [
+			"ionic",
 			"http-auth-interceptor",
 			"facebook",
 			"monospaced.qrcode",
@@ -14,116 +19,113 @@
 			APP_NAME + ".directives",
 			APP_NAME + ".controllers"
 		])
-		/* RoutingAccess: home-made services are not available in the config stage,
-		   but thankfully it's just a class and is globally accessible */
-		.config(["$locationProvider", "$routeProvider", "$httpProvider", "FacebookProvider", function ($locationProvider, $routeProvider, $httpProvider, FacebookProvider) {
-			$locationProvider.html5Mode(false).hashPrefix('!');
 
-			function addBoilerplateRoute (name, urlTokens) {
-				var url = "/" + name;
-				if(urlTokens && urlTokens.length) {
-					url += "/" + urlTokens.join("/");
+		.run(function ($ionicPlatform) {
+			$ionicPlatform.ready( function () {
+				// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+				// for form inputs)
+				if (cordova && cordova.plugins.Keyboard) {
+					cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 				}
-
-				$routeProvider.when(url, {
-					templateUrl: "partials/" + name + ".html",
-					controller: name.charAt(0).toUpperCase() + name.slice(1) + "Controller",
-					bodyClassname: name + "-screen"
-				});
-			}
-
-			addBoilerplateRoute("home");
-			addBoilerplateRoute("auth");
-			addBoilerplateRoute("login");
-			addBoilerplateRoute("signup");
-			addBoilerplateRoute("scan");
-			addBoilerplateRoute("user", [":id"]);
-			addBoilerplateRoute("create");
-			addBoilerplateRoute("shop");
-			addBoilerplateRoute("logout");
-			addBoilerplateRoute("checkin");
-			addBoilerplateRoute("settings");
-
-			$routeProvider.otherwise({
-				redirectTo: "/home"
+				if (StatusBar) {
+					// org.apache.cordova.statusbar required
+					StatusBar.styleDefault();
+				}
 			});
+		})
 
-			FacebookProvider.init("326477510810744");
-		}])
-		.run([
-			"$window",
-			"$location",
-			"$rootScope",
-			"$log",
-			"UserService",
-			function ($window, $location, $rootScope, $log, UserService) {
-				$rootScope.$on("$locationChangeStart", function () {
-					$log.debug("$locationChangeStart", arguments);
-				});
+		.config(function ($stateProvider, $urlRouterProvider) {
+			$stateProvider
+				.state('app', {
+					url: "/app",
+					abstract: true,
+					templateUrl: "templates/menu.html",
+					controller: 'AppController'
+				})
 
-				$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
-					if (current && current.$$route) {
-						$rootScope.bodyClassname = current.$$route.bodyClassname;
-					} else {
-						$rootScope.bodyClassname = "";
+				.state('app.home', {
+					url: "/home",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/home.html",
+							controller: "HomeController"
+						}
 					}
-				});
+				})
 
-				// managing history
-				var historyStack = [], historyStackPtr = 0;
-				$rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
-					var currentRelativeUrl = current;
-
-					// consider the "forward" case
-					if (historyStack[historyStackPtr+1] !== currentRelativeUrl) {
-						historyStack.push(currentRelativeUrl);
+				.state('app.checkin', {
+					url: "/checkin",
+					views: {
+						'menuContent': {
+							templateUrl: "templates/checkin.html",
+							controller: "CheckinController"
+						}
 					}
+				})
 
-					historyStackPtr++;
-				});
-				$rootScope.back = function () {
-					historyStackPtr--;
-					historyStack[historyStackPtr];
-				};
-				$rootScope.forward = function () {
-					historyStackPtr = Math.min(historyStackPtr + 1, historyStack.length - 1);
-					historyStack[historyStackPtr];
-				};
-				console.log([historyStack, historyStackPtr]);
-				// (end) managing history
+				.state('app.user', {
+					url: "/user",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/user.html",
+							controller: "UserController"
+						}
+					}
+				})
 
-				$rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
-					$log.debug("failed to change routes", arguments);
-				});
+				// .state('app.databit', {
+				// 	url: "/databit/:id",
+				// 	views: {
+				// 		'menuContent' :{
+				// 			templateUrl: "templates/databit.html",
+				// 			controller: "DatabitController"
+				// 		}
+				// 	}
+				// })
 
-				UserService.user().then(function (user) {
-					console.log("app::run (success!)", user);
-					$rootScope.user = user;
-					$rootScope.identified = !!user && !!user.username;
-				}, function (message) {
-					console.log("app::run (error)", message);
-					$rootScope.identified = false;
-				});
-			}
-		]);
+				.state('app.login', {
+					url: "/login",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/login.html",
+							controller: 'LoginController'
+						}
+					}
+				})
 
-	console.log("angular setup complete");
-	document.addEventListener("deviceready", function () {
-		console.log("deviceready: angular setup complete");
-	}, false);
-	// var bootstrap = function () {
-	// 	console.log("bootstrapping!");
-	//	angular.bootstrap(document, [APP_NAME]);
-	// };
-	// if (cordova) {
-	// 	if (cordova.logger) {
-	// 		cordova.logger.__onDeviceReady();
-	// 	}
-	// 	alert("have cordova. going to wait for device ready");
-	// 	document.addEventListener('deviceready', bootstrap, false);
-	// } else {
-	// 	alert("no cordova. let's rock.");
-	// 	bootstrap();
-	// }
-})("sprtidApp", angular, window.cordova);
+				.state('app.signup', {
+					url: "/signup",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/signup.html",
+							controller: 'SignupController'
+						}
+					}
+				})
 
+				.state('app.logout', {
+					url: "/logout",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/logout.html",
+							controller: 'LogoutController'
+						}
+					}
+				})
+
+				.state('app.scan', {
+					url: "/scan",
+					views: {
+						'menuContent' :{
+							templateUrl: "templates/scan.html",
+							controller: 'ScanController'
+						}
+					}
+				})
+			;
+			// if none of the above states are matched, use this as the fallback
+			$urlRouterProvider.otherwise('/app/home');
+		})
+	;
+
+})("sprtidApp", angular, window.cordova, window.StatusBar);

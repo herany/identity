@@ -18,22 +18,25 @@ var LoginAuthControllerDefinition = [
 	"UserService",
 	function ($rootScope, $scope, $log, UserService) {
 		"use strict";
-		$log.info("AuthController", arguments);
+		$log.info("LoginAuthController", arguments);
 
-		$scope.username = "";
-		$scope.password = "";
+		$scope.auth = {
+			username: "",
+			password: ""
+		};
 
 		// broadcast login event
 		$scope.login = function () {
-			UserService.login($scope.username, $scope.password).then(function () {
-				$log.log("AuthController::login ($q.resolve)", arguments);
+			UserService.login($scope.auth.username, $scope.auth.password).then(function (user) {
+				$log.log("LoginController::login ($q.resolve)", arguments);
 				$scope.success = true;
-				$rootScope.back();
+				$scope.setUser(user);
 			}, function () {
-				$log.log("AuthController::login ($q.reject)", arguments);
+				$log.log("LoginController::login ($q.reject)", arguments);
+				$scope.setUser(null);
 				$scope.success = false;
 			}, function () {
-				$log.log("AuthController::login ($q.notify)", arguments);
+				$log.log("LoginController::login ($q.notify)", arguments);
 			});
 		};
 	}
@@ -58,15 +61,15 @@ var SignupAuthControllerDefinition = [
 		// broadcast login event
 		$scope.signup = function (user) {
 			UserService.signup($scope.username, $scope.password, $scope.passwordConfirmation, $scope.email, $scope.firstName, $scope.lastName).then(function () {
-				$log.log("AuthController::login ($q.resolve)", arguments);
-
-				$rootScope.back();
+				$log.log("SignupController::signup ($q.resolve)", arguments);
+				$scope.success = true;
+				$scope.setUser(user);
 			}, function (message) {
-				$log.log("AuthController::login ($q.reject)", arguments);
-
+				$log.log("SignupController::signup ($q.reject)", arguments);
 				$scope.error = message;
+				$scope.setUser(null);
 			}, function () {
-				$log.log("AuthController::login ($q.notify)", arguments);
+				$log.log("SignupController::signup ($q.notify)", arguments);
 			});
 		};
 	}

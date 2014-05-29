@@ -39,6 +39,14 @@
 				return JSON.stringify(obj, null, "  ");
 			};
 		})
+		.filter("fullName", function () {
+			return function (obj) {
+				var bits = [];
+				if (obj.firstName) { bits.push(obj.firstName); }
+				if (obj.lastName) { bits.push(obj.lastName); }
+				return bits.join(" ");
+			};
+		})
 		.filter("findBarcode", function () {
 			return function (dataBits) {
 				var barcodeDataBit = dataBitsToBarcode(dataBits);

@@ -2,29 +2,25 @@
 	"use strict";
 
 	angular.module(APP_NAME + ".controllers", [])
-		.controller("AppController", [
-			"$scope",
-			"$log",
-			"UserService",
-			function ($scope, $log, UserService) {
-				"use strict";
-				$log.info("CheckinController", arguments);
+		.controller("AppController", AppControllerDefinition)
+		.controller('PlaylistsCtrl', function($scope) {
+			$scope.playlists = [
+				{ title: 'Reggae', id: 1 },
+				{ title: 'Chill', id: 2 },
+				{ title: 'Dubstep', id: 3 },
+				{ title: 'Indie', id: 4 },
+				{ title: 'Rap', id: 5 },
+				{ title: 'Cowbell', id: 6 }
+			];
+		})
 
-				// if user has children, prompt for who is checking in
-
-				UserService.user().then(function (data, status, headers, config) {
-					console.log("CheckinController::login (success!)", data);
-					$scope.user = data;
-				}, function (data, status, headers, config) {
-					console.log("CheckinController::login (error)", data, status);
-				});
-			}
-		])
+		.controller("CheckinController", CheckinControllerDefinition)
 		.controller("HomeController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("HomeController", arguments);
 		}])
 		.controller("ScanController", ScanControllerDefinition)
 		.controller("UserController", UserControllerDefinition)
+		// .controller("DatabitController", DatabitControllerDefinition)
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CreateController", arguments);
 		}])
@@ -39,5 +35,5 @@
 		.controller("SettingsController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("SettingsController", arguments);
 		}])
-		;
+	;
 })("sprtidApp", angular);

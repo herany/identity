@@ -1,0 +1,112 @@
+<div class="modal">
+	<!-- Modal header bar -->
+	<ion-header-bar class="bar-secondary">
+		<h1 class="title">New Data Bit</h1>
+		<button class="button button-clear button-positive" ng-click="closeNewDatabit()">Cancel</button>
+	</ion-header-bar>
+
+	<!-- Modal content area -->
+	<ion-content class="has-header" padding="true">
+		<div class="page-content">
+			<form ng-submit="saveDatabit(databit)">
+				<fieldset>
+					<legend>Type of Data Bit</legend>
+					<input type="radio" name="type" id="type-birthday" ng-model="databit.type" value="birthday" />
+					<label for="type-birthday">Birthday</label>
+					<input type="radio" name="type" id="type-phone" ng-model="databit.type" value="phone" />
+					<label for="type-birthday">Phone Number</label>
+					<input type="radio" name="type" id="type-health" ng-model="databit.type" value="health" />
+					<label for="type-health">Health</label>
+				</fieldset>
+
+
+<!-- birthday data bit -->
+				<fieldset class="list" ng-show="databit.type == 'birthday'">
+					<legend>Birthday:</legend>
+					<div class="input-wrapper item item-input">
+						<label for="databit-birthday-birthdate">Birthday:</label>
+						<input type="date" id="databit-birthday-birthdate" name="birthdate" ng-model="databit.birthday.birthdate" placeholder="Birthday" />
+					</div>
+					<div class="input-wrapper item">
+						<fieldset>
+							<legend>Visibility:</legend>
+							<input type="radio" id="databit-birthday-visibility-public" name="visibility" ng-model="databit.birthday.visibility" value="public" />
+							<label for="databit-birthday-visibility-public">Public</label>
+							<input type="radio" id="databit-birthday-visibility-protected" name="visibility" ng-model="databit.birthday.visibility" value="protected" />
+							<label for="databit-birthday-visibility-protected">Protected</label>
+							<input type="radio" id="databit-birthday-visibility-private" name="visibility" ng-model="databit.birthday.visibility" value="private" />
+							<label for="databit-birthday-visibility-private">Private</label>
+						</fieldset>
+					</div>
+				</fieldset>
+
+<!-- phone data bit -->
+				<fieldset class="list" ng-show="databit.type == 'phone'">
+					<legend>Contact Information:</legend>
+					<div class="input-wrapper item item-input">
+						<label for="databit-phone-number">Phone Number:</label>
+						<input type="tel" id="databit-phone-number" name="number" ng-model="databit.phone.number" placeholder="Phone Number" />
+					</div>
+					<div class="input-wrapper item">
+						<fieldset>
+							<legend>Visibility:</legend>
+							<input type="radio" id="databit-phone-visibility-public" name="visibility" ng-model="databit.phone.visibility" value="public" />
+							<label for="databit-phone-visibility-public">Public</label>
+							<input type="radio" id="databit-phone-visibility-protected" name="visibility" ng-model="databit.phone.visibility" value="protected" />
+							<label for="databit-phone-visibility-protected">Protected</label>
+							<input type="radio" id="databit-phone-visibility-private" name="visibility" ng-model="databit.phone.visibility" value="private" />
+							<label for="databit-phone-visibility-private">Private</label>
+						</fieldset>
+					</div>
+				</fieldset>
+
+<!-- health data bit -->
+				<fieldset class="list" ng-show="databit.type == 'health'">
+					<legend>Health:</legend>
+					<div class="input-wrapper item item-input">
+						<label for="databit-health-condition">Condition:</label>
+						<input type="text" id="databit-health-condition" name="condition" ng-model="databit.health.condition" placeholder="Condition" />
+					</div>
+					<div class="input-wrapper item item-input">
+						<label for="databit-health-treatment">Treatment:</label>
+						<textarea id="databit-health-treatment" name="treatment" ng-model="databit.health.treatment" placeholder="Treatment"></textarea>
+					</div>
+					<div class="input-wrapper item">
+						<fieldset>
+							<legend>Contact Me if Condition Arises:</legend>
+							<input type="radio" id="databit-health-contact-phone" name="contact" ng-model="databit.health.contact" value="phone" />
+							<label for="databit-health-contact-phone">Phone Call</label>
+							<input type="radio" id="databit-health-contact-text" name="contact" ng-model="databit.health.contact" value="text" />
+							<label for="databit-health-contact-text">Text Message</label>
+							<input type="radio" id="databit-health-contact-email" name="contact" ng-model="databit.health.contact" value="email" />
+							<label for="databit-health-contact-email">Email</label>
+							<input type="radio" id="databit-health-contact-nothanks" name="contact" ng-model="databit.health.contact" value="" />
+							<label for="databit-health-contact-nothanks">No Thanks</label>
+						</fieldset>
+					</div>
+					<div class="input-wrapper item item-input">
+						<label for="databit-health-expirationdate">Expires on (optional):</label>
+						<input type="date" id="databit-health-expirationdate" name="expirationDate" ng-model="databit.health.expirationDate" placeholder="Date" />
+						<input type="time" id="databit-health-expirationtime" name="expirationTime" ng-model="databit.health.expirationTime" placeholder="Time" />
+					</div>
+					<div class="input-wrapper item">
+						<fieldset>
+							<legend>Visibility:</legend>
+							<input type="radio" id="databit-health-visibility-public" name="visibility" ng-model="databit.health.visibility" value="public" />
+							<label for="databit-health-visibility-public">Public</label>
+							<input type="radio" id="databit-health-visibility-protected" name="visibility" ng-model="databit.health.visibility" value="protected" />
+							<label for="databit-health-visibility-protected">Protected</label>
+							<input type="radio" id="databit-health-visibility-private" name="visibility" ng-model="databit.health.visibility" value="private" />
+							<label for="databit-health-visibility-private">Private</label>
+						</fieldset>
+					</div>
+				</fieldset>
+
+
+				<div class="actions padding">
+					<button type="submit" class="button button-block button-positive">Save</button>
+				</div>
+			</form>
+		</div>
+	</ion-content>
+</div>

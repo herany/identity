@@ -1,0 +1,23 @@
+<ion-view title="Check In">
+	<ion-nav-buttons side="left">
+		<span class="location-icon icon-compass"></span>
+	</ion-nav-buttons>
+	<ion-content class="has-header" padding="true">
+		<div class="page-content">
+			<p class="instruction">
+				Hold your phone up to a sprt&middot;id check-in kiosk.
+			</p>
+			<div class="user-name h1">
+				{{ user.firstName }} {{ user.lastName }}
+			</div>
+			<div class="user-barcode-image">
+				<qrcode version="2" error-correction-level="M" size="400" data="{{ user.dataBits | findEncodableBarcode }}"></qrcode>
+			</div>
+			<div class="user-barcode-value">
+				{{ user.dataBits | findEncodableBarcode }}
+			</div>
+			<hr />
+			<pre>{{ user | jsonFormatter }}</pre>
+		</div>
+	</ion-content>
+</ion-view>

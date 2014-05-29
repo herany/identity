@@ -1,48 +1,13 @@
-var production = true;
+var production = false;
 
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
 
 	angular.module(APP_NAME + ".factories", [])
-		// .factory('cordovaReady', function() {
-		// 	return function (fn) {
-		// 		var queue = [];
-
-		// 		var impl = function () {
-		// 			queue.push(Array.prototype.slice.call(arguments));
-		// 		};
-
-		// 		document.addEventListener('deviceready', function () {
-		// 			queue.forEach(function (args) {
-		// 				fn.apply(this, args);
-		// 			});
-		// 			impl = fn;
-		// 		}, false);
-
-		// 		return function () {
-		// 			return impl.apply(this, arguments);
-		// 		};
-		// 	};
-		// })
-		.factory("$scanFactory", ["$http", "$log", function ($http, $log) {
-			var URL_TOKEN_ID = "#{id}",
-			    APP_ID_URL_PATTERN = apiBaseUrl + "/v1/scans/" + URL_TOKEN_ID;
-
-			function fetchByBarcode (id, fnCallback) {
-				var url = APP_ID_URL_PATTERN.replace(URL_TOKEN_ID, id);
-
-				return $http.get(url);
-			}
-
-			return {
-				fetchByBarcode: fetchByBarcode
-			};
-		}])
 		.factory("UserService", ["$window", "$http", "$q", function ($window, $http, $q) {
-			var user;
 			var methods = {
 				login: function (username, password) {
-					var config, xhr;
+					var config, xhr, deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth/login",
@@ -55,19 +20,17 @@ var production = true;
 
 					xhr = $http(config)
 						.success(function (data, status, headers, config) {
-							user = data; // user a proper User object
+							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
-							user = null;
+							deferred.reject(data);
 						})
 					;
 
-					return $q.when(xhr);
+					return deferred.promise;
 				},
 				signup: function (username, password, passwordConfirmation, email, firstName, lastName) {
-					var config, xhr;
-
-					// if (this.user) { return; }
+					var config, xhr, deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth/signup",
@@ -88,16 +51,41 @@ var production = true;
 
 					xhr = $http(config)
 						.success(function (data, status, headers, config) {
-							user = data; // user a proper User object
+							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
-							user = null;
+							deferred.reject(data);
 						})
 					;
 
-					return $q.when(xhr);
+					return deferred.promise;
 				},
-				user: function () {
+				save: function (userId, email, firstName, lastName) {
+					var config, xhr, deferred = $q.defer();
+
+					config = {
+						url: apiBaseUrl + "/v1/users/" + (userId ? userId : "me"),
+						data: JSON.stringify({
+							firstName: firstName,
+							lastName: lastName,
+							email: email
+						}),
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"}
+					};
+
+					xhr = $http(config)
+						.success(function (data, status, headers, config) {
+							deferred.resolve(data);
+						})
+						.error(function (data, status, headers, config) {
+							deferred.reject(data);
+						})
+					;
+
+					return deferred.promise;
+				},
+				user: function (id) {
 					// how do you force a request?
 					var config;
 
@@ -109,22 +97,45 @@ var production = true;
 					methods.user.deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/auth",
+						url: apiBaseUrl + "/auth" + (id ? "/" + id : ""),
 						method: "GET"
 					};
 
 					$http(config)
 						.success(function (data, status, headers, config) {
-							user = data; // user a proper User object
-							methods.user.deferred.resolve(user);
+							methods.user.deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
-							user = null;
 							methods.user.deferred.reject(data);
 						})
 					;
 
 					return methods.user.deferred.promise;
+				},
+				saveDatabit: function (user, databit) {
+					var config, xhr, deferred = $q.defer(), url;
+
+					url = apiBaseUrl + "/v1/users/" + user.id + "/databit";
+					if (databit.id) {
+						url += "/" + databit.id;
+					}
+					config = {
+						url: url,
+						data: JSON.stringify(databit),
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"}
+					};
+
+					xhr = $http(config)
+						.success(function (data, status, headers, config) {
+							deferred.resolve(data);
+						})
+						.error(function (data, status, headers, config) {
+							deferred.reject(data);
+						})
+					;
+
+					return deferred.promise;
 				},
 				logout: function () {
 				},
