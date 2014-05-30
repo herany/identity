@@ -62,17 +62,64 @@ $nope: 0;
 $golden-ratio: 1.61803399;
 
 
-
 // ------------------ ionic -----------------------
-$menu-bg: black;
-$light:      nth($black, $foreground);
-$stable:     nth($grey, $foreground);
-$positive:   nth($blue, $foreground);
-$calm:       nth($green-blue, $foreground);
-$balanced:   nth($green, $foreground);
-$energized:  nth($orange, $foreground);
-$assertive:  nth($red, $foreground);
-$royal:      nth($purple, $foreground);
-$dark:       nth($white, $foreground);
+$key: $foreground;
+$light:      nth($black, $key);
+$stable:     nth($grey, $key);
+$positive:   nth($blue, $key);
+$calm:       nth($green-blue, $key);
+$balanced:   nth($green, $key);
+$energized:  nth($orange, $key);
+$assertive:  nth($red, $key);
+$royal:      nth($purple, $key);
+$dark:       nth($white, $key);
 
-$base-background-color: nth($black, $background);
+$key: $background;
+$lighter:     nth($black, $key);
+$stabler:     nth($grey, $key);
+$positiver:   nth($blue, $key);
+$calmer:      nth($green-blue, $key);
+$balanceder:  nth($green, $key);
+$energizeder: nth($orange, $key);
+$assertiver:  nth($red, $key);
+$royaler:     nth($purple, $key);
+$darker:      nth($white, $key);
+
+$seriously-light: black;
+$seriously-dark:  white;
+
+// ----- overrides -----
+$menu-bg:                         $seriously-light;
+$base-background-color:           $lighter;
+$base-color:                      $darker;
+$toggle-handle-dragging-bg-color: mix($seriously-light, $seriously-dark, 95%);
+$toggle-off-bg-color:             mix($light, $dark, 0.9);
+$toggle-off-border-color:         mix($light, $dark, 0.75);
+$checkbox-off-bg-color:           $light;
+$checkbox-check-color:            $dark;
+$range-default-track-bg:          mix($light, $dark, 0.75);
+$modal-bg-color:                  $seriously-light;
+$sheet-bg-color:                  rgba($seriously-light, 0.6);
+$popup-background-color:          rgba($seriously-light, 0.9);
+$loading-text-color:              $light;
+$loading-bg-color:                rgba($seriously-dark, 0.7);
+$loading-backdrop-bg-color:       rgba($seriously-dark, 0.7);
+$badge-default-text:              mix($light, $dark, 0.667); // AA/FF
+
+$button-light-bg:                 $light;
+$button-light-text:               mix($light, $dark, 0.25);   // 44 / FF
+$button-light-border:             mix($light, $dark, 0.8667); // DD / FF
+$button-light-active-bg:          mix($light, $dark, 0.98); // FA / FF
+$button-light-active-border:      mix($light, $dark, 0.80); // CC / FF
+
+
+$bar-light-bg:                    $lighter;
+$bar-stable-bg:                   $stabler;
+$bar-positive-bg:                 $positiver;
+$bar-calm-bg:                     $calmer;
+$bar-assertive-bg:                $assertiver;
+$bar-balanced-bg:                 $balanceder;
+$bar-energized-bg:                $energizeder;
+$bar-royal-bg:                    $royaler;
+$bar-dark-bg:                     $darker;
+$bar-default-bg:                  $darker;
