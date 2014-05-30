@@ -2,6 +2,9 @@ $font-family-headline: Matchbook, Impact, sans-serif;
 $font-family-content: OpenSans, Helvetica, sans-serif;
 
 
+$foreground: 1;
+$background: 2;
+
 // internal variables!
 $white: #ecf0f1, #bdc3c7; // white
 $grey: #95a5a6, #7f8c8d;
@@ -15,40 +18,40 @@ $blue: #3498db, #2980b9; // #00acee
 $purple: #9b59b6, #8e44ad;
 
 $color-scheme-foreground: $white;
-$color-scheme-foreground-primary:   nth($color-scheme-foreground, 1);
-$color-scheme-foreground-secondary: nth($color-scheme-foreground, 2);
+$color-scheme-foreground-primary:   nth($color-scheme-foreground, $foreground);
+$color-scheme-foreground-secondary: nth($color-scheme-foreground, $background);
 
 $color-scheme-background: $black;
-$color-scheme-background-primary:   nth($color-scheme-background, 1);
-$color-scheme-background-secondary: nth($color-scheme-background, 2);
+$color-scheme-background-primary:   nth($color-scheme-background, $foreground);
+$color-scheme-background-secondary: nth($color-scheme-background, $background);
 
 $color-scheme-scan: $green;
-$color-scheme-scan-primary:   nth($color-scheme-scan, 1);
-$color-scheme-scan-secondary: nth($green, 2);
+$color-scheme-scan-primary:   nth($color-scheme-scan, $foreground);
+$color-scheme-scan-secondary: nth($green, $background);
 
 $color-scheme-create: $orange;
-$color-scheme-create-primary:   nth($color-scheme-create, 1);
-$color-scheme-create-secondary: nth($color-scheme-create, 2);
+$color-scheme-create-primary:   nth($color-scheme-create, $foreground);
+$color-scheme-create-secondary: nth($color-scheme-create, $background);
 
 $color-scheme-shop: $blue;
-$color-scheme-shop-primary:   nth($color-scheme-shop, 1);
-$color-scheme-shop-secondary: nth($color-scheme-shop, 2);
+$color-scheme-shop-primary:   nth($color-scheme-shop, $foreground);
+$color-scheme-shop-secondary: nth($color-scheme-shop, $background);
 
 $color-scheme-settings: $yellow;
-$color-scheme-settings-primary:   nth($color-scheme-settings, 1);
-$color-scheme-settings-secondary: nth($color-scheme-settings, 2);
+$color-scheme-settings-primary:   nth($color-scheme-settings, $foreground);
+$color-scheme-settings-secondary: nth($color-scheme-settings, $background);
 
 $color-scheme-auth: $grey;
-$color-scheme-auth-primary:   nth($color-scheme-auth, 1);
-$color-scheme-auth-secondary: nth($color-scheme-auth, 2);
+$color-scheme-auth-primary:   nth($color-scheme-auth, $foreground);
+$color-scheme-auth-secondary: nth($color-scheme-auth, $background);
 
 $color-scheme-checkin: $purple;
-$color-scheme-checkin-primary:   nth($color-scheme-checkin, 1);
-$color-scheme-checkin-secondary: nth($color-scheme-checkin, 2);
+$color-scheme-checkin-primary:   nth($color-scheme-checkin, $foreground);
+$color-scheme-checkin-secondary: nth($color-scheme-checkin, $background);
 
 $color-scheme-user: $red;
-$color-scheme-user-primary:   nth($color-scheme-user, 1);
-$color-scheme-user-secondary: nth($color-scheme-user, 2);
+$color-scheme-user-primary:   nth($color-scheme-user, $foreground);
+$color-scheme-user-secondary: nth($color-scheme-user, $background);
 
 $default-spacing: 25px;
 
@@ -62,3 +65,14 @@ $golden-ratio: 1.61803399;
 
 // ------------------ ionic -----------------------
 $menu-bg: black;
+$light:      nth($black, $foreground);
+$stable:     nth($grey, $foreground);
+$positive:   nth($blue, $foreground);
+$calm:       nth($green-blue, $foreground);
+$balanced:   nth($green, $foreground);
+$energized:  nth($orange, $foreground);
+$assertive:  nth($red, $foreground);
+$royal:      nth($purple, $foreground);
+$dark:       nth($white, $foreground);
+
+$base-background-color: nth($black, $background);

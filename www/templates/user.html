@@ -1,6 +1,7 @@
 <ion-view title="{{ title }}" ><!--  style="background-image: url('{{ user.image.secure_url }}'); height: {{user.image.height}}px;" -->
 	<ion-nav-buttons side="left">
 		<span class="location-icon icon-user2"></span>
+		<button class="button button-clear button-positive">Edit</button>
 	</ion-nav-buttons>
 	<ion-content class="has-header" padding="true">
 		<div class="page-content">
@@ -12,17 +13,23 @@
 			<form ng-submit="save()">
 				<fieldset class="list">
 					<input name="id" ng-model="user.id" type="hidden" />
-					<div class="input-wrapper item item-input">
-						<label for="first-name">First Name:</label>
-						<input id="first-name" name="first-name" ng-model="user.firstName" placeholder="First Name" />
+					<div class="input-wrapper">
+						<label for="first-name" class="item item-input">
+							<span class="input-label">First Name</span>
+							<input id="first-name" name="first-name" ng-model="user.firstName" placeholder="First Name" />
+						</label>
 					</div>
-					<div class="input-wrapper item item-input">
-						<label for="last-name">Last Name:</label>
-						<input id="last-name" name="last-name" ng-model="user.lastName" placeholder="Last Name" />
+					<div class="input-wrapper">
+						<label for="last-name" class="item item-input">
+							<span class="input-label">Last Name</span>
+							<input id="last-name" name="last-name" ng-model="user.lastName" placeholder="Last Name" />
+						</label>
 					</div>
-					<div class="input-wrapper item item-input">
-						<label for="email">Email:</label>
-						<input id="email" name="email" ng-model="user.email" placeholder="Email Address" type="email" />
+					<div class="input-wrapper">
+						<label for="email" class="item item-input">
+							<span class="input-label">Email</span>
+							<input id="email" name="email" ng-model="user.email" placeholder="Email Address" type="email" />
+						</label>
 					</div>
 				</fieldset>
 				<div class="actions padding">
@@ -30,13 +37,29 @@
 				</div>
 			</form>
 			<hr />
-			<button class="button button-icon ion-plus" ng-click="newDatabit()">New Data Bit</button>
-			<!-- ng-disabled="checked" -->
-<!-- 			<div ng-repeat="dataBit in user.dataBits" class="{{dataBit.type | asClassname}}">
-				<hr />
-				<pre>{{ dataBit | jsonFormatter }}</pre>
+			<button class="button button-clear button-positive button-icon ion-plus" ng-click="newDatabit()">New Data Bit</button>
+			<div class="list list-inset">
+				<div ng-repeat="dataBit in user.dataBits" class="{{dataBit.type | asClassname}}">
+					<div class="item item-divider item-icon-left">
+						<i class="icon ion-person-stalker"></i>
+						{{dataBit.typeReadable}}
+					</div>
+					<div class="item item-icon-left item-text-wrap">
+						This is a basic Card which contains an item that has wrapping text.
+					</div>
+					<div class="item tabs tabs-secondary tabs-icon-left">
+						<a class="tab-item" href="#">
+							<i class="icon ion-edit"></i>
+							Edit
+						</a>
+						<a class="tab-item" href="#">
+							<i class="icon ion-trash-outline"></i>
+							Delete
+						</a>
+					</div>
+  				</div>
 			</div>
- -->			<hr />
+			<hr />
 			<pre>{{ user | jsonFormatter }}</pre>
 		</div>
 	</ion-content>
