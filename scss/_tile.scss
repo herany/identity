@@ -1,0 +1,56 @@
+
+
+.tile {
+	&.tile-icon {
+		position: relative;
+		height: 0;
+		width: 100%;
+		padding-bottom: 100%;
+		box-sizing: border-box;
+
+		.tile-content {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: $dark;
+			color: $light;
+			text-decoration: none;
+
+			&:hover,
+			&:active {
+				background: $darker;
+				color: $light;
+			}
+			&:visited {
+				background: $dark;
+				color: $light;
+			}
+
+			.icon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+
+				$icon-font-size: 64px;
+				$icon-font-size-vw: 25vw;
+				font-size: $icon-font-size;
+				font-size: $icon-font-size-vw; // 1/4 of viewport width
+				margin-top: $icon-font-size / -2;
+				margin-top: $icon-font-size-vw / -2;
+				margin-left: $icon-font-size / -2;
+				margin-left: $icon-font-size-vw / -2;
+			}
+			label,
+			.label {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}

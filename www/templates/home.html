@@ -1,55 +1,46 @@
 <ion-view title="sprt~id">
 	<ion-nav-buttons side="left">
-		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+		<ion-nav-buttons side="left">
+			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+		</ion-nav-buttons>
+		<ion-nav-buttons side="right">
+			<a href="#/app/logout" class="button button-clear button-assertive">
+				Logout
+			</a>
+		</ion-nav-buttons>
 	</ion-nav-buttons>
 	<ion-content class="has-header" padding="true">
-		<div class="page-content">
-			<ul class="home-navigation">
-				<li class="navigation-link">
-					<a href="#/app/scan" class="navigation scan">
-						<span class="icon icon-qrcode"></span>
-						<span class="navigation-label">Scan</span>
+		<div class="row" ng-hide="auth.identified">
+			<div class="col col-50">
+				<div class="tile tile-icon">
+					<a href="#/app/login" class="tile-content">
+						<span class="icon ion-log-in"></span>
+						<span class="label">Log In</span>
 					</a>
-				</li>
-				<li class="navigation-link">
-					<a href="#/app/checkin" class="navigation checkin">
-						<span class="icon icon-compass"></span>
-						<span class="navigation-label">Check In</span>
+				</div>
+			</div>
+			<div class="col col-50">
+				<div class="tile tile-icon">
+					<a href="#/app/signup" class="tile-content">
+						<span class="icon icon-edit"></span>
+						<span class="label">Register</span>
 					</a>
-				</li>
-				<li class="navigation-link">
-					<a href="#/app/user" class="navigation user">
-						<span class="icon icon-pencil"></span>
-						<span class="navigation-label">Profile</span>
-					</a>
-				</li>
-	<!--
-				<li class="navigation-link">
-					<a href="#/app/shop" class="navigation shop">
-						<span class="icon icon-cart"></span>
-						<span class="navigation-label">Shop</span>
-					</a>
-				</li>
-	-->
-	<!--
-				<li class="navigation-link">
-					<a href="#/app/settings" class="navigation settings">
-						<span class="icon icon-settings"></span>
-						<span class="navigation-label">Settings</span>
-					</a>
-				</li>
-	-->
-				<li class="navigation-link">
-					<a href="#/app/login" class="navigation auth" ng-hide="auth.identified">
-						<span class="icon icon-lock"></span>
-						<span class="navigation-label">Log In/Sign Up</span>
-					</a>
-					<a href="#/app/logout" class="navigation auth" ng-show="auth.identified">
-						<span class="icon icon-unlocked"></span>
-						<span class="navigation-label">Logout</span>
-					</a>
-				</li>
-			</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="list card" ng-hide="auth.identified">
+			<div class="card">
+				<div class="item item-dark item-divider">
+					I'm a Header in a Card!
+				</div>
+				<div class="item item-dark item-text-wrap">
+					This is a basic Card with some text.
+				</div>
+				<div class="item item-dark item-divider">
+					I'm a Footer in a Card!
+				</div>
+			</div>
 		</div>
 	</ion-content>
 </ion-view>

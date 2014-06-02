@@ -123,3 +123,12 @@ $bar-energized-bg:                $energizeder;
 $bar-royal-bg:                    $royaler;
 $bar-dark-bg:                     $darker;
 $bar-default-bg:                  $darker;
+
+// $card-header-bg:                  mix($light, $dark, 0.96); // F5 / FF
+// $card-body-bg:                    $light;
+// $card-footer-bg:                  mix($light, $dark, 0.96); // F5 / FF
+// $card-border-color:               mix($light, $dark, 0.80); // CC / FF
+$card-box-shadow:                 1px 2px 0 rgba($light, .1);
+
+$item-divider-bg:                 mix($light, $dark, 0.96); // F5 / FF
+$item-divider-color:              mix($light, $dark, 0.135); // 22 / FF
