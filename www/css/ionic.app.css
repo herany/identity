@@ -14,6 +14,21 @@ $assertive:                       #ef4e3a !default;
 $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 /*!
   Ionicons, v1.4.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -4088,7 +4103,7 @@ ion-infinite-scroll.active .scroll-infinite {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2c3e50;
+  background-color: #0c1e30;
   overflow: hidden;
 }
 
@@ -4467,7 +4482,7 @@ a.subdued:last-child {
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid #eaeeef;
+  border-bottom: 1px solid #304355;
   background-color: #bdc3c7;
   /* border-width: 1px will actually create 2 device pixels on retina */
   /* this nifty trick sets an actual 1px border on hi-res displays */
@@ -4477,7 +4492,7 @@ a.subdued:last-child {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_bar\.scss}line{font-family:\000037}}
   .bar {
     border: none;
-    background-image: linear-gradient(0deg, #eaeeef, #eaeeef 50%, transparent 50%);
+    background-image: linear-gradient(0deg, #304355, #304355 50%, transparent 50%);
     background-position: bottom;
     background-size: 100% 1px;
     background-repeat: no-repeat;
@@ -4510,14 +4525,14 @@ a.subdued:last-child {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_bar\.scss}line{font-family:\0000369}}
 .bar.bar-light {
-  border-color: #eaeeef;
-  background-color: #2c3e50;
-  background-image: linear-gradient(0deg, #eaeeef, #eaeeef 50%, transparent 50%);
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #0c1e30;
+  background-image: linear-gradient(0deg, #304355, #304355 50%, transparent 50%);
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000367}}
 .bar.bar-light .title {
-  color: #ebeff0;
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_bar\.scss}line{font-family:\0000372}}
 .bar.bar-stable {
@@ -4711,19 +4726,19 @@ a.subdued:last-child {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_bar\.scss}line{font-family:\00003219}}
 .bar-light .button {
-  border-color: #eaeeef;
-  background-color: #2c3e50;
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #0c1e30;
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000311}}
 .bar-light .button:hover {
-  color: #ebeff0;
+  color: #b6bec4;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000316}}
 .bar-light .button.active, .bar-light .button.activated {
-  border-color: #eaeeef;
-  background-color: #eaeeef;
+  border-color: #3f5061;
+  background-color: #182c41;
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000324}}
@@ -4731,7 +4746,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: #ebeff0;
+  color: #b6bec4;
   font-size: 17px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000334}}
@@ -5086,16 +5101,16 @@ a.subdued:last-child {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_tabs\.scss}line{font-family:\0000347}}
 .tabs-light > .tabs,
 .tabs.tabs-light {
-  border-color: #eaeeef;
-  background-color: #34495e;
-  background-image: linear-gradient(0deg, #eaeeef, #eaeeef 50%, transparent 50%);
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #14293e;
+  background-image: linear-gradient(0deg, #304355, #304355 50%, transparent 50%);
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000384}}
 .tabs-light > .tabs .tab-item .badge,
 .tabs.tabs-light .tab-item .badge {
-  background-color: #ebeff0;
-  color: #34495e;
+  background-color: #b6bec4;
+  color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_tabs\.scss}line{font-family:\0000352}}
@@ -5350,7 +5365,7 @@ a.subdued:last-child {
 .tab-item.tab-item-active.tab-item-light,
 .tab-item.active.tab-item-light,
 .tab-item.activated.tab-item-light {
-  color: #34495e;
+  color: #14293e;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_tabs\.scss}line{font-family:\00003205}}
 .tab-item.tab-item-active.tab-item-stable,
@@ -5676,7 +5691,7 @@ a.subdued:last-child {
   padding: 20px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.7);
-  color: #34495e;
+  color: #14293e;
   text-align: center;
   text-overflow: ellipsis;
   font-size: 15px;
@@ -5691,7 +5706,7 @@ a.subdued:last-child {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_loading\.scss}line{font-family:\0000336}}
 .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
-  color: #34495e;
+  color: #14293e;
 }
 
 /**
@@ -5700,9 +5715,9 @@ a.subdued:last-child {
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\000036}}
 .item {
-  border-color: #eaeeef;
-  background-color: #34495e;
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #14293e;
+  color: #b6bec4;
   position: relative;
   z-index: 2;
   display: block;
@@ -5773,9 +5788,9 @@ a.subdued:last-child {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\0000369}}
 .item.item-light {
-  border-color: #eaeeef;
-  background-color: #34495e;
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #14293e;
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\0000372}}
 .item.item-stable {
@@ -5837,7 +5852,7 @@ a.subdued:last-child {
 .item-complex.activated .item-content,
 .item .item-content.active,
 .item .item-content.activated {
-  border-color: #eaeeef;
+  border-color: #3f5061;
   background-color: #d9d9d9;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\00003113}}
@@ -5847,8 +5862,8 @@ a.subdued:last-child {
 .item-complex.activated .item-content.item-light,
 .item .item-content.active.item-light,
 .item .item-content.activated.item-light {
-  border-color: #eaeeef;
-  background-color: #eaeeef;
+  border-color: #3f5061;
+  background-color: #182c41;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\00003116}}
 .item.active.item-stable,
@@ -5986,7 +6001,7 @@ button.item.item-complex {
   z-index: 2;
   padding: 15px 45px 15px 15px;
   border: none;
-  background-color: #34495e;
+  background-color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_items\.scss}line{font-family:\00003200}}
@@ -6362,8 +6377,8 @@ button.item.item-button-right {
   padding-top: 8px;
   padding-bottom: 8px;
   min-height: 30px;
-  background-color: #eaeeef;
-  color: #ebeff0;
+  background-color: #1c3045;
+  color: #ced5d8;
   font-weight: bold;
 }
 
@@ -6696,7 +6711,7 @@ button.item.item-button-right {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_badge\.scss}line{font-family:\000037}}
 .badge {
   background-color: transparent;
-  color: #eaeef0;
+  color: #5b6b79;
   z-index: 1;
   display: inline-block;
   padding: 3px 8px;
@@ -6717,8 +6732,8 @@ button.item.item-button-right {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_badge\.scss}line{font-family:\0000329}}
 .tabs .tab-item .badge.badge-light,
 .badge.badge-light {
-  background-color: #34495e;
-  color: #ebeff0;
+  background-color: #14293e;
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_badge\.scss}line{font-family:\0000332}}
 .tabs .tab-item .badge.badge-stable,
@@ -6899,7 +6914,7 @@ legend {
   margin-bottom: 1.42857;
   padding: 0;
   width: 100%;
-  border: 1px solid #eaeeef;
+  border: 1px solid #304355;
   color: #ecf0f1;
   font-size: 21px;
   line-height: 2.85714;
@@ -7107,7 +7122,7 @@ textarea {
   border-radius: 2px;
   padding: 4px 8px 3px;
   border: none;
-  background-color: #34495e;
+  background-color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_form\.scss}line{font-family:\00003153}}
@@ -7135,7 +7150,7 @@ input[type="color"] {
   display: block;
   padding-top: 2px;
   height: 34px;
-  color: #111111;
+  color: #ecf0f1;
   vertical-align: middle;
   font-size: 14px;
   line-height: 16px;
@@ -7220,17 +7235,17 @@ input[type="file"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003175}}
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: white;
+  color: #4a5a6a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003178}}
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: white;
+  color: #4a5a6a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003181}}
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: white;
+  color: #4a5a6a;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_form\.scss}line{font-family:\00003277}}
@@ -7273,11 +7288,11 @@ input[type="checkbox"][readonly] {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003130}}
 .checkbox.checkbox-light input:before, .checkbox.checkbox-light .checkbox-icon:before {
-  border-color: #eaeeef;
+  border-color: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003136}}
 .checkbox.checkbox-light input:checked:before, .checkbox.checkbox-light input:checked + .checkbox-icon:before {
-  background: #eaeeef;
+  background: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003130}}
 .checkbox.checkbox-stable input:before, .checkbox.checkbox-stable .checkbox-icon:before {
@@ -7370,7 +7385,7 @@ input[type="checkbox"][readonly] {
   border-width: 1px;
   border-style: solid;
   border-radius: 28px;
-  background: #34495e;
+  background: #14293e;
   content: ' ';
   transition: background-color 20ms ease-in-out;
 }
@@ -7483,8 +7498,8 @@ input:checked + .checkbox-icon:after {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003147}}
 .toggle.toggle-light input:checked + .track {
-  border-color: #eaeeef;
-  background-color: #eaeeef;
+  border-color: #304355;
+  background-color: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003147}}
 .toggle.toggle-stable input:checked + .track {
@@ -7548,9 +7563,9 @@ input:checked + .checkbox-icon:after {
   box-sizing: border-box;
   width: 54px;
   height: 32px;
-  border: solid 2px #eaeeef;
+  border: solid 2px #4a5a6a;
   border-radius: 20px;
-  background-color: #eaeeef;
+  background-color: #293c4f;
   content: ' ';
   cursor: pointer;
   pointer-events: none;
@@ -7568,7 +7583,7 @@ input:checked + .checkbox-icon:after {
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  background-color: #34495e;
+  background-color: #14293e;
   top: 7px;
   left: 7px;
 }
@@ -7586,7 +7601,7 @@ input:checked + .checkbox-icon:after {
   -webkit-transform: translate3d(22px, 0, 0);
   -moz-transform: translate3d(22px, 0, 0);
   transform: translate3d(22px, 0, 0);
-  background-color: #34495e;
+  background-color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_toggle\.scss}line{font-family:\00003108}}
@@ -7700,8 +7715,8 @@ input[type="range"] {
   width: auto;
   height: 35px;
   outline: none;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eaeeef), color-stop(100%, #eaeeef));
-  background: linear-gradient(to right, #eaeeef 0%, #eaeeef 100%);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4a5a6a), color-stop(100%, #4a5a6a));
+  background: linear-gradient(to right, #4a5a6a 0%, #4a5a6a 100%);
   background-position: center;
   background-size: 99% 4px;
   background-repeat: no-repeat;
@@ -7713,7 +7728,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background-color: #34495e;
+  background-color: #14293e;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 1px 3px 5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   -webkit-appearance: none;
@@ -7756,7 +7771,7 @@ input[type="range"]::-webkit-slider-thumb:after {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003119}}
 .range.range-light input::-webkit-slider-thumb:before {
-  background: #eaeeef;
+  background: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\00003119}}
 .range.range-stable input::-webkit-slider-thumb:before {
@@ -7987,19 +8002,19 @@ progress {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_button\.scss}line{font-family:\0000374}}
 .button.button-light {
-  border-color: #eaeeef;
-  background-color: #34495e;
-  color: #ebeff0;
+  border-color: #304355;
+  background-color: #14293e;
+  color: #b6bec4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000311}}
 .button.button-light:hover {
-  color: #ebeff0;
+  color: #b6bec4;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000316}}
 .button.button-light.active, .button.button-light.activated {
-  border-color: #eaeeef;
-  background-color: #eaeeef;
+  border-color: #3f5061;
+  background-color: #182c41;
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000324}}
@@ -8007,7 +8022,7 @@ progress {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: #eaeeef;
+  color: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000334}}
 .button.button-light.button-icon {
@@ -8016,13 +8031,13 @@ progress {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000341}}
 .button.button-light.button-outline {
-  border-color: #eaeeef;
+  border-color: #304355;
   background: transparent;
-  color: #eaeeef;
+  color: #304355;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_mixins\.scss}line{font-family:\0000349}}
 .button.button-light.button-outline.active, .button.button-light.button-outline.activated {
-  background-color: #eaeeef;
+  background-color: #304355;
   box-shadow: none;
   color: #fff;
 }
@@ -10217,17 +10232,17 @@ a.button {
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_util\.scss}line{font-family:\00003146}}
 .light, a.light {
-  color: #34495e;
+  color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_util\.scss}line{font-family:\00003149}}
 .light-bg {
-  background-color: #34495e;
+  background-color: #14293e;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_util\.scss}line{font-family:\00003152}}
 .light-border {
-  border-color: #eaeeef;
+  border-color: #304355;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/www\/lib\/ionic\/scss\/_util\.scss}line{font-family:\00003156}}
@@ -10423,18 +10438,18 @@ a.button {
   height: 100%;
   width: 100%;
   background: #ecf0f1;
-  color: #34495e;
+  color: #14293e;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_tile\.scss}line{font-family:\0000323}}
 .tile.tile-icon .tile-content:hover, .tile.tile-icon .tile-content:active {
   background: #bdc3c7;
-  color: #34495e;
+  color: #14293e;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_tile\.scss}line{font-family:\0000327}}
 .tile.tile-icon .tile-content:visited {
   background: #ecf0f1;
-  color: #34495e;
+  color: #14293e;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_tile\.scss}line{font-family:\0000332}}
 .tile.tile-icon .tile-content .icon {

@@ -1,6 +1,6 @@
 <ion-view title="Log In">
 	<ion-nav-buttons side="left">
-		<span class="location-icon icon-lock"></span>
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
 	</ion-nav-buttons>
 	<ion-content class="has-header" padding="true">
 		<div class="page-content">
@@ -9,25 +9,24 @@
 			</div>
 
 			<div ng-controller="FacebookController">
-				<button data-ng-show="!logged" data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()">
+				<button ng-disabled="!facebookReady" ng-click="IntentLogin()">
 					Login with Facebook
-				</button>
-				<button data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">
-					Logout
 				</button>
 			</div>
 
 			<form ng-submit="login()">
-				<div class="input-wrapper">
-					<label for="username">Username:</label>
-					<input id="username" name="username" type="text" ng-model="auth.username" placeholder="Username" type="email" />
-				</div>
-				<div class="input-wrapper">
-					<label for="password">Password:</label>
-					<input id="password" name="password" type="password" ng-model="auth.password" placeholder="Password" />
+				<div class="list">
+					<label for="username" class="item item-input">
+						<span class="input-label">Username:</span>
+						<input type="email" id="username" name="username" ng-model="auth.username" placeholder="you@email.com" />
+					</label>
+					<label for="password" class="item item-input">
+						<span class="input-label">Password:</span>
+						<input type="password" id="password" name="password" ng-model="auth.password" />
+					</label>
 				</div>
 				<div class="actions">
-					<button type="submit">Login</button>
+					<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">Save</button>
 				</div>
 			</form>
 

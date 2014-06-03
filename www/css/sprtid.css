@@ -63,6 +63,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @font-face {
   font-family: 'Matchbook';
   src: url("../fonts/Matchbook.ttf") format("truetype");
@@ -303,6 +318,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "\e624";
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_auth\.scss}line{font-family:\000036}}
 body.auth-screen {
   background-color: #95a5a6;
@@ -314,6 +344,21 @@ body.auth-screen #top-banner {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_auth\.scss}line{font-family:\0000312}}
 body.auth-screen #top-banner .location-icon {
   color: #95a5a6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_checkin\.scss}line{font-family:\000036}}
@@ -329,6 +374,21 @@ body.checkin-screen #top-banner .location-icon {
   color: #9b59b6;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_create\.scss}line{font-family:\000036}}
 body.create-screen {
   background-color: #e67e22;
@@ -340,6 +400,21 @@ body.create-screen #top-banner {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_create\.scss}line{font-family:\0000312}}
 body.create-screen #top-banner .location-icon {
   color: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_home\.scss}line{font-family:\000033}}
@@ -448,6 +523,21 @@ body.home-screen .navigation-link a .navigation-label {
   bottom: 5%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_login\.scss}line{font-family:\000037}}
 body.login-screen,
 body.signup-screen {
@@ -464,6 +554,21 @@ body.signup-screen #top-banner .location-icon {
   color: #95a5a6;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_scan\.scss}line{font-family:\000036}}
 body.scan-screen {
   background-color: #2ecc71;
@@ -475,6 +580,21 @@ body.scan-screen #top-banner {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_scan\.scss}line{font-family:\0000312}}
 body.scan-screen #top-banner .location-icon {
   color: #2ecc71;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_settings\.scss}line{font-family:\000036}}
@@ -490,6 +610,21 @@ body.settings-screen #top-banner .location-icon {
   color: #f1c40f;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_shop\.scss}line{font-family:\000036}}
 body.shop-screen {
   background-color: #3498db;
@@ -501,6 +636,21 @@ body.shop-screen #top-banner {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_shop\.scss}line{font-family:\0000312}}
 body.shop-screen #top-banner .location-icon {
   color: #3498db;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003146}}
+input,
+select,
+option,
+textarea {
+  color: #ecf0f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.user-barcode-image {
+  padding: 20px 0;
+  background: white;
+  text-align: center;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/pages\/_user\.scss}line{font-family:\000038}}
@@ -536,7 +686,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   color: #ecf0f1;
-  background: #34495e;
+  background: #14293e;
   font-family: OpenSans, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -629,7 +779,7 @@ button {
   position: relative;
   border-bottom: 1px solid #ecf0f1;
   padding: 0;
-  background: #2c3e50;
+  background: #0c1e30;
   overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/sprtid\.scss}line{font-family:\0000388}}
@@ -638,7 +788,7 @@ button {
   top: -25px;
   left: -25px;
   width: auto;
-  color: #34495e;
+  color: #14293e;
   font-size: 208px;
   z-index: 0;
   -webkit-transform: rotate(-15deg);

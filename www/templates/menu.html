@@ -12,25 +12,29 @@
 		</header>
 		<ion-content class="has-header">
 			<ion-list>
+				<ion-item nav-clear menu-close href="#/app/home">
+					<span class="icon icon-home"></span>
+					Home
+				</ion-item>
+				<ion-item nav-clear menu-close href="#/app/login" ng-hide="loggedIn()">
+					<span class="icon icon-lock"></span>
+					Log In/Sign Up
+				</ion-item>
+				<ion-item nav-clear menu-close href="#/app/user" ng-show="loggedIn()">
+					<span class="icon icon-pencil"></span>
+					{{ getUser() | fullName:'Profile' }}
+				</ion-item>
 				<ion-item nav-clear menu-close href="#/app/checkin">
 					<span class="icon icon-compass"></span>
 					Check In
 				</ion-item>
-				<ion-item nav-clear menu-close href="#/app/user">
-					<span class="icon icon-pencil"></span>
-					Profile
-				</ion-item>
-				<ion-item nav-clear menu-close href="#/app/login" ng-hide="auth.identified">
-					<span class="icon icon-lock"></span>
-					Log In/Sign Up
-				</ion-item>
-				<ion-item nav-clear menu-close href="#/app/login" ng-show="auth.identified">
-					<span class="icon icon-unlocked"></span>
-					Log Out
-				</ion-item>
 				<ion-item nav-clear menu-close href="#/app/scan">
 					<span class="icon icon-qrcode"></span>
 					Scan an Id
+				</ion-item>
+				<ion-item nav-clear menu-close href="#/app/login" ng-show="loggedIn()" class="assertive">
+					<span class="icon icon-unlocked"></span>
+					Log Out
 				</ion-item>
 			</ion-list>
 		</ion-content>

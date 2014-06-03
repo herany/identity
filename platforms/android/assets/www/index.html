@@ -8,11 +8,18 @@
 		<title>sprt&middot;id identity</title>
 
 		<link rel="stylesheet" type="text/css" href="css/ionic.app.css">
-        <link rel="stylesheet" type="text/css" href="css/sprtid.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/sprtid.css" /> -->
     </head>
 
     <body ng-app="starter">
-        <ion-nav-view></ion-nav-view>
+		<ion-pane ion-side-menu-content>
+			<ion-nav-bar class="nav-title-slide-ios7 bar-light">
+				<ion-nav-back-button class="button-clear">
+					<i class="ion-arrow-left-c"></i> {{getPreviousTitle() || 'Back'}}
+				</ion-nav-back-button>
+			</ion-nav-bar>
+	        <ion-nav-view class="slide-left-right"></ion-nav-view>
+		</ion-pane>
 
 		<!-- ionic/angularjs js -->
 		<script src="lib/ionic/js/ionic.bundle.js"></script>

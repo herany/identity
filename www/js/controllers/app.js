@@ -1,8 +1,9 @@
 var AppControllerDefinition = [
 	"$scope",
 	"$log",
+	"$ionicNavBarDelegate",
 	"UserService",
-	function ($scope, $log, UserService) {
+	function ($scope, $log, $ionicNavBarDelegate, UserService) {
 		"use strict";
 		$log.info("CheckinController", arguments);
 
@@ -11,6 +12,13 @@ var AppControllerDefinition = [
 		};
 		$scope.getUser = function (user) {
 			return $scope._loggedInUser;
+		};
+		$scope.loggedIn = function () {
+			return $scope._loggedInUser && $scope._loggedInUser.id;
+		};
+
+		$scope.getPreviousTitle = function() {
+			return $ionicNavBarDelegate.getPreviousTitle();
 		};
 
 		UserService.user().then(function (data, status, headers, config) {

@@ -40,11 +40,11 @@
 			};
 		})
 		.filter("fullName", function () {
-			return function (obj) {
+			return function (obj, defaultValue) {
 				var bits = [];
 				if (obj.firstName) { bits.push(obj.firstName); }
 				if (obj.lastName) { bits.push(obj.lastName); }
-				return bits.join(" ");
+				return bits.length ? bits.join(" ") : defaultValue;
 			};
 		})
 		.filter("findBarcode", function () {
@@ -57,6 +57,16 @@
 			return function (dataBits) {
 				var barcodeDataBit = dataBitsToBarcode(dataBits);
 				return barcodeDataBit ? barcodeDataBit.encodable : "";
+			};
+		})
+		.filter("databitIconClass", function () {
+			return function (type) {
+				switch (type.toLowerCase()) {
+					case "birthday": return "ion-ios7-calendar";
+					case "health": return "ion-ios7-medkit";
+					case "phone": return "ion-ios7-telephone";
+					default: return "ion-ios7-flag";
+				}
 			};
 		})
 	;

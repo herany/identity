@@ -90,8 +90,12 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/README.md \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/ie.css \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/ionic.app.css \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/ionic.app.min.css \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/print.css \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/screen.css \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/sprtid.css \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/css/style.css \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/fonts/icomoon.eot \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/fonts/icomoon.svg \

@@ -8,7 +8,7 @@ $background: 2;
 // internal variables!
 $white: #ecf0f1, #bdc3c7; // white
 $grey: #95a5a6, #7f8c8d;
-$black: #34495e, #2c3e50; // black
+$black: #14293e, #0c1e30; // black
 $red: #e74c3c, #c0392b; // #ef5734
 $orange: #e67e22, #d35400;
 $yellow: #f1c40f, #f39c12; // #ffcc2f
@@ -92,25 +92,27 @@ $seriously-dark:  white;
 $menu-bg:                         $seriously-light;
 $base-background-color:           $lighter;
 $base-color:                      $darker;
+$input-color:                     $dark;
+$input-color-placeholder:         mix($light, $dark, 75%);
 $toggle-handle-dragging-bg-color: mix($seriously-light, $seriously-dark, 95%);
-$toggle-off-bg-color:             mix($light, $dark, 0.9);
-$toggle-off-border-color:         mix($light, $dark, 0.75);
+$toggle-off-bg-color:             mix($light, $dark, 90%);
+$toggle-off-border-color:         mix($light, $dark, 75%);
 $checkbox-off-bg-color:           $light;
 $checkbox-check-color:            $dark;
-$range-default-track-bg:          mix($light, $dark, 0.75);
+$range-default-track-bg:          mix($light, $dark, 75%);
 $modal-bg-color:                  $seriously-light;
 $sheet-bg-color:                  rgba($seriously-light, 0.6);
 $popup-background-color:          rgba($seriously-light, 0.9);
 $loading-text-color:              $light;
 $loading-bg-color:                rgba($seriously-dark, 0.7);
 $loading-backdrop-bg-color:       rgba($seriously-dark, 0.7);
-$badge-default-text:              mix($light, $dark, 0.667); // AA/FF
+$badge-default-text:              mix($light, $dark, 66.67%); // AA/FF
 
 $button-light-bg:                 $light;
-$button-light-text:               mix($light, $dark, 0.25);   // 44 / FF
-$button-light-border:             mix($light, $dark, 0.8667); // DD / FF
-$button-light-active-bg:          mix($light, $dark, 0.98); // FA / FF
-$button-light-active-border:      mix($light, $dark, 0.80); // CC / FF
+$button-light-text:               mix($light, $dark, 25%);   // 44 / FF
+$button-light-border:             mix($light, $dark, 86.67%); // DD / FF
+$button-light-active-bg:          mix($light, $dark, 98%); // FA / FF
+$button-light-active-border:      mix($light, $dark, 80%); // CC / FF
 
 
 $bar-light-bg:                    $lighter;
@@ -128,7 +130,27 @@ $bar-default-bg:                  $darker;
 // $card-body-bg:                    $light;
 // $card-footer-bg:                  mix($light, $dark, 0.96); // F5 / FF
 // $card-border-color:               mix($light, $dark, 0.80); // CC / FF
-$card-box-shadow:                 1px 2px 0 rgba($light, .1);
+$card-box-shadow:                 1px 2px 0 rgba($light, 0.1);
 
-$item-divider-bg:                 mix($light, $dark, 0.96); // F5 / FF
-$item-divider-color:              mix($light, $dark, 0.135); // 22 / FF
+$item-divider-bg:                 mix($light, $dark, 96%); // F5 / FF
+$item-divider-color:              mix($light, $dark, 13.5%); // 22 / FF
+
+
+
+
+
+// ----------- reset styles --------------
+input,
+select,
+option,
+textarea {
+	color: $dark;
+}
+
+
+// ----------- sprt~id specific ------------
+.user-barcode-image {
+	padding: 20px 0;
+	background: white; // qr codes are black on white, so background must be white
+	text-align: center;
+}

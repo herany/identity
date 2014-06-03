@@ -1,7 +1,6 @@
 <ion-view title="{{ title }}" ><!--  style="background-image: url('{{ user.image.secure_url }}'); height: {{user.image.height}}px;" -->
 	<ion-nav-buttons side="left">
-		<span class="location-icon icon-user2"></span>
-		<button class="button button-clear button-positive">Edit</button>
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
 	</ion-nav-buttons>
 	<ion-content class="has-header" padding="true">
 		<div class="page-content">
@@ -11,29 +10,23 @@
 			</div>
 -->
 			<form ng-submit="save()">
-				<fieldset class="list">
+				<div class="list">
 					<input name="id" ng-model="user.id" type="hidden" />
-					<div class="input-wrapper">
-						<label for="first-name" class="item item-input">
-							<span class="input-label">First Name</span>
-							<input id="first-name" name="first-name" ng-model="user.firstName" placeholder="First Name" />
-						</label>
-					</div>
-					<div class="input-wrapper">
-						<label for="last-name" class="item item-input">
-							<span class="input-label">Last Name</span>
-							<input id="last-name" name="last-name" ng-model="user.lastName" placeholder="Last Name" />
-						</label>
-					</div>
-					<div class="input-wrapper">
-						<label for="email" class="item item-input">
-							<span class="input-label">Email</span>
-							<input id="email" name="email" ng-model="user.email" placeholder="Email Address" type="email" />
-						</label>
-					</div>
-				</fieldset>
-				<div class="actions padding">
-					<button type="submit" class="button button-block button-positive">Save</button>
+					<label for="first-name" class="item item-input">
+						<span class="input-label">First Name</span>
+						<input type="text" id="first-name" name="first-name" ng-model="user.firstName" placeholder="First Name" />
+					</label>
+					<label for="last-name" class="item item-input">
+						<span class="input-label">Last Name</span>
+						<input type="text" id="last-name" name="last-name" ng-model="user.lastName" placeholder="Last Name" />
+					</label>
+					<label for="email" class="item item-input">
+						<span class="input-label">Email</span>
+						<input type="email" id="email" name="email" ng-model="user.email" placeholder="Email Address" />
+					</label>
+				</div>
+				<div class="actions">
+					<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">Save</button>
 				</div>
 			</form>
 			<hr />
@@ -41,7 +34,7 @@
 			<div class="list list-inset">
 				<div ng-repeat="dataBit in user.dataBits" class="{{dataBit.type | asClassname}}">
 					<div class="item item-divider item-icon-left">
-						<i class="icon ion-person-stalker"></i>
+						<i class="icon {{dataBit.typeReadable | databitIconClass}}"></i>
 						{{dataBit.typeReadable}}
 					</div>
 					<div class="item item-icon-left item-text-wrap">
@@ -49,7 +42,7 @@
 					</div>
 					<div class="item tabs tabs-secondary tabs-icon-left">
 						<a class="tab-item" href="#">
-							<i class="icon ion-edit"></i>
+							<i class="icon ion-compose"></i>
 							Edit
 						</a>
 						<a class="tab-item" href="#">

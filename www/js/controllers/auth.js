@@ -33,8 +33,8 @@ var LoginAuthControllerDefinition = [
 				$scope.setUser(user);
 			}, function () {
 				$log.log("LoginController::login ($q.reject)", arguments);
-				$scope.setUser(null);
 				$scope.success = false;
+				$scope.setUser(null);
 			}, function () {
 				$log.log("LoginController::login ($q.notify)", arguments);
 			});
@@ -64,10 +64,12 @@ var SignupAuthControllerDefinition = [
 				$log.log("SignupController::signup ($q.resolve)", arguments);
 				$scope.success = true;
 				$scope.setUser(user);
+				$scope.$digest();
 			}, function (message) {
 				$log.log("SignupController::signup ($q.reject)", arguments);
 				$scope.error = message;
 				$scope.setUser(null);
+				$scope.$digest();
 			}, function () {
 				$log.log("SignupController::signup ($q.notify)", arguments);
 			});

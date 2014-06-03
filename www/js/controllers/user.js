@@ -13,18 +13,16 @@ var UserControllerDefinition = [
 
 		$scope.title = "My Profile";
 
-		UserService.user($stateParams.id).then(function (data, status, headers, config) {
-			console.log("UserController::user (success!)", data);
-			$scope.user = data;
-		}, function (data, status, headers, config) {
-			console.log("UserController::user (error)", data, status);
-			$scope.user = null;
-		});
+		$scope.user = $scope.getUser();
 
 		fnSuccess = function (user) {
 			$log.log("UserController::save ($q.resolve)", arguments);
 			$scope.success = true;
-			$scope.setUser(user);
+			var u = $scope.getUser();
+			if (u && user && u.id === user.id) {
+				$scope.setUser(user);
+			}
+			$scope.user = user;
 
 			$scope.title = $filter("fullName")(user);
 		};

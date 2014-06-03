@@ -12,12 +12,14 @@
     </head>
 
     <body ng-app="starter">
-		<ion-nav-bar class="nav-title-slide-ios7 bar-positive">
-			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-			<ion-nav-back-button class="button-icon ion-arrow-left-c">
-			</ion-nav-back-button>
-		</ion-nav-bar>
-        <ion-nav-view class="slide-left-right"></ion-nav-view>
+		<ion-pane ion-side-menu-content>
+			<ion-nav-bar class="nav-title-slide-ios7 bar-light">
+				<ion-nav-back-button class="button-clear">
+					<i class="ion-arrow-left-c"></i> {{getPreviousTitle() || 'Back'}}
+				</ion-nav-back-button>
+			</ion-nav-bar>
+	        <ion-nav-view class="slide-left-right"></ion-nav-view>
+		</ion-pane>
 
 		<!-- ionic/angularjs js -->
 		<script src="lib/ionic/js/ionic.bundle.js"></script>
