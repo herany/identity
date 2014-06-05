@@ -72,6 +72,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -327,6 +362,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -355,6 +425,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -383,6 +488,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -411,6 +551,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -532,6 +707,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -563,6 +773,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -591,6 +836,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -619,6 +899,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;
@@ -647,6 +962,41 @@ textarea {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003152}}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -25vw;
+  width: 50vw;
+  color: white;
+  background: black;
+  font-size: 12.5vw;
+  font-family: monospace;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003166}}
+.logo:before, .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-width: 0.05em;
+  border-style: solid;
+  height: 100%;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003175}}
+.logo:before {
+  left: -0.2em;
+  border-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003179}}
+.logo:after {
+  border-left: 0;
+  right: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/_variables\.scss}line{font-family:\00003184}}
 .user-barcode-image {
   padding: 20px 0;
   background: white;

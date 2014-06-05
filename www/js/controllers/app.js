@@ -7,10 +7,10 @@ var AppControllerDefinition = [
 		"use strict";
 		$log.info("CheckinController", arguments);
 
-		$scope.setUser = function (user) {
+		$scope.setLoggedInUser = function (user) {
 			$scope._loggedInUser = user;
 		};
-		$scope.getUser = function (user) {
+		$scope.getLoggedInUser = function (user) {
 			return $scope._loggedInUser;
 		};
 		$scope.loggedIn = function () {
@@ -23,10 +23,10 @@ var AppControllerDefinition = [
 
 		UserService.user().then(function (data, status, headers, config) {
 			console.log("AppController::user (success!)", data);
-			$scope.setUser(data);
+			$scope.setLoggedInUser(data);
 		}, function (data, status, headers, config) {
 			console.log("AppController::user (error)", data, status);
-			$scope.setUser(null);
+			$scope.setLoggedInUser(null);
 		});
 	}
 ];

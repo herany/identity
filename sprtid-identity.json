@@ -1,0 +1,11 @@
+{
+	"local": {
+		"apihost": "http://localhost:1212"
+	},
+	"stage": {
+		"apihost": "http://sprtid-api.herokuapp.com"
+	},
+	"prod": {
+		"apihost": "http://sprtid-api.herokuapp.com"
+	}
+}

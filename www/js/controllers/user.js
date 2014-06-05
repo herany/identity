@@ -1,30 +1,35 @@
 var UserControllerDefinition = [
 	"$scope",
 	"$log",
-	"$filter",
 	"$stateParams",
 	"$ionicModal",
+	"$filter",
 	"UserService",
-	function ($scope, $log, $filter, $stateParams, $ionicModal, UserService) {
+	function ($scope, $log, $stateParams, $ionicModal, $filter, UserService) {
 		"use strict";
 		$log.info("UserController", arguments);
 
 		var fnSuccess, fnError, fnNotify;
 
-		$scope.title = "My Profile";
-
-		$scope.user = $scope.getUser();
+		if ($stateParams.id) {
+			UserService.user($stateParams.id)
+				.then(function (data, status, headers, config) {
+					$scope.user = data;
+				}, function (data, status, headers, config) {
+					$scope.user = null;
+				});
+		} else {
+			$scope.user = $scope.getLoggedInUser();
+		}
 
 		fnSuccess = function (user) {
 			$log.log("UserController::save ($q.resolve)", arguments);
 			$scope.success = true;
-			var u = $scope.getUser();
+			var u = $scope.getLoggedInUser();
 			if (u && user && u.id === user.id) {
-				$scope.setUser(user);
+				$scope.setLoggedInUser(user);
 			}
 			$scope.user = user;
-
-			$scope.title = $filter("fullName")(user);
 		};
 		fnError = function (message) {
 			$log.log("UserController::save ($q.reject)", arguments);
@@ -36,7 +41,7 @@ var UserControllerDefinition = [
 
 		$scope.save = function () {
 			UserService
-				.save($scope.user.id, $scope.user.email, $scope.user.firstName, $scope.user.lastName)
+				.save($scope.user)
 				.then(fnSuccess, fnError, fnNotify)
 				;
 		};
@@ -57,7 +62,7 @@ var UserControllerDefinition = [
 			angular.extend(dataBit, formObj[formObj.type]);
 			// ajaxing indicator
 			UserService
-				.saveDatabit($scope.getUser(), dataBit)
+				.saveDatabit($scope.getLoggedInUser(), dataBit)
 				.then(function () {
 					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);

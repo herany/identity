@@ -1,8 +1,9 @@
 todo:
-- Make User Update Globally
-- Figure out Back Buttons
+- splash screen
+x - Make User Update Globally
+n - Figure out Back Buttons
 - Figure out Header
-- Menu: Log In/Register/{{name}}/Logout
+x Menu: Log In/Register/{{name}}/Logout
 - Add Misc Data Bit
 - Add Photo Data Bit (choose which photo to use?)
 - home page history
@@ -10,7 +11,9 @@ todo:
 - display photo
 - lightweight server to redirect barcode URL to scan page (e.g., if you scanned from non-sprtid scanner)
 - delete data bit
-- splash screen
+- add user
+- preserve state such that re-opening the app starts where you left off (localStorage?)
+- barcode width
 
 x - cache user request/attach user to global scope
 x - sign up

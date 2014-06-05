@@ -1,4 +1,6 @@
-var production = false;
+var $$$settings$$$ = window.$$$settings$$$ || {};
+var apiBaseUrl = $$$settings$$$.apihost || "http://localhost:1212";
+apiBaseUrl = "http://sprtid-api.herokuapp.com";
 
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
@@ -6,14 +8,14 @@ var production = false;
 	angular.module(APP_NAME + ".factories", [])
 		.factory("UserService", ["$window", "$http", "$q", function ($window, $http, $q) {
 			var methods = {
-				login: function (username, password) {
+				login: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth/login",
 						data: {
-							username: username,
-							password: password
+							username: params.username,
+							password: params.password
 						},
 						method: "POST"
 					};
@@ -29,20 +31,20 @@ var production = false;
 
 					return deferred.promise;
 				},
-				signup: function (username, password, passwordConfirmation, email, firstName, lastName) {
+				signup: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth/signup",
 						data: JSON.stringify({
-							firstName: firstName,
-							lastName: lastName,
-							email: email,
+							firstName: params.firstName,
+							lastName: params.lastName,
+							email: params.email,
 							login: {
-								username: username,
-								password: password,
-								passwordConfirmation: passwordConfirmation,
-								email: email
+								username: params.username || params.email,
+								password: params.password,
+								passwordConfirmation: params.passwordConfirmation,
+								email: params.email
 							}
 						}),
 						method: "POST",
@@ -60,15 +62,15 @@ var production = false;
 
 					return deferred.promise;
 				},
-				save: function (userId, email, firstName, lastName) {
+				save: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/v1/users/" + (userId ? userId : "me"),
+						url: apiBaseUrl + "/v1/users/" + (params.userId ? params.userId : "me"),
 						data: JSON.stringify({
-							firstName: firstName,
-							lastName: lastName,
-							email: email
+							firstName: params.firstName,
+							lastName: params.lastName,
+							email: params.email
 						}),
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"}
@@ -153,4 +155,4 @@ var production = false;
 			return methods;
 		}])
 	;
-})("sprtidApp", angular, production ? "http://sprtid-api.herokuapp.com" : "http://localhost:1212");
+})("sprtidApp", angular, apiBaseUrl);

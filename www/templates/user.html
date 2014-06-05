@@ -1,4 +1,12 @@
-<ion-view title="{{ title }}" ><!--  style="background-image: url('{{ user.image.secure_url }}'); height: {{user.image.height}}px;" -->
+<!--
+
+	Consider Using a SlideBox to display You+Dependencies
+	e.g., swipe right to see your dependencies
+	swipe all the way to the right for a "new dependency" form
+
+-->
+
+<ion-view title="{{ user | fullName:'My Profile' }}" ><!--  style="background-image: url('{{ user.image.secure_url }}'); height: {{user.image.height}}px;" -->
 	<ion-nav-buttons side="left">
 		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
 	</ion-nav-buttons>
@@ -30,7 +38,7 @@
 				</div>
 			</form>
 			<hr />
-			<button class="button button-clear button-positive button-icon ion-plus" ng-click="newDatabit()">New Data Bit</button>
+			<button class="button button-outline button-calm button-icon ion-plus" ng-click="newDatabit()">New Data Bit</button>
 			<div class="list list-inset">
 				<div ng-repeat="dataBit in user.dataBits" class="{{dataBit.type | asClassname}}">
 					<div class="item item-divider item-icon-left">

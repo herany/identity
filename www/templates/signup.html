@@ -1,10 +1,7 @@
 <ion-view title="Sign Up">
-	<ion-nav-buttons side="left">
-		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-	</ion-nav-buttons>
 	<ion-content class="has-header" padding="true">
 		<div class="page-content">
-			<div ng-hide="success">
+			<div ng-show="!success" class="bar bar-subheader bar-energized">
 				<p>{{ error }}</p>
 			</div>
 
@@ -15,28 +12,32 @@
 			</div>
 
 			<form ng-submit="signup()">
-				<div class="input-wrapper">
-					<label for="first-name">First Name:</label>
-					<input id="first-name" name="first-name" ng-model="firstName" placeholder="First Name" />
-				</div>
-				<div class="input-wrapper">
-					<label for="last-name">Last Name:</label>
-					<input id="last-name" name="last-name" ng-model="lastName" placeholder="Last Name" />
-				</div>
-				<div class="input-wrapper">
-					<label for="email">Email:</label>
-					<input id="email" name="email" ng-model="email" placeholder="Email Address" type="email" />
-				</div>
-				<div class="input-wrapper">
-					<label for="password">Password:</label>
-					<input id="password" name="password" type="password" ng-model="password" placeholder="Password" />
-				</div>
-				<div class="input-wrapper">
-					<label for="password-confirmation">Confirm Password:</label>
-					<input id="password-confirmation" name="password-confirmation" type="password" ng-model="passwordConfirmation" placeholder="Confirm Password" />
+				<div class="list">
+					<label for="first-name" class="item item-input">
+						<span class="input-label">First Name</span>
+						<input type="text" id="first-name" name="first-name" ng-model="auth.firstName" />
+					</label>
+					<label for="last-name" class="item item-input">
+						<span class="input-label">Last Name</span>
+						<input type="text" id="last-name" name="last-name" ng-model="auth.lastName" />
+					</label>
+					<label for="email" class="item item-input">
+						<span class="input-label">Email</span>
+						<input type="email" id="email" name="email" ng-model="auth.email" />
+					</label>
+					<label for="password" class="item item-input">
+						<span class="input-label">Password</span>
+						<input type="password" id="password" name="password" ng-model="auth.password" />
+					</label>
+					<label for="password-confirmation" class="item item-input">
+						<span class="input-label">Confirm Password</span>
+						<input type="password" id="password-confirmation" name="password-confirmation" ng-model="auth.passwordConfirmation" />
+					</label>
 				</div>
 				<div class="actions">
-					<button type="submit">Sign Up</button>
+					<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">
+						Register
+					</button>
 				</div>
 			</form>
 

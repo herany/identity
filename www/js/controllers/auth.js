@@ -27,14 +27,16 @@ var LoginAuthControllerDefinition = [
 
 		// broadcast login event
 		$scope.login = function () {
-			UserService.login($scope.auth.username, $scope.auth.password).then(function (user) {
+			UserService.login($scope.auth).then(function (user) {
 				$log.log("LoginController::login ($q.resolve)", arguments);
 				$scope.success = true;
-				$scope.setUser(user);
+				$scope.setLoggedInUser(user);
+				$state.go("home");
 			}, function () {
 				$log.log("LoginController::login ($q.reject)", arguments);
 				$scope.success = false;
-				$scope.setUser(null);
+				$scope.error = "Login Failed";
+				$scope.setLoggedInUser(null);
 			}, function () {
 				$log.log("LoginController::login ($q.notify)", arguments);
 			});
@@ -51,25 +53,26 @@ var SignupAuthControllerDefinition = [
 		"use strict";
 		$log.info("SignupAuthController", arguments);
 
-		$scope.email = "";
-		$scope.firstName = "";
-		$scope.lastName = "";
-		$scope.username = "";
-		$scope.password = "";
-		$scope.passwordConfirmation = "";
+		$scope.auth = {
+			email: "",
+			firstName: "",
+			lastName: "",
+			username: "",
+			password: "",
+			passwordConfirmation: ""
+		};
 
 		// broadcast login event
-		$scope.signup = function (user) {
-			UserService.signup($scope.username, $scope.password, $scope.passwordConfirmation, $scope.email, $scope.firstName, $scope.lastName).then(function () {
+		$scope.signup = function () {
+			UserService.signup($scope.auth).then(function () {
 				$log.log("SignupController::signup ($q.resolve)", arguments);
 				$scope.success = true;
-				$scope.setUser(user);
-				$scope.$digest();
+				$scope.setLoggedInUser(user);
+				$state.go("home");
 			}, function (message) {
 				$log.log("SignupController::signup ($q.reject)", arguments);
 				$scope.error = message;
-				$scope.setUser(null);
-				$scope.$digest();
+				$scope.setLoggedInUser(null);
 			}, function () {
 				$log.log("SignupController::signup ($q.notify)", arguments);
 			});

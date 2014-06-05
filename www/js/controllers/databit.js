@@ -1,9 +1,9 @@
 var DatabitControllerDefinition = [
 	"$scope",
 	"$log",
-	"DatabitService",
 	"$stateParams",
-	function ($scope, $log, DatabitService, $stateParams) {
+	"DatabitService",
+	function ($scope, $log, $stateParams, DatabitService) {
 		"use strict";
 		$log.info("DatabitController", arguments);
 
@@ -36,7 +36,7 @@ var DatabitControllerDefinition = [
 			fnSuccess = function (user) {
 				$log.log("DatabitController::save ($q.resolve)", arguments);
 				$scope.success = true;
-				$scope.setUser(user);
+				$scope.setLoggedInUser(user);
 			};
 			fnError = function (message) {
 				$log.log("DatabitController::save ($q.reject)", arguments);

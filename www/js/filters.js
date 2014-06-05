@@ -42,6 +42,8 @@
 		.filter("fullName", function () {
 			return function (obj, defaultValue) {
 				var bits = [];
+				if (!obj) { return defaultValue; }
+
 				if (obj.firstName) { bits.push(obj.firstName); }
 				if (obj.lastName) { bits.push(obj.lastName); }
 				return bits.length ? bits.join(" ") : defaultValue;
