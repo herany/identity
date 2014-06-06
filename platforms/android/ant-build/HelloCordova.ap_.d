@@ -274,6 +274,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/home.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/login.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/logout.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/menu.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/scan.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/settings.html \

@@ -1,14 +1,14 @@
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
+// "starter" is the name of this angular module example (also set in a <body> attribute in index.html)
+// the 2nd parameter is an array of "requires"
+// "starter.controllers" is found in controllers.js
 ;(function (APP_NAME, angular, cordova, StatusBar, undefined) {
 	"use strict";
 
 	angular
-		.module('starter', [
+		.module("starter", [
 			"ionic",
 			"http-auth-interceptor",
 			"facebook",
@@ -36,95 +36,95 @@
 
 		.config(function ($stateProvider, $urlRouterProvider) {
 			$stateProvider
-				.state('app', {
+				.state("app", {
 					url: "/app",
 					abstract: true,
 					templateUrl: "templates/menu.html",
-					controller: 'AppController'
+					controller: "AppController"
 				})
 
-				.state('app.home', {
+				.state("app.home", {
 					url: "/home",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/home.html",
 							controller: "HomeController"
 						}
 					}
 				})
 
-				.state('app.checkin', {
+				.state("app.checkin", {
 					url: "/checkin",
 					views: {
-						'menuContent': {
+						"menuContent": {
 							templateUrl: "templates/checkin.html",
 							controller: "CheckinController"
 						}
 					}
 				})
 
-				.state('app.user', {
+				.state("app.user", {
 					url: "/user",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/user.html",
 							controller: "UserController"
 						}
 					}
 				})
 
-				// .state('app.databit', {
+				// .state("app.databit", {
 				// 	url: "/databit/:id",
 				// 	views: {
-				// 		'menuContent' :{
+				// 		"menuContent" :{
 				// 			templateUrl: "templates/databit.html",
 				// 			controller: "DatabitController"
 				// 		}
 				// 	}
 				// })
 
-				.state('app.login', {
+				.state("app.login", {
 					url: "/login",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/login.html",
-							controller: 'LoginController'
+							controller: "LoginController"
 						}
 					}
 				})
 
-				.state('app.signup', {
+				.state("app.signup", {
 					url: "/signup",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/signup.html",
-							controller: 'SignupController'
+							controller: "SignupController"
 						}
 					}
 				})
 
-				.state('app.logout', {
+				.state("app.logout", {
 					url: "/logout",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/logout.html",
-							controller: 'LogoutController'
+							controller: "LogoutController"
 						}
 					}
 				})
 
-				.state('app.scan', {
+				.state("app.scan", {
 					url: "/scan",
 					views: {
-						'menuContent' :{
+						"menuContent" :{
 							templateUrl: "templates/scan.html",
-							controller: 'ScanController'
+							controller: "ScanController"
 						}
 					}
 				})
 			;
 			// if none of the above states are matched, use this as the fallback
-			$urlRouterProvider.otherwise('/app/home');
+			$urlRouterProvider.otherwise("/app/home");
 		})
 	;
 

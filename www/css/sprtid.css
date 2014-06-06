@@ -1036,7 +1036,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   color: #ecf0f1;
-  background: #14293e;
+  background: #04192e;
   font-family: OpenSans, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1129,7 +1129,7 @@ button {
   position: relative;
   border-bottom: 1px solid #ecf0f1;
   padding: 0;
-  background: #0c1e30;
+  background: #000e20;
   overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmn\/code\/personal\/sprtid\/identity\/scss\/sprtid\.scss}line{font-family:\0000388}}
@@ -1138,7 +1138,7 @@ button {
   top: -25px;
   left: -25px;
   width: auto;
-  color: #14293e;
+  color: #04192e;
   font-size: 208px;
   z-index: 0;
   -webkit-transform: rotate(-15deg);

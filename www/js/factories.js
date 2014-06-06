@@ -1,31 +1,37 @@
 var $$$settings$$$ = window.$$$settings$$$ || {};
 var apiBaseUrl = $$$settings$$$.apihost || "http://localhost:1212";
-apiBaseUrl = "http://sprtid-api.herokuapp.com";
+// apiBaseUrl = "http://sprtid-api.herokuapp.com";
 
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
 
 	angular.module(APP_NAME + ".factories", [])
-		.factory("UserService", ["$window", "$http", "$q", function ($window, $http, $q) {
+		.factory("UserService", ["$window", "$http", "$q", "$log", function ($window, $http, $q, $log) {
 			var methods = {
 				login: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
 						url: apiBaseUrl + "/auth/login",
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: {
 							username: params.username,
 							password: params.password
-						},
-						method: "POST"
+						}
 					};
 
 					xhr = $http(config)
 						.success(function (data, status, headers, config) {
+							$log.log("UserService#login -> success", arguments);
 							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
+							$log.log("UserService#login -> error", arguments);
 							deferred.reject(data);
+						})
+						.finally(function () {
+							$log.log("UserService#login -> finally", arguments);
 						})
 					;
 
@@ -36,6 +42,8 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 
 					config = {
 						url: apiBaseUrl + "/auth/signup",
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: JSON.stringify({
 							firstName: params.firstName,
 							lastName: params.lastName,
@@ -46,16 +54,16 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 								passwordConfirmation: params.passwordConfirmation,
 								email: params.email
 							}
-						}),
-						method: "POST",
-						headers: {"Content-Type": "application/json;charset=utf-8"}
+						})
 					};
 
 					xhr = $http(config)
 						.success(function (data, status, headers, config) {
+							$log.log("UserService#signup -> success", arguments);
 							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
+							$log.log("UserService#signup -> error", arguments);
 							deferred.reject(data);
 						})
 					;
@@ -78,9 +86,11 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 
 					xhr = $http(config)
 						.success(function (data, status, headers, config) {
+							$log.log("UserService#save -> success", arguments);
 							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
+							$log.log("UserService#save -> error", arguments);
 							deferred.reject(data);
 						})
 					;
@@ -140,6 +150,15 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 					return deferred.promise;
 				},
 				logout: function () {
+					var config;
+
+					config = {
+						url: apiBaseUrl + "/auth/logout",
+						method: "GET",
+						headers: {"Content-Type": "application/json;charset=utf-8"}
+					};
+
+					return $http(config);
 				},
 				isLoggedIn: function () {
 					return !!this.getToken();

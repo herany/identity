@@ -8,7 +8,7 @@ $background: 2;
 // internal variables!
 $white: #ecf0f1, #bdc3c7; // white
 $grey: #95a5a6, #7f8c8d;
-$black: #14293e, #0c1e30; // black
+$black: #04192e, #000e20; // black
 $red: #e74c3c, #c0392b; // #ef5734
 $orange: #e67e22, #d35400;
 $yellow: #f1c40f, #f39c12; // #ffcc2f
@@ -90,9 +90,9 @@ $seriously-dark:  white;
 
 // ----- overrides -----
 $menu-bg:                         $seriously-light;
-$base-background-color:           $lighter;
-$base-color:                      $darker;
-$input-color:                     $dark;
+$base-background-color:           $light;
+$base-color:                      $dark;
+$input-color:                     $darker;
 $input-color-placeholder:         mix($light, $dark, 75%);
 $toggle-handle-dragging-bg-color: mix($seriously-light, $seriously-dark, 95%);
 $toggle-off-bg-color:             mix($light, $dark, 90%);

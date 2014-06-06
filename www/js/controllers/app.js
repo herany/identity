@@ -21,11 +21,11 @@ var AppControllerDefinition = [
 			return $ionicNavBarDelegate.getPreviousTitle();
 		};
 
-		UserService.user().then(function (data, status, headers, config) {
-			console.log("AppController::user (success!)", data);
-			$scope.setLoggedInUser(data);
-		}, function (data, status, headers, config) {
-			console.log("AppController::user (error)", data, status);
+		UserService.user().then(function (user) {
+			console.log("AppController::user (success!)", arguments);
+			$scope.setLoggedInUser(user);
+		}, function (error) {
+			console.log("AppController::user (error)", arguments);
 			$scope.setLoggedInUser(null);
 		});
 	}

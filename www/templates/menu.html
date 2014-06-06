@@ -1,6 +1,6 @@
 <ion-side-menus>
 	<ion-pane ion-side-menu-content>
-		<ion-nav-bar class="bar-stable nav-title-slide-ios7">
+		<ion-nav-bar class="bar-light nav-title-slide-ios7">
 			<ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
 		</ion-nav-bar>
 		<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
@@ -12,31 +12,31 @@
 		</header>
 		<ion-content class="has-header">
 			<ion-list>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/home">
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.home">
 					<i class="icon ion-home"></i>
 					Home
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/login" ng-hide="loggedIn()">
+				<ion-item menu-close class="item-icon-left" ui-sref="app.login" ng-hide="loggedIn()">
 					<i class="icon ion-log-in"></i>
 					Log In
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/signup" ng-hide="loggedIn()">
+				<ion-item menu-close class="item-icon-left" ui-sref="app.signup" ng-hide="loggedIn()">
 					<i class="icon ion-log-in"></i>
 					Register
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/user" ng-show="loggedIn()">
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.user" ng-show="loggedIn()">
 					<i class="icon ion-profile"></i>
 					{{ getUser() | fullName:'Profile' }}
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/checkin">
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.checkin">
 					<i class="icon ion-compass"></i>
 					Check In
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left" href="#/app/scan">
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.scan">
 					<i class="icon ion-qrcode"></i>
 					Scan an Id
 				</ion-item>
-				<ion-item nav-clear menu-close class="item-icon-left assertive" href="#/app/logout" ng-show="loggedIn()">
+				<ion-item nav-clear menu-close class="item-icon-left assertive" ui-sref="app.logout" ng-show="loggedIn()">
 					<i class="icon ion-log-in"></i>
 					Log Out
 				</ion-item>
