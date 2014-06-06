@@ -1,6 +1,6 @@
 var $$$settings$$$ = window.$$$settings$$$ || {};
 var apiBaseUrl = $$$settings$$$.apihost || "http://localhost:1212";
-// apiBaseUrl = "http://sprtid-api.herokuapp.com";
+apiBaseUrl = "http://sprtid-api.herokuapp.com";
 
 ;(function (APP_NAME, angular, apiBaseUrl, undefined) {
 	"use strict";
