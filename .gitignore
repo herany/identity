@@ -36,24 +36,28 @@ Desktop.ini
 *.swp
 *.class
 *.jar
+
 # IntelliJ IDEA files
 *.iml
 .idea
 ### (end) apache cordova .gitignore
 
-### exclude bulid files
+### exclude build files
 platforms/android/assets/www/*
 platforms/ios/www/*
 *.apk
 *.ap_
 platforms/android/**/*.prop
 platforms/ios/SprtidIdentity.xcodeproj/*
+.sass-cache/
 ###
 
 # Emulator logs
 platforms/ios/cordova/console.log
 
-
+### exclude ide files
 *.sublime-workspace
-.sass-cache/
+*.xcuserstate
+###
+
 /*.zip
