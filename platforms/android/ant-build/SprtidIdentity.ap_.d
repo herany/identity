@@ -1,4 +1,4 @@
-/Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/HelloCordova.ap_ \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/SprtidIdentity.ap_ \
  : /Users/pmn/code/personal/sprtid/identity/platforms/android/res/drawable/icon.png \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/res/drawable/launcher_icon.png \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/res/drawable/share_via_barcode.png \

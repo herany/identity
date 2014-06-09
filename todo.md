@@ -1,9 +1,7 @@
 todo:
 - splash screen
-x - Make User Update Globally
-n - Figure out Back Buttons
-- Figure out Header
-x Menu: Log In/Register/{{name}}/Logout
+- current user display => /profile.html
+- profile w/SlideBox having last slide be add dependant
 - Add Misc Data Bit
 - Add Photo Data Bit (choose which photo to use?)
 - home page history
@@ -22,3 +20,7 @@ x - Add Birthday Data Bit
 x - Add Health Data Bit
 x - Add Phone Data Bit
 x - display data bits
+x - Make User Update Globally
+n - Figure out Back Buttons
+x - Figure out Header
+x - Menu: Log In/Register/{{name}}/Logout

@@ -17,12 +17,12 @@
        under the License.
  */
 
-package com.sprtid.identity;
+package com.ionicframework.starter;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class HelloCordova extends CordovaActivity 
+public class SprtidIdentity extends CordovaActivity
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
