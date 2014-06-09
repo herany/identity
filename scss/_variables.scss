@@ -6,50 +6,64 @@ $foreground: 1;
 $background: 2;
 
 // internal variables!
-$white: #ecf0f1, #bdc3c7; // white
-$grey: #95a5a6, #7f8c8d;
-$black: #04192e, #000e20; // black
-$red: #e74c3c, #c0392b; // #ef5734
-$orange: #e67e22, #d35400;
-$yellow: #f1c40f, #f39c12; // #ffcc2f
-$green: #2ecc71, #27ae60; // #2baf2b
-$green-blue: #1abc9c, #16a085;
-$blue: #3498db, #2980b9; // #00acee
-$purple: #9b59b6, #8e44ad;
+$white: #ecf0f1;
+$black: #04192e;
+$grey: #95a5a6;
+$red: #e74c3c; // #ef5734
+$orange: #e67e22;
+$yellow: #f1c40f; // #ffcc2f
+$green: #2ecc71; // #2baf2b
+$light-blue: #b4d8e7;
+$blue: #3498db; // #00acee
+$purple: #9b59b6;
 
-$color-scheme-foreground: $white;
+$background-color-mix-pct: 90%;
+$background-color-mix: $black;
+$color-scheme-white:      $white,      mix($white, $background-color-mix, $background-color-mix-pct);
+$color-scheme-black:      $black,      mix($black, black, $background-color-mix-pct);
+$color-scheme-grey:       $grey,       mix($grey, $background-color-mix, $background-color-mix-pct);
+$color-scheme-red:        $red,        mix($red, $background-color-mix, $background-color-mix-pct);
+$color-scheme-orange:     $orange,     mix($orange, $background-color-mix, $background-color-mix-pct);
+$color-scheme-yellow:     $yellow,     mix($yellow, $background-color-mix, $background-color-mix-pct);
+$color-scheme-green:      $green,      mix($green, $background-color-mix, $background-color-mix-pct);
+$color-scheme-light-blue: $light-blue, mix($light-blue, $background-color-mix, $background-color-mix-pct);
+$color-scheme-blue:       $blue,       mix($blue, $background-color-mix, $background-color-mix-pct);
+$color-scheme-purple:     $purple,     mix($purple, $background-color-mix, $background-color-mix-pct);
+
+
+$color-scheme-foreground: $color-scheme-white;
 $color-scheme-foreground-primary:   nth($color-scheme-foreground, $foreground);
 $color-scheme-foreground-secondary: nth($color-scheme-foreground, $background);
 
-$color-scheme-background: $black;
+$color-scheme-background: $color-scheme-black;
 $color-scheme-background-primary:   nth($color-scheme-background, $foreground);
 $color-scheme-background-secondary: nth($color-scheme-background, $background);
 
-$color-scheme-scan: $green;
+$color-scheme-scan: $color-scheme-green;
 $color-scheme-scan-primary:   nth($color-scheme-scan, $foreground);
 $color-scheme-scan-secondary: nth($green, $background);
 
-$color-scheme-create: $orange;
+$color-scheme-create: $color-scheme-orange;
 $color-scheme-create-primary:   nth($color-scheme-create, $foreground);
 $color-scheme-create-secondary: nth($color-scheme-create, $background);
 
-$color-scheme-shop: $blue;
+$color-scheme-shop: $color-scheme-blue;
 $color-scheme-shop-primary:   nth($color-scheme-shop, $foreground);
 $color-scheme-shop-secondary: nth($color-scheme-shop, $background);
 
-$color-scheme-settings: $yellow;
+$color-scheme-settings: $color-scheme-yellow;
 $color-scheme-settings-primary:   nth($color-scheme-settings, $foreground);
 $color-scheme-settings-secondary: nth($color-scheme-settings, $background);
 
-$color-scheme-auth: $grey;
+$color-scheme-auth: $color-scheme-grey;
 $color-scheme-auth-primary:   nth($color-scheme-auth, $foreground);
 $color-scheme-auth-secondary: nth($color-scheme-auth, $background);
 
-$color-scheme-checkin: $purple;
+$color-scheme-checkin: $color-scheme-purple;
 $color-scheme-checkin-primary:   nth($color-scheme-checkin, $foreground);
 $color-scheme-checkin-secondary: nth($color-scheme-checkin, $background);
 
-$color-scheme-user: $red;
+$color-scheme-user: $color-scheme-red;
 $color-scheme-user-primary:   nth($color-scheme-user, $foreground);
 $color-scheme-user-secondary: nth($color-scheme-user, $background);
 
@@ -67,7 +81,7 @@ $key: $foreground;
 $light:      nth($black, $key);
 $stable:     nth($grey, $key);
 $positive:   nth($blue, $key);
-$calm:       nth($green-blue, $key);
+$calm:       nth($light-blue, $key);
 $balanced:   nth($green, $key);
 $energized:  nth($orange, $key);
 $assertive:  nth($red, $key);
@@ -78,7 +92,7 @@ $key: $background;
 $lighter:     nth($black, $key);
 $stabler:     nth($grey, $key);
 $positiver:   nth($blue, $key);
-$calmer:      nth($green-blue, $key);
+$calmer:      nth($light-blue, $key);
 $balanceder:  nth($green, $key);
 $energizeder: nth($orange, $key);
 $assertiver:  nth($red, $key);
