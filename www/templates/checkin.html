@@ -10,12 +10,7 @@
 			<div class="user-name h1">
 				{{ user | fullName }}
 			</div>
-			<div class="user-barcode-image">
-				<qrcode version="2" error-correction-level="M" size="{{ barcodeSize }}" data="{{ user.dataBits | findEncodableBarcode }}"></qrcode>
-			</div>
-			<div class="user-barcode-value">
-				{{ user.dataBits | findBarcode }}
-			</div>
+			<sprtid-databit-barcode databit="user.dataBits | findBarcodeDatabit"></sprtid-databit-barcode>
 		</div>
 	</ion-content>
 </ion-view>

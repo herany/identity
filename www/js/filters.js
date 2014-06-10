@@ -1,15 +1,15 @@
 /*jshint smarttabs:true */
 
-;(function (APP_NAME, angular, undefined) {
+;(function (APP_NAME, angular, moment, undefined) {
 	"use strict";
 
-	function dataBitsToBarcode (dataBits) {
+	function dataBitsToBarcode (dataBits, type) {
 		var barcodeDataBit, i;
 
-		if (!dataBits || !dataBits.length) { return null; }
+		if (!dataBits || !dataBits.length || !type) { return null; }
 
 		for (i = 0; i < dataBits.length; i++) {
-			if (dataBits[i].type === "BarcodeDataBit") {
+			if (dataBits[i].type === type) {
 				barcodeDataBit = dataBits[i];
 				break;
 			}
@@ -49,15 +49,20 @@
 				return bits.length ? bits.join(" ") : defaultValue;
 			};
 		})
+		.filter("findBarcodeDatabit", function () {
+			return function (dataBits) {
+				return dataBitsToBarcode(dataBits, "BarcodeDataBit");
+			};
+		})
 		.filter("findBarcode", function () {
 			return function (dataBits) {
-				var barcodeDataBit = dataBitsToBarcode(dataBits);
+				var barcodeDataBit = dataBitsToBarcode(dataBits, "BarcodeDataBit");
 				return barcodeDataBit ? barcodeDataBit.barcode : "";
 			};
 		})
 		.filter("findEncodableBarcode", function () {
 			return function (dataBits) {
-				var barcodeDataBit = dataBitsToBarcode(dataBits);
+				var barcodeDataBit = dataBitsToBarcode(dataBits, "BarcodeDataBit");
 				return barcodeDataBit ? barcodeDataBit.encodable : "";
 			};
 		})
@@ -71,5 +76,29 @@
 				}
 			};
 		})
+		.filter("databitVisibilityClass", function () {
+			return function (type) {
+				switch (type.toLowerCase()) {
+					case "private": return "ion-locked";
+					case "protected": return "ion-person-stalker";
+					default: return "ion-earth";
+				}
+			};
+		})
+		.filter("humanReadableDate", function () {
+			return function (dateString) {
+				return moment(dateString).calendar();
+			};
+		})
+		.filter("humanReadableDateSince", function () {
+			return function (dateString) {
+				return moment(dateString).fromNow(true);;
+			};
+		})
+		.filter("databitExpirationClassname", function () {
+			return function (dateString) {
+				return (2 * Math.random() % 2) ? "energized" : "calm";
+			};
+		})
 	;
-})("sprtidApp", angular);
+})("sprtidApp", angular, moment);

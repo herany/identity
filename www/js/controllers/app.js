@@ -48,5 +48,10 @@ var AppControllerDefinition = [
 		}
 
 		$window.addEventListener("orientationchange", gotoScanner, false);
+
+		var letsBeSmarterAboutThisSize = 0.75 * Math.min($window.innerWidth, $window.innerHeight);
+		$scope.getBarcodeSize = function () {
+			return letsBeSmarterAboutThisSize;
+		};
 	}
 ];

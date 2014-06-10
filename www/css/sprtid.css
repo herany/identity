@@ -107,10 +107,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 @font-face {
@@ -397,10 +404,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_auth.scss */
@@ -460,10 +474,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_checkin.scss */
@@ -523,10 +544,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_create.scss */
@@ -586,10 +614,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 3, ../../scss/pages/_home.scss */
@@ -742,10 +777,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 7, ../../scss/pages/_login.scss */
@@ -808,10 +850,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_scan.scss */
@@ -871,10 +920,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_settings.scss */
@@ -934,10 +990,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 6, ../../scss/pages/_shop.scss */
@@ -997,10 +1060,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /* line 8, ../../scss/pages/_user.scss */

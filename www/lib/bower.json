@@ -6,6 +6,7 @@
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.15",
-    "angular-touch": "~1.2.16"
+    "angular-touch": "~1.2.16",
+    "momentjs": "~2.6.0"
   }
 }

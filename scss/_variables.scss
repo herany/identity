@@ -202,8 +202,13 @@ textarea {
 		right: -0.2em;
 	}
 }
-.user-barcode-image {
-	padding: 20px 0;
+.databit-barcode-image {
+	margin: 0 auto;
+	box-sizing: initial; // the width is set inline, so let's use normal box model sizing
+	padding: 20px;
 	background: white; // qr codes are black on white, so background must be white
+}
+.databit-barcode-barcode {
 	text-align: center;
+	font-size: 2em;
 }

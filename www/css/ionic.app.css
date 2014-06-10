@@ -58,10 +58,17 @@ textarea {
 }
 
 /* line 205, ../../scss/_variables.scss */
-.user-barcode-image {
-  padding: 20px 0;
+.databit-barcode-image {
+  margin: 0 auto;
+  box-sizing: initial;
+  padding: 20px;
   background: white;
+}
+
+/* line 211, ../../scss/_variables.scss */
+.databit-barcode-barcode {
   text-align: center;
+  font-size: 2em;
 }
 
 /*!
