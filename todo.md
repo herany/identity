@@ -1,12 +1,8 @@
 todo:
-- current user display => /profile.html
-- profile w/SlideBox having last slide be add dependant
 - add user (dependant)
 - Add Misc Data Bit
-- Add Photo Data Bit (choose which photo to use?)
 - display photo
 - on scan, add record to database
-- rotate to scan
 - scanner timeout
 - sort out back/scanner issues
 - more ion icons (or icomoon)
@@ -14,6 +10,18 @@ todo:
 - lightweight server to redirect barcode URL to scan page (e.g., if you scanned from non-sprtid scanner)
 - delete data bit
 - preserve state such that re-opening the app starts where you left off (localStorage?)
+
+in progress:
+- current user display => /profile.html
+- profile w/SlideBox having last slide be add dependant
+- Add Photo Data Bit (choose which photo to use?)
+
+
+backlog:
+- rotate to scan
+
+
+done:
 
 x - cache user request/attach user to global scope
 x - sign up

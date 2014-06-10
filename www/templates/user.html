@@ -10,8 +10,7 @@
 			</div>
 -->
 
-			<sprtid-user user="user" ng-show="!editable || ModelState == ModelState.read"></sprtid-user>
-			<sprtid-user-form user="user" ng-show="editable && ModelState == ModelState.write"></sprtid-user-form>
+			<sprtid-user user="user" edit="editable && ModelState == ModelState.write"></sprtid-user>
 			<hr />
 			<button class="button button-outline button-calm button-icon ion-plus" ng-click="newDatabit()" ng-show="editable">
 				New Data Bit

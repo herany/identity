@@ -31,8 +31,8 @@
     <feature name="BarcodeScanner">
         <param name="ios-package" value="CDVBarcodeScanner" />
     </feature>
-    <feature name="YoikScreenOrientation">
-        <param name="ios-package" value="YoikScreenOrientation" />
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
     </feature>
     <name>sprtid-identity</name>
     <description>
@@ -46,6 +46,7 @@
     <access origin="http://api.sprtid.com/*" />
     <access origin="http://sprtid-api.herokuapp.com/*" />
     <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="portrait" />
     <preference name="webviewbounce" value="true" />
     <preference name="UIWebViewBounce" value="true" />
     <preference name="DisallowOverscroll" value="true" />

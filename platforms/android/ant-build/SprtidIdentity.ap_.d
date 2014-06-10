@@ -124,6 +124,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/services.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/app.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/auth.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/camera.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/checkin.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/databit.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/facebook_auth.js \
@@ -265,14 +266,17 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ngCordova/dist/ng-cordova.min.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner \
-/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard/www \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner/www \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js \
-/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www \
-/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/Camera.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraConstants.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/auth.html \
@@ -283,6 +287,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/login.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/logout.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/menu.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/profile.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/scan.html \
@@ -292,6 +297,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/user.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/forms/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/forms/_user.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals/databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_user.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/AndroidManifest.xml \

@@ -53,7 +53,7 @@ var UserControllerDefinition = [
 		};
 
 		// Create and load the Modal
-		$ionicModal.fromTemplateUrl("/templates/forms/databit.html", function (modal) {
+		$ionicModal.fromTemplateUrl("/templates/modals/databit.html", function (modal) {
 			$scope.databitModal = modal;
 		}, {
 			scope: $scope,

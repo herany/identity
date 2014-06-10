@@ -14,8 +14,8 @@
     <feature name="BarcodeScanner">
         <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
     </feature>
-    <feature name="YoikScreenOrientation">
-        <param name="android-package" value="net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation" />
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
     <name>sprtid-identity</name>
     <description>
@@ -29,6 +29,7 @@
     <access origin="http://api.sprtid.com/*" />
     <access origin="http://sprtid-api.herokuapp.com/*" />
     <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="portrait" />
     <preference name="webviewbounce" value="true" />
     <preference name="UIWebViewBounce" value="true" />
     <preference name="DisallowOverscroll" value="true" />

@@ -1,4 +1,8 @@
 <div class="list">
 	<h1>{{ user | fullName }}</h1>
 	<h6><em>{{ user.email }}</em></h6>
+	<hr />
+	<pre>{{ user | jsonFormatter }}</pre>
+	<hr />
+	<sprtid-databit ng-repeat="databit in user.dataBits" databit="databit"></sprtid-databit>
 </div>

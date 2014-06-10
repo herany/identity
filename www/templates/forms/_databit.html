@@ -2,6 +2,8 @@
 	<div class="list">
 		<h3>Type of Data Bit</h3>
 		<div class="item">
+			<input type="radio" name="type" id="type-photo" ng-model="databit.type" value="photo" />
+			<label for="type-photo">Photo</label>
 			<input type="radio" name="type" id="type-birthday" ng-model="databit.type" value="birthday" />
 			<label for="type-birthday">Birthday</label>
 			<input type="radio" name="type" id="type-phone" ng-model="databit.type" value="phone" />
@@ -12,15 +14,47 @@
 	</div>
 
 
+<!-- photo data bit -->
+	<div class="list" ng-show="databit.type == 'photo'">
+		<h3>Photo</h3>
+		<div class="row" ng-controller="CameraController">
+			<div class="col col-50">
+				<div class="tile tile-icon">
+					<button class="tile-content" ng-click="takePicture()">
+						<span class="icon ion-camera"></span>
+						<span class="label">Camera/Gallery</span>
+					</button>
+				</div>
+			</div>
+			<div class="col col-50">
+				<div class="tile">
+					<div class="tile-content">
+						<img ng-src="{{ safeImageSource }}" />
+						<input type="hidden" name="{{ imageSource }}" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<h3>Visibility</h3>
+			<input type="radio" id="databit-birthday-visibility-public" name="visibility" ng-model="databit.birthday.visibility" value="public" />
+			<label for="databit-birthday-visibility-public">Public</label>
+			<input type="radio" id="databit-birthday-visibility-protected" name="visibility" ng-model="databit.birthday.visibility" value="protected" />
+			<label for="databit-birthday-visibility-protected">Protected</label>
+			<input type="radio" id="databit-birthday-visibility-private" name="visibility" ng-model="databit.birthday.visibility" value="private" />
+			<label for="databit-birthday-visibility-private">Private</label>
+		</div>
+	</div>
+
 <!-- birthday data bit -->
 	<div class="list" ng-show="databit.type == 'birthday'">
-		<h3>Birthday:</h3>
+		<h3>Birthday</h3>
 		<label for="databit-birthday-birthdate" class="item item-input">
-			<span class="input-label">Birthday:</span>
+			<span class="input-label">Birthday</span>
 			<input type="date" id="databit-birthday-birthdate" name="birthdate" ng-model="databit.birthday.birthdate" placeholder="Birthday" />
 		</label>
 		<div class="item">
-			<h3>Visibility:</h3>
+			<h3>Visibility</h3>
 			<input type="radio" id="databit-birthday-visibility-public" name="visibility" ng-model="databit.birthday.visibility" value="public" />
 			<label for="databit-birthday-visibility-public">Public</label>
 			<input type="radio" id="databit-birthday-visibility-protected" name="visibility" ng-model="databit.birthday.visibility" value="protected" />
@@ -32,13 +66,13 @@
 
 <!-- phone data bit -->
 	<div class="list" ng-show="databit.type == 'phone'">
-		<h3>Contact Information:</h3>
+		<h3>Contact Information</h3>
 		<label for="databit-phone-number" class="item item-input">
-			<span class="input-label">Phone Number:</span>
+			<span class="input-label">Phone Number</span>
 			<input type="tel" id="databit-phone-number" name="number" ng-model="databit.phone.number" placeholder="212 555 1212" />
 		</label>
 		<div class="item">
-			<h3>Visibility:</h3>
+			<h3>Visibility</h3>
 			<input type="radio" id="databit-phone-visibility-public" name="visibility" ng-model="databit.phone.visibility" value="public" />
 			<label for="databit-phone-visibility-public">Public</label>
 			<input type="radio" id="databit-phone-visibility-protected" name="visibility" ng-model="databit.phone.visibility" value="protected" />
@@ -50,17 +84,17 @@
 
 <!-- health data bit -->
 	<div class="list" ng-show="databit.type == 'health'">
-		<h3>Health:</h3>
+		<h3>Health</h3>
 		<label for="databit-health-condition" class="item item-input">
-			<span class="input-label">Condition:</span>
+			<span class="input-label">Condition</span>
 			<input type="text" id="databit-health-condition" name="condition" ng-model="databit.health.condition" placeholder="Condition" />
 		</label>
 		<label for="databit-health-treatment" class="item item-input">
-			<span class="input-label">Treatment:</span>
+			<span class="input-label">Treatment</span>
 			<textarea id="databit-health-treatment" name="treatment" ng-model="databit.health.treatment" placeholder="Treatment"></textarea>
 		</label>
 		<div class="item">
-			<h3>Contact Me if Condition Arises:</h3>
+			<h3>Contact Me if Condition Arises</h3>
 			<input type="radio" id="databit-health-contact-phone" name="contact" ng-model="databit.health.contact" value="phone" />
 			<label for="databit-health-contact-phone">Phone Call</label>
 			<input type="radio" id="databit-health-contact-text" name="contact" ng-model="databit.health.contact" value="text" />
@@ -71,12 +105,12 @@
 			<label for="databit-health-contact-nothanks">No Thanks</label>
 		</div>
 		<label for="databit-health-expirationdate" class="item item-input">
-			<span class="input-label">Expires on (optional):</span>
+			<span class="input-label">Expires on (optional)</span>
 			<input type="date" id="databit-health-expirationdate" name="expirationDate" ng-model="databit.health.expirationDate" placeholder="Date" />
 			<input type="time" id="databit-health-expirationtime" name="expirationTime" ng-model="databit.health.expirationTime" placeholder="Time" />
 		</label>
 		<div class="item">
-			<h3>Visibility:</h3>
+			<h3>Visibility</h3>
 			<input type="radio" id="databit-health-visibility-public" name="visibility" ng-model="databit.health.visibility" value="public" />
 			<label for="databit-health-visibility-public">Public</label>
 			<input type="radio" id="databit-health-visibility-protected" name="visibility" ng-model="databit.health.visibility" value="protected" />

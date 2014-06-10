@@ -22,10 +22,31 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js",
-        "id": "net.yoik.cordova.plugins.screenorientation.screenorientation",
+        "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
+        "id": "org.apache.cordova.camera.Camera",
         "clobbers": [
-            "cordova.plugins.screenorientation"
+            "Camera"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
+        "id": "org.apache.cordova.camera.CameraPopoverOptions",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.camera/www/Camera.js",
+        "id": "org.apache.cordova.camera.camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
+        "id": "org.apache.cordova.camera.CameraPopoverHandle",
+        "clobbers": [
+            "CameraPopoverHandle"
         ]
     }
 ];
@@ -36,7 +57,7 @@ module.exports.metadata =
     "org.apache.cordova.console": "0.2.8",
     "org.apache.cordova.device": "0.2.9",
     "com.phonegap.plugins.barcodescanner": "1.1.0",
-    "net.yoik.cordova.plugins.screenorientation": "0.0.2"
+    "org.apache.cordova.camera": "0.2.9"
 }
 // BOTTOM OF METADATA
 });

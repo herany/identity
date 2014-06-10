@@ -18,6 +18,9 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/com/sprtid/identity/R.class \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/com/sprtid/identity/SprtidIdentity.class \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/net/yoik/cordova/plugins/screenorientation/YoikScreenOrientation.class \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/dexedLibs/classes-3112f9aa9ccf3fd4eba126f3ea935bda.jar \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/dexedLibs/com.google.zxing.client.android.captureactivity-de924f6ec4f26a1295d970b3fd89fe19.jar \

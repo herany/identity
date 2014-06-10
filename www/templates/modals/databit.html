@@ -1,0 +1,23 @@
+<div class="modal">
+	<!-- Modal header bar -->
+	<ion-header-bar class="bar-secondary">
+		<h1 class="title">New Data Bit</h1>
+		<button class="button button-clear button-positive" ng-click="closeNewDatabit()">Cancel</button>
+	</ion-header-bar>
+
+	<!-- Modal content area -->
+	<ion-content class="has-header" padding="true">
+		<div class="page-content padding">
+			<form ng-submit="saveDatabit(databit)">
+
+				<sprtid-databit edit="true" databit="databit"></sprtid-databit>
+
+				<div class="actions">
+					<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">
+						Save
+					</button>
+				</div>
+			</form>
+		</div>
+	</ion-content>
+</div>

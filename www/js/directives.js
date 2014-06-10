@@ -12,36 +12,28 @@
 			return {
 				restrict: "E",
 				scope: {
-					user: '=user'
+					user: "=user"
 				},
-				templateUrl: "/templates/partials/_user.html"
-			};
-		})
-		.directive("sprtidUserForm", function () {
-			return {
-				restrict: "E",
-				scope: {
-					user: '=user'
+				link: function ($scope, element, attributes) {
+					$scope.getTemplateUrl = function () {
+						return "/templates/" + (attributes.edit === "true" ? "forms" : "partials") + "/_user.html";
+					};
 				},
-				templateUrl: "/templates/forms/_user.html"
+				template: '<div ng-include="getTemplateUrl()"></div>'
 			};
 		})
 		.directive("sprtidDatabit", function () {
 			return {
 				restrict: "E",
 				scope: {
-					databit: '=databit'
+					databit: "=databit"
 				},
-				templateUrl: "/templates/partials/_databit.html"
-			};
-		})
-		.directive("sprtidDatabitForm", function () {
-			return {
-				restrict: "E",
-				scope: {
-					databit: '=databit'
+				link: function ($scope, element, attributes) {
+					$scope.getTemplateUrl = function () {
+						return "/templates/" + (attributes.edit === "true" ? "forms" : "partials") + "/_databit.html";
+					};
 				},
-				templateUrl: "/templates/forms/_databit.html"
+				template: '<div ng-include="getTemplateUrl()"></div>'
 			};
 		})
 	;
