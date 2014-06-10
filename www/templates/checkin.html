@@ -8,16 +8,14 @@
 				Hold your phone up to a sprt&middot;id check-in kiosk.
 			</p>
 			<div class="user-name h1">
-				{{ user.firstName }} {{ user.lastName }}
+				{{ user | fullName }}
 			</div>
 			<div class="user-barcode-image">
-				<qrcode version="2" error-correction-level="M" size="400" data="{{ user.dataBits | findEncodableBarcode }}"></qrcode>
+				<qrcode version="2" error-correction-level="M" size="{{ barcodeSize }}" data="{{ user.dataBits | findEncodableBarcode }}"></qrcode>
 			</div>
 			<div class="user-barcode-value">
-				{{ user.dataBits | findEncodableBarcode }}
+				{{ user.dataBits | findBarcode }}
 			</div>
-			<hr />
-			<pre>{{ user | jsonFormatter }}</pre>
 		</div>
 	</ion-content>
 </ion-view>

@@ -11,12 +11,17 @@ var ScanControllerDefinition = [
 		$scope.success = null;
 		$scope.barcode = null;
 
+		if (cordova.plugins.screenorientation) {
+			var so = cordova.plugins.screenorientation;
+			so.setOrientation(so.Orientation.LANDSCAPE);
+		}
+
 		$scope.onSuccess = function (scanRespose) {
 			$log.info("ScanController :: ~ctor (success)", scanRespose);
 
 			$scope.success = !!scanRespose;
 			if ($scope.success) {
-				$scope.$apply(function() {
+				$scope.$apply(function () {
 					$scope.title = "Success";
 					$scope.response = JSON.stringify(scanRespose);
 
@@ -32,7 +37,7 @@ var ScanControllerDefinition = [
 			$log.info("ScanController :: ~ctor (error)", scanRespose);
 
 			$scope.success = false;
-			$scope.$apply(function() {
+			$scope.$apply(function () {
 				$scope.title = "Failure";
 				$scope.response = JSON.stringify(scanRespose);
 			});

@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "plugins": []
@@ -75,6 +79,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.sprtid.identity"
+        },
+        "net.yoik.cordova.plugins.screenorientation": {
             "PACKAGE_NAME": "com.sprtid.identity"
         }
     },

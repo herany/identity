@@ -1,4 +1,4 @@
-<ion-view title="Scan">
+<ion-view title="{{ title }}">
 	<ion-nav-buttons side="left">
 		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
 	</ion-nav-buttons>
@@ -18,7 +18,7 @@
 					</form>
 				</div>
 			</div>
-			<div cordova-barcode-scanner on-success="onSuccess(results)" on-error="onError(results)"></div>
+			<cordova-barcode-scanner on-success="onSuccess(results)" on-error="onError(results)"></cordova-barcode-scanner>
 		</div>
 	</ion-content>
 </ion-view>

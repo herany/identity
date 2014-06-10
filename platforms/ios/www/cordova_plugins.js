@@ -34,6 +34,13 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
+    },
+    {
+        "file": "plugins/net.yoik.cordova.plugins.screenorientation/www/screenorientation.js",
+        "id": "net.yoik.cordova.plugins.screenorientation.screenorientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -42,7 +49,8 @@ module.exports.metadata =
     "com.ionic.keyboard": "0.0.1",
     "org.apache.cordova.console": "0.2.8",
     "org.apache.cordova.device": "0.2.9",
-    "com.phonegap.plugins.barcodescanner": "1.1.0"
+    "com.phonegap.plugins.barcodescanner": "1.1.0",
+    "net.yoik.cordova.plugins.screenorientation": "0.0.2"
 }
 // BOTTOM OF METADATA
 });

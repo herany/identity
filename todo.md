@@ -5,7 +5,6 @@ todo:
 - Add Misc Data Bit
 - Add Photo Data Bit (choose which photo to use?)
 - display photo
-- barcode width
 - on scan, add record to database
 - rotate to scan
 - scanner timeout
@@ -28,3 +27,4 @@ n - Figure out Back Buttons
 x - Figure out Header
 x - Menu: Log In/Register/{{name}}/Logout
 x - splash screen
+x - barcode width

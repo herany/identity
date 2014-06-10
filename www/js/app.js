@@ -13,6 +13,7 @@
 			"http-auth-interceptor",
 			"facebook",
 			"monospaced.qrcode",
+			APP_NAME + ".constants",
 			APP_NAME + ".filters",
 			APP_NAME + ".services",
 			APP_NAME + ".factories",
@@ -21,7 +22,7 @@
 		])
 
 		.run(function ($ionicPlatform) {
-			$ionicPlatform.ready( function () {
+			$ionicPlatform.ready(function () {
 				// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 				// for form inputs)
 				if (cordova && cordova.plugins.Keyboard) {
@@ -64,10 +65,30 @@
 				})
 
 				.state("app.user", {
-					url: "/user",
+					url: "/user/:id",
 					views: {
 						"menuContent" :{
-							templateUrl: "templates/user.html",
+							templateUrl: "templates/user/index.html",
+							controller: "UserController"
+						}
+					}
+				})
+
+				.state("app.user-edit", {
+					url: "/user/:id/edit",
+					views: {
+						"menuContent" :{
+							templateUrl: "templates/user/edit.html",
+							controller: "UserController"
+						}
+					}
+				})
+
+				.state("app.profile", {
+					url: "/profile",
+					views: {
+						"menuContent" :{
+							templateUrl: "templates/profile.html",
 							controller: "UserController"
 						}
 					}

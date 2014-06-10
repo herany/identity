@@ -1,18 +1,14 @@
-var $$$settings$$$ = window.$$$settings$$$ || {};
-var apiBaseUrl = $$$settings$$$.apihost || "http://localhost:1212";
-apiBaseUrl = "http://sprtid-api.herokuapp.com";
-
-;(function (APP_NAME, angular, apiBaseUrl, undefined) {
+;(function (APP_NAME, angular, undefined) {
 	"use strict";
 
 	angular.module(APP_NAME + ".factories", [])
-		.factory("UserService", ["$window", "$http", "$q", "$log", function ($window, $http, $q, $log) {
+		.factory("UserService", ["$window", "$http", "$q", "$log", "APP_CONFIG", function ($window, $http, $q, $log, APP_CONFIG) {
 			var methods = {
 				login: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/auth/login",
+						url: APP_CONFIG.apiBaseUrl + "/auth/login",
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: {
@@ -41,7 +37,7 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/auth/signup",
+						url: APP_CONFIG.apiBaseUrl + "/auth/signup",
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: JSON.stringify({
@@ -74,7 +70,7 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/v1/users/" + (params.userId ? params.userId : "me"),
+						url: APP_CONFIG.apiBaseUrl + "/v1/users/" + (params.userId ? params.userId : "me"),
 						data: JSON.stringify({
 							firstName: params.firstName,
 							lastName: params.lastName,
@@ -109,7 +105,7 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 					methods.user.deferred = $q.defer();
 
 					config = {
-						url: apiBaseUrl + "/auth" + (id ? "/" + id : ""),
+						url: APP_CONFIG.apiBaseUrl + "/auth" + (id ? "/" + id : ""),
 						method: "GET"
 					};
 
@@ -127,7 +123,7 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 				saveDatabit: function (user, databit) {
 					var config, xhr, deferred = $q.defer(), url;
 
-					url = apiBaseUrl + "/v1/users/" + user.id + "/databit";
+					url = APP_CONFIG.apiBaseUrl + "/v1/users/" + user.id + "/databit";
 					if (databit.id) {
 						url += "/" + databit.id;
 					}
@@ -153,25 +149,16 @@ apiBaseUrl = "http://sprtid-api.herokuapp.com";
 					var config;
 
 					config = {
-						url: apiBaseUrl + "/auth/logout",
+						url: APP_CONFIG.apiBaseUrl + "/auth/logout",
 						method: "GET",
 						headers: {"Content-Type": "application/json;charset=utf-8"}
 					};
 
 					return $http(config);
-				},
-				isLoggedIn: function () {
-					return !!this.getToken();
-				},
-				setToken: function (token) {
-					$window.sessionStorage.setItem("token", token);
-				},
-				getToken: function () {
-					return $window.sessionStorage.getItem("token");
 				}
 			};
 
 			return methods;
 		}])
 	;
-})("sprtidApp", angular, apiBaseUrl);
+})("sprtidApp", angular);

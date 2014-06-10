@@ -41,7 +41,7 @@ $color-scheme-background-secondary: nth($color-scheme-background, $background);
 
 $color-scheme-scan: $color-scheme-green;
 $color-scheme-scan-primary:   nth($color-scheme-scan, $foreground);
-$color-scheme-scan-secondary: nth($green, $background);
+$color-scheme-scan-secondary: nth($color-scheme-scan, $background);
 
 $color-scheme-create: $color-scheme-orange;
 $color-scheme-create-primary:   nth($color-scheme-create, $foreground);
@@ -78,26 +78,26 @@ $golden-ratio: 1.61803399;
 
 // ------------------ ionic -----------------------
 $key: $foreground;
-$light:      nth($black, $key);
-$stable:     nth($grey, $key);
-$positive:   nth($blue, $key);
-$calm:       nth($light-blue, $key);
-$balanced:   nth($green, $key);
-$energized:  nth($orange, $key);
-$assertive:  nth($red, $key);
-$royal:      nth($purple, $key);
-$dark:       nth($white, $key);
+$light:      nth($color-scheme-black, $key);
+$stable:     nth($color-scheme-grey, $key);
+$positive:   nth($color-scheme-blue, $key);
+$calm:       nth($color-scheme-light-blue, $key);
+$balanced:   nth($color-scheme-green, $key);
+$energized:  nth($color-scheme-orange, $key);
+$assertive:  nth($color-scheme-red, $key);
+$royal:      nth($color-scheme-purple, $key);
+$dark:       nth($color-scheme-white, $key);
 
 $key: $background;
-$lighter:     nth($black, $key);
-$stabler:     nth($grey, $key);
-$positiver:   nth($blue, $key);
-$calmer:      nth($light-blue, $key);
-$balanceder:  nth($green, $key);
-$energizeder: nth($orange, $key);
-$assertiver:  nth($red, $key);
-$royaler:     nth($purple, $key);
-$darker:      nth($white, $key);
+$lighter:     nth($color-scheme-black, $key);
+$stabler:     nth($color-scheme-grey, $key);
+$positiver:   nth($color-scheme-blue, $key);
+$calmer:      nth($color-scheme-light-blue, $key);
+$balanceder:  nth($color-scheme-green, $key);
+$energizeder: nth($color-scheme-orange, $key);
+$assertiver:  nth($color-scheme-red, $key);
+$royaler:     nth($color-scheme-purple, $key);
+$darker:      nth($color-scheme-white, $key);
 
 $seriously-light: black;
 $seriously-dark:  white;
@@ -128,6 +128,13 @@ $button-light-border:             mix($light, $dark, 86.67%); // DD / FF
 $button-light-active-bg:          mix($light, $dark, 98%); // FA / FF
 $button-light-active-border:      mix($light, $dark, 80%); // CC / FF
 
+$button-dark-bg:                  $dark;
+$button-dark-text:                mix($dark, $light, 25%);   // 44 / FF
+$button-dark-border:              mix($dark, $light, 86.67%); // DD / FF
+$button-dark-active-bg:           mix($dark, $light, 98%); // FA / FF
+$button-dark-active-border:       mix($dark, $light, 80%); // CC / FF
+
+
 
 $bar-light-bg:                    $lighter;
 $bar-stable-bg:                   $stabler;
@@ -141,7 +148,7 @@ $bar-dark-bg:                     $darker;
 $bar-default-bg:                  $darker;
 
 // $card-header-bg:                  mix($light, $dark, 0.96); // F5 / FF
-// $card-body-bg:                    $light;
+$card-body-bg:                    $lighter;
 // $card-footer-bg:                  mix($light, $dark, 0.96); // F5 / FF
 // $card-border-color:               mix($light, $dark, 0.80); // CC / FF
 $card-box-shadow:                 1px 2px 0 rgba($light, 0.1);

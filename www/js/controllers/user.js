@@ -11,11 +11,17 @@ var UserControllerDefinition = [
 
 		var fnSuccess, fnError, fnNotify;
 
+		$scope.$watch("user", function(newValue, oldValue) {
+			var u = $scope.getLoggedInUser();
+			$scope.editable = u.id === $scope.user.id; // or dependants
+			$scope.title = $filter("fullName")($scope.user);
+		});
+
 		if ($stateParams.id) {
 			UserService.user($stateParams.id)
-				.then(function (data, status, headers, config) {
-					$scope.user = data;
-				}, function (data, status, headers, config) {
+				.then(function (user, status, headers, config) {
+					$scope.user = user;
+				}, function (message, status, headers, config) {
 					$scope.user = null;
 				});
 		} else {
@@ -47,7 +53,7 @@ var UserControllerDefinition = [
 		};
 
 		// Create and load the Modal
-		$ionicModal.fromTemplateUrl("/templates/databit.html", function (modal) {
+		$ionicModal.fromTemplateUrl("/templates/forms/databit.html", function (modal) {
 			$scope.databitModal = modal;
 		}, {
 			scope: $scope,

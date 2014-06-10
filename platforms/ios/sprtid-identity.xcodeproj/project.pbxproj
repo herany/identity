@@ -49,6 +49,7 @@
 		DD7B4E6E8E014332BE953A6B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C15A01DE9B400B9F20DCD3 /* AVFoundation.framework */; };
 		9783C5D233374668AA2EA908 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CEFD10DAF849BD9CAAB8FB /* CoreVideo.framework */; };
 		A91A9B518DE14A1994600552 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF34FD05AACD43DF84BEBCCA /* QuartzCore.framework */; };
+		12C8F76A86FA4E609593C171 /* YoikScreenOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD255A05F548ED9FA4B362 /* YoikScreenOrientation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		12C15A01DE9B400B9F20DCD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		F1CEFD10DAF849BD9CAAB8FB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		FF34FD05AACD43DF84BEBCCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		91FD255A05F548ED9FA4B362 /* YoikScreenOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "YoikScreenOrientation.m"; path = "net.yoik.cordova.plugins.screenorientation/YoikScreenOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C9CDEDAFD6B247F6816D9FE6 /* YoikScreenOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "YoikScreenOrientation.h"; path = "net.yoik.cordova.plugins.screenorientation/YoikScreenOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 				AF2CA83C0E344D1D95FB2D1E /* CDVBarcodeScanner.mm */,
 				DE969BF44B8A49CF89F1894E /* zxing-all-in-one.cpp */,
 				0E8FF83F3A714BA29DAB27ED /* zxing-all-in-one.h */,
+				91FD255A05F548ED9FA4B362 /* YoikScreenOrientation.m */,
+				C9CDEDAFD6B247F6816D9FE6 /* YoikScreenOrientation.h */,
 			);
 			name = Plugins;
 			path = "sprtid-identity/Plugins";
@@ -470,6 +475,7 @@
 				72A9C5AA8FCE457D9241F1D5 /* CDVDevice.m in Sources */,
 				0030400DEB3B4904A9E7C5E0 /* CDVBarcodeScanner.mm in Resources */,
 				0DBDB6A2D4AB44D6998D53A4 /* zxing-all-in-one.cpp in Resources */,
+				12C8F76A86FA4E609593C171 /* YoikScreenOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
