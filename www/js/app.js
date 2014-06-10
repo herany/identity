@@ -10,6 +10,7 @@
 	angular
 		.module("starter", [
 			"ionic",
+			"ngCordova", // https://github.com/driftyco/ng-cordova.git
 			"http-auth-interceptor",
 			"facebook",
 			"monospaced.qrcode",

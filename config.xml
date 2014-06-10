@@ -18,7 +18,6 @@
 	<access origin="http://sprtid-api.herokuapp.com/*" />
 
 	<preference name="fullscreen" value="false" />
-	<preference name="orientation" value="portrait"/>
 	<preference name="webviewbounce" value="true" />
 	<preference name="UIWebViewBounce" value="true" />
 	<preference name="DisallowOverscroll" value="true" />

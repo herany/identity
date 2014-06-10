@@ -1,8 +1,9 @@
 var ScanControllerDefinition = [
 	"$scope",
 	"$log",
+	"$ionicPlatform",
 	"$location",
-	function($scope, $log, $location) {
+	function($scope, $log, $ionicPlatform, $location) {
 		"use strict";
 		$log.info("ScanController", arguments);
 
@@ -11,10 +12,12 @@ var ScanControllerDefinition = [
 		$scope.success = null;
 		$scope.barcode = null;
 
-		if (cordova.plugins.screenorientation) {
-			var so = cordova.plugins.screenorientation;
-			so.setOrientation(so.Orientation.LANDSCAPE);
-		}
+		$ionicPlatform.ready(function () {
+			if (cordova && cordova.plugins.screenorientation) {
+				var so = cordova.plugins.screenorientation;
+				so.setOrientation(so.Orientation.LANDSCAPE);
+			}
+		});
 
 		$scope.onSuccess = function (scanRespose) {
 			$log.info("ScanController :: ~ctor (success)", scanRespose);

@@ -16,5 +16,9 @@ var CheckinControllerDefinition = [
 		}, function (message) {
 			console.log("CheckinController::~ctor (error)", message);
 		});
+
+		// add plugin: cordova plugin add org.apache.cordova.vibration
+		// ping server for checkin record
+		// vibrate/inform user that they are all set
 	}
 ];

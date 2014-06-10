@@ -135,6 +135,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower.json \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ionic \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ngCordova \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular-facebook \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components/angular-http-auth \
@@ -260,6 +261,8 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-icons.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-variables.scss \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ionic/scss/ionicons/ionicons.scss \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ngCordova/dist \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/ngCordova/dist/ng-cordova.min.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/net.yoik.cordova.plugins.screenorientation \
