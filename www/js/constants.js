@@ -3,7 +3,8 @@
 
 	angular.module(APP_NAME + ".constants", [])
 		.constant("APP_CONFIG", {
-			apiBaseUrl: "http://sprtid-api.herokuapp.com" // "http://localhost:1212" //
+			// apiBaseUrl: "http://localhost:1212"
+			apiBaseUrl: "http://sprtid-api.herokuapp.com"
 		})
 		.constant("ModelState", {
 			read: 1,
