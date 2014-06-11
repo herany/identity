@@ -1,5 +1,5 @@
-$font-family-headline: Matchbook, Impact, sans-serif;
-$font-family-content: OpenSans, Helvetica, sans-serif;
+// $font-family-headline: Matchbook, Impact, sans-serif;
+// $font-family-content: OpenSans, Helvetica, sans-serif;
 
 
 $foreground: 1;
@@ -103,6 +103,10 @@ $seriously-light: black;
 $seriously-dark:  white;
 
 // ----- overrides -----
+$font-family-sans-serif:          "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family-light-sans-serif:    "Roboto-Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family-serif:               "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+
 $menu-bg:                         $seriously-light;
 $base-background-color:           $light;
 $base-color:                      $dark;
@@ -155,60 +159,3 @@ $card-box-shadow:                 1px 2px 0 rgba($light, 0.1);
 
 $item-divider-bg:                 mix($light, $dark, 96%); // F5 / FF
 $item-divider-color:              mix($light, $dark, 13.5%); // 22 / FF
-
-
-
-
-
-// ----------- reset styles --------------
-input,
-select,
-option,
-textarea {
-	color: $dark;
-}
-
-
-// ----------- sprt~id specific ------------
-.logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -25vw;
-	margin-top: -25vw;
-	width: 50vw;
-	color: $seriously-dark;
-	background: $seriously-light;
-	font-size: 12.5vw;
-	font-family: monospace;
-	font-weight: lighter;
-
-	&:before,
-	&:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		border-width: 0.05em;
-		border-style: solid;
-		height: 100%;
-		width: 15%;
-	}
-	&:before {
-		left: -0.2em;
-		border-right: 0;
-	}
-	&:after {
-		border-left: 0;
-		right: -0.2em;
-	}
-}
-.databit-barcode-image {
-	margin: 0 auto;
-	box-sizing: initial; // the width is set inline, so let's use normal box model sizing
-	padding: 20px;
-	background: white; // qr codes are black on white, so background must be white
-}
-.databit-barcode-barcode {
-	text-align: center;
-	font-size: 2em;
-}

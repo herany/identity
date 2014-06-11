@@ -24,4 +24,66 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "../www/lib/ionic/scss/ionic";
 
-@import '_tile';
+@import '_fonts',
+        '_tile';
+
+
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-serif;
+}
+
+// ----------- reset styles --------------
+input,
+select,
+option,
+textarea {
+	color: $dark;
+}
+
+
+// ----------- sprt~id specific ------------
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25vw;
+	margin-top: -25vw;
+	width: 50vw;
+	color: $seriously-dark;
+	background: $seriously-light;
+	font-size: 12.5vw;
+	font-family: monospace;
+	font-weight: lighter;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		border-width: 0.05em;
+		border-style: solid;
+		height: 100%;
+		width: 15%;
+	}
+	&:before {
+		left: -0.2em;
+		border-right: 0;
+	}
+	&:after {
+		border-left: 0;
+		right: -0.2em;
+	}
+}
+.databit-barcode-image {
+	margin: 0 auto;
+	box-sizing: initial; // the width is set inline, so let's use normal box model sizing
+	padding: 20px;
+	background: white; // qr codes are black on white, so background must be white
+}
+.databit-barcode-barcode {
+	text-align: center;
+	font-size: 2em;
+}

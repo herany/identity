@@ -12,9 +12,17 @@
 				</div>
 				<div ng-hide="success">
 					<form ng-submit="gotoUser()">
-						<label for="barcode">Enter Code:</label>
-						<input id="barcode" name="barcode" ng-model="barcode" />
-						<button type="submit">Get Id</button>
+						<div class="list">
+							<label for="barcode" class="item item-input">
+								<span class="input-label">Enter Code</span>
+								<input type="email" id="barcode" name="barcode" ng-model="barcode" />
+							</label>
+						</div>
+						<div class="actions">
+							<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">
+								Get Id
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>
