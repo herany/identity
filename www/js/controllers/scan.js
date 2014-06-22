@@ -46,12 +46,9 @@ var ScanControllerDefinition = [
 			});
 		};
 
-		$scope.gotoUser = function (e) {
-			if (e) {
-				e.preventDefault();
-			}
-
-			$location.path("/user/" + $scope.barcode).replace();
+		$scope.scanBarcode = function () {
+			// $state.go("app.user");
+			$location.path("/user/" + $scope.barcode + "/scan").replace();
 		};
 	}
 ];

@@ -14,7 +14,7 @@ var AppControllerDefinition = [
 		$scope.modelState = ModelState.read;
 
 		$scope.setTitle = function (title) {
-			$scope.title = title || "sprt~id";
+			$scope.title = title || "sprt·id";
 		};
 		$scope.setTitle();
 

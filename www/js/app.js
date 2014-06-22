@@ -36,7 +36,7 @@
 			});
 		})
 
-		.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
+		.config(["$stateProvider", "$urlRouterProvider", "$provide", function ($stateProvider, $urlRouterProvider, $provide) {
 			$stateProvider
 				.state("app", {
 					url: "/app",
@@ -48,7 +48,7 @@
 				.state("app.home", {
 					url: "/home",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/home.html",
 							controller: "HomeController"
 						}
@@ -68,18 +68,28 @@
 				.state("app.user", {
 					url: "/user/:id",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/user/index.html",
 							controller: "UserController"
 						}
 					}
 				})
 
-				.state("app.user-edit", {
-					url: "/user/:id/edit",
+				.state("app.user.edit", {
+					url: "/edit",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/user/edit.html",
+							controller: "UserController"
+						}
+					}
+				})
+
+				.state("app.user.scan", {
+					url: "/scan",
+					views: {
+						"menuContent": {
+							templateUrl: "templates/user/index.html",
 							controller: "UserController"
 						}
 					}
@@ -88,7 +98,7 @@
 				.state("app.profile", {
 					url: "/profile",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/profile.html",
 							controller: "UserController"
 						}
@@ -98,7 +108,7 @@
 				// .state("app.databit", {
 				// 	url: "/databit/:id",
 				// 	views: {
-				// 		"menuContent" :{
+				// 		"menuContent": {
 				// 			templateUrl: "templates/databit.html",
 				// 			controller: "DatabitController"
 				// 		}
@@ -108,7 +118,7 @@
 				.state("app.login", {
 					url: "/login",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/login.html",
 							controller: "LoginController"
 						}
@@ -118,7 +128,7 @@
 				.state("app.signup", {
 					url: "/signup",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/signup.html",
 							controller: "SignupController"
 						}
@@ -128,7 +138,7 @@
 				.state("app.logout", {
 					url: "/logout",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/logout.html",
 							controller: "LogoutController"
 						}
@@ -138,7 +148,7 @@
 				.state("app.scan", {
 					url: "/scan",
 					views: {
-						"menuContent" :{
+						"menuContent": {
 							templateUrl: "templates/scan.html",
 							controller: "ScanController"
 						}
@@ -147,6 +157,14 @@
 			;
 			// if none of the above states are matched, use this as the fallback
 			$urlRouterProvider.otherwise("/app/home");
+
+			$provide.decorator("$log", function ($delegate, sprtidLog) {
+				return sprtidLog($delegate);
+			});
+
+			// $provide.decorator("$exceptionHandler", function ($delegate, sprtidExceptionHandler) {
+			// 	return sprtidExceptionHandler($delegate);
+			// });
 		}])
 	;
 

@@ -2,13 +2,13 @@
 	"use strict";
 
 	angular.module(APP_NAME + ".factories", [])
-		.factory("UserService", ["$window", "$http", "$q", "$log", "APP_CONFIG", function ($window, $http, $q, $log, APP_CONFIG) {
+		.factory("UserService", ["$window", "$http", "$q", "$log", "AppConfig", function ($window, $http, $q, $log, AppConfig) {
 			var methods = {
 				login: function (params) {
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: APP_CONFIG.apiBaseUrl + "/auth/login",
+						url: AppConfig.apiBaseUrl + "/auth/login",
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: {
@@ -37,7 +37,7 @@
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: APP_CONFIG.apiBaseUrl + "/auth/signup",
+						url: AppConfig.apiBaseUrl + "/auth/signup",
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"},
 						data: JSON.stringify({
@@ -70,7 +70,7 @@
 					var config, xhr, deferred = $q.defer();
 
 					config = {
-						url: APP_CONFIG.apiBaseUrl + "/v1/users/" + (params.userId ? params.userId : "me"),
+						url: AppConfig.apiBaseUrl + "/v1/users/" + (params.userId ? params.userId : "me"),
 						data: JSON.stringify({
 							firstName: params.firstName,
 							lastName: params.lastName,
@@ -105,7 +105,7 @@
 					methods.user.deferred = $q.defer();
 
 					config = {
-						url: APP_CONFIG.apiBaseUrl + "/auth" + (id ? "/" + id : ""),
+						url: AppConfig.apiBaseUrl + (id ? "/user/" + id : "/auth"),
 						method: "GET"
 					};
 
@@ -123,7 +123,7 @@
 				saveDatabit: function (user, databit) {
 					var config, xhr, deferred = $q.defer(), url;
 
-					url = APP_CONFIG.apiBaseUrl + "/v1/users/" + user.id + "/databit";
+					url = AppConfig.apiBaseUrl + "/v1/users/" + user.id + "/databit";
 					if (databit.id) {
 						url += "/" + databit.id;
 					}
@@ -149,7 +149,7 @@
 					var config;
 
 					config = {
-						url: APP_CONFIG.apiBaseUrl + "/auth/logout",
+						url: AppConfig.apiBaseUrl + "/auth/logout",
 						method: "GET",
 						headers: {"Content-Type": "application/json;charset=utf-8"}
 					};
@@ -160,5 +160,56 @@
 
 			return methods;
 		}])
+		.factory("LoggerService", ["$injector", "$cordovaDevice", "AppConfig", function ($injector, $cordovaDevice, AppConfig) {
+			var methods = {};
+
+			angular.forEach(["debug", "log", "info", "warn", "error", "exception"], function (method) {
+				this[method] = function () {
+					var config;
+
+					if (!arguments || !arguments.length) { return; }
+
+					config = {
+						url: AppConfig.apiBaseUrl + "/logs",
+						method: "POST",
+						headers: {"Content-Type": "application/json;charset=utf-8"},
+						data: {
+							level: method,
+							device: cordova && cordova.plugins.device ? $cordovaDevice.getDevice() : {"device": "n/a"}, // look for update from ngCordova on how to mock in non-app environment
+							message: arguments[0],
+							detail: Array.prototype.slice.call(arguments, 1)
+						}
+					};
+
+					return $injector.get("$http")(config);
+				};
+			}, methods);
+
+			return methods;
+		}])
+		.factory("sprtidLog", ["LoggerService", "LogLevel", "AppConfig", function (LoggerService, LogLevel, AppConfig) {
+			return function($delegate){
+				var methods = {};
+
+				angular.forEach(["debug", "log", "info", "warn", "error", "exception"], function (method) {
+					this[method] = function () {
+						$delegate[method].apply($delegate, arguments);
+						if (LogLevel[method] >= AppConfig.logLevel) {
+							LoggerService[method].apply(LoggerService, arguments);
+						}
+					};
+				}, methods);
+
+				return methods;
+			};
+		}])
+		// .factory("sprtidExceptionHandler", ["LoggerService", function (LoggerService) {
+		// 	return function($delegate){
+		// 		return function (exception, cause) {
+		// 			$delegate(exception, cause);
+		// 			LoggerService.exception(exception.message, arguments);
+		// 		};
+		// 	};
+		// }])
 	;
 })("sprtidApp", angular);

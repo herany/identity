@@ -34,16 +34,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.175"
-     inkscape:cx="-58.131839"
+     inkscape:cx="-775.2747"
      inkscape:cy="842.44431"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer3"
      showgrid="false"
-     inkscape:window-width="1532"
-     inkscape:window-height="1122"
-     inkscape:window-x="1716"
-     inkscape:window-y="103"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      borderlayer="true"
      inkscape:showpageshadow="false" />
   <metadata
@@ -62,7 +62,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="ios-ipad-vertical-h:2048"
-     style="display:none">
+     style="display:inline">
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4037"
@@ -70,9 +70,26 @@
        height="2048"
        x="0"
        y="0"
-       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Sprtid-Portrait~ipad.png"
-       inkscape:export-xdpi="45"
-       inkscape:export-ydpi="45" />
+       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Default-Portrait@2x~ipad.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="ios-ipad-horizontal-h:1536"
+     style="display:inline">
+    <rect
+       y="-1792"
+       x="256"
+       height="2048"
+       width="1536"
+       id="rect4040"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Default-Landscape@2x~ipad.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -85,9 +102,9 @@
        height="2304"
        x="0"
        y="-128"
-       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Sprtid~iphone.png"
-       inkscape:export-xdpi="18.75"
-       inkscape:export-ydpi="18.75" />
+       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Default@2x~iphone.png"
+       inkscape:export-xdpi="37.5"
+       inkscape:export-ydpi="37.5" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -100,26 +117,9 @@
        height="2726.3999"
        x="0"
        y="-339.19995"
-       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Sprtid-568h@2x~iphone.png"
+       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Default-568h@2x~iphone.png"
        inkscape:export-xdpi="37.5"
        inkscape:export-ydpi="37.5" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="ios-ipad-horizontal-h:1536"
-     style="display:none">
-    <rect
-       y="-1792"
-       x="256"
-       height="2048"
-       width="1536"
-       id="rect4040"
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0,1,-1,0,0,0)"
-       inkscape:export-filename="/Users/pmn/code/personal/sprtid/identity/platforms/ios/sprtid-identity/Resources/splash/Sprtid-Landscape~ipad.png"
-       inkscape:export-xdpi="45"
-       inkscape:export-ydpi="45" />
   </g>
   <g
      inkscape:label="detail"
@@ -127,73 +127,98 @@
      id="layer1"
      transform="translate(0,995.63782)"
      sodipodi:insensitive="true">
-    <path
-       inkscape:connector-curvature="0"
-       d="m 689.42508,-361.87101 -21.73723,4.91638 25.42917,110.73404 C 553.24859,-207.08346 465.57716,-64.080871 493.38351,81.877919 L 386.36265,107.44255 c -1.69989,0.4356 -2.67732,2.09564 -2.27094,3.45555 l 3.67068,16.54728 c 0.50997,1.70255 2.35593,2.62421 3.6335,2.11689 l 106.91728,-25.53276 c 38.95917,143.31335 180.30969,231.80285 322.76247,203.83181 l 25.42919,110.73405 21.73723,-5.33339 -25.42917,-110.31969 C 982.58837,263.61126 1070.5599,120.4015 1042.5464,-25.567901 l 107.0421,-25.17155 c 1.8141,-0.67464 2.6242,-1.43161 2.3639,-2.9562 l -3.8699,-17.41051 c -0.6003,-1.61754 -1.6494,-2.48873 -3.4343,-1.77425 l -107.0315,25.16091 C 998.55402,-190.65038 857.0255,-279.20096 714.85425,-251.55131 l -25.42917,-110.3197 z m 72.99932,164.87264 c 100.33023,-2.9987 191.14378,63.22499 219.42558,162.819489 l -52.91415,12.3029 1.23507,5.73711 -86.12294,20.50216 2.45687,11.08112 86.53993,-20.5128 1.22445,5.33338 52.49979,-12.30555 C 1007.1676,101.40267 939.83102,212.1075 829.28289,244.29105 l -12.30555,-52.49715 -5.33338,1.23241 -20.0958,-87.358 -11.07048,2.45952 20.50218,87.775 -5.73711,1.2218 12.30289,52.49979 C 694.4663,270.59406 585.08951,201.65056 553.67355,90.903239 l 52.90353,-12.70928 -1.22445,-5.33338 86.52932,-20.51014 -2.45687,-11.07048 -86.53993,20.51014 -1.22445,-5.74773 -52.90352,12.70927 C 528.34797,-44.763301 595.97406,-155.8931 706.64702,-187.98369 l 11.90182,52.4998 5.73711,-1.23507 20.09579,87.775009 11.07049,-2.47014 -20.50218,-87.764379 5.73711,-1.22445 -12.30291,-52.49714 c 11.38125,-2.11689 22.81562,-3.76631 34.04015,-4.09831 z"
-       style="fill:#b4d8e7;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="path3093" />
-    <text
-       xml:space="preserve"
-       style="font-size:60.40147018px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Sans Italic"
-       x="1144.5973"
-       y="-317.51367"
-       id="text3163"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         x="1144.5973"
-         y="-317.51367"
-         id="tspan3167">sprt</tspan><tspan
-         sodipodi:role="line"
-         x="1144.5973"
-         y="-257.11221"
-         id="tspan3171">id</tspan></text>
-    <text
-       sodipodi:linespacing="100%"
-       id="text3173"
-       y="-1107.6427"
-       x="411.19266"
-       style="font-size:60.40147018px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Sans Italic"
-       xml:space="preserve"
-       transform="matrix(0,1,-1,0,0,0)"><tspan
-         id="tspan3175"
-         y="-1107.6427"
-         x="411.19266"
-         sodipodi:role="line">sprt</tspan><tspan
-         id="tspan3177"
-         y="-1047.2412"
-         x="411.19266"
-         sodipodi:role="line">id</tspan></text>
-    <text
-       transform="scale(-1,-1)"
-       xml:space="preserve"
-       style="font-size:60.40147018px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Sans Italic"
-       x="-391.40271"
-       y="-374.23804"
-       id="text3179"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         x="-391.40271"
-         y="-374.23804"
-         id="tspan3181">sprt</tspan><tspan
-         sodipodi:role="line"
-         x="-391.40271"
-         y="-313.83658"
-         id="tspan3183">id</tspan></text>
-    <text
-       sodipodi:linespacing="100%"
-       id="text3185"
-       y="428.35733"
-       x="354.46829"
-       style="font-size:60.40147018px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Sans Italic"
-       xml:space="preserve"
-       transform="matrix(0,-1,1,0,0,0)"><tspan
-         id="tspan3187"
-         y="428.35733"
-         x="354.46829"
-         sodipodi:role="line">sprt</tspan><tspan
-         id="tspan3189"
-         y="488.75879"
-         x="354.46829"
-         sodipodi:role="line">id</tspan></text>
+    <g
+       id="g4360"
+       transform="matrix(2.4764466,0,0,2.4764466,852.97618,-896.5117)">
+      <g
+         inkscape:export-ydpi="136.78845"
+         inkscape:export-xdpi="136.78845"
+         inkscape:export-filename="/Users/pmn/code/personal/sprtid/common/img/logo/dog-tag/tags.png"
+         transform="matrix(0.83848976,0.54491734,-0.54491734,0.83848976,-301.88141,-234.4428)"
+         id="g3952">
+        <path
+           id="path3954"
+           d="m 460,271.65625 c -16.62,0 -30,33.45 -30,75 0,41.55 13.38,75 30,75 l 182.71875,0 c 16.62,0 30,-33.45 30,-75 0,-41.55 -13.38,-75 -30,-75 l -182.71875,0 z m -3,66.40625 c 4.73387,0 8.5625,3.85988 8.5625,8.59375 0,4.73387 -3.82863,8.5625 -8.5625,8.5625 -4.73387,0 -8.5625,-3.82863 -8.5625,-8.5625 0,-4.73387 3.82863,-8.59375 8.5625,-8.59375 z"
+           style="fill:#b4d8e7;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+        <g
+           style="fill:#68b2d0;fill-opacity:1"
+           id="g3956">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 655.78125,279.09375 c 10.02967,12.10965 16.9375,37.75239 16.9375,67.5625 0,41.55 -13.38,75 -30,75 l -182.71875,0 c -3.21097,0 -6.29152,-1.27945 -9.1875,-3.59375 3.97834,4.8554 8.4465,7.59375 13.1875,7.59375 l 182.71875,0 c 16.62,0 30,-33.45 30,-75 0,-33.64797 -8.77331,-62.00158 -20.9375,-71.5625 z"
+             id="path3958" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 460,274.1875 c -3.30789,0 -6.60062,1.64287 -9.875,5.09375 -3.27438,3.45088 -6.37136,8.64714 -9,15.21875 -5.25729,13.14322 -8.59375,31.65233 -8.59375,52.15625 0,20.50392 3.33646,39.01303 8.59375,52.15625 2.62864,6.57161 5.72562,11.76787 9,15.21875 0.52148,0.54959 1.0401,1.04146 1.5625,1.5 -3.11051,-3.44483 -6.05267,-8.44416 -8.5625,-14.71875 -5.25729,-13.14322 -8.59375,-31.65233 -8.59375,-52.15625 0,-20.50392 3.33646,-39.01303 8.59375,-52.15625 2.62864,-6.57161 5.72562,-11.76787 9,-15.21875 3.27438,-3.45088 6.56711,-5.09375 9.875,-5.09375 l 182.71875,0 c 2.78108,0 5.55475,1.17311 8.3125,3.59375 -0.14724,-0.16307 -0.2895,-0.34403 -0.4375,-0.5 -3.27438,-3.45088 -6.56711,-5.09375 -9.875,-5.09375 l -182.71875,0 z"
+             id="path3960" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 457,338.0625 c -4.73387,0 -8.5625,3.85988 -8.5625,8.59375 0,3.4048 1.96769,6.33565 4.84375,7.71875 -0.54924,-1.13046 -0.84375,-2.37749 -0.84375,-3.71875 0,-4.73387 3.82863,-8.59375 8.5625,-8.59375 1.3314,0 2.59458,0.33332 3.71875,0.875 -1.38429,-2.87287 -4.31628,-4.875 -7.71875,-4.875 z"
+             id="path3962" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 465.34375,340.3125 c 1.34313,1.76427 2.15625,3.9619 2.15625,6.34375 0,5.78689 -4.71311,10.5 -10.5,10.5 -2.379,0 -4.58055,-0.81603 -6.34375,-2.15625 1.92057,2.51554 4.94395,4.15625 8.34375,4.15625 5.78689,0 10.5,-4.71311 10.5,-10.5 0,-3.40504 -1.63409,-6.42364 -4.15625,-8.34375 z"
+             id="path3964" />
+          <text
+             xml:space="preserve"
+             style="font-size:35.11235809px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;font-family:American Typewriter;-inkscape-font-specification:American Typewriter"
+             x="487.45514"
+             y="317.8595"
+             id="text3966"><tspan
+               sodipodi:role="line"
+               id="tspan3968"
+               x="487.45514"
+               y="317.8595">SPRTID</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:export-ydpi="136.78845"
+         inkscape:export-xdpi="136.78845"
+         inkscape:export-filename="/Users/pmn/code/personal/sprtid/common/img/logo/dog-tag/tags.png"
+         transform="matrix(0.83256765,-0.55392338,0.55392338,0.83256765,-940.14822,103.60027)"
+         id="g3996">
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#f7c3b1;fill-opacity:1;stroke:none"
+           d="m 653.99746,621.3807 c -2.5502,-16.42318 -37.65712,-24.51211 -78.71507,-18.13662 -41.05796,6.3755 -72.05879,24.72966 -69.50859,41.15285 l 28.03663,180.55494 c 2.5502,16.42318 37.65712,24.51212 78.71508,18.13662 41.05795,-6.37549 72.05878,-24.72966 69.50858,-41.15284 L 653.99746,621.3807 z m -66.08017,7.225 c 0.72637,4.67781 -2.50033,9.05337 -7.17814,9.77974 -4.67781,0.72637 -9.04857,-2.46945 -9.77495,-7.14726 -0.72637,-4.67781 2.46945,-9.04857 7.14726,-9.77494 4.67781,-0.72637 9.07945,2.46465 9.80583,7.14246 z"
+           id="path3972" />
+        <g
+           id="g3974"
+           style="fill:#cd4514;fill-opacity:1"
+           transform="matrix(0.15344147,0.98815774,-0.98815774,0.15344147,851.85361,125.14481)">
+          <path
+             id="path3976"
+             d="m 655.78125,279.09375 c 10.02967,12.10965 16.9375,37.75239 16.9375,67.5625 0,41.55 -13.38,75 -30,75 l -182.71875,0 c -3.21097,0 -6.29152,-1.27945 -9.1875,-3.59375 3.97834,4.8554 8.4465,7.59375 13.1875,7.59375 l 182.71875,0 c 16.62,0 30,-33.45 30,-75 0,-33.64797 -8.77331,-62.00158 -20.9375,-71.5625 z"
+             inkscape:connector-curvature="0"
+             style="fill:#cd4514;fill-opacity:1" />
+          <path
+             id="path3978"
+             d="m 460,274.1875 c -3.30789,0 -6.60062,1.64287 -9.875,5.09375 -3.27438,3.45088 -6.37136,8.64714 -9,15.21875 -5.25729,13.14322 -8.59375,31.65233 -8.59375,52.15625 0,20.50392 3.33646,39.01303 8.59375,52.15625 2.62864,6.57161 5.72562,11.76787 9,15.21875 0.52148,0.54959 1.0401,1.04146 1.5625,1.5 -3.11051,-3.44483 -6.05267,-8.44416 -8.5625,-14.71875 -5.25729,-13.14322 -8.59375,-31.65233 -8.59375,-52.15625 0,-20.50392 3.33646,-39.01303 8.59375,-52.15625 2.62864,-6.57161 5.72562,-11.76787 9,-15.21875 3.27438,-3.45088 6.56711,-5.09375 9.875,-5.09375 l 182.71875,0 c 2.78108,0 5.55475,1.17311 8.3125,3.59375 -0.14724,-0.16307 -0.2895,-0.34403 -0.4375,-0.5 -3.27438,-3.45088 -6.56711,-5.09375 -9.875,-5.09375 l -182.71875,0 z"
+             inkscape:connector-curvature="0"
+             style="fill:#cd4514;fill-opacity:1" />
+          <path
+             id="path3980"
+             d="m 457,338.0625 c -4.73387,0 -8.5625,3.85988 -8.5625,8.59375 0,3.4048 1.96769,6.33565 4.84375,7.71875 -0.54924,-1.13046 -0.84375,-2.37749 -0.84375,-3.71875 0,-4.73387 3.82863,-8.59375 8.5625,-8.59375 1.3314,0 2.59458,0.33332 3.71875,0.875 -1.38429,-2.87287 -4.31628,-4.875 -7.71875,-4.875 z"
+             inkscape:connector-curvature="0"
+             style="fill:#cd4514;fill-opacity:1" />
+          <path
+             id="path3982"
+             d="m 465.34375,340.3125 c 1.34313,1.76427 2.15625,3.9619 2.15625,6.34375 0,5.78689 -4.71311,10.5 -10.5,10.5 -2.379,0 -4.58055,-0.81603 -6.34375,-2.15625 1.92057,2.51554 4.94395,4.15625 8.34375,4.15625 5.78689,0 10.5,-4.71311 10.5,-10.5 0,-3.40504 -1.63409,-6.42364 -4.15625,-8.34375 z"
+             inkscape:connector-curvature="0"
+             style="fill:#cd4514;fill-opacity:1" />
+          <text
+             id="text3984"
+             y="317.8595"
+             x="487.45514"
+             style="font-size:35.11235809px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#cd4514;fill-opacity:1;font-family:American Typewriter;-inkscape-font-specification:American Typewriter"
+             xml:space="preserve"><tspan
+               y="317.8595"
+               x="487.45514"
+               id="tspan3986"
+               sodipodi:role="line">SPRTID</tspan></text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
