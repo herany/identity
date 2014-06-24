@@ -4,11 +4,14 @@ var AppControllerDefinition = [
 	"$window",
 	"$ionicNavBarDelegate",
 	"$state",
+	"$cordovaSplashscreen",
 	"UserService",
 	"ModelState",
-	function ($scope, $log, $window, $ionicNavBarDelegate, $state, UserService, ModelState) {
+	function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaSplashscreen, UserService, ModelState) {
 		"use strict";
 		$log.info("CheckinController", arguments);
+
+		$cordovaSplashscreen.show();
 
 		$scope.editable = false;
 		$scope.modelState = ModelState.read;

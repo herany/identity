@@ -12,7 +12,7 @@
 			"ionic",
 			"ngCordova", // https://github.com/driftyco/ng-cordova.git
 			"http-auth-interceptor",
-			"facebook",
+			// "facebook",
 			"monospaced.qrcode",
 			APP_NAME + ".constants",
 			APP_NAME + ".filters",

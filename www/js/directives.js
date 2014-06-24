@@ -7,7 +7,7 @@
 				elm.text(version);
 			};
 		}])
-		.directive("cordovaBarcodeScanner", ["$log", ScannerClass])
+		// .directive("cordovaBarcodeScanner", ["$log", ScannerClass])
 		.directive("sprtidUser", function () {
 			return {
 				restrict: "E",

@@ -19,7 +19,7 @@
 		.controller("LoginController", LoginAuthControllerDefinition)
 		.controller("LogoutController", LogoutAuthControllerDefinition)
 		.controller("SignupController", SignupAuthControllerDefinition)
-		.controller("FacebookController", FacebookAuthControllerDefinition)
+		// .controller("FacebookController", FacebookAuthControllerDefinition)
 		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("ShopController", arguments);
 		}])
