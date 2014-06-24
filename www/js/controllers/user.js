@@ -4,8 +4,9 @@ var UserControllerDefinition = [
 	"$stateParams",
 	"$ionicModal",
 	"$filter",
+	"AppConfig",
 	"UserService",
-	function ($scope, $log, $stateParams, $ionicModal, $filter, UserService) {
+	function ($scope, $log, $stateParams, $ionicModal, $filter, AppConfig, UserService) {
 		"use strict";
 		$log.info("UserController", arguments);
 
@@ -53,7 +54,7 @@ var UserControllerDefinition = [
 		};
 
 		// Create and load the Modal
-		$ionicModal.fromTemplateUrl("/templates/modals/databit.html", function (modal) {
+		$ionicModal.fromTemplateUrl(AppConfig.templatesPath + "modals/databit.html", function (modal) {
 			$scope.databitModal = modal;
 		}, {
 			scope: $scope,

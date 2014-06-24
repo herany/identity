@@ -8,7 +8,7 @@
 			};
 		}])
 		// .directive("cordovaBarcodeScanner", ["$log", ScannerClass])
-		.directive("sprtidUser", function () {
+		.directive("sprtidUser", ["AppConfig", function (AppConfig) {
 			return {
 				restrict: "E",
 				scope: {
@@ -16,13 +16,13 @@
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
-						return "/templates/" + (attributes.edit === "true" ? "forms" : "partials") + "/_user.html";
+						return AppConfig.templatesPath + (attributes.edit === "true" ? "forms" : "partials") + "/_user.html";
 					};
 				},
 				template: '<div ng-include="getTemplateUrl()"></div>'
 			};
-		})
-		.directive("sprtidDatabit", function () {
+		}])
+		.directive("sprtidDatabit", ["AppConfig", function (AppConfig) {
 			return {
 				restrict: "E",
 				scope: {
@@ -30,13 +30,13 @@
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
-						return "/templates/" + (attributes.edit === "true" ? "forms" : "partials") + "/_databit.html";
+						return AppConfig.templatesPath + (attributes.edit === "true" ? "forms" : "partials") + "/_databit.html";
 					};
 				},
 				template: '<div ng-include="getTemplateUrl()"></div>'
 			};
-		})
-		.directive("sprtidDatabitBarcode", function () {
+		}])
+		.directive("sprtidDatabitBarcode", ["AppConfig", function (AppConfig) {
 			return {
 				restrict: "E",
 				scope: {
@@ -46,8 +46,8 @@
 					// I just happen to know that this app is forced into portrait mode.  #besmarter if that changes
 					$scope.size = 0.75 * element[0].parentElement.offsetWidth;
 				},
-				templateUrl: "/templates/partials/_databit_barcode.html"
+				templateUrl: AppConfig.templatesPath + "partials/_databit_barcode.html"
 			};
-		})
+		}])
 	;
 })("sprtidApp", angular, AngularCordova.Plugins.BarcodeScanner);

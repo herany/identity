@@ -4,17 +4,41 @@ var AppControllerDefinition = [
 	"$window",
 	"$ionicNavBarDelegate",
 	"$state",
+	"$cordovaNetwork",
 	"$cordovaSplashscreen",
 	"UserService",
 	"ModelState",
-	function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaSplashscreen, UserService, ModelState) {
+	function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService, ModelState) {
 		"use strict";
 		$log.info("CheckinController", arguments);
 
-		$cordovaSplashscreen.show();
+		if (navigator.splashscreen) {
+			$log.info("Showing Splash Screen", arguments);
+			$cordovaSplashscreen.show();
+
+			setTimeout(function () {
+				$log.info("Hiding Splash Screen", arguments);
+				$cordovaSplashscreen.hide();
+			}, 2000);
+		} else {
+			$log.debug("navigator.splashscreen is undefined");
+		}
 
 		$scope.editable = false;
 		$scope.modelState = ModelState.read;
+
+		if (navigator.connection) {
+			$scope.isOffline = $cordovaNetwork.isOffline();
+			var toggleOfflineIndicator = function () {
+				$scope.$apply(function () {
+					$scope.isOffline = $cordovaNetwork.isOffline();
+				});
+			};
+			document.addEventListener("online", toggleOfflineIndicator, false);
+			document.addEventListener("offline", toggleOfflineIndicator, false);
+		} else {
+			$log.debug("navigator.connection is undefined");
+		}
 
 		$scope.setTitle = function (title) {
 			$scope.title = title || "sprt·id";

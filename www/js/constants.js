@@ -10,6 +10,10 @@
 		exception: 50
 	};
 
+	var scripts = document.getElementsByTagName("script"),
+	    currentScriptPath = scripts[scripts.length-1].src,
+	    templatesPath = currentScriptPath.substring(0, currentScriptPath.indexOf("/www/") + 5) + "templates/";
+
 	angular.module(APP_NAME + ".constants", [])
 		.constant("LogLevel", LogLevel)
 		.constant("ModelState", {
@@ -17,9 +21,10 @@
 			write: 2
 		})
 		.constant("AppConfig", {
-			apiBaseUrl: "http://localhost:1212",
-			// apiBaseUrl: "http://sprtid-api.herokuapp.com",
-			logLevel: LogLevel.warn
+			// apiBaseUrl: "http://localhost:1212",
+			apiBaseUrl: "http://sprtid-api.herokuapp.com",
+			logLevel: LogLevel.warn,
+			templatesPath: templatesPath
 		})
 	;
 })("sprtidApp", angular);

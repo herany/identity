@@ -7,7 +7,7 @@
 	</ion-pane>
 
 	<ion-side-menu side="left">
-		<header class="bar bar-header bar-light">
+		<header class="bar bar-header" ng-class="{'bar-light': !isOffline, 'bar-stable': isOffline}">
 			<h1 class="title">Main Menu</h1>
 		</header>
 		<ion-content class="has-header">

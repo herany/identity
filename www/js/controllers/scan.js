@@ -20,12 +20,13 @@ var ScanControllerDefinition = [
 
 					$scope.success = !!scanRespose;
 					if ($scope.success) {
-						$scope.$apply(function () {
-							$scope.title = "Success";
-							$scope.response = JSON.stringify(scanRespose);
+						$scope.title = "Success";
+						$scope.response = JSON.stringify(scanRespose);
 
-							$scope.gotoUser(scanRespose.text);
-						});
+						$scope.gotoUser(scanRespose.text);
+						if(!$scope.$$phase) {
+							$scope.$digest();
+						}
 					} else {
 						// todo: handle error
 					}
@@ -33,10 +34,12 @@ var ScanControllerDefinition = [
 					$log.info("ScanController :: ~ctor (error)", scanRespose);
 
 					$scope.success = false;
-					$scope.$apply(function () {
-						$scope.title = "Failure";
-						$scope.response = JSON.stringify(scanRespose);
-					});
+					$scope.title = "Failure";
+					$scope.response = JSON.stringify(scanRespose);
+
+					if(!$scope.$$phase) {
+						$scope.$digest();
+					}
 				});
 			} else {
 				$scope.success = false;
@@ -51,6 +54,6 @@ var ScanControllerDefinition = [
 		$scope.gotoUser = function (barcodeOrUrl) {
 			// $state.go("app.user");
 			$location.path("/user/" + barcodeOrUrl + "/scan").replace();
-		}
+		};
 	}
 ];

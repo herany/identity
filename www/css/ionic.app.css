@@ -10581,3 +10581,14 @@ textarea {
   text-align: center;
   font-size: 2em;
 }
+
+/* line 93, ../../scss/ionic.app.scss */
+body.offline .pane,
+body.offline .view {
+  background: #444444;
+}
+/* line 96, ../../scss/ionic.app.scss */
+body.offline .pane .bar,
+body.offline .view .bar {
+  background: #3d3d3d !important;
+}

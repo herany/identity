@@ -16,6 +16,7 @@ $green: #2ecc71; // #2baf2b
 $light-blue: #b4d8e7;
 $blue: #3498db; // #00acee
 $purple: #9b59b6;
+$dark-grey: #444444;
 
 $background-color-mix-pct: 90%;
 $background-color-mix: $black;
@@ -29,6 +30,7 @@ $color-scheme-green:      $green,      mix($green, $background-color-mix, $backg
 $color-scheme-light-blue: $light-blue, mix($light-blue, $background-color-mix, $background-color-mix-pct);
 $color-scheme-blue:       $blue,       mix($blue, $background-color-mix, $background-color-mix-pct);
 $color-scheme-purple:     $purple,     mix($purple, $background-color-mix, $background-color-mix-pct);
+$color-scheme-disabled:   $dark-grey,  mix($dark-grey, black, $background-color-mix-pct);
 
 
 $color-scheme-foreground: $color-scheme-white;
@@ -66,6 +68,10 @@ $color-scheme-checkin-secondary: nth($color-scheme-checkin, $background);
 $color-scheme-user: $color-scheme-red;
 $color-scheme-user-primary:   nth($color-scheme-user, $foreground);
 $color-scheme-user-secondary: nth($color-scheme-user, $background);
+
+$color-scheme-user: $color-scheme-disabled;
+$color-scheme-disabled-primary:   nth($color-scheme-disabled, $foreground);
+$color-scheme-disabled-secondary: nth($color-scheme-disabled, $background);
 
 $default-spacing: 25px;
 

@@ -87,3 +87,14 @@ textarea {
 	text-align: center;
 	font-size: 2em;
 }
+
+body.offline {
+	.pane,
+	.view {
+		background: $color-scheme-disabled-primary;
+
+		.bar {
+			background: $color-scheme-disabled-secondary !important;
+		}
+	}
+}
