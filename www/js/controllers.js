@@ -9,7 +9,7 @@
 			$log.info("HomeController", arguments);
 		}])
 		.controller("ScanController", ScanControllerDefinition)
-		.controller("ScanController", ScanControllerDefinition)
+		.controller("UserController", UserControllerDefinition)
 		.controller("BarcodeUserController", BarcodeUserControllerDefinition)
 		// .controller("DatabitController", DatabitControllerDefinition)
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {

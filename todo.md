@@ -1,13 +1,13 @@
 todo:
+- more ion icons (or icomoon)
+- splashscreens
 - add user (dependant)
 - Add Misc Data Bit
 - display photo
-- on scan, add record to database (scanner, scanee, event, timestamp)
 - home page history
 - does the scanner have option to display a cancel button?
 - scanner timeout
 - sort out back/scanner issues
-- more ion icons (or icomoon)
 - lightweight server to redirect barcode URL to scan page (e.g., if you scanned from non-sprtid scanner)
 - delete data bit
 - preserve state such that re-opening the app starts where you left off (localStorage?)
@@ -19,8 +19,7 @@ todo:
 
 
 in progress:
-- logging
-- profile w/SlideBox having last slide be add dependant
+- on scan, add record to database (scanner, scanee, event, timestamp)
 - Add Photo Data Bit
 
 
@@ -44,3 +43,5 @@ x - Menu: Log In/Register/{{name}}/Logout
 x - splash screen
 x - barcode width
 x - current user display => /profile.html
+x - profile w/SlideBox having last slide be add dependant
+x - logging
