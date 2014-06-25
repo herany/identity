@@ -556,5 +556,6 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals/databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_barcode.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_birthday.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_user.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/ant-build/AndroidManifest.xml \

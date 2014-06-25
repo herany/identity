@@ -12,11 +12,12 @@ var UserControllerDefinition = [
 
 		var fnSuccess, fnError, fnNotify;
 
-		$scope.$watch("user", function(newValue, oldValue) {
-			var u = $scope.getLoggedInUser();
-			$scope.editable = u.id === $scope.user.id; // or dependants
+		$scope.databit = {}; // initialize in order to pass to the databit directive
+		var u = $scope.getLoggedInUser();
+		$scope.editable = $scope.user && u && u.id === $scope.user.id; // or dependants
+		if ($scope.editable) {
 			$scope.title = $filter("fullName")($scope.user);
-		});
+		}
 
 		if ($stateParams.id) {
 			UserService.user($stateParams.id)
@@ -73,6 +74,7 @@ var UserControllerDefinition = [
 				.then(function () {
 					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
+					$scope.databit = {};
 					$scope.databitModal.hide();
 				}, function () {
 					// hide ajaxing indicator
@@ -82,12 +84,17 @@ var UserControllerDefinition = [
 		};
 
 		// Open our new task modal
-		$scope.newDatabit = function() {
+		$scope.newDatabit = function () {
+			$scope.databitModal.show();
+		};
+
+		$scope.editDatabit = function (index_or_maybe_databitobject) {
+			$scope.databit = index_or_maybe_databitobject;
 			$scope.databitModal.show();
 		};
 
 		// Close the new task modal
-		$scope.closeNewDatabit = function() {
+		$scope.closeNewDatabit = function () {
 			$scope.databitModal.hide();
 		};
 	}

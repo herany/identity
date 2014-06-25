@@ -25,8 +25,8 @@
 			};
 		}])
 		.filter("ageFormatter", function () {
-			return function (unformattedDate, emptyStrText) {
-				return ViewHelpers.age(unformattedDate);
+			return function (dateString, emptyStrText) {
+				return moment().diff(dateString, 'years');
 			};
 		})
 		.filter("asClassname", function () {
@@ -85,6 +85,11 @@
 				}
 			};
 		})
+		.filter("fullmonthDayYear", function () {
+			return function (dateString) {
+				return moment(dateString).format("MMMM D, YYYY");
+			};
+		})
 		.filter("humanReadableDate", function () {
 			return function (dateString) {
 				return moment(dateString).calendar();
@@ -92,7 +97,7 @@
 		})
 		.filter("humanReadableDateSince", function () {
 			return function (dateString) {
-				return moment(dateString).fromNow(true);;
+				return moment(dateString).fromNow(true);
 			};
 		})
 		.filter("databitExpirationClassname", function () {

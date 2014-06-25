@@ -10592,3 +10592,24 @@ body.offline .pane .bar,
 body.offline .view .bar {
   background: #3d3d3d !important;
 }
+
+/* line 103, ../../scss/ionic.app.scss */
+.databit-birthday {
+  text-align: center;
+}
+/* line 106, ../../scss/ionic.app.scss */
+.databit-birthday .databit-birthday-age {
+  font-size: 5em;
+  font-family: "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+  line-height: 1em;
+}
+/* line 111, ../../scss/ionic.app.scss */
+.databit-birthday .databit-birthday-age span {
+  font-size: 0.2em;
+}
+/* line 116, ../../scss/ionic.app.scss */
+.databit-birthday .databit-birthday-birthday {
+  margin-top: 25px;
+  font-size: 2em;
+  line-height: 1em;
+}

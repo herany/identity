@@ -42,6 +42,7 @@ end
 		</div>
 		<div class="item item-light item-text-wrap" ng-switch="databit.type">
 			<sprtid-databit-barcode ng-switch-when="BarcodeDataBit" databit="databit"></sprtid-databit-barcode>
+			<sprtid-databit-birthday ng-switch-when="BirthdayDataBit" databit="databit"></sprtid-databit-birthday>
 			<pre ng-switch-default>{{ databit | jsonFormatter }}</pre>
 		</div>
 		<div class="item item-light item-divider icon icon-left {{ databit.visibility | databitVisibilityClass }}">

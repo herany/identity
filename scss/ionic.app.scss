@@ -98,3 +98,24 @@ body.offline {
 		}
 	}
 }
+
+
+.databit-birthday {
+	text-align: center;
+
+	.databit-birthday-age {
+		font-size: 5em;
+		font-family: $font-family-serif;
+		line-height: 1em;
+
+		span {
+			font-size: 0.2em;
+		}
+	}
+
+	.databit-birthday-birthday {
+		margin-top: $default-spacing;
+		font-size: 2em;
+		line-height: 1em;
+	}
+}

@@ -12,7 +12,8 @@
 			return {
 				restrict: "E",
 				scope: {
-					user: "=user"
+					user: "=",
+					onNewDatabit: "&"
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
@@ -26,7 +27,7 @@
 			return {
 				restrict: "E",
 				scope: {
-					databit: "=databit"
+					databit: "="
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
@@ -40,13 +41,22 @@
 			return {
 				restrict: "E",
 				scope: {
-					databit: "=databit"
+					databit: "="
 				},
 				link: function ($scope, element, attributes) {
 					// I just happen to know that this app is forced into portrait mode.  #besmarter if that changes
 					$scope.size = 0.75 * element[0].parentElement.offsetWidth;
 				},
 				templateUrl: AppConfig.templatesPath + "partials/_databit_barcode.html"
+			};
+		}])
+		.directive("sprtidDatabitBirthday", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					databit: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_databit_birthday.html"
 			};
 		}])
 	;
