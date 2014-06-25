@@ -12,7 +12,8 @@
 
 	var scripts = document.getElementsByTagName("script"),
 	    currentScriptPath = scripts[scripts.length-1].src,
-	    templatesPath = currentScriptPath.substring(0, currentScriptPath.indexOf("/www/") + 5) + "templates/";
+	    wwwIndex = currentScriptPath.indexOf("/www/"),
+	    templatesPath = (wwwIndex >= 0 ? currentScriptPath.substring(0, wwwIndex + 5) : "/") + "templates/";
 
 	angular.module(APP_NAME + ".constants", [])
 		.constant("LogLevel", LogLevel)

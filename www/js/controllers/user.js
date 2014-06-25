@@ -92,3 +92,27 @@ var UserControllerDefinition = [
 		};
 	}
 ];
+
+var BarcodeUserControllerDefinition = [
+	"$scope",
+	"$log",
+	"$state",
+	"$stateParams",
+	"UserService",
+	function ($scope, $log, $state, $stateParams, UserService) {
+		"use strict";
+		$log.info("BarcodeUserController", arguments);
+
+		if ($stateParams.barcode) {
+			UserService.userByBarcode($stateParams.barcode)
+				.then(function (user, status, headers, config) {
+					$state.go("app.user", {id: user.id});
+				}, function (message, status, headers, config) {
+					$scope.success = false;
+					$scope.message = message;
+				});
+		} else {
+			$scope.user = $scope.getLoggedInUser();
+		}
+	}
+];

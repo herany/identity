@@ -65,11 +65,21 @@
 					}
 				})
 
+				.state("app.barcode", {
+					url: "/user/barcode/:barcode",
+					views: {
+						"menuContent": {
+							templateUrl: "templates/user.html",
+							controller: "BarcodeUserController"
+						}
+					}
+				})
+
 				.state("app.user", {
 					url: "/user/:id",
 					views: {
 						"menuContent": {
-							templateUrl: "templates/user/index.html",
+							templateUrl: "templates/user.html",
 							controller: "UserController"
 						}
 					}

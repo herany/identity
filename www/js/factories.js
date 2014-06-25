@@ -120,6 +120,33 @@
 
 					return methods.user.deferred.promise;
 				},
+				userByBarcode: function (barcode) {
+					// how do you force a request?
+					var config;
+
+					if (methods.user.deferred) {
+						return methods.user.deferred.promise;
+					}
+
+					// attach a property to the `user` method to store/cache the Q.
+					methods.user.deferred = $q.defer();
+
+					config = {
+						url: AppConfig.apiBaseUrl + "/user/barcode/" + encodeURIComponent(barcode),
+						method: "GET"
+					};
+
+					$http(config)
+						.success(function (data, status, headers, config) {
+							methods.user.deferred.resolve(data);
+						})
+						.error(function (data, status, headers, config) {
+							methods.user.deferred.reject(data);
+						})
+					;
+
+					return methods.user.deferred.promise;
+				},
 				saveDatabit: function (user, databit) {
 					var config, xhr, deferred = $q.defer(), url;
 

@@ -1,10 +1,11 @@
 var ScanControllerDefinition = [
 	"$scope",
 	"$log",
+	"$state",
 	"$ionicPlatform",
 	"$cordovaBarcodeScanner",
 	"$location",
-	function($scope, $log, $ionicPlatform, $cordovaBarcodeScanner, $location) {
+	function($scope, $log, $state, $ionicPlatform, $cordovaBarcodeScanner, $location) {
 		"use strict";
 		$log.info("ScanController", arguments);
 
@@ -12,6 +13,10 @@ var ScanControllerDefinition = [
 		$scope.response = "";
 		$scope.success = null;
 		$scope.barcode = null;
+
+		function gotoUser (barcodeOrUrl) {
+			$state.go("app.barcode", {barcode: barcodeOrUrl});
+		}
 
 		$ionicPlatform.ready(function () {
 			if (cordova && cordova.plugins.barcodeScanner) { // this conditional exists due to a lack of null checking in ngCordova
@@ -23,10 +28,8 @@ var ScanControllerDefinition = [
 						$scope.title = "Success";
 						$scope.response = JSON.stringify(scanRespose);
 
-						$scope.gotoUser(scanRespose.text);
-						if(!$scope.$$phase) {
-							$scope.$digest();
-						}
+						gotoUser(scanRespose.text);
+						if(!$scope.$$phase) { $scope.$digest(); }
 					} else {
 						// todo: handle error
 					}
@@ -37,9 +40,7 @@ var ScanControllerDefinition = [
 					$scope.title = "Failure";
 					$scope.response = JSON.stringify(scanRespose);
 
-					if(!$scope.$$phase) {
-						$scope.$digest();
-					}
+					if(!$scope.$$phase) { $scope.$digest(); }
 				});
 			} else {
 				$scope.success = false;
@@ -48,12 +49,7 @@ var ScanControllerDefinition = [
 		});
 
 		$scope.scanBarcode = function () {
-			$scope.gotoUser($scope.barcode);
-		};
-
-		$scope.gotoUser = function (barcodeOrUrl) {
-			// $state.go("app.user");
-			$location.path("/user/" + barcodeOrUrl + "/scan").replace();
+			gotoUser($scope.barcode);
 		};
 	}
 ];
