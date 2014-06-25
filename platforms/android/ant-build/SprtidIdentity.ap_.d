@@ -517,6 +517,8 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard/www \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/com.phonegap.plugins.barcodescanner/www \
@@ -528,6 +530,11 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/auth.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/checkin.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/create.html \
