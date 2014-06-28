@@ -105,7 +105,7 @@
 					methods.user.deferred = $q.defer();
 
 					config = {
-						url: AppConfig.apiBaseUrl + (id ? "/user/" + id : "/auth"),
+						url: AppConfig.apiBaseUrl + (id ? "/v1/user/" + id : "/auth"),
 						method: "GET"
 					};
 
@@ -122,35 +122,30 @@
 				},
 				userByBarcode: function (barcode) {
 					// how do you force a request?
-					var config;
+					var config, deferred;
 
-					if (methods.user.deferred) {
-						return methods.user.deferred.promise;
-					}
-
-					// attach a property to the `user` method to store/cache the Q.
-					methods.user.deferred = $q.defer();
+					deferred = $q.defer();
 
 					config = {
-						url: AppConfig.apiBaseUrl + "/user/barcode/" + encodeURIComponent(barcode),
+						url: AppConfig.apiBaseUrl + "/v1/users/barcode/" + encodeURIComponent(barcode),
 						method: "GET"
 					};
 
 					$http(config)
 						.success(function (data, status, headers, config) {
-							methods.user.deferred.resolve(data);
+							deferred.resolve(data);
 						})
 						.error(function (data, status, headers, config) {
-							methods.user.deferred.reject(data);
+							deferred.reject(data);
 						})
 					;
 
-					return methods.user.deferred.promise;
+					return deferred.promise;
 				},
-				saveDatabit: function (user, databit) {
+				saveDatabit: function (userId, databit) {
 					var config, xhr, deferred = $q.defer(), url;
 
-					url = AppConfig.apiBaseUrl + "/v1/users/" + user.id + "/databit";
+					url = AppConfig.apiBaseUrl + "/v1/users/" + userId + "/databit";
 					if (databit.id) {
 						url += "/" + databit.id;
 					}
@@ -159,6 +154,26 @@
 						data: JSON.stringify(databit),
 						method: "POST",
 						headers: {"Content-Type": "application/json;charset=utf-8"}
+					};
+
+					xhr = $http(config)
+						.success(function (data, status, headers, config) {
+							deferred.resolve(data);
+						})
+						.error(function (data, status, headers, config) {
+							deferred.reject(data);
+						})
+					;
+
+					return deferred.promise;
+				},
+				deleteDatabit: function (userId, databitId) {
+					var config, xhr, deferred = $q.defer(), url;
+
+					url = AppConfig.apiBaseUrl + "/v1/users/" + userId + "/databit/" + databitId;
+					config = {
+						url: url,
+						method: "DELETE"
 					};
 
 					xhr = $http(config)

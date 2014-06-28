@@ -1,4 +1,4 @@
-;(function (APP_NAME, angular, ScannerClass, undefined) {
+;(function (APP_NAME, angular, undefined) {
 	"use strict";
 
 	angular.module(APP_NAME + ".directives", [])
@@ -7,13 +7,14 @@
 				elm.text(version);
 			};
 		}])
-		// .directive("cordovaBarcodeScanner", ["$log", ScannerClass])
+		// .directive("cordovaBarcodeScanner", ["$log"])
 		.directive("sprtidUser", ["AppConfig", function (AppConfig) {
 			return {
 				restrict: "E",
 				scope: {
 					user: "=",
-					onNewDatabit: "&"
+					onNewDatabit: "&",
+					onDeleteDatabit: "&"
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
@@ -27,7 +28,8 @@
 			return {
 				restrict: "E",
 				scope: {
-					databit: "="
+					databit: "=",
+					onDelete: "&"
 				},
 				link: function ($scope, element, attributes) {
 					$scope.getTemplateUrl = function () {
@@ -60,4 +62,4 @@
 			};
 		}])
 	;
-})("sprtidApp", angular, AngularCordova.Plugins.BarcodeScanner);
+})("sprtidApp", angular);

@@ -9,7 +9,7 @@
 		<div class="page-content">
 			<ion-slide-box show-pager="true" on-slide-changed="setTitle($index)">
 				<ion-slide>
-					<sprtid-user user="user"></sprtid-user>
+					<sprtid-user user="user" on-delete-databit="deleteDatabit(databit)"></sprtid-user>
 				</ion-slide>
 				<ion-slide ng-repeat="dependant in user.dependants">
 					<sprtid-user user="dependant"></sprtid-user>

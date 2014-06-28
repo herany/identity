@@ -46,7 +46,7 @@ var DatabitControllerDefinition = [
 				$log.log("DatabitController::save ($q.notify)", arguments);
 			};
 
-			UserService.saveDatabit($scope.databit).then(fnSuccess, fnError, fnNotify);
+			UserService.saveDatabit($scope.user.id, $scope.databit).then(fnSuccess, fnError, fnNotify);
 		};
 	}
 ];

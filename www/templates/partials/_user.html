@@ -3,5 +3,5 @@
 	<h3><em>{{ user.email }}</em></h3>
 	<h6>member for <em>{{ user.createdAt | humanReadableDateSince }}</em></h6>
 	<hr />
-	<sprtid-databit ng-repeat="databit in user.dataBits" databit="databit"></sprtid-databit>
+	<sprtid-databit ng-repeat="databit in user.dataBits" databit="databit" on-delete="onDeleteDatabit({databit: databit})"></sprtid-databit>
 </div>

@@ -12,7 +12,7 @@ var ScanControllerDefinition = [
 		$scope.title = "Scanning";
 		$scope.response = "";
 		$scope.success = null;
-		$scope.barcode = null;
+		$scope.barcode = {code: null};
 
 		function gotoUser (barcodeOrUrl) {
 			$state.go("app.barcode", {barcode: barcodeOrUrl});
@@ -49,7 +49,7 @@ var ScanControllerDefinition = [
 		});
 
 		$scope.scanBarcode = function () {
-			gotoUser($scope.barcode);
+			gotoUser($scope.barcode.code);
 		};
 	}
 ];

@@ -68,9 +68,9 @@ var UserControllerDefinition = [
 				type: formObj.type
 			};
 			angular.extend(dataBit, formObj[formObj.type]);
-			// ajaxing indicator
+			// show ajaxing indicator
 			UserService
-				.saveDatabit($scope.getLoggedInUser(), dataBit)
+				.saveDatabit($scope.user.id, dataBit)
 				.then(function () {
 					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
@@ -88,9 +88,30 @@ var UserControllerDefinition = [
 			$scope.databitModal.show();
 		};
 
-		$scope.editDatabit = function (index_or_maybe_databitobject) {
-			$scope.databit = index_or_maybe_databitobject;
-			$scope.databitModal.show();
+		$scope.editDatabit = function () {
+			// show ajaxing indicator
+			UserService.editDatabit($scope.user.id, $scope.databit)
+				.then(function () {
+					// hide ajaxing indicator
+					fnSuccess.apply(this, arguments);
+				}, function () {
+					// hide ajaxing indicator
+					fnError.apply(this, arguments);
+				}, fnNotify)
+				;
+		};
+
+		$scope.deleteDatabit = function (databit) {
+			// show ajaxing indicator
+			UserService.deleteDatabit($scope.user.id, databit.id)
+				.then(function () {
+					// hide ajaxing indicator
+					fnSuccess.apply(this, arguments);
+				}, function () {
+					// hide ajaxing indicator
+					fnError.apply(this, arguments);
+				}, fnNotify)
+				;
 		};
 
 		// Close the new task modal
