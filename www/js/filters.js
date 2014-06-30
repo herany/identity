@@ -105,5 +105,20 @@
 				return (2 * Math.random() % 2) ? "energized" : "calm";
 			};
 		})
+		.filter("history", function () {
+			return function (user) {
+				var history = [];
+
+				if (!user) { return []; }
+
+				if (user.checkins) {
+					history = Array.prototype.concat.apply(history, user.checkins);
+				}
+				if (user.scans) {
+					history = Array.prototype.concat.apply(history, user.scans);
+				}
+				return history;
+			};
+		})
 	;
 })("sprtidApp", angular, moment);

@@ -15,25 +15,13 @@
 			<div class="col col-50">
 				<div class="tile tile-icon">
 					<a href="#/app/signup" class="tile-content">
-						<span class="icon icon-edit"></span>
+						<span class="icon ion-log-in"></span>
 						<span class="label">Register</span>
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="list card card-light" ng-show="loggedIn()">
-			<div class="card">
-				<div class="item item-light item-divider">
-					History Title
-				</div>
-				<div class="item item-light item-text-wrap">
-					History Details...
-				</div>
-				<div class="item item-light item-divider">
-					History Footer? Not really sure.
-				</div>
-			</div>
-		</div>
+		<sprtid-history user="user" ng-show="loggedIn()"></sprtid-history>
 	</ion-content>
 </ion-view>

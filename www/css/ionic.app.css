@@ -15,27 +15,27 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 /*!
-  Ionicons, v1.4.1
+  Ionicons, v1.5.2
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
 */
 @font-face {
   font-family: "Ionicons";
-  src: url("../lib/ionic/fonts/ionicons.eot?v=1.4.1");
-  src: url("../lib/ionic/fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/ionicons.ttf?v=1.4.1") format("truetype"), url("../lib/ionic/fonts/ionicons.woff?v=1.4.1") format("woff"), url("../lib/ionic/fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg");
+  src: url("../lib/bower_components/ionicons/fonts/ionicons.eot?v=1.5.2");
+  src: url("../lib/bower_components/ionicons/fonts/ionicons.eot?v=1.5.2#iefix") format("embedded-opentype"), url("../lib/bower_components/ionicons/fonts/ionicons.ttf?v=1.5.2") format("truetype"), url("../lib/bower_components/ionicons/fonts/ionicons.woff?v=1.5.2") format("woff"), url("../lib/bower_components/ionicons/fonts/ionicons.svg?v=1.5.2#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 15, ../lib/ionic/scss/ionicons/_ionicons-font.scss */
+/* line 15, ../lib/bower_components/ionicons/scss/_ionicons-font.scss */
 .ion, .ion-loading-a,
 .ion-loading-b,
 .ion-loading-c,
 .ion-loading-d,
 .ion-looping,
 .ion-refreshing,
-.ion-ios7-reloading, .ionicons:before,
+.ion-ios7-reloading, .ionicons,
 .ion-alert:before,
 .ion-alert-circled:before,
 .ion-android-add:before,
@@ -45,6 +45,7 @@ $dark:                            #444 !default;
 .ion-android-arrow-back:before,
 .ion-android-arrow-down-left:before,
 .ion-android-arrow-down-right:before,
+.ion-android-arrow-forward:before,
 .ion-android-arrow-up-left:before,
 .ion-android-arrow-up-right:before,
 .ion-android-battery:before,
@@ -62,6 +63,7 @@ $dark:                            #444 !default;
 .ion-android-developer:before,
 .ion-android-display:before,
 .ion-android-download:before,
+.ion-android-drawer:before,
 .ion-android-dropdown:before,
 .ion-android-earth:before,
 .ion-android-folder:before,
@@ -92,6 +94,7 @@ $dark:                            #444 !default;
 .ion-android-social:before,
 .ion-android-social-user:before,
 .ion-android-sort:before,
+.ion-android-stair-drawer:before,
 .ion-android-star:before,
 .ion-android-stopwatch:before,
 .ion-android-storage:before,
@@ -100,8 +103,10 @@ $dark:                            #444 !default;
 .ion-android-system-windows:before,
 .ion-android-timer:before,
 .ion-android-trash:before,
+.ion-android-user-menu:before,
 .ion-android-volume:before,
 .ion-android-wifi:before,
+.ion-aperture:before,
 .ion-archive:before,
 .ion-arrow-down-a:before,
 .ion-arrow-down-b:before,
@@ -126,6 +131,7 @@ $dark:                            #444 !default;
 .ion-arrow-up-a:before,
 .ion-arrow-up-b:before,
 .ion-arrow-up-c:before,
+.ion-asterisk:before,
 .ion-at:before,
 .ion-bag:before,
 .ion-battery-charging:before,
@@ -136,6 +142,7 @@ $dark:                            #444 !default;
 .ion-beaker:before,
 .ion-beer:before,
 .ion-bluetooth:before,
+.ion-bonfire:before,
 .ion-bookmark:before,
 .ion-briefcase:before,
 .ion-bug:before,
@@ -143,6 +150,7 @@ $dark:                            #444 !default;
 .ion-calendar:before,
 .ion-camera:before,
 .ion-card:before,
+.ion-cash:before,
 .ion-chatbox:before,
 .ion-chatbox-working:before,
 .ion-chatboxes:before,
@@ -161,6 +169,7 @@ $dark:                            #444 !default;
 .ion-close:before,
 .ion-close-circled:before,
 .ion-close-round:before,
+.ion-closed-captioning:before,
 .ion-cloud:before,
 .ion-code:before,
 .ion-code-download:before,
@@ -170,6 +179,7 @@ $dark:                            #444 !default;
 .ion-compose:before,
 .ion-connection-bars:before,
 .ion-contrast:before,
+.ion-cube:before,
 .ion-disc:before,
 .ion-document:before,
 .ion-document-text:before,
@@ -184,7 +194,9 @@ $dark:                            #444 !default;
 .ion-female:before,
 .ion-filing:before,
 .ion-film-marker:before,
+.ion-fireball:before,
 .ion-flag:before,
+.ion-flame:before,
 .ion-flash:before,
 .ion-flash-off:before,
 .ion-flask:before,
@@ -192,14 +204,17 @@ $dark:                            #444 !default;
 .ion-fork:before,
 .ion-fork-repo:before,
 .ion-forward:before,
+.ion-funnel:before,
 .ion-game-controller-a:before,
 .ion-game-controller-b:before,
 .ion-gear-a:before,
 .ion-gear-b:before,
 .ion-grid:before,
 .ion-hammer:before,
+.ion-happy:before,
 .ion-headphone:before,
 .ion-heart:before,
+.ion-heart-broken:before,
 .ion-help:before,
 .ion-help-buoy:before,
 .ion-help-circled:before,
@@ -216,6 +231,10 @@ $dark:                            #444 !default;
 .ion-ios7-alarm-outline:before,
 .ion-ios7-albums:before,
 .ion-ios7-albums-outline:before,
+.ion-ios7-americanfootball:before,
+.ion-ios7-americanfootball-outline:before,
+.ion-ios7-analytics:before,
+.ion-ios7-analytics-outline:before,
 .ion-ios7-arrow-back:before,
 .ion-ios7-arrow-down:before,
 .ion-ios7-arrow-forward:before,
@@ -228,6 +247,12 @@ $dark:                            #444 !default;
 .ion-ios7-arrow-up:before,
 .ion-ios7-at:before,
 .ion-ios7-at-outline:before,
+.ion-ios7-barcode:before,
+.ion-ios7-barcode-outline:before,
+.ion-ios7-baseball:before,
+.ion-ios7-baseball-outline:before,
+.ion-ios7-basketball:before,
+.ion-ios7-basketball-outline:before,
 .ion-ios7-bell:before,
 .ion-ios7-bell-outline:before,
 .ion-ios7-bolt:before,
@@ -285,6 +310,7 @@ $dark:                            #444 !default;
 .ion-ios7-drag:before,
 .ion-ios7-email:before,
 .ion-ios7-email-outline:before,
+.ion-ios7-expand:before,
 .ion-ios7-eye:before,
 .ion-ios7-eye-outline:before,
 .ion-ios7-fastforward:before,
@@ -297,6 +323,8 @@ $dark:                            #444 !default;
 .ion-ios7-flag-outline:before,
 .ion-ios7-folder:before,
 .ion-ios7-folder-outline:before,
+.ion-ios7-football:before,
+.ion-ios7-football-outline:before,
 .ion-ios7-gear:before,
 .ion-ios7-gear-outline:before,
 .ion-ios7-glasses:before,
@@ -306,6 +334,8 @@ $dark:                            #444 !default;
 .ion-ios7-help:before,
 .ion-ios7-help-empty:before,
 .ion-ios7-help-outline:before,
+.ion-ios7-home:before,
+.ion-ios7-home-outline:before,
 .ion-ios7-infinite:before,
 .ion-ios7-infinite-outline:before,
 .ion-ios7-information:before,
@@ -320,6 +350,8 @@ $dark:                            #444 !default;
 .ion-ios7-location-outline:before,
 .ion-ios7-locked:before,
 .ion-ios7-locked-outline:before,
+.ion-ios7-loop:before,
+.ion-ios7-loop-strong:before,
 .ion-ios7-medkit:before,
 .ion-ios7-medkit-outline:before,
 .ion-ios7-mic:before,
@@ -338,12 +370,16 @@ $dark:                            #444 !default;
 .ion-ios7-musical-notes:before,
 .ion-ios7-navigate:before,
 .ion-ios7-navigate-outline:before,
+.ion-ios7-paper:before,
+.ion-ios7-paper-outline:before,
 .ion-ios7-paperplane:before,
 .ion-ios7-paperplane-outline:before,
 .ion-ios7-partlysunny:before,
 .ion-ios7-partlysunny-outline:before,
 .ion-ios7-pause:before,
 .ion-ios7-pause-outline:before,
+.ion-ios7-paw:before,
+.ion-ios7-paw-outline:before,
 .ion-ios7-people:before,
 .ion-ios7-people-outline:before,
 .ion-ios7-person:before,
@@ -361,8 +397,12 @@ $dark:                            #444 !default;
 .ion-ios7-plus-outline:before,
 .ion-ios7-pricetag:before,
 .ion-ios7-pricetag-outline:before,
+.ion-ios7-pricetags:before,
+.ion-ios7-pricetags-outline:before,
 .ion-ios7-printer:before,
 .ion-ios7-printer-outline:before,
+.ion-ios7-pulse:before,
+.ion-ios7-pulse-strong:before,
 .ion-ios7-rainy:before,
 .ion-ios7-rainy-outline:before,
 .ion-ios7-recording:before,
@@ -374,10 +414,15 @@ $dark:                            #444 !default;
 .ion-ios7-refresh-outline:before,
 .ion-ios7-reload:before,
 .ion-ios7-reloading:before,
+.ion-ios7-reverse-camera:before,
+.ion-ios7-reverse-camera-outline:before,
 .ion-ios7-rewind:before,
 .ion-ios7-rewind-outline:before,
 .ion-ios7-search:before,
 .ion-ios7-search-strong:before,
+.ion-ios7-settings:before,
+.ion-ios7-settings-strong:before,
+.ion-ios7-shrink:before,
 .ion-ios7-skipbackward:before,
 .ion-ios7-skipbackward-outline:before,
 .ion-ios7-skipforward:before,
@@ -386,6 +431,7 @@ $dark:                            #444 !default;
 .ion-ios7-speedometer:before,
 .ion-ios7-speedometer-outline:before,
 .ion-ios7-star:before,
+.ion-ios7-star-half:before,
 .ion-ios7-star-outline:before,
 .ion-ios7-stopwatch:before,
 .ion-ios7-stopwatch-outline:before,
@@ -393,12 +439,16 @@ $dark:                            #444 !default;
 .ion-ios7-sunny-outline:before,
 .ion-ios7-telephone:before,
 .ion-ios7-telephone-outline:before,
+.ion-ios7-tennisball:before,
+.ion-ios7-tennisball-outline:before,
 .ion-ios7-thunderstorm:before,
 .ion-ios7-thunderstorm-outline:before,
 .ion-ios7-time:before,
 .ion-ios7-time-outline:before,
 .ion-ios7-timer:before,
 .ion-ios7-timer-outline:before,
+.ion-ios7-toggle:before,
+.ion-ios7-toggle-outline:before,
 .ion-ios7-trash:before,
 .ion-ios7-trash-outline:before,
 .ion-ios7-undo:before,
@@ -445,6 +495,7 @@ $dark:                            #444 !default;
 .ion-man:before,
 .ion-map:before,
 .ion-medkit:before,
+.ion-merge:before,
 .ion-mic-a:before,
 .ion-mic-b:before,
 .ion-mic-c:before,
@@ -454,12 +505,15 @@ $dark:                            #444 !default;
 .ion-model-s:before,
 .ion-monitor:before,
 .ion-more:before,
+.ion-mouse:before,
 .ion-music-note:before,
 .ion-navicon:before,
 .ion-navicon-round:before,
 .ion-navigate:before,
+.ion-network:before,
 .ion-no-smoking:before,
 .ion-nuclear:before,
+.ion-outlet:before,
 .ion-paper-airplane:before,
 .ion-paperclip:before,
 .ion-pause:before,
@@ -471,22 +525,31 @@ $dark:                            #444 !default;
 .ion-pinpoint:before,
 .ion-pizza:before,
 .ion-plane:before,
+.ion-planet:before,
 .ion-play:before,
 .ion-playstation:before,
 .ion-plus:before,
 .ion-plus-circled:before,
 .ion-plus-round:before,
+.ion-podium:before,
 .ion-pound:before,
 .ion-power:before,
 .ion-pricetag:before,
 .ion-pricetags:before,
 .ion-printer:before,
+.ion-pull-request:before,
+.ion-qr-scanner:before,
+.ion-quote:before,
 .ion-radio-waves:before,
 .ion-record:before,
 .ion-refresh:before,
 .ion-refreshing:before,
 .ion-reply:before,
 .ion-reply-all:before,
+.ion-ribbon-a:before,
+.ion-ribbon-b:before,
+.ion-sad:before,
+.ion-scissors:before,
 .ion-search:before,
 .ion-settings:before,
 .ion-share:before,
@@ -509,13 +572,19 @@ $dark:                            #444 !default;
 .ion-social-dropbox-outline:before,
 .ion-social-facebook:before,
 .ion-social-facebook-outline:before,
+.ion-social-foursquare:before,
+.ion-social-foursquare-outline:before,
 .ion-social-freebsd-devil:before,
 .ion-social-github:before,
 .ion-social-github-outline:before,
+.ion-social-google:before,
+.ion-social-google-outline:before,
 .ion-social-googleplus:before,
 .ion-social-googleplus-outline:before,
 .ion-social-hackernews:before,
 .ion-social-hackernews-outline:before,
+.ion-social-instagram:before,
+.ion-social-instagram-outline:before,
 .ion-social-linkedin:before,
 .ion-social-linkedin-outline:before,
 .ion-social-pinterest:before,
@@ -531,6 +600,8 @@ $dark:                            #444 !default;
 .ion-social-tux:before,
 .ion-social-twitter:before,
 .ion-social-twitter-outline:before,
+.ion-social-usd:before,
+.ion-social-usd-outline:before,
 .ion-social-vimeo:before,
 .ion-social-vimeo-outline:before,
 .ion-social-windows:before,
@@ -551,9 +622,13 @@ $dark:                            #444 !default;
 .ion-thermometer:before,
 .ion-thumbsdown:before,
 .ion-thumbsup:before,
+.ion-toggle:before,
+.ion-toggle-filled:before,
 .ion-trash-a:before,
 .ion-trash-b:before,
+.ion-trophy:before,
 .ion-umbrella:before,
+.ion-university:before,
 .ion-unlocked:before,
 .ion-upload:before,
 .ion-usb:before,
@@ -562,6 +637,7 @@ $dark:                            #444 !default;
 .ion-volume-low:before,
 .ion-volume-medium:before,
 .ion-volume-mute:before,
+.ion-wand:before,
 .ion-waterdrop:before,
 .ion-wifi:before,
 .ion-wineglass:before,
@@ -581,7 +657,7 @@ $dark:                            #444 !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 4, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+/* line 4, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
 .ion-spin, .ion-loading-a,
 .ion-loading-b,
 .ion-loading-c,
@@ -596,2693 +672,3073 @@ $dark:                            #444 !default;
 }
 
 @-moz-keyframes spin {
-  /* line 12, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 12, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 13, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 13, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -moz-transform: rotate(359deg);
   }
 }
 
 @-webkit-keyframes spin {
-  /* line 16, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 16, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 17, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 17, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
 
 @-o-keyframes spin {
-  /* line 20, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 20, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -o-transform: rotate(0deg);
   }
 
-  /* line 21, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 21, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -o-transform: rotate(359deg);
   }
 }
 
 @-ms-keyframes spin {
-  /* line 24, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 24, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -ms-transform: rotate(0deg);
   }
 
-  /* line 25, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 25, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
 
 @keyframes spin {
-  /* line 28, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 28, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 29, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+  /* line 29, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     transform: rotate(359deg);
   }
 }
 
-/* line 44, ../lib/ionic/scss/ionicons/_ionicons-animation.scss */
+/* line 44, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
 .ion-loading-a {
   -webkit-animation-timing-function: steps(8, start);
   -moz-animation-timing-function: steps(8, start);
   animation-timing-function: steps(8, start);
 }
 
-/* line 533, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 609, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-alert:before {
   content: "\f101";
 }
 
-/* line 534, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 610, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-alert-circled:before {
   content: "\f100";
 }
 
-/* line 535, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 611, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-add:before {
   content: "\f2c7";
 }
 
-/* line 536, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 612, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-add-contact:before {
   content: "\f2c6";
 }
 
-/* line 537, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 613, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-alarm:before {
   content: "\f2c8";
 }
 
-/* line 538, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 614, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-archive:before {
   content: "\f2c9";
 }
 
-/* line 539, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 615, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-back:before {
   content: "\f2ca";
 }
 
-/* line 540, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 616, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-down-left:before {
   content: "\f2cb";
 }
 
-/* line 541, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 617, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-down-right:before {
   content: "\f2cc";
 }
 
-/* line 542, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 618, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-android-arrow-forward:before {
+  content: "\f30f";
+}
+
+/* line 619, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-up-left:before {
   content: "\f2cd";
 }
 
-/* line 543, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 620, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-up-right:before {
   content: "\f2ce";
 }
 
-/* line 544, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 621, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-battery:before {
   content: "\f2cf";
 }
 
-/* line 545, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 622, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-book:before {
   content: "\f2d0";
 }
 
-/* line 546, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 623, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-calendar:before {
   content: "\f2d1";
 }
 
-/* line 547, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 624, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-call:before {
   content: "\f2d2";
 }
 
-/* line 548, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 625, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-camera:before {
   content: "\f2d3";
 }
 
-/* line 549, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 626, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-chat:before {
   content: "\f2d4";
 }
 
-/* line 550, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 627, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-checkmark:before {
   content: "\f2d5";
 }
 
-/* line 551, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 628, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-clock:before {
   content: "\f2d6";
 }
 
-/* line 552, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 629, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-close:before {
   content: "\f2d7";
 }
 
-/* line 553, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 630, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-contact:before {
   content: "\f2d8";
 }
 
-/* line 554, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 631, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-contacts:before {
   content: "\f2d9";
 }
 
-/* line 555, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 632, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-data:before {
   content: "\f2da";
 }
 
-/* line 556, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 633, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-developer:before {
   content: "\f2db";
 }
 
-/* line 557, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 634, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-display:before {
   content: "\f2dc";
 }
 
-/* line 558, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 635, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-download:before {
   content: "\f2dd";
 }
 
-/* line 559, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 636, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-android-drawer:before {
+  content: "\f310";
+}
+
+/* line 637, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-dropdown:before {
   content: "\f2de";
 }
 
-/* line 560, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 638, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-earth:before {
   content: "\f2df";
 }
 
-/* line 561, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 639, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-folder:before {
   content: "\f2e0";
 }
 
-/* line 562, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 640, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-forums:before {
   content: "\f2e1";
 }
 
-/* line 563, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 641, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-friends:before {
   content: "\f2e2";
 }
 
-/* line 564, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 642, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-hand:before {
   content: "\f2e3";
 }
 
-/* line 565, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 643, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-image:before {
   content: "\f2e4";
 }
 
-/* line 566, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 644, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-inbox:before {
   content: "\f2e5";
 }
 
-/* line 567, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 645, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-information:before {
   content: "\f2e6";
 }
 
-/* line 568, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 646, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-keypad:before {
   content: "\f2e7";
 }
 
-/* line 569, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 647, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-lightbulb:before {
   content: "\f2e8";
 }
 
-/* line 570, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 648, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-locate:before {
   content: "\f2e9";
 }
 
-/* line 571, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 649, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-location:before {
   content: "\f2ea";
 }
 
-/* line 572, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 650, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-mail:before {
   content: "\f2eb";
 }
 
-/* line 573, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 651, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-microphone:before {
   content: "\f2ec";
 }
 
-/* line 574, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 652, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-mixer:before {
   content: "\f2ed";
 }
 
-/* line 575, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 653, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-more:before {
   content: "\f2ee";
 }
 
-/* line 576, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 654, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-note:before {
   content: "\f2ef";
 }
 
-/* line 577, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 655, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-playstore:before {
   content: "\f2f0";
 }
 
-/* line 578, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 656, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-printer:before {
   content: "\f2f1";
 }
 
-/* line 579, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 657, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-promotion:before {
   content: "\f2f2";
 }
 
-/* line 580, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 658, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-reminder:before {
   content: "\f2f3";
 }
 
-/* line 581, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 659, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-remove:before {
   content: "\f2f4";
 }
 
-/* line 582, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 660, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-search:before {
   content: "\f2f5";
 }
 
-/* line 583, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 661, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-send:before {
   content: "\f2f6";
 }
 
-/* line 584, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 662, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-settings:before {
   content: "\f2f7";
 }
 
-/* line 585, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 663, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-share:before {
   content: "\f2f8";
 }
 
-/* line 586, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 664, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-social:before {
   content: "\f2fa";
 }
 
-/* line 587, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 665, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-social-user:before {
   content: "\f2f9";
 }
 
-/* line 588, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 666, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-sort:before {
   content: "\f2fb";
 }
 
-/* line 589, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 667, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-android-stair-drawer:before {
+  content: "\f311";
+}
+
+/* line 668, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-star:before {
   content: "\f2fc";
 }
 
-/* line 590, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 669, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-stopwatch:before {
   content: "\f2fd";
 }
 
-/* line 591, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 670, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-storage:before {
   content: "\f2fe";
 }
 
-/* line 592, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 671, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-back:before {
   content: "\f2ff";
 }
 
-/* line 593, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 672, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-home:before {
   content: "\f300";
 }
 
-/* line 594, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 673, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-windows:before {
   content: "\f301";
 }
 
-/* line 595, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 674, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-timer:before {
   content: "\f302";
 }
 
-/* line 596, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 675, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-trash:before {
   content: "\f303";
 }
 
-/* line 597, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 676, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-android-user-menu:before {
+  content: "\f312";
+}
+
+/* line 677, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-volume:before {
   content: "\f304";
 }
 
-/* line 598, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 678, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-wifi:before {
   content: "\f305";
 }
 
-/* line 599, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 679, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-aperture:before {
+  content: "\f313";
+}
+
+/* line 680, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-archive:before {
   content: "\f102";
 }
 
-/* line 600, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 681, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-a:before {
   content: "\f103";
 }
 
-/* line 601, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 682, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-b:before {
   content: "\f104";
 }
 
-/* line 602, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 683, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-c:before {
   content: "\f105";
 }
 
-/* line 603, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 684, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-expand:before {
   content: "\f25e";
 }
 
-/* line 604, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 685, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-down-left:before {
   content: "\f25f";
 }
 
-/* line 605, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 686, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-down-right:before {
   content: "\f260";
 }
 
-/* line 606, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 687, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-up-left:before {
   content: "\f261";
 }
 
-/* line 607, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 688, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-up-right:before {
   content: "\f262";
 }
 
-/* line 608, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 689, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-a:before {
   content: "\f106";
 }
 
-/* line 609, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 690, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-b:before {
   content: "\f107";
 }
 
-/* line 610, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 691, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-c:before {
   content: "\f108";
 }
 
-/* line 611, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 692, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-move:before {
   content: "\f263";
 }
 
-/* line 612, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 693, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-resize:before {
   content: "\f264";
 }
 
-/* line 613, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 694, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-return-left:before {
   content: "\f265";
 }
 
-/* line 614, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 695, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-return-right:before {
   content: "\f266";
 }
 
-/* line 615, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 696, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-a:before {
   content: "\f109";
 }
 
-/* line 616, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 697, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-b:before {
   content: "\f10a";
 }
 
-/* line 617, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 698, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-c:before {
   content: "\f10b";
 }
 
-/* line 618, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 699, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-shrink:before {
   content: "\f267";
 }
 
-/* line 619, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 700, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-swap:before {
   content: "\f268";
 }
 
-/* line 620, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 701, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-a:before {
   content: "\f10c";
 }
 
-/* line 621, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 702, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-b:before {
   content: "\f10d";
 }
 
-/* line 622, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 703, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-c:before {
   content: "\f10e";
 }
 
-/* line 623, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 704, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-asterisk:before {
+  content: "\f314";
+}
+
+/* line 705, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-at:before {
   content: "\f10f";
 }
 
-/* line 624, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 706, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bag:before {
   content: "\f110";
 }
 
-/* line 625, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 707, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-charging:before {
   content: "\f111";
 }
 
-/* line 626, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 708, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-empty:before {
   content: "\f112";
 }
 
-/* line 627, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 709, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-full:before {
   content: "\f113";
 }
 
-/* line 628, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 710, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-half:before {
   content: "\f114";
 }
 
-/* line 629, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 711, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-low:before {
   content: "\f115";
 }
 
-/* line 630, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 712, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-beaker:before {
   content: "\f269";
 }
 
-/* line 631, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 713, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-beer:before {
   content: "\f26a";
 }
 
-/* line 632, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 714, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bluetooth:before {
   content: "\f116";
 }
 
-/* line 633, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 715, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-bonfire:before {
+  content: "\f315";
+}
+
+/* line 716, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bookmark:before {
   content: "\f26b";
 }
 
-/* line 634, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 717, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-briefcase:before {
   content: "\f26c";
 }
 
-/* line 635, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 718, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bug:before {
   content: "\f2be";
 }
 
-/* line 636, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 719, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-calculator:before {
   content: "\f26d";
 }
 
-/* line 637, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 720, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-calendar:before {
   content: "\f117";
 }
 
-/* line 638, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 721, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-camera:before {
   content: "\f118";
 }
 
-/* line 639, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 722, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-card:before {
   content: "\f119";
 }
 
-/* line 640, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 723, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-cash:before {
+  content: "\f316";
+}
+
+/* line 724, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbox:before {
   content: "\f11b";
 }
 
-/* line 641, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 725, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbox-working:before {
   content: "\f11a";
 }
 
-/* line 642, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 726, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatboxes:before {
   content: "\f11c";
 }
 
-/* line 643, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 727, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubble:before {
   content: "\f11e";
 }
 
-/* line 644, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 728, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubble-working:before {
   content: "\f11d";
 }
 
-/* line 645, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 729, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubbles:before {
   content: "\f11f";
 }
 
-/* line 646, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 730, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark:before {
   content: "\f122";
 }
 
-/* line 647, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 731, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark-circled:before {
   content: "\f120";
 }
 
-/* line 648, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 732, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark-round:before {
   content: "\f121";
 }
 
-/* line 649, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 733, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-down:before {
   content: "\f123";
 }
 
-/* line 650, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 734, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-left:before {
   content: "\f124";
 }
 
-/* line 651, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 735, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-right:before {
   content: "\f125";
 }
 
-/* line 652, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 736, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-up:before {
   content: "\f126";
 }
 
-/* line 653, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 737, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-clipboard:before {
   content: "\f127";
 }
 
-/* line 654, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 738, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-clock:before {
   content: "\f26e";
 }
 
-/* line 655, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 739, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close:before {
   content: "\f12a";
 }
 
-/* line 656, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 740, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close-circled:before {
   content: "\f128";
 }
 
-/* line 657, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 741, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close-round:before {
   content: "\f129";
 }
 
-/* line 658, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 742, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-closed-captioning:before {
+  content: "\f317";
+}
+
+/* line 743, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-cloud:before {
   content: "\f12b";
 }
 
-/* line 659, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 744, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code:before {
   content: "\f271";
 }
 
-/* line 660, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 745, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code-download:before {
   content: "\f26f";
 }
 
-/* line 661, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 746, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code-working:before {
   content: "\f270";
 }
 
-/* line 662, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 747, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-coffee:before {
   content: "\f272";
 }
 
-/* line 663, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 748, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-compass:before {
   content: "\f273";
 }
 
-/* line 664, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 749, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-compose:before {
   content: "\f12c";
 }
 
-/* line 665, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 750, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-connection-bars:before {
   content: "\f274";
 }
 
-/* line 666, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 751, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-contrast:before {
   content: "\f275";
 }
 
-/* line 667, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 752, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-cube:before {
+  content: "\f318";
+}
+
+/* line 753, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-disc:before {
   content: "\f12d";
 }
 
-/* line 668, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 754, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-document:before {
   content: "\f12f";
 }
 
-/* line 669, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 755, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-document-text:before {
   content: "\f12e";
 }
 
-/* line 670, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 756, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-drag:before {
   content: "\f130";
 }
 
-/* line 671, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 757, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-earth:before {
   content: "\f276";
 }
 
-/* line 672, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 758, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-edit:before {
   content: "\f2bf";
 }
 
-/* line 673, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 759, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-egg:before {
   content: "\f277";
 }
 
-/* line 674, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 760, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eject:before {
   content: "\f131";
 }
 
-/* line 675, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 761, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-email:before {
   content: "\f132";
 }
 
-/* line 676, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 762, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eye:before {
   content: "\f133";
 }
 
-/* line 677, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 763, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eye-disabled:before {
   content: "\f306";
 }
 
-/* line 678, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 764, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-female:before {
   content: "\f278";
 }
 
-/* line 679, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 765, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-filing:before {
   content: "\f134";
 }
 
-/* line 680, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 766, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-film-marker:before {
   content: "\f135";
 }
 
-/* line 681, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 767, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-fireball:before {
+  content: "\f319";
+}
+
+/* line 768, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flag:before {
   content: "\f279";
 }
 
-/* line 682, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 769, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-flame:before {
+  content: "\f31a";
+}
+
+/* line 770, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flash:before {
   content: "\f137";
 }
 
-/* line 683, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 771, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flash-off:before {
   content: "\f136";
 }
 
-/* line 684, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 772, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flask:before {
   content: "\f138";
 }
 
-/* line 685, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 773, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-folder:before {
   content: "\f139";
 }
 
-/* line 686, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 774, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-fork:before {
   content: "\f27a";
 }
 
-/* line 687, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 775, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-fork-repo:before {
   content: "\f2c0";
 }
 
-/* line 688, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 776, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-forward:before {
   content: "\f13a";
 }
 
-/* line 689, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 777, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-funnel:before {
+  content: "\f31b";
+}
+
+/* line 778, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-game-controller-a:before {
   content: "\f13b";
 }
 
-/* line 690, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 779, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-game-controller-b:before {
   content: "\f13c";
 }
 
-/* line 691, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 780, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-gear-a:before {
   content: "\f13d";
 }
 
-/* line 692, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 781, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-gear-b:before {
   content: "\f13e";
 }
 
-/* line 693, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 782, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-grid:before {
   content: "\f13f";
 }
 
-/* line 694, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 783, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-hammer:before {
   content: "\f27b";
 }
 
-/* line 695, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 784, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-happy:before {
+  content: "\f31c";
+}
+
+/* line 785, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-headphone:before {
   content: "\f140";
 }
 
-/* line 696, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 786, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-heart:before {
   content: "\f141";
 }
 
-/* line 697, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 787, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-heart-broken:before {
+  content: "\f31d";
+}
+
+/* line 788, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help:before {
   content: "\f143";
 }
 
-/* line 698, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 789, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help-buoy:before {
   content: "\f27c";
 }
 
-/* line 699, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 790, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help-circled:before {
   content: "\f142";
 }
 
-/* line 700, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 791, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-home:before {
   content: "\f144";
 }
 
-/* line 701, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 792, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icecream:before {
   content: "\f27d";
 }
 
-/* line 702, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 793, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icon-social-google-plus:before {
   content: "\f146";
 }
 
-/* line 703, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 794, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icon-social-google-plus-outline:before {
   content: "\f145";
 }
 
-/* line 704, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 795, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-image:before {
   content: "\f147";
 }
 
-/* line 705, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 796, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-images:before {
   content: "\f148";
 }
 
-/* line 706, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 797, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-information:before {
   content: "\f14a";
 }
 
-/* line 707, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 798, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-information-circled:before {
   content: "\f149";
 }
 
-/* line 708, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 799, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ionic:before {
   content: "\f14b";
 }
 
-/* line 709, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 800, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-alarm:before {
   content: "\f14d";
 }
 
-/* line 710, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 801, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-alarm-outline:before {
   content: "\f14c";
 }
 
-/* line 711, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 802, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-albums:before {
   content: "\f14f";
 }
 
-/* line 712, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 803, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-albums-outline:before {
   content: "\f14e";
 }
 
-/* line 713, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 804, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-americanfootball:before {
+  content: "\f31f";
+}
+
+/* line 805, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-americanfootball-outline:before {
+  content: "\f31e";
+}
+
+/* line 806, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-analytics:before {
+  content: "\f321";
+}
+
+/* line 807, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-analytics-outline:before {
+  content: "\f320";
+}
+
+/* line 808, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-back:before {
   content: "\f150";
 }
 
-/* line 714, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 809, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-down:before {
   content: "\f151";
 }
 
-/* line 715, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 810, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-forward:before {
   content: "\f152";
 }
 
-/* line 716, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 811, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-left:before {
   content: "\f153";
 }
 
-/* line 717, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 812, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-right:before {
   content: "\f154";
 }
 
-/* line 718, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 813, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-down:before {
   content: "\f27e";
 }
 
-/* line 719, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 814, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-left:before {
   content: "\f27f";
 }
 
-/* line 720, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 815, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-right:before {
   content: "\f280";
 }
 
-/* line 721, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 816, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-up:before {
   content: "\f281";
 }
 
-/* line 722, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 817, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-up:before {
   content: "\f155";
 }
 
-/* line 723, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 818, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-at:before {
   content: "\f157";
 }
 
-/* line 724, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 819, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-at-outline:before {
   content: "\f156";
 }
 
-/* line 725, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 820, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-barcode:before {
+  content: "\f323";
+}
+
+/* line 821, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-barcode-outline:before {
+  content: "\f322";
+}
+
+/* line 822, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-baseball:before {
+  content: "\f325";
+}
+
+/* line 823, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-baseball-outline:before {
+  content: "\f324";
+}
+
+/* line 824, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-basketball:before {
+  content: "\f327";
+}
+
+/* line 825, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-basketball-outline:before {
+  content: "\f326";
+}
+
+/* line 826, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bell:before {
   content: "\f159";
 }
 
-/* line 726, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 827, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bell-outline:before {
   content: "\f158";
 }
 
-/* line 727, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 828, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bolt:before {
   content: "\f15b";
 }
 
-/* line 728, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 829, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bolt-outline:before {
   content: "\f15a";
 }
 
-/* line 729, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 830, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bookmarks:before {
   content: "\f15d";
 }
 
-/* line 730, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 831, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bookmarks-outline:before {
   content: "\f15c";
 }
 
-/* line 731, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 832, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-box:before {
   content: "\f15f";
 }
 
-/* line 732, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 833, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-box-outline:before {
   content: "\f15e";
 }
 
-/* line 733, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 834, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-briefcase:before {
   content: "\f283";
 }
 
-/* line 734, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 835, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-briefcase-outline:before {
   content: "\f282";
 }
 
-/* line 735, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 836, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-browsers:before {
   content: "\f161";
 }
 
-/* line 736, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 837, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-browsers-outline:before {
   content: "\f160";
 }
 
-/* line 737, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 838, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calculator:before {
   content: "\f285";
 }
 
-/* line 738, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 839, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calculator-outline:before {
   content: "\f284";
 }
 
-/* line 739, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 840, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calendar:before {
   content: "\f163";
 }
 
-/* line 740, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 841, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calendar-outline:before {
   content: "\f162";
 }
 
-/* line 741, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 842, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-camera:before {
   content: "\f165";
 }
 
-/* line 742, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 843, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-camera-outline:before {
   content: "\f164";
 }
 
-/* line 743, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 844, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cart:before {
   content: "\f167";
 }
 
-/* line 744, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 845, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cart-outline:before {
   content: "\f166";
 }
 
-/* line 745, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 846, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatboxes:before {
   content: "\f169";
 }
 
-/* line 746, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 847, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatboxes-outline:before {
   content: "\f168";
 }
 
-/* line 747, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 848, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatbubble:before {
   content: "\f16b";
 }
 
-/* line 748, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 849, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatbubble-outline:before {
   content: "\f16a";
 }
 
-/* line 749, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 850, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark:before {
   content: "\f16e";
 }
 
-/* line 750, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 851, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark-empty:before {
   content: "\f16c";
 }
 
-/* line 751, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 852, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark-outline:before {
   content: "\f16d";
 }
 
-/* line 752, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 853, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-circle-filled:before {
   content: "\f16f";
 }
 
-/* line 753, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 854, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-circle-outline:before {
   content: "\f170";
 }
 
-/* line 754, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 855, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-clock:before {
   content: "\f172";
 }
 
-/* line 755, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 856, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-clock-outline:before {
   content: "\f171";
 }
 
-/* line 756, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 857, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close:before {
   content: "\f2bc";
 }
 
-/* line 757, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 858, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close-empty:before {
   content: "\f2bd";
 }
 
-/* line 758, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 859, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close-outline:before {
   content: "\f2bb";
 }
 
-/* line 759, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 860, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud:before {
   content: "\f178";
 }
 
-/* line 760, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 861, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-download:before {
   content: "\f174";
 }
 
-/* line 761, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 862, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-download-outline:before {
   content: "\f173";
 }
 
-/* line 762, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 863, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-outline:before {
   content: "\f175";
 }
 
-/* line 763, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 864, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-upload:before {
   content: "\f177";
 }
 
-/* line 764, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 865, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-upload-outline:before {
   content: "\f176";
 }
 
-/* line 765, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 866, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy:before {
   content: "\f17a";
 }
 
-/* line 766, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 867, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-night:before {
   content: "\f308";
 }
 
-/* line 767, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 868, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-night-outline:before {
   content: "\f307";
 }
 
-/* line 768, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 869, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-outline:before {
   content: "\f179";
 }
 
-/* line 769, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 870, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cog:before {
   content: "\f17c";
 }
 
-/* line 770, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 871, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cog-outline:before {
   content: "\f17b";
 }
 
-/* line 771, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 872, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-compose:before {
   content: "\f17e";
 }
 
-/* line 772, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 873, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-compose-outline:before {
   content: "\f17d";
 }
 
-/* line 773, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 874, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-contact:before {
   content: "\f180";
 }
 
-/* line 774, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 875, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-contact-outline:before {
   content: "\f17f";
 }
 
-/* line 775, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 876, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-copy:before {
   content: "\f182";
 }
 
-/* line 776, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 877, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-copy-outline:before {
   content: "\f181";
 }
 
-/* line 777, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 878, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-download:before {
   content: "\f184";
 }
 
-/* line 778, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 879, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-download-outline:before {
   content: "\f183";
 }
 
-/* line 779, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 880, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-drag:before {
   content: "\f185";
 }
 
-/* line 780, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 881, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-email:before {
   content: "\f187";
 }
 
-/* line 781, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 882, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-email-outline:before {
   content: "\f186";
 }
 
-/* line 782, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 883, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-expand:before {
+  content: "\f30d";
+}
+
+/* line 884, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-eye:before {
   content: "\f189";
 }
 
-/* line 783, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 885, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-eye-outline:before {
   content: "\f188";
 }
 
-/* line 784, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 886, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-fastforward:before {
   content: "\f18b";
 }
 
-/* line 785, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 887, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-fastforward-outline:before {
   content: "\f18a";
 }
 
-/* line 786, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 888, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-filing:before {
   content: "\f18d";
 }
 
-/* line 787, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 889, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-filing-outline:before {
   content: "\f18c";
 }
 
-/* line 788, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 890, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-film:before {
   content: "\f18f";
 }
 
-/* line 789, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 891, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-film-outline:before {
   content: "\f18e";
 }
 
-/* line 790, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 892, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-flag:before {
   content: "\f191";
 }
 
-/* line 791, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 893, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-flag-outline:before {
   content: "\f190";
 }
 
-/* line 792, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 894, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-folder:before {
   content: "\f193";
 }
 
-/* line 793, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 895, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-folder-outline:before {
   content: "\f192";
 }
 
-/* line 794, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 896, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-football:before {
+  content: "\f329";
+}
+
+/* line 897, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-football-outline:before {
+  content: "\f328";
+}
+
+/* line 898, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-gear:before {
   content: "\f195";
 }
 
-/* line 795, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 899, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-gear-outline:before {
   content: "\f194";
 }
 
-/* line 796, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 900, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-glasses:before {
   content: "\f197";
 }
 
-/* line 797, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 901, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-glasses-outline:before {
   content: "\f196";
 }
 
-/* line 798, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 902, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-heart:before {
   content: "\f199";
 }
 
-/* line 799, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 903, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-heart-outline:before {
   content: "\f198";
 }
 
-/* line 800, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 904, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help:before {
   content: "\f19c";
 }
 
-/* line 801, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 905, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help-empty:before {
   content: "\f19a";
 }
 
-/* line 802, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 906, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help-outline:before {
   content: "\f19b";
 }
 
-/* line 803, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 907, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-home:before {
+  content: "\f32b";
+}
+
+/* line 908, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-home-outline:before {
+  content: "\f32a";
+}
+
+/* line 909, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-infinite:before {
   content: "\f19e";
 }
 
-/* line 804, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 910, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-infinite-outline:before {
   content: "\f19d";
 }
 
-/* line 805, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 911, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information:before {
   content: "\f1a1";
 }
 
-/* line 806, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 912, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information-empty:before {
   content: "\f19f";
 }
 
-/* line 807, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 913, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information-outline:before {
   content: "\f1a0";
 }
 
-/* line 808, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 914, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-ionic-outline:before {
   content: "\f1a2";
 }
 
-/* line 809, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 915, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-keypad:before {
   content: "\f1a4";
 }
 
-/* line 810, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 916, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-keypad-outline:before {
   content: "\f1a3";
 }
 
-/* line 811, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 917, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-lightbulb:before {
   content: "\f287";
 }
 
-/* line 812, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 918, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-lightbulb-outline:before {
   content: "\f286";
 }
 
-/* line 813, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 919, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-location:before {
   content: "\f1a6";
 }
 
-/* line 814, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 920, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-location-outline:before {
   content: "\f1a5";
 }
 
-/* line 815, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 921, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-locked:before {
   content: "\f1a8";
 }
 
-/* line 816, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 922, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-locked-outline:before {
   content: "\f1a7";
 }
 
-/* line 817, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 923, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-loop:before {
+  content: "\f32d";
+}
+
+/* line 924, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-loop-strong:before {
+  content: "\f32c";
+}
+
+/* line 925, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-medkit:before {
   content: "\f289";
 }
 
-/* line 818, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 926, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-medkit-outline:before {
   content: "\f288";
 }
 
-/* line 819, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 927, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic:before {
   content: "\f1ab";
 }
 
-/* line 820, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 928, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic-off:before {
   content: "\f1a9";
 }
 
-/* line 821, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 929, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic-outline:before {
   content: "\f1aa";
 }
 
-/* line 822, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 930, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus:before {
   content: "\f1ae";
 }
 
-/* line 823, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 931, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus-empty:before {
   content: "\f1ac";
 }
 
-/* line 824, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 932, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus-outline:before {
   content: "\f1ad";
 }
 
-/* line 825, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 933, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-monitor:before {
   content: "\f1b0";
 }
 
-/* line 826, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 934, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-monitor-outline:before {
   content: "\f1af";
 }
 
-/* line 827, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 935, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-moon:before {
   content: "\f1b2";
 }
 
-/* line 828, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 936, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-moon-outline:before {
   content: "\f1b1";
 }
 
-/* line 829, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 937, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-more:before {
   content: "\f1b4";
 }
 
-/* line 830, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 938, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-more-outline:before {
   content: "\f1b3";
 }
 
-/* line 831, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 939, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-musical-note:before {
   content: "\f1b5";
 }
 
-/* line 832, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 940, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-musical-notes:before {
   content: "\f1b6";
 }
 
-/* line 833, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 941, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-navigate:before {
   content: "\f1b8";
 }
 
-/* line 834, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 942, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-navigate-outline:before {
   content: "\f1b7";
 }
 
-/* line 835, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 943, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-paper:before {
+  content: "\f32f";
+}
+
+/* line 944, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-paper-outline:before {
+  content: "\f32e";
+}
+
+/* line 945, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paperplane:before {
   content: "\f1ba";
 }
 
-/* line 836, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 946, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paperplane-outline:before {
   content: "\f1b9";
 }
 
-/* line 837, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 947, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-partlysunny:before {
   content: "\f1bc";
 }
 
-/* line 838, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 948, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-partlysunny-outline:before {
   content: "\f1bb";
 }
 
-/* line 839, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 949, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pause:before {
   content: "\f1be";
 }
 
-/* line 840, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 950, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pause-outline:before {
   content: "\f1bd";
 }
 
-/* line 841, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 951, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-paw:before {
+  content: "\f331";
+}
+
+/* line 952, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-paw-outline:before {
+  content: "\f330";
+}
+
+/* line 953, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-people:before {
   content: "\f1c0";
 }
 
-/* line 842, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 954, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-people-outline:before {
   content: "\f1bf";
 }
 
-/* line 843, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 955, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-person:before {
   content: "\f1c2";
 }
 
-/* line 844, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 956, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-person-outline:before {
   content: "\f1c1";
 }
 
-/* line 845, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 957, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-personadd:before {
   content: "\f1c4";
 }
 
-/* line 846, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 958, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-personadd-outline:before {
   content: "\f1c3";
 }
 
-/* line 847, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 959, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-photos:before {
   content: "\f1c6";
 }
 
-/* line 848, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 960, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-photos-outline:before {
   content: "\f1c5";
 }
 
-/* line 849, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 961, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pie:before {
   content: "\f28b";
 }
 
-/* line 850, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 962, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pie-outline:before {
   content: "\f28a";
 }
 
-/* line 851, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 963, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-play:before {
   content: "\f1c8";
 }
 
-/* line 852, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 964, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-play-outline:before {
   content: "\f1c7";
 }
 
-/* line 853, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 965, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus:before {
   content: "\f1cb";
 }
 
-/* line 854, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 966, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus-empty:before {
   content: "\f1c9";
 }
 
-/* line 855, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 967, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus-outline:before {
   content: "\f1ca";
 }
 
-/* line 856, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 968, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetag:before {
   content: "\f28d";
 }
 
-/* line 857, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 969, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetag-outline:before {
   content: "\f28c";
 }
 
-/* line 858, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 970, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-pricetags:before {
+  content: "\f333";
+}
+
+/* line 971, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-pricetags-outline:before {
+  content: "\f332";
+}
+
+/* line 972, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-printer:before {
   content: "\f1cd";
 }
 
-/* line 859, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 973, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-printer-outline:before {
   content: "\f1cc";
 }
 
-/* line 860, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 974, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-pulse:before {
+  content: "\f335";
+}
+
+/* line 975, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-pulse-strong:before {
+  content: "\f334";
+}
+
+/* line 976, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rainy:before {
   content: "\f1cf";
 }
 
-/* line 861, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 977, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rainy-outline:before {
   content: "\f1ce";
 }
 
-/* line 862, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 978, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-recording:before {
   content: "\f1d1";
 }
 
-/* line 863, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 979, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-recording-outline:before {
   content: "\f1d0";
 }
 
-/* line 864, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 980, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-redo:before {
   content: "\f1d3";
 }
 
-/* line 865, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 981, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-redo-outline:before {
   content: "\f1d2";
 }
 
-/* line 866, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 982, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh:before {
   content: "\f1d6";
 }
 
-/* line 867, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 983, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh-empty:before {
   content: "\f1d4";
 }
 
-/* line 868, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 984, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh-outline:before {
   content: "\f1d5";
 }
 
-/* line 869, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 985, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-reload:before, .ion-ios7-reloading:before {
   content: "\f28e";
 }
 
-/* line 870, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 986, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-reverse-camera:before {
+  content: "\f337";
+}
+
+/* line 987, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-reverse-camera-outline:before {
+  content: "\f336";
+}
+
+/* line 988, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rewind:before {
   content: "\f1d8";
 }
 
-/* line 871, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 989, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rewind-outline:before {
   content: "\f1d7";
 }
 
-/* line 872, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 990, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-search:before {
   content: "\f1da";
 }
 
-/* line 873, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 991, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-search-strong:before {
   content: "\f1d9";
 }
 
-/* line 874, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 992, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-settings:before {
+  content: "\f339";
+}
+
+/* line 993, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-settings-strong:before {
+  content: "\f338";
+}
+
+/* line 994, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-shrink:before {
+  content: "\f30e";
+}
+
+/* line 995, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipbackward:before {
   content: "\f1dc";
 }
 
-/* line 875, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 996, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipbackward-outline:before {
   content: "\f1db";
 }
 
-/* line 876, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 997, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipforward:before {
   content: "\f1de";
 }
 
-/* line 877, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 998, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipforward-outline:before {
   content: "\f1dd";
 }
 
-/* line 878, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 999, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-snowy:before {
   content: "\f309";
 }
 
-/* line 879, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1000, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-speedometer:before {
   content: "\f290";
 }
 
-/* line 880, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1001, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-speedometer-outline:before {
   content: "\f28f";
 }
 
-/* line 881, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1002, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-star:before {
   content: "\f1e0";
 }
 
-/* line 882, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1003, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-star-half:before {
+  content: "\f33a";
+}
+
+/* line 1004, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-star-outline:before {
   content: "\f1df";
 }
 
-/* line 883, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1005, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-stopwatch:before {
   content: "\f1e2";
 }
 
-/* line 884, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1006, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-stopwatch-outline:before {
   content: "\f1e1";
 }
 
-/* line 885, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1007, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-sunny:before {
   content: "\f1e4";
 }
 
-/* line 886, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1008, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-sunny-outline:before {
   content: "\f1e3";
 }
 
-/* line 887, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1009, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-telephone:before {
   content: "\f1e6";
 }
 
-/* line 888, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1010, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-telephone-outline:before {
   content: "\f1e5";
 }
 
-/* line 889, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1011, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-tennisball:before {
+  content: "\f33c";
+}
+
+/* line 1012, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-tennisball-outline:before {
+  content: "\f33b";
+}
+
+/* line 1013, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-thunderstorm:before {
   content: "\f1e8";
 }
 
-/* line 890, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1014, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-thunderstorm-outline:before {
   content: "\f1e7";
 }
 
-/* line 891, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1015, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-time:before {
   content: "\f292";
 }
 
-/* line 892, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1016, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-time-outline:before {
   content: "\f291";
 }
 
-/* line 893, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1017, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-timer:before {
   content: "\f1ea";
 }
 
-/* line 894, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1018, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-timer-outline:before {
   content: "\f1e9";
 }
 
-/* line 895, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1019, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-toggle:before {
+  content: "\f33e";
+}
+
+/* line 1020, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ios7-toggle-outline:before {
+  content: "\f33d";
+}
+
+/* line 1021, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-trash:before {
   content: "\f1ec";
 }
 
-/* line 896, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1022, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-trash-outline:before {
   content: "\f1eb";
 }
 
-/* line 897, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1023, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-undo:before {
   content: "\f1ee";
 }
 
-/* line 898, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1024, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-undo-outline:before {
   content: "\f1ed";
 }
 
-/* line 899, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1025, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-unlocked:before {
   content: "\f1f0";
 }
 
-/* line 900, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1026, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-unlocked-outline:before {
   content: "\f1ef";
 }
 
-/* line 901, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1027, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-upload:before {
   content: "\f1f2";
 }
 
-/* line 902, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1028, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-upload-outline:before {
   content: "\f1f1";
 }
 
-/* line 903, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1029, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-videocam:before {
   content: "\f1f4";
 }
 
-/* line 904, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1030, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-videocam-outline:before {
   content: "\f1f3";
 }
 
-/* line 905, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1031, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-volume-high:before {
   content: "\f1f5";
 }
 
-/* line 906, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1032, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-volume-low:before {
   content: "\f1f6";
 }
 
-/* line 907, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1033, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-wineglass:before {
   content: "\f294";
 }
 
-/* line 908, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1034, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-wineglass-outline:before {
   content: "\f293";
 }
 
-/* line 909, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1035, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-world:before {
   content: "\f1f8";
 }
 
-/* line 910, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1036, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-world-outline:before {
   content: "\f1f7";
 }
 
-/* line 911, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1037, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ipad:before {
   content: "\f1f9";
 }
 
-/* line 912, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1038, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-iphone:before {
   content: "\f1fa";
 }
 
-/* line 913, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1039, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ipod:before {
   content: "\f1fb";
 }
 
-/* line 914, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1040, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-jet:before {
   content: "\f295";
 }
 
-/* line 915, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1041, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-key:before {
   content: "\f296";
 }
 
-/* line 916, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1042, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-knife:before {
   content: "\f297";
 }
 
-/* line 917, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1043, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-laptop:before {
   content: "\f1fc";
 }
 
-/* line 918, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1044, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-leaf:before {
   content: "\f1fd";
 }
 
-/* line 919, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1045, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-levels:before {
   content: "\f298";
 }
 
-/* line 920, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1046, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-lightbulb:before {
   content: "\f299";
 }
 
-/* line 921, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1047, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-link:before {
   content: "\f1fe";
 }
 
-/* line 922, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1048, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-a:before, .ion-loading-a:before {
   content: "\f29a";
 }
 
-/* line 923, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1049, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-b:before, .ion-loading-b:before {
   content: "\f29b";
 }
 
-/* line 924, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1050, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-c:before, .ion-loading-c:before {
   content: "\f29c";
 }
 
-/* line 925, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1051, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-d:before, .ion-loading-d:before {
   content: "\f29d";
 }
 
-/* line 926, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1052, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-location:before {
   content: "\f1ff";
 }
 
-/* line 927, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1053, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-locked:before {
   content: "\f200";
 }
 
-/* line 928, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1054, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-log-in:before {
   content: "\f29e";
 }
 
-/* line 929, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1055, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-log-out:before {
   content: "\f29f";
 }
 
-/* line 930, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1056, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-loop:before, .ion-looping:before {
   content: "\f201";
 }
 
-/* line 931, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1057, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-magnet:before {
   content: "\f2a0";
 }
 
-/* line 932, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1058, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-male:before {
   content: "\f2a1";
 }
 
-/* line 933, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1059, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-man:before {
   content: "\f202";
 }
 
-/* line 934, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1060, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-map:before {
   content: "\f203";
 }
 
-/* line 935, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1061, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-medkit:before {
   content: "\f2a2";
 }
 
-/* line 936, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1062, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-merge:before {
+  content: "\f33f";
+}
+
+/* line 1063, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-a:before {
   content: "\f204";
 }
 
-/* line 937, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1064, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-b:before {
   content: "\f205";
 }
 
-/* line 938, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1065, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-c:before {
   content: "\f206";
 }
 
-/* line 939, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1066, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus:before {
   content: "\f209";
 }
 
-/* line 940, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1067, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus-circled:before {
   content: "\f207";
 }
 
-/* line 941, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1068, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus-round:before {
   content: "\f208";
 }
 
-/* line 942, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1069, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-model-s:before {
   content: "\f2c1";
 }
 
-/* line 943, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1070, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-monitor:before {
   content: "\f20a";
 }
 
-/* line 944, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1071, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-more:before {
   content: "\f20b";
 }
 
-/* line 945, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1072, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-mouse:before {
+  content: "\f340";
+}
+
+/* line 1073, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-music-note:before {
   content: "\f20c";
 }
 
-/* line 946, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1074, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navicon:before {
   content: "\f20e";
 }
 
-/* line 947, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1075, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navicon-round:before {
   content: "\f20d";
 }
 
-/* line 948, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1076, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navigate:before {
   content: "\f2a3";
 }
 
-/* line 949, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1077, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-network:before {
+  content: "\f341";
+}
+
+/* line 1078, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-no-smoking:before {
   content: "\f2c2";
 }
 
-/* line 950, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1079, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-nuclear:before {
   content: "\f2a4";
 }
 
-/* line 951, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1080, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-outlet:before {
+  content: "\f342";
+}
+
+/* line 1081, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-paper-airplane:before {
   content: "\f2c3";
 }
 
-/* line 952, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1082, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-paperclip:before {
   content: "\f20f";
 }
 
-/* line 953, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1083, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pause:before {
   content: "\f210";
 }
 
-/* line 954, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1084, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person:before {
   content: "\f213";
 }
 
-/* line 955, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1085, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person-add:before {
   content: "\f211";
 }
 
-/* line 956, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1086, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person-stalker:before {
   content: "\f212";
 }
 
-/* line 957, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1087, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pie-graph:before {
   content: "\f2a5";
 }
 
-/* line 958, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1088, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pin:before {
   content: "\f2a6";
 }
 
-/* line 959, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1089, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pinpoint:before {
   content: "\f2a7";
 }
 
-/* line 960, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1090, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pizza:before {
   content: "\f2a8";
 }
 
-/* line 961, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1091, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plane:before {
   content: "\f214";
 }
 
-/* line 962, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1092, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-planet:before {
+  content: "\f343";
+}
+
+/* line 1093, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-play:before {
   content: "\f215";
 }
 
-/* line 963, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1094, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-playstation:before {
   content: "\f30a";
 }
 
-/* line 964, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1095, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus:before {
   content: "\f218";
 }
 
-/* line 965, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1096, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus-circled:before {
   content: "\f216";
 }
 
-/* line 966, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1097, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus-round:before {
   content: "\f217";
 }
 
-/* line 967, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1098, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-podium:before {
+  content: "\f344";
+}
+
+/* line 1099, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pound:before {
   content: "\f219";
 }
 
-/* line 968, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1100, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-power:before {
   content: "\f2a9";
 }
 
-/* line 969, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1101, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pricetag:before {
   content: "\f2aa";
 }
 
-/* line 970, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1102, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pricetags:before {
   content: "\f2ab";
 }
 
-/* line 971, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1103, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-printer:before {
   content: "\f21a";
 }
 
-/* line 972, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1104, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-pull-request:before {
+  content: "\f345";
+}
+
+/* line 1105, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-qr-scanner:before {
+  content: "\f346";
+}
+
+/* line 1106, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-quote:before {
+  content: "\f347";
+}
+
+/* line 1107, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-radio-waves:before {
   content: "\f2ac";
 }
 
-/* line 973, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1108, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-record:before {
   content: "\f21b";
 }
 
-/* line 974, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1109, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-refresh:before, .ion-refreshing:before {
   content: "\f21c";
 }
 
-/* line 975, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1110, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-reply:before {
   content: "\f21e";
 }
 
-/* line 976, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1111, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-reply-all:before {
   content: "\f21d";
 }
 
-/* line 977, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1112, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ribbon-a:before {
+  content: "\f348";
+}
+
+/* line 1113, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-ribbon-b:before {
+  content: "\f349";
+}
+
+/* line 1114, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-sad:before {
+  content: "\f34a";
+}
+
+/* line 1115, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-scissors:before {
+  content: "\f34b";
+}
+
+/* line 1116, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-search:before {
   content: "\f21f";
 }
 
-/* line 978, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1117, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-settings:before {
   content: "\f2ad";
 }
 
-/* line 979, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1118, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-share:before {
   content: "\f220";
 }
 
-/* line 980, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1119, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-shuffle:before {
   content: "\f221";
 }
 
-/* line 981, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1120, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-skip-backward:before {
   content: "\f222";
 }
 
-/* line 982, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1121, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-skip-forward:before {
   content: "\f223";
 }
 
-/* line 983, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1122, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-android:before {
   content: "\f225";
 }
 
-/* line 984, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1123, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-android-outline:before {
   content: "\f224";
 }
 
-/* line 985, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1124, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-apple:before {
   content: "\f227";
 }
 
-/* line 986, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1125, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-apple-outline:before {
   content: "\f226";
 }
 
-/* line 987, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1126, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-bitcoin:before {
   content: "\f2af";
 }
 
-/* line 988, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1127, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-bitcoin-outline:before {
   content: "\f2ae";
 }
 
-/* line 989, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1128, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-buffer:before {
   content: "\f229";
 }
 
-/* line 990, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1129, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-buffer-outline:before {
   content: "\f228";
 }
 
-/* line 991, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1130, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-designernews:before {
   content: "\f22b";
 }
 
-/* line 992, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1131, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-designernews-outline:before {
   content: "\f22a";
 }
 
-/* line 993, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1132, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dribbble:before {
   content: "\f22d";
 }
 
-/* line 994, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1133, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dribbble-outline:before {
   content: "\f22c";
 }
 
-/* line 995, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1134, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dropbox:before {
   content: "\f22f";
 }
 
-/* line 996, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1135, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dropbox-outline:before {
   content: "\f22e";
 }
 
-/* line 997, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1136, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-facebook:before {
   content: "\f231";
 }
 
-/* line 998, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1137, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-facebook-outline:before {
   content: "\f230";
 }
 
-/* line 999, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1138, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-foursquare:before {
+  content: "\f34d";
+}
+
+/* line 1139, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-foursquare-outline:before {
+  content: "\f34c";
+}
+
+/* line 1140, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-freebsd-devil:before {
   content: "\f2c4";
 }
 
-/* line 1000, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1141, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-github:before {
   content: "\f233";
 }
 
-/* line 1001, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1142, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-github-outline:before {
   content: "\f232";
 }
 
-/* line 1002, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1143, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-google:before {
+  content: "\f34f";
+}
+
+/* line 1144, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-google-outline:before {
+  content: "\f34e";
+}
+
+/* line 1145, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-googleplus:before {
   content: "\f235";
 }
 
-/* line 1003, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1146, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-googleplus-outline:before {
   content: "\f234";
 }
 
-/* line 1004, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1147, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-hackernews:before {
   content: "\f237";
 }
 
-/* line 1005, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1148, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-hackernews-outline:before {
   content: "\f236";
 }
 
-/* line 1006, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1149, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-instagram:before {
+  content: "\f351";
+}
+
+/* line 1150, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-instagram-outline:before {
+  content: "\f350";
+}
+
+/* line 1151, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-linkedin:before {
   content: "\f239";
 }
 
-/* line 1007, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1152, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-linkedin-outline:before {
   content: "\f238";
 }
 
-/* line 1008, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1153, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-pinterest:before {
   content: "\f2b1";
 }
 
-/* line 1009, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1154, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-pinterest-outline:before {
   content: "\f2b0";
 }
 
-/* line 1010, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1155, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-reddit:before {
   content: "\f23b";
 }
 
-/* line 1011, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1156, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-reddit-outline:before {
   content: "\f23a";
 }
 
-/* line 1012, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1157, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-rss:before {
   content: "\f23d";
 }
 
-/* line 1013, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1158, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-rss-outline:before {
   content: "\f23c";
 }
 
-/* line 1014, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1159, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-skype:before {
   content: "\f23f";
 }
 
-/* line 1015, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1160, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-skype-outline:before {
   content: "\f23e";
 }
 
-/* line 1016, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1161, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tumblr:before {
   content: "\f241";
 }
 
-/* line 1017, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1162, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tumblr-outline:before {
   content: "\f240";
 }
 
-/* line 1018, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1163, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tux:before {
   content: "\f2c5";
 }
 
-/* line 1019, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1164, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-twitter:before {
   content: "\f243";
 }
 
-/* line 1020, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1165, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-twitter-outline:before {
   content: "\f242";
 }
 
-/* line 1021, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1166, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-usd:before {
+  content: "\f353";
+}
+
+/* line 1167, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-social-usd-outline:before {
+  content: "\f352";
+}
+
+/* line 1168, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-vimeo:before {
   content: "\f245";
 }
 
-/* line 1022, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1169, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-vimeo-outline:before {
   content: "\f244";
 }
 
-/* line 1023, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1170, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-windows:before {
   content: "\f247";
 }
 
-/* line 1024, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1171, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-windows-outline:before {
   content: "\f246";
 }
 
-/* line 1025, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1172, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-wordpress:before {
   content: "\f249";
 }
 
-/* line 1026, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1173, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-wordpress-outline:before {
   content: "\f248";
 }
 
-/* line 1027, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1174, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-yahoo:before {
   content: "\f24b";
 }
 
-/* line 1028, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1175, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-yahoo-outline:before {
   content: "\f24a";
 }
 
-/* line 1029, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1176, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-youtube:before {
   content: "\f24d";
 }
 
-/* line 1030, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1177, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-youtube-outline:before {
   content: "\f24c";
 }
 
-/* line 1031, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1178, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-speakerphone:before {
   content: "\f2b2";
 }
 
-/* line 1032, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1179, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-speedometer:before {
   content: "\f2b3";
 }
 
-/* line 1033, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1180, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-spoon:before {
   content: "\f2b4";
 }
 
-/* line 1034, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1181, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-star:before {
   content: "\f24e";
 }
 
-/* line 1035, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1182, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-stats-bars:before {
   content: "\f2b5";
 }
 
-/* line 1036, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1183, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-steam:before {
   content: "\f30b";
 }
 
-/* line 1037, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1184, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-stop:before {
   content: "\f24f";
 }
 
-/* line 1038, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1185, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thermometer:before {
   content: "\f2b6";
 }
 
-/* line 1039, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1186, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thumbsdown:before {
   content: "\f250";
 }
 
-/* line 1040, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1187, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thumbsup:before {
   content: "\f251";
 }
 
-/* line 1041, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1188, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-toggle:before {
+  content: "\f355";
+}
+
+/* line 1189, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-toggle-filled:before {
+  content: "\f354";
+}
+
+/* line 1190, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-trash-a:before {
   content: "\f252";
 }
 
-/* line 1042, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1191, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-trash-b:before {
   content: "\f253";
 }
 
-/* line 1043, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1192, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-trophy:before {
+  content: "\f356";
+}
+
+/* line 1193, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-umbrella:before {
   content: "\f2b7";
 }
 
-/* line 1044, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1194, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-university:before {
+  content: "\f357";
+}
+
+/* line 1195, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-unlocked:before {
   content: "\f254";
 }
 
-/* line 1045, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1196, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-upload:before {
   content: "\f255";
 }
 
-/* line 1046, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1197, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-usb:before {
   content: "\f2b8";
 }
 
-/* line 1047, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1198, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-videocamera:before {
   content: "\f256";
 }
 
-/* line 1048, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1199, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-high:before {
   content: "\f257";
 }
 
-/* line 1049, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1200, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-low:before {
   content: "\f258";
 }
 
-/* line 1050, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1201, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-medium:before {
   content: "\f259";
 }
 
-/* line 1051, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1202, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-mute:before {
   content: "\f25a";
 }
 
-/* line 1052, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1203, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
+.ion-wand:before {
+  content: "\f358";
+}
+
+/* line 1204, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-waterdrop:before {
   content: "\f25b";
 }
 
-/* line 1053, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1205, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wifi:before {
   content: "\f25c";
 }
 
-/* line 1054, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1206, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wineglass:before {
   content: "\f2b9";
 }
 
-/* line 1055, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1207, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-woman:before {
   content: "\f25d";
 }
 
-/* line 1056, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1208, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wrench:before {
   content: "\f2ba";
 }
 
-/* line 1057, ../lib/ionic/scss/ionicons/_ionicons-icons.scss */
+/* line 1209, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-xbox:before {
   content: "\f30c";
 }
@@ -10612,4 +11068,11 @@ body.offline .view .bar {
   margin-top: 25px;
   font-size: 2em;
   line-height: 1em;
+}
+
+/* line 123, ../../scss/ionic.app.scss */
+.footnote {
+  font-weight: normal;
+  font-style: italic;
+  text-align: right;
 }

@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<div ng-repeat="event in (user | history | orderBy : 'createdAt')" class="list card card-light">
+	<div class="card">
+		<sprtid-history-checkin checkin="event" ng-if="event.scannedUserId === user.id"></sprtid-history-checkin>
+		<sprtid-history-scan    scan="event"    ng-if="event.scanningUserId === user.id"></sprtid-history-scan>
+	</div>
+</div>

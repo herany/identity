@@ -5,9 +5,7 @@
 		.controller("AppController", AppControllerDefinition)
 
 		.controller("CheckinController", CheckinControllerDefinition)
-		.controller("HomeController", ["$scope", "$log", function ($scope, $log) {
-			$log.info("HomeController", arguments);
-		}])
+		.controller("HomeController", HomeControllerDefinition)
 		.controller("ScanController", ScanControllerDefinition)
 		.controller("UserController", UserControllerDefinition)
 		.controller("BarcodeUserController", BarcodeUserControllerDefinition)

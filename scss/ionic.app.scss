@@ -19,7 +19,7 @@ $dark:                            #444 !default;
 @import '_variables';
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+$ionicons-font-path: "../lib/bower_components/ionicons/fonts" !default;
 
 // Include all of Ionic
 @import "../www/lib/ionic/scss/ionic";
@@ -118,4 +118,10 @@ body.offline {
 		font-size: 2em;
 		line-height: 1em;
 	}
+}
+
+.footnote {
+	font-weight: normal;
+	font-style: italic;
+	text-align: right;
 }

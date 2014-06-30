@@ -61,5 +61,32 @@
 				templateUrl: AppConfig.templatesPath + "partials/_databit_birthday.html"
 			};
 		}])
+		.directive("sprtidHistory", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					user: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_history.html"
+			};
+		}])
+		.directive("sprtidHistoryCheckin", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					checkin: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_history_checkin.html"
+			};
+		}])
+		.directive("sprtidHistoryScan", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					scan: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_history_scan.html"
+			};
+		}])
 	;
 })("sprtidApp", angular);
