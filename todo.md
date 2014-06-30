@@ -4,7 +4,6 @@ todo:
 - add user (dependant)
 - Add Misc Data Bit
 - display photo
-- home page history
 - does the scanner have option to display a cancel button?
 - scanner timeout
 - sort out back/scanner issues
@@ -46,3 +45,4 @@ x - profile w/SlideBox having last slide be add dependant
 x - logging
 x - on scan, add record to database (scanner, scanee, event, timestamp)
 x - delete data bit
+x - home page history
