@@ -10958,14 +10958,15 @@ a.button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   font-size: 64px;
   font-size: 25vw;
-  margin-top: -32px;
-  margin-top: -12.5vw;
-  margin-left: -32px;
-  margin-left: -12.5vw;
 }
-/* line 47, ../../scss/_tile.scss */
+/* line 44, ../../scss/_tile.scss */
 .tile.tile-icon .tile-content label,
 .tile.tile-icon .tile-content .label {
   position: absolute;

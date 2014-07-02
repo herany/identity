@@ -88,6 +88,14 @@ var UserControllerDefinition = [
 			$scope.databitModal.show();
 		};
 
+		// Open our new task modal
+		$scope.newPhotoDatabit = function () {
+			$scope.databit = {
+				type: "photo"
+			};
+			$scope.databitModal.show();
+		};
+
 		$scope.editDatabit = function () {
 			// show ajaxing indicator
 			UserService.editDatabit($scope.user.id, $scope.databit)

@@ -33,6 +33,12 @@
 					// org.apache.cordova.statusbar required
 					StatusBar.styleDefault();
 				}
+
+				if (navigator && navigator.splashscreen) {
+					navigator.splashscreen.hide();
+				} else {
+					console.log("splashscreen: nope.", navigator, navigator.splashscreen);
+				}
 			});
 		})
 

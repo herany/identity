@@ -3,6 +3,15 @@
 ;(function (APP_NAME, angular, moment, undefined) {
 	"use strict";
 
+	function getActiveDatabitsByType (dataBits, typePattern) {
+		if (!typePattern) { return activeTypedDatabits; }
+
+		return angular.forEach(dataBits, function (dataBit) {
+			if (dataBit && dataBit.active && typePattern.test(dataBit.type)) {
+				this.push(dataBit);
+			}
+		}, []);
+	}
 	function dataBitsToBarcode (dataBits, type) {
 		var barcodeDataBit, i;
 
@@ -52,6 +61,21 @@
 		.filter("findBarcodeDatabit", function () {
 			return function (dataBits) {
 				return dataBitsToBarcode(dataBits, "BarcodeDataBit");
+			};
+		})
+		.filter("findPhotoDatabits", function () {
+			return function (dataBits) {
+				return getActiveDatabitsByType(dataBits, /PhotoDataBit$/).length;
+			};
+		})
+		.filter("findBirthdayDatabits", function () {
+			return function (dataBits) {
+				return getActiveDatabitsByType(dataBits, /BirthdayDataBit$/).length;
+			};
+		})
+		.filter("findPhoneDatabits", function () {
+			return function (dataBits) {
+				return getActiveDatabitsByType(dataBits, /PhoneDataBit$/).length;
 			};
 		})
 		.filter("findBarcode", function () {

@@ -2,7 +2,7 @@ var CameraControllerDefinition = [
 	"$scope",
 	"$log",
 	"$cordovaCamera",
-	function ($scope, $log, $stateParams, $cameraController) {
+	function ($scope, $log, $cordovaCamera) {
 		"use strict";
 		$log.info("CameraController", arguments);
 
@@ -23,7 +23,7 @@ var CameraControllerDefinition = [
 		fnSuccess = function (imageData) {
 			$log.log("CameraController#takePicture (success)", arguments);
 
-			$scope.setImageSource(imageData);
+			setImageSource(imageData);
 			setError(null);
 		};
 		fnError = function (err) {
@@ -38,11 +38,11 @@ var CameraControllerDefinition = [
 		$scope.takePicture = function () {
 			$cordovaCamera.getPicture({
 				quality: 75,
-				destinationType: nagivator.camera.DestinationType.DATA_URL,
-				sourceType: nagivator.camera.PictureSourceType.CAMERA,
+				destinationType: Camera.DestinationType.DATA_URL,
+				sourceType: Camera.PictureSourceType.CAMERA,
 				allowEdit: true,
-				encodingType: nagivator.camera.EncodingType.JPEG,
-				mediaType: nagivator.camera.MediaType.PICTURE
+				encodingType: Camera.EncodingType.JPEG,
+				mediaType: Camera.MediaType.PICTURE
 				// See all the possible Camera options from the Camera docs:
 				// https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md#cameraoptions
 			}).then(fnSuccess, fnError, fnNotify);
