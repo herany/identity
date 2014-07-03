@@ -7,21 +7,6 @@ var DatabitControllerDefinition = [
 		"use strict";
 		$log.info("DatabitController", arguments);
 
-		$scope.databit = {
-			birthday: {
-				visibility: 'protected' // move to contant
-			},
-			phone: {
-				visibility: 'private' // move to contant
-			},
-			health: {
-				visibility: 'protected' // move to contant
-			},
-			other: {
-				visibility: 'public' // move to contant
-			}
-		};
-
 		DatabitService.user($stateParams.id).then(function (data, status, headers, config) {
 			console.log("DatabitService::login (success!)", data);
 			$scope.user = data;

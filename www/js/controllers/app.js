@@ -12,6 +12,12 @@ var AppControllerDefinition = [
 		"use strict";
 		$log.info("CheckinController", arguments);
 
+
+		$scope.debug = function () {
+			$log.log($scope);
+		};
+
+
 		if (navigator.splashscreen) {
 			$log.info("Showing Splash Screen", arguments);
 			$cordovaSplashscreen.show();
