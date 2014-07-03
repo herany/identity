@@ -7,7 +7,7 @@ var CameraControllerDefinition = [
 		$log.info("CameraController", arguments);
 
 		var fnSuccess, fnError, fnNotify;
-		var TRANSPARENT_IMAGE = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+		var TRANSPARENT_IMAGE = "R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 
 		function setError (msg) {
 			$scope.error = msg;
@@ -16,7 +16,7 @@ var CameraControllerDefinition = [
 
 		function setImageSource (source) {
 			$scope.imageSource = source;
-			$scope.safemageSource = $scope.imageSource || TRANSPARENT_IMAGE;
+			$scope.safeImageSource = "data:image/gif;base64," + ($scope.imageSource || TRANSPARENT_IMAGE);
 		}
 		setImageSource();
 
@@ -40,6 +40,19 @@ var CameraControllerDefinition = [
 				quality: 75,
 				destinationType: Camera.DestinationType.DATA_URL,
 				sourceType: Camera.PictureSourceType.CAMERA,
+				allowEdit: true,
+				encodingType: Camera.EncodingType.JPEG,
+				mediaType: Camera.MediaType.PICTURE
+				// See all the possible Camera options from the Camera docs:
+				// https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md#cameraoptions
+			}).then(fnSuccess, fnError, fnNotify);
+		};
+
+		$scope.choosePicture = function () {
+			$cordovaCamera.getPicture({
+				quality: 75,
+				destinationType: Camera.DestinationType.DATA_URL,
+				sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
 				allowEdit: true,
 				encodingType: Camera.EncodingType.JPEG,
 				mediaType: Camera.MediaType.PICTURE

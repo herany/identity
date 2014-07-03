@@ -10,7 +10,7 @@
 			<ion-slide-box show-pager="true" on-slide-changed="setTitle($index)">
 				<ion-slide>
 					<div class="row">
-						<div class="col col-50" ng-hide="user.dataBits | findPhotoDatabit">
+						<div class="col col-50" ng-hide="user.dataBits | findPhotoDatabits">
 							<div class="tile tile-icon">
 								<a class="tile-content" ng-click="newPhotoDatabit()">
 									<span class="icon ion-camera"></span> <!-- ion-ios7-camera-outline -->
@@ -18,10 +18,10 @@
 								</a>
 							</div>
 						</div>
-						<div class="col col-50">
+						<div class="col col-50" ng-hide="user.dataBits | findPhotoDatabits">
 							<div class="tile tile-icon">
 								<a class="tile-content" ng-click="newPhotoDatabit()">
-									<span class="icon ion-ios7-cloud-upload"></span>
+									<span class="icon ion-image"></span>
 									<span class="label">Upload Picture</span>
 								</a>
 							</div>

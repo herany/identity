@@ -12,7 +12,28 @@ var UserControllerDefinition = [
 
 		var fnSuccess, fnError, fnNotify;
 
-		$scope.databit = {}; // initialize in order to pass to the databit directive
+		function initializeDatabit (type) {
+			$scope.databit = {
+				type: type || "",
+				birthday: {
+					visibility: 'protected' // move to constant
+				},
+				phone: {
+					visibility: 'private' // move to constant
+				},
+				photo: {
+					visibility: 'protected' // move to constant
+				},
+				health: {
+					visibility: 'protected' // move to constant
+				},
+				other: {
+					visibility: 'public' // move to constant
+				}
+			};
+		}
+		initializeDatabit(); // initialize in order to pass to the databit directive
+
 		var u = $scope.getLoggedInUser();
 		$scope.editable = $scope.user && u && u.id === $scope.user.id; // or dependants
 		if ($scope.editable) {
@@ -64,17 +85,19 @@ var UserControllerDefinition = [
 
 		// Called when the form is submitted
 		$scope.saveDatabit = function (formObj) {
-			var dataBit = {
+			var fn, dataBit = {
 				type: formObj.type
 			};
 			angular.extend(dataBit, formObj[formObj.type]);
+
+			fn = dataBit.type === "photo" ? UserService.saveDatabitWithFile : UserService.saveDatabit;
+
 			// show ajaxing indicator
-			UserService
-				.saveDatabit($scope.user.id, dataBit)
+			fn($scope.user.id, dataBit, formObj.fileUri)
 				.then(function () {
 					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
-					$scope.databit = {};
+					initializeDatabit();
 					$scope.databitModal.hide();
 				}, function () {
 					// hide ajaxing indicator
@@ -90,9 +113,7 @@ var UserControllerDefinition = [
 
 		// Open our new task modal
 		$scope.newPhotoDatabit = function () {
-			$scope.databit = {
-				type: "photo"
-			};
+			initializeDatabit("photo");
 			$scope.databitModal.show();
 		};
 

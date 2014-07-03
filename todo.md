@@ -1,6 +1,7 @@
 todo:
 - more ion icons (or icomoon)
-- splashscreens
+- launch camera immediately
+- pick picture from library
 - add user (dependant)
 - Add Misc Data Bit
 - display photo
@@ -46,3 +47,4 @@ x - logging
 x - on scan, add record to database (scanner, scanee, event, timestamp)
 x - delete data bit
 x - home page history
+x - splashscreens
