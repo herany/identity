@@ -59,6 +59,8 @@
     <preference name="DisallowOverscroll" value="true" />
     <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
     <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>

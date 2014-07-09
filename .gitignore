@@ -61,3 +61,6 @@ platforms/ios/cordova/console.log
 ###
 
 /*.zip
+
+resources/splash/android/*.png
+resources/splash/ios/*.png
