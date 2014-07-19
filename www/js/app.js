@@ -11,7 +11,7 @@
 		.module("starter", [
 			"ionic",
 			"ngCordova", // https://github.com/driftyco/ng-cordova.git
-			"http-auth-interceptor",
+			// "http-auth-interceptor",
 			// "facebook",
 			"monospaced.qrcode",
 			APP_NAME + ".constants",

@@ -14,6 +14,7 @@
 	<content src="index.html" />
 
 	<access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+	<access origin="http://localhost*"/> <!-- allow local pages -->
 	<access origin="http://api.sprtid.com/*" />
 	<access origin="http://sprtid-api.herokuapp.com/*" />
 

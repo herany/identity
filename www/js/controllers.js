@@ -4,27 +4,26 @@
 	angular.module(APP_NAME + ".controllers", [])
 		.controller("AppController", AppControllerDefinition)
 
-		.controller("CheckinController", CheckinControllerDefinition)
-		.controller("HomeController", HomeControllerDefinition)
-		.controller("ScanController", ScanControllerDefinition)
-		.controller("UserController", UserControllerDefinition)
+		.controller("AuthController", AuthControllerDefinition)
 		.controller("BarcodeUserController", BarcodeUserControllerDefinition)
-		// .controller("DatabitController", DatabitControllerDefinition)
+		.controller("CameraController", SprtId.Controllers.Camera())
+		.controller("CheckinController", CheckinControllerDefinition)
 		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("CreateController", arguments);
 		}])
-		.controller("CheckinController", CheckinControllerDefinition)
-		.controller("AuthController", AuthControllerDefinition)
+		// .controller("DatabitController", DatabitControllerDefinition)
+		// .controller("FacebookController", FacebookAuthControllerDefinition)
+		.controller("HomeController", HomeControllerDefinition)
 		.controller("LoginController", LoginAuthControllerDefinition)
 		.controller("LogoutController", LogoutAuthControllerDefinition)
-		.controller("SignupController", SignupAuthControllerDefinition)
-		// .controller("FacebookController", FacebookAuthControllerDefinition)
-		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
-			$log.info("ShopController", arguments);
-		}])
+		.controller("ScanController", ScanControllerDefinition)
 		.controller("SettingsController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("SettingsController", arguments);
 		}])
-		.controller("CameraController", CameraControllerDefinition)
+		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
+			$log.info("ShopController", arguments);
+		}])
+		.controller("SignupController", SignupAuthControllerDefinition)
+		.controller("UserController", UserControllerDefinition)
 	;
 })("sprtidApp", angular);

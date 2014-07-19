@@ -29,7 +29,8 @@ var UserControllerDefinition = [
 				},
 				other: {
 					visibility: 'public' // move to constant
-				}
+				},
+				imageUr: ""
 			};
 		}
 		initializeDatabit(); // initialize in order to pass to the databit directive
@@ -75,6 +76,10 @@ var UserControllerDefinition = [
 				;
 		};
 
+		$scope.$on(SprtId.Controllers.Camera.events.getImage, function (event, imageUri) {
+			$scope.databit.imageUri = imageUri;
+		});
+
 		// Create and load the Modal
 		$ionicModal.fromTemplateUrl(AppConfig.templatesPath + "modals/databit.html", function (modal) {
 			$scope.databitModal = modal;
@@ -90,10 +95,10 @@ var UserControllerDefinition = [
 			};
 			angular.extend(dataBit, formObj[formObj.type]);
 
-			fn = dataBit.type === "photo" ? UserService.saveDatabitWithFile : UserService.saveDatabit;
+			fn = dataBit.type === "photo" ? UserService.saveDatabitWithImage : UserService.saveDatabit;
 
 			// show ajaxing indicator
-			fn($scope.user.id, dataBit, formObj.fileUri)
+			fn($scope.user.id, dataBit, formObj.imageUri)
 				.then(function () {
 					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);

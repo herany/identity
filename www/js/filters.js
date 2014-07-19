@@ -4,13 +4,16 @@
 	"use strict";
 
 	function getActiveDatabitsByType (dataBits, typePattern) {
-		if (!typePattern) { return activeTypedDatabits; }
+		var activeTypedDatabits = [];
+		if (!typePattern || !dataBits) { return activeTypedDatabits; }
 
-		return angular.forEach(dataBits, function (dataBit) {
+		angular.forEach(dataBits, function (dataBit) {
 			if (dataBit && dataBit.active && typePattern.test(dataBit.type)) {
 				this.push(dataBit);
 			}
-		}, []);
+		}, activeTypedDatabits);
+
+		return activeTypedDatabits;
 	}
 	function dataBitsToBarcode (dataBits, type) {
 		var barcodeDataBit, i;
@@ -96,6 +99,7 @@
 					case "birthday": return "ion-ios7-calendar";
 					case "health": return "ion-ios7-medkit";
 					case "phone": return "ion-ios7-telephone";
+					case "photo": return "ion-camera";
 					default: return "ion-ios7-flag";
 				}
 			};

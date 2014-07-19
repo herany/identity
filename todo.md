@@ -1,4 +1,5 @@
 todo:
+- radioset (like button set)
 - more ion icons (or icomoon)
 - launch camera immediately
 - pick picture from library

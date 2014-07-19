@@ -43,13 +43,14 @@ end
 		<div class="item item-light item-text-wrap" ng-switch="databit.type">
 			<sprtid-databit-barcode ng-switch-when="BarcodeDataBit" databit="databit"></sprtid-databit-barcode>
 			<sprtid-databit-birthday ng-switch-when="BirthdayDataBit" databit="databit"></sprtid-databit-birthday>
+			<sprtid-databit-photo ng-switch-when="PhotoDataBit" databit="databit"></sprtid-databit-photo>
 			<pre ng-switch-default>{{ databit | jsonFormatter }}</pre>
 		</div>
 		<div class="item item-light item-divider">
 			<span class="icon icon-left {{ databit.visibility | databitVisibilityClass }}">
 				{{ databit.visibility }}
 			</span>
-			<button class="button button-icon ion-close" ng-click="onDelete({databit: databit})"></button>
+			<button class="button button-icon button-small item-button-right icon ion-close" ng-click="onDelete({databit: databit})"></button>
 		</div>
 	</div>
 </div>

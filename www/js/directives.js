@@ -61,6 +61,15 @@
 				templateUrl: AppConfig.templatesPath + "partials/_databit_birthday.html"
 			};
 		}])
+		.directive("sprtidDatabitPhoto", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					databit: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_databit_photo.html"
+			};
+		}])
 		.directive("sprtidHistory", ["AppConfig", function (AppConfig) {
 			return {
 				restrict: "E",
@@ -88,5 +97,62 @@
 				templateUrl: AppConfig.templatesPath + "partials/_history_scan.html"
 			};
 		}])
+		.directive("radioSet", function () {
+			return {
+				restrict: 'E',
+				// replace: true,
+				scope: {
+					ngModel: '=?',
+					ngChange: '&',
+					name: '@'
+				},
+				transclude: true,
+				template: '<div class="radio-set row" ng-transclude></div>',
+				controller: function () {}
+			};
+		})
+		.directive("radioSetButton", function () {
+			// function link (scope, element, attrs, controller) {
+			// 	var pController, name;
+
+			// 	pController = controller.length ? controller[controller.length - 2] : controller;
+
+			// 	if (!pController) { return; }
+			// 	name = pController.getName ? pController.getName() : null;
+			// 	// this feels more like compile stuff, but we need the parent scope's name attribute
+			// 	if (name) {
+			// 		element.children().eq(0).attr("name", name);
+			// 	}
+
+			// 	scope.ngModel = pController.getNgModel ? pController.getNgModel() : null;
+			// 	scope.ngChange = pController.getNgChange ? pController.getNgChange() : null;
+			// }
+			return {
+				restrict: 'E',
+				replace: true,
+				require: ['^radioSet', '?ngModel'],
+				scope: {
+					ngModel: '=?', // should be provided by radioSet but can't get it to work
+					ngValue: '=?',
+					ngChange: '&', // should be provided by radioSet but can't get it to work
+					icon: '@',
+					name: '=' // should be provided by radioSet but can't get it to work
+				},
+				transclude: true,
+				template: '<label class="radio-set-button">' +
+				            '<input type="radio" name="name" ng-model="ngModel" ng-value="ngValue" ng-change="ngChange()">' +
+				            '<i class="radio-icon disable-pointer-events icon"></i>' +
+				            '<div class="radio-content disable-pointer-events" ng-transclude></div>' +
+				          '</label>',
+				link: function (scope, element, attr) {
+					element.children().eq(0).attr("name", attr.name);
+					if (attr.icon) {
+						element.children().eq(1).addClass(attr.icon);
+					} else {
+						element.children().eq(1).remove();
+					}
+				}
+			};
+		})
 	;
 })("sprtidApp", angular);

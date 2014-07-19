@@ -57,6 +57,7 @@
 	</author>
     <content src="index.html" />
     <access origin="http://127.0.0.1*" />
+    <access origin="http://localhost*" />
     <access origin="http://api.sprtid.com/*" />
     <access origin="http://sprtid-api.herokuapp.com/*" />
     <preference name="fullscreen" value="false" />

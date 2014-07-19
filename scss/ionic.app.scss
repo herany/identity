@@ -125,3 +125,47 @@ body.offline {
 	font-style: italic;
 	text-align: right;
 }
+
+
+
+// ----------------- radio-set -----------------
+.radio-set {
+	@include item-style($item-default-bg, $item-default-border, $item-default-text);
+	border-style: solid;
+	border-width: 1px 0 0 1px;
+	padding: 0;
+
+	.radio-set-button {
+		background-color: $lighter;
+		text-align: center;
+		@include item-style($item-default-bg, $item-default-border, $item-default-text);
+		border-style: solid;
+		border-width: 0 1px 1px 0;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		input {
+			position: absolute;
+			left: -9999px;
+		}
+		.radio-icon {
+			display: block;
+			font-size: 32px;
+		}
+		.radio-content {
+			display: block;
+			padding-bottom: 5px;
+			font-size: 75%;
+		}
+		input:checked ~ {
+			.radio-icon,
+			.radio-content {
+				background-color: $dark;
+				color: $light;
+			}
+		}
+	}
+}
+// end: ----------------- radio-set -----------------
