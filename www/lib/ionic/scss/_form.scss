@@ -51,7 +51,8 @@ textarea {
   overflow: hidden;
   padding: 6px 0 5px 8px;
 
-  input {
+  input,
+  textarea {
     @include border-radius(0);
     @include flex(1, 0, 220px);
     @include appearance(none);

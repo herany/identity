@@ -1,6 +1,8 @@
 todo:
-- launch camera immediately
+- preregister for an event
+- accept waiver
 - add user (dependant)
+- launch camera immediately
 - Add Misc Data Bit
 - does the scanner have option to display a cancel button?
 - scanner timeout
@@ -12,7 +14,6 @@ todo:
 - do not require an authenticated state to do anything... write to localStorage, display a banner when things are unsaved
 - consider the offline state... write to localStorage for every data-daving operation. if/when online becomes available, send to server
 - do not require payment to add to profile... display a banner when additional "pay" data bits have been created (obv. hide those bits if !payment)
-- bug: delete data bit response includes deleted databit
 - more ion icons (or icomoon)
 
 
@@ -50,3 +51,4 @@ done:
 - display photo
 - pick picture from library
 - ajax indicator
+- bug: delete data bit response includes deleted databit

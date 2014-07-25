@@ -129,8 +129,12 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/fonts/Roboto/Roboto-Regular.ttf \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/fonts/Roboto/Roboto-Thin.ttf \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/fonts/Roboto/Roboto-ThinItalic.ttf \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/backgrounds \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/icon-identity-logo.png \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/ionic.png \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/placeholder-no-photo.png \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/sprtid.png \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/img/backgrounds/faceoff.png \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/app.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/constants.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers \
@@ -1771,6 +1775,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_barcode.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_birthday.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_health.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_photo.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_history.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_history_checkin.html \

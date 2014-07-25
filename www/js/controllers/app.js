@@ -57,7 +57,7 @@ var AppControllerDefinition = [
 		}
 
 		$scope.setTitle = function (title) {
-			$scope.title = title || "sprt·id";
+			$scope.title = title || "<em class='wordmark'>SPRTID</em>";
 		};
 		$scope.setTitle();
 

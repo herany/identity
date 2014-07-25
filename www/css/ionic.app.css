@@ -6294,7 +6294,7 @@ a.subdued:last-child {
 .item .item-content.active,
 .item .item-content.activated {
   border-color: #324355;
-  background-color: #d9d9d9;
+  background-color: #223547;
 }
 /* line 113, ../lib/ionic/scss/_items.scss */
 .item.active.item-light,
@@ -7402,8 +7402,9 @@ textarea {
   overflow: hidden;
   padding: 6px 0 5px 8px;
 }
-/* line 54, ../lib/ionic/scss/_form.scss */
-.item-input input {
+/* line 55, ../lib/ionic/scss/_form.scss */
+.item-input input,
+.item-input textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -7420,7 +7421,7 @@ textarea {
   padding-right: 24px;
   background-color: transparent;
 }
-/* line 63, ../lib/ionic/scss/_form.scss */
+/* line 64, ../lib/ionic/scss/_form.scss */
 .item-input .button .icon {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 24px;
@@ -7434,7 +7435,7 @@ textarea {
   text-align: center;
   font-size: 16px;
 }
-/* line 72, ../lib/ionic/scss/_form.scss */
+/* line 73, ../lib/ionic/scss/_form.scss */
 .item-input .button-bar {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -7449,12 +7450,12 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 78, ../lib/ionic/scss/_form.scss */
+/* line 79, ../lib/ionic/scss/_form.scss */
 .item-input .icon {
   min-width: 14px;
 }
 
-/* line 83, ../lib/ionic/scss/_form.scss */
+/* line 84, ../lib/ionic/scss/_form.scss */
 .item-input-inset {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7472,7 +7473,7 @@ textarea {
   padding: 10px;
 }
 
-/* line 91, ../lib/ionic/scss/_form.scss */
+/* line 92, ../lib/ionic/scss/_form.scss */
 .item-input-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7499,7 +7500,7 @@ textarea {
   background: #eee;
 }
 
-/* line 101, ../lib/ionic/scss/_form.scss */
+/* line 102, ../lib/ionic/scss/_form.scss */
 .item-input-inset .item-input-wrapper input {
   padding-left: 4px;
   height: 29px;
@@ -7507,12 +7508,12 @@ textarea {
   line-height: 18px;
 }
 
-/* line 108, ../lib/ionic/scss/_form.scss */
+/* line 109, ../lib/ionic/scss/_form.scss */
 .item-input-wrapper ~ .button {
   margin-left: 10px;
 }
 
-/* line 112, ../lib/ionic/scss/_form.scss */
+/* line 113, ../lib/ionic/scss/_form.scss */
 .input-label {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 100px;
@@ -7529,33 +7530,33 @@ textarea {
   font-size: 14px;
 }
 
-/* line 123, ../lib/ionic/scss/_form.scss */
+/* line 124, ../lib/ionic/scss/_form.scss */
 .placeholder-icon {
   color: #aaa;
 }
-/* line 125, ../lib/ionic/scss/_form.scss */
+/* line 126, ../lib/ionic/scss/_form.scss */
 .placeholder-icon:first-child {
   padding-right: 6px;
 }
-/* line 128, ../lib/ionic/scss/_form.scss */
+/* line 129, ../lib/ionic/scss/_form.scss */
 .placeholder-icon:last-child {
   padding-left: 6px;
 }
 
-/* line 133, ../lib/ionic/scss/_form.scss */
+/* line 134, ../lib/ionic/scss/_form.scss */
 .item-stacked-label {
   display: block;
   background-color: transparent;
   box-shadow: none;
 }
-/* line 138, ../lib/ionic/scss/_form.scss */
+/* line 139, ../lib/ionic/scss/_form.scss */
 .item-stacked-label .input-label, .item-stacked-label .icon {
   display: inline-block;
   padding: 4px 0;
   vertical-align: middle;
 }
 
-/* line 147, ../lib/ionic/scss/_form.scss */
+/* line 148, ../lib/ionic/scss/_form.scss */
 .item-stacked-label input,
 .item-stacked-label textarea {
   -webkit-border-radius: 2px;
@@ -7566,13 +7567,13 @@ textarea {
   background-color: #04192e;
 }
 
-/* line 153, ../lib/ionic/scss/_form.scss */
+/* line 154, ../lib/ionic/scss/_form.scss */
 .item-stacked-label input {
   overflow: hidden;
   height: 46px;
 }
 
-/* line 177, ../lib/ionic/scss/_form.scss */
+/* line 178, ../lib/ionic/scss/_form.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -7597,7 +7598,7 @@ input[type="color"] {
   line-height: 16px;
 }
 
-/* line 193, ../lib/ionic/scss/_form.scss */
+/* line 194, ../lib/ionic/scss/_form.scss */
 .platform-ios input[type="datetime-local"],
 .platform-ios input[type="date"],
 .platform-ios input[type="month"],
@@ -7611,18 +7612,18 @@ input[type="color"] {
   padding-top: 8px;
 }
 
-/* line 199, ../lib/ionic/scss/_form.scss */
+/* line 200, ../lib/ionic/scss/_form.scss */
 input,
 textarea {
   width: 100%;
 }
 
-/* line 204, ../lib/ionic/scss/_form.scss */
+/* line 205, ../lib/ionic/scss/_form.scss */
 textarea {
   height: auto;
 }
 
-/* line 223, ../lib/ionic/scss/_form.scss */
+/* line 224, ../lib/ionic/scss/_form.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -7641,14 +7642,14 @@ input[type="color"] {
   border: 0;
 }
 
-/* line 229, ../lib/ionic/scss/_form.scss */
+/* line 230, ../lib/ionic/scss/_form.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0;
   line-height: normal;
 }
 
-/* line 241, ../lib/ionic/scss/_form.scss */
+/* line 242, ../lib/ionic/scss/_form.scss */
 input[type="file"],
 input[type="image"],
 input[type="submit"],
@@ -7659,12 +7660,12 @@ input[type="checkbox"] {
   width: auto;
 }
 
-/* line 246, ../lib/ionic/scss/_form.scss */
+/* line 247, ../lib/ionic/scss/_form.scss */
 input[type="file"] {
   line-height: 34px;
 }
 
-/* line 253, ../lib/ionic/scss/_form.scss */
+/* line 254, ../lib/ionic/scss/_form.scss */
 .previous-input-focus,
 .cloned-text-input + input,
 .cloned-text-input + textarea {
@@ -7689,7 +7690,7 @@ textarea::-webkit-input-placeholder {
   color: #3e4e5e;
 }
 
-/* line 277, ../lib/ionic/scss/_form.scss */
+/* line 278, ../lib/ionic/scss/_form.scss */
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -7700,7 +7701,7 @@ select[readonly] {
   cursor: not-allowed;
 }
 
-/* line 285, ../lib/ionic/scss/_form.scss */
+/* line 286, ../lib/ionic/scss/_form.scss */
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
 input[type="radio"][readonly],
@@ -11129,145 +11130,236 @@ body.offline .view .bar {
   color: #04192e;
 }
 
-@-webkit-keyframes rainbow {
+@-webkit-keyframes rainbow-border-color {
   /* line 192, ../../scss/ionic.app.scss */
   0% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 193, ../../scss/ionic.app.scss */
   33% {
-    color: lime !important;
-    border-color: lime !important;
+    border-color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 194, ../../scss/ionic.app.scss */
   67% {
-    color: blue !important;
-    border-color: blue !important;
+    border-color: blue;
   }
 
-  /* line 207, ../../scss/ionic.app.scss */
+  /* line 195, ../../scss/ionic.app.scss */
   100% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 }
 
-@-moz-keyframes rainbow {
+@-moz-keyframes rainbow-border-color {
   /* line 192, ../../scss/ionic.app.scss */
   0% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 193, ../../scss/ionic.app.scss */
   33% {
-    color: lime !important;
-    border-color: lime !important;
+    border-color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 194, ../../scss/ionic.app.scss */
   67% {
-    color: blue !important;
-    border-color: blue !important;
+    border-color: blue;
   }
 
-  /* line 207, ../../scss/ionic.app.scss */
+  /* line 195, ../../scss/ionic.app.scss */
   100% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 }
 
-@-ms-keyframes rainbow {
+@-ms-keyframes rainbow-border-color {
   /* line 192, ../../scss/ionic.app.scss */
   0% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 193, ../../scss/ionic.app.scss */
   33% {
-    color: lime !important;
-    border-color: lime !important;
+    border-color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 194, ../../scss/ionic.app.scss */
   67% {
-    color: blue !important;
-    border-color: blue !important;
+    border-color: blue;
   }
 
-  /* line 207, ../../scss/ionic.app.scss */
+  /* line 195, ../../scss/ionic.app.scss */
   100% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 }
 
-@keyframes rainbow {
+@keyframes rainbow-border-color {
   /* line 192, ../../scss/ionic.app.scss */
   0% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 193, ../../scss/ionic.app.scss */
   33% {
-    color: lime !important;
-    border-color: lime !important;
+    border-color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 194, ../../scss/ionic.app.scss */
   67% {
-    color: blue !important;
-    border-color: blue !important;
+    border-color: blue;
   }
 
-  /* line 207, ../../scss/ionic.app.scss */
+  /* line 195, ../../scss/ionic.app.scss */
   100% {
-    color: red !important;
-    border-color: red !important;
+    border-color: red;
   }
 }
 
-/* line 214, ../../scss/ionic.app.scss */
+@-webkit-keyframes color {
+  /* line 198, ../../scss/ionic.app.scss */
+  0% {
+    color: red;
+  }
+
+  /* line 199, ../../scss/ionic.app.scss */
+  33% {
+    color: lime;
+  }
+
+  /* line 200, ../../scss/ionic.app.scss */
+  67% {
+    color: blue;
+  }
+
+  /* line 201, ../../scss/ionic.app.scss */
+  100% {
+    color: red;
+  }
+}
+
+@-moz-keyframes color {
+  /* line 198, ../../scss/ionic.app.scss */
+  0% {
+    color: red;
+  }
+
+  /* line 199, ../../scss/ionic.app.scss */
+  33% {
+    color: lime;
+  }
+
+  /* line 200, ../../scss/ionic.app.scss */
+  67% {
+    color: blue;
+  }
+
+  /* line 201, ../../scss/ionic.app.scss */
+  100% {
+    color: red;
+  }
+}
+
+@-ms-keyframes color {
+  /* line 198, ../../scss/ionic.app.scss */
+  0% {
+    color: red;
+  }
+
+  /* line 199, ../../scss/ionic.app.scss */
+  33% {
+    color: lime;
+  }
+
+  /* line 200, ../../scss/ionic.app.scss */
+  67% {
+    color: blue;
+  }
+
+  /* line 201, ../../scss/ionic.app.scss */
+  100% {
+    color: red;
+  }
+}
+
+@keyframes color {
+  /* line 198, ../../scss/ionic.app.scss */
+  0% {
+    color: red;
+  }
+
+  /* line 199, ../../scss/ionic.app.scss */
+  33% {
+    color: lime;
+  }
+
+  /* line 200, ../../scss/ionic.app.scss */
+  67% {
+    color: blue;
+  }
+
+  /* line 201, ../../scss/ionic.app.scss */
+  100% {
+    color: red;
+  }
+}
+
+/* line 204, ../../scss/ionic.app.scss */
 .action-indicator-bar {
   border-bottom: 2px solid transparent;
 }
-/* line 218, ../../scss/ionic.app.scss */
+/* line 210, ../../scss/ionic.app.scss */
 .performing-action .action-indicator-bar, .action-indicator-bar.performing-action {
   border-bottom-color: red;
-  -webkit-animation: rainbow 4s linear infinite;
-  -moz-animation: rainbow 4s linear infinite;
-  animation: rainbow 4s linear infinite;
+  -webkit-animation: rainbow-border-color 4s linear infinite;
+  -moz-animation: rainbow-border-color 4s linear infinite;
+  animation: rainbow-border-color 4s linear infinite;
+}
+/* line 214, ../../scss/ionic.app.scss */
+.performing-action .action-indicator-bar .title, .action-indicator-bar.performing-action .title {
+  color: red;
+  -webkit-animation: color 4s linear infinite;
+  -moz-animation: color 4s linear infinite;
+  animation: color 4s linear infinite;
 }
 
-/* line 225, ../../scss/ionic.app.scss */
+/* line 221, ../../scss/ionic.app.scss */
 .wordmark {
   letter-spacing: 0.2em;
   margin-right: -0.2em;
   text-transform: uppercase;
-}
-/* line 231, ../../scss/ionic.app.scss */
-.wordmark.animated {
   font-style: none;
-  -webkit-animation: rainbow 180s linear infinite;
-  -moz-animation: rainbow 180s linear infinite;
-  animation: rainbow 180s linear infinite;
-}
-/* line 237, ../../scss/ionic.app.scss */
-.wordmark.animated b {
   font-weight: normal;
-  -webkit-animation: rainbow 198.0s linear infinite;
-  -moz-animation: rainbow 198.0s linear infinite;
-  animation: rainbow 198.0s linear infinite;
 }
 
-/* line 244, ../../scss/ionic.app.scss */
+/* line 230, ../../scss/ionic.app.scss */
 .pane {
   background-image: url("../img/backgrounds/faceoff.png");
   background-size: cover;
+}
+
+/* line 235, ../../scss/ionic.app.scss */
+.banner {
+  display: block;
+  padding: 5px;
+  height: 44px;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #223547;
+  background-color: #d4dadd;
+}
+/* line 247, ../../scss/ionic.app.scss */
+.banner.error {
+  text-align: center;
+  border-color: #a85913;
+  background-color: #cf7323;
+  background-image: linear-gradient(0deg, #a85913, #a85913 50%, transparent 50%);
+  color: white;
+}
+/* line 67, ../lib/ionic/scss/_mixins.scss */
+.banner.error .title {
+  color: white;
 }

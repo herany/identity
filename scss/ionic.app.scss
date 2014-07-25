@@ -188,37 +188,33 @@ body.offline {
 	}
 }
 
-@include keyframes(rainbow) {
-	0% {
-		$color: hsl(0, 100%, 50%);
-		color: $color !important;
-		border-color: $color !important;
-	}
-	33% {
-		$color: hsl(120, 100%, 50%);
-		color: $color !important;
-		border-color: $color !important;
-	}
-	67% {
-		$color: hsl(240, 100%, 50%);
-		color: $color !important;
-		border-color: $color !important;
-	}
-	100% {
-		$color: hsl(360, 100%, 50%);
-		color: $color !important;
-		border-color: $color !important;
-	}
+@include keyframes(rainbow-border-color) {
+	0%   { border-color: hsl(  0, 100%, 50%); }
+	33%  { border-color: hsl(120, 100%, 50%); }
+	67%  { border-color: hsl(240, 100%, 50%); }
+	100% { border-color: hsl(360, 100%, 50%); }
+}
+@include keyframes(color) {
+	0%   { color: hsl(  0, 100%, 50%); }
+	33%  { color: hsl(120, 100%, 50%); }
+	67%  { color: hsl(240, 100%, 50%); }
+	100% { color: hsl(360, 100%, 50%); }
 }
 
 .action-indicator-bar {
 	border-bottom: 2px solid transparent;
 
+	$duration: 4s;
+	$initial-color: hsl(0, 100%, 50%);
 	.performing-action &,
 	&.performing-action {
-		$duration: 4s;
-		border-bottom-color: hsl(0, 100%, 50%);
-		@include animation(rainbow $duration linear infinite);
+		border-bottom-color: $initial-color;
+		@include animation(rainbow-border-color $duration linear infinite);
+
+		.title {
+			color: $initial-color;
+			@include animation(color $duration linear infinite);
+		}
 	}
 }
 
@@ -227,18 +223,8 @@ body.offline {
 	letter-spacing: $letter-spacing;
 	margin-right: -$letter-spacing;
 	text-transform: uppercase;
-
-	&.animated {
-		$duration: 180s;
-
-		font-style: none;
-		@include animation(rainbow $duration linear infinite);
-
-		b {
-			font-weight: normal;
-			@include animation(rainbow 1.1 * $duration linear infinite);
-		}
-	}
+	font-style: none;
+	font-weight: normal;
 }
 
 .pane {
@@ -246,3 +232,20 @@ body.offline {
 	background-size: cover;
 }
 
+.banner {
+	display: block;
+	padding: $bar-padding-portrait;
+
+	height: $bar-height;
+	border-width: 0;
+	border-style: solid;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid $bar-default-border;
+
+	background-color: $bar-default-bg;
+
+	&.error {
+		text-align: center;
+		@include bar-style($bar-energized-bg, $bar-energized-border, $bar-energized-text);
+	}
+}
