@@ -87,6 +87,9 @@ textarea {
 	text-align: center;
 	font-size: 2em;
 }
+.secondary-action {
+	float: right;
+}
 
 body.offline {
 	.pane,
@@ -169,3 +172,77 @@ body.offline {
 	}
 }
 // end: ----------------- radio-set -----------------
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@include keyframes(rainbow) {
+	0% {
+		$color: hsl(0, 100%, 50%);
+		color: $color !important;
+		border-color: $color !important;
+	}
+	33% {
+		$color: hsl(120, 100%, 50%);
+		color: $color !important;
+		border-color: $color !important;
+	}
+	67% {
+		$color: hsl(240, 100%, 50%);
+		color: $color !important;
+		border-color: $color !important;
+	}
+	100% {
+		$color: hsl(360, 100%, 50%);
+		color: $color !important;
+		border-color: $color !important;
+	}
+}
+
+.action-indicator-bar {
+	border-bottom: 2px solid transparent;
+
+	.performing-action &,
+	&.performing-action {
+		$duration: 4s;
+		border-bottom-color: hsl(0, 100%, 50%);
+		@include animation(rainbow $duration linear infinite);
+	}
+}
+
+.wordmark {
+	$letter-spacing: 0.2em;
+	letter-spacing: $letter-spacing;
+	margin-right: -$letter-spacing;
+	text-transform: uppercase;
+
+	&.animated {
+		$duration: 180s;
+
+		font-style: none;
+		@include animation(rainbow $duration linear infinite);
+
+		b {
+			font-weight: normal;
+			@include animation(rainbow 1.1 * $duration linear infinite);
+		}
+	}
+}
+
+.pane {
+	background-image: url('../img/backgrounds/faceoff.png');
+	background-size: cover;
+}
+

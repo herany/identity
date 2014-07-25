@@ -96,10 +96,10 @@
 		.filter("databitIconClass", function () {
 			return function (type) {
 				switch (type.toLowerCase()) {
-					case "birthday": return "ion-ios7-calendar";
-					case "health": return "ion-ios7-medkit";
-					case "phone": return "ion-ios7-telephone";
-					case "photo": return "ion-camera";
+					case "birthdaydatabit": return "ion-ios7-calendar";
+					case "healthdatabit": return "ion-ios7-medkit";
+					case "phonedatabit": return "ion-ios7-telephone";
+					case "photodatabit": return "ion-camera";
 					default: return "ion-ios7-flag";
 				}
 			};

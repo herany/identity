@@ -10,13 +10,23 @@ var AppControllerDefinition = [
 	"ModelState",
 	function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService, ModelState) {
 		"use strict";
-		$log.info("CheckinController", arguments);
+		$log.info("AppController", arguments);
 
 
 		$scope.debug = function () {
 			$log.log($scope);
 		};
+		$scope.indicators = {
+			ajaxing: 0
+		};
 
+		$scope.ajaxing = function (done) {
+			if (done) {
+				$scope.indicators.ajaxing = Math.max(0, $scope.indicators.ajaxing - 1);
+			} else {
+				$scope.indicators.ajaxing++;
+			}
+		};
 
 		if (navigator.splashscreen) {
 			$log.info("Showing Splash Screen", arguments);
@@ -65,12 +75,15 @@ var AppControllerDefinition = [
 			return $ionicNavBarDelegate.getPreviousTitle();
 		};
 
+		$scope.ajaxing();
 		UserService.user().then(function (user) {
 			console.log("AppController::user (success!)", arguments);
 			$scope.setLoggedInUser(user);
+			$scope.ajaxing(true);
 		}, function (error) {
 			console.log("AppController::user (error)", arguments);
 			$scope.setLoggedInUser(null);
+			$scope.ajaxing(true);
 		});
 
 		function gotoScanner () {

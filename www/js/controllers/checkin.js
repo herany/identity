@@ -8,11 +8,14 @@ var CheckinControllerDefinition = [
 
 		// if user has children, prompt for who is checking in
 
+		$scope.ajaxing();
 		UserService.user().then(function (user) {
 			console.log("CheckinController::~ctor (success!)", user);
-			$scope.user = user;
+			$scope.user = user; // this seems odd
+			$scope.ajaxing(true);
 		}, function (message) {
 			console.log("CheckinController::~ctor (error)", message);
+			$scope.ajaxing(true);
 		});
 
 		// add plugin: cordova plugin add org.apache.cordova.vibration

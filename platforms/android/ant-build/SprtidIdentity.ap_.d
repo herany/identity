@@ -1771,6 +1771,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_barcode.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_birthday.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_photo.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_history.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_history_checkin.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_history_scan.html \

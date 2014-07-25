@@ -17,6 +17,8 @@
 	<access origin="http://localhost*"/> <!-- allow local pages -->
 	<access origin="http://api.sprtid.com/*" />
 	<access origin="http://sprtid-api.herokuapp.com/*" />
+	<access origin="http://http://res.cloudinary.com/sprtid/*" />
+	<access origin="https://http://res.cloudinary.com/sprtid/*" />
 
 	<preference name="fullscreen" value="false" />
 	<preference name="orientation" value="portrait"/>

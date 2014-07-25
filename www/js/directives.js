@@ -7,6 +7,26 @@
 				elm.text(version);
 			};
 		}])
+		.directive("actionIndicatorBar", function () {
+			return {
+				// restrict: "E",
+				restrict: "A",
+				scope: false,
+				// replace: true,
+				// transclude: true,
+				// template: '<div class="action-indicator-bar" ng-class="{\'performing-action\': inAction}" ng-transclude></div>'
+				link: function (scope, element, attributes) {
+					scope.$watch(attributes.inAction, function (isInAction, wasInAction) {
+						if (isInAction) {
+							element.addClass("performing-action");
+						} else {
+							element.removeClass("performing-action");
+						}
+					});
+					element.addClass("action-indicator-bar");
+				}
+			};
+		})
 		// .directive("cordovaBarcodeScanner", ["$log"])
 		.directive("sprtidUser", ["AppConfig", function (AppConfig) {
 			return {
@@ -59,6 +79,15 @@
 					databit: "="
 				},
 				templateUrl: AppConfig.templatesPath + "partials/_databit_birthday.html"
+			};
+		}])
+		.directive("sprtidDatabitHealth", ["AppConfig", function (AppConfig) {
+			return {
+				restrict: "E",
+				scope: {
+					databit: "="
+				},
+				templateUrl: AppConfig.templatesPath + "partials/_databit_health.html"
 			};
 		}])
 		.directive("sprtidDatabitPhoto", ["AppConfig", function (AppConfig) {

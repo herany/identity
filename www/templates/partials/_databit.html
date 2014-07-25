@@ -44,13 +44,15 @@ end
 			<sprtid-databit-barcode ng-switch-when="BarcodeDataBit" databit="databit"></sprtid-databit-barcode>
 			<sprtid-databit-birthday ng-switch-when="BirthdayDataBit" databit="databit"></sprtid-databit-birthday>
 			<sprtid-databit-photo ng-switch-when="PhotoDataBit" databit="databit"></sprtid-databit-photo>
+			<sprtid-databit-health ng-switch-when="HealthDataBit" databit="databit"></sprtid-databit-health>
 			<pre ng-switch-default>{{ databit | jsonFormatter }}</pre>
 		</div>
 		<div class="item item-light item-divider">
 			<span class="icon icon-left {{ databit.visibility | databitVisibilityClass }}">
 				{{ databit.visibility }}
 			</span>
-			<button class="button button-icon button-small item-button-right icon ion-close" ng-click="onDelete({databit: databit})"></button>
+			<!-- this button should be edit, which opens edit options: 1) move up/down; 2) edit; 3) delete; -->
+			<button class="button button-icon button-small secondary-action icon ion-close" ng-click="onDelete({databit: databit})"></button>
 		</div>
 	</div>
 </div>

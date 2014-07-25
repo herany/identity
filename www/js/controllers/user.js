@@ -42,11 +42,14 @@ var UserControllerDefinition = [
 		}
 
 		if ($stateParams.id) {
+			$scope.ajaxing();
 			UserService.user($stateParams.id)
 				.then(function (user, status, headers, config) {
 					$scope.user = user;
+					$scope.ajaxing(true);
 				}, function (message, status, headers, config) {
 					$scope.user = null;
+					$scope.ajaxing(true);
 				});
 		} else {
 			$scope.user = $scope.getLoggedInUser();
@@ -60,16 +63,19 @@ var UserControllerDefinition = [
 				$scope.setLoggedInUser(user);
 			}
 			$scope.user = user;
+			$scope.ajaxing(true);
 		};
 		fnError = function (message) {
 			$log.log("UserController::save ($q.reject)", arguments);
 			$scope.error = message;
+			$scope.ajaxing(true);
 		};
 		fnNotify = function () {
 			$log.log("UserController::save ($q.notify)", arguments);
 		};
 
 		$scope.save = function () {
+			$scope.ajaxing();
 			UserService
 				.save($scope.user)
 				.then(fnSuccess, fnError, fnNotify)
@@ -97,15 +103,13 @@ var UserControllerDefinition = [
 
 			fn = dataBit.type === "photo" ? UserService.saveDatabitWithImage : UserService.saveDatabit;
 
-			// show ajaxing indicator
+			$scope.ajaxing();
 			fn($scope.user.id, dataBit, formObj.imageUri)
 				.then(function () {
-					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
 					initializeDatabit();
 					$scope.databitModal.hide();
 				}, function () {
-					// hide ajaxing indicator
 					fnError.apply(this, arguments);
 				}, fnNotify)
 				;
@@ -123,26 +127,22 @@ var UserControllerDefinition = [
 		};
 
 		$scope.editDatabit = function () {
-			// show ajaxing indicator
+			$scope.ajaxing();
 			UserService.editDatabit($scope.user.id, $scope.databit)
 				.then(function () {
-					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
 				}, function () {
-					// hide ajaxing indicator
 					fnError.apply(this, arguments);
 				}, fnNotify)
 				;
 		};
 
 		$scope.deleteDatabit = function (databit) {
-			// show ajaxing indicator
+			$scope.ajaxing();
 			UserService.deleteDatabit($scope.user.id, databit.id)
 				.then(function () {
-					// hide ajaxing indicator
 					fnSuccess.apply(this, arguments);
 				}, function () {
-					// hide ajaxing indicator
 					fnError.apply(this, arguments);
 				}, fnNotify)
 				;
@@ -166,12 +166,15 @@ var BarcodeUserControllerDefinition = [
 		$log.info("BarcodeUserController", arguments);
 
 		if ($stateParams.barcode) {
+			$scope.ajaxing();
 			UserService.userByBarcode($stateParams.barcode)
 				.then(function (user, status, headers, config) {
+					$scope.ajaxing(true);
 					$state.go("app.user", {id: user.id});
 				}, function (message, status, headers, config) {
 					$scope.success = false;
 					$scope.message = message;
+					$scope.ajaxing(true);
 				});
 		} else {
 			$scope.user = $scope.getLoggedInUser();
