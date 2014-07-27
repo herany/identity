@@ -1,7 +1,7 @@
-;(function (APP_NAME, angular, undefined) {
+;(function (appName, angular, undefined) {
 	"use strict";
 
-	angular.module(APP_NAME + ".factories", [])
+	angular.module(appName + ".factories", [])
 		.factory("UserService", ["$window", "$http", "$q", "$log", "AppConfig", function ($window, $http, $q, $log, AppConfig) {
 			var methods = {
 				login: function (params) {
@@ -319,4 +319,4 @@
 		// 	};
 		// }])
 	;
-})("sprtidApp", angular);
+})(SprtId.AppName, angular);

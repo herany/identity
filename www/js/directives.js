@@ -1,7 +1,7 @@
-;(function (APP_NAME, angular, undefined) {
+;(function (appName, angular, undefined) {
 	"use strict";
 
-	angular.module(APP_NAME + ".directives", [])
+	angular.module(appName + ".directives", [])
 		.directive("appVersion", ["version", function(version) {
 			return function(scope, elm, attrs) {
 				elm.text(version);
@@ -184,4 +184,4 @@
 			};
 		})
 	;
-})("sprtidApp", angular);
+})(SprtId.AppName, angular);

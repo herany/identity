@@ -1,6 +1,6 @@
 /*jshint smarttabs:true */
 
-;(function (APP_NAME, angular, moment, undefined) {
+;(function (appName, angular, moment, undefined) {
 	"use strict";
 
 	function getActiveDatabitsByType (dataBits, typePattern) {
@@ -30,7 +30,7 @@
 		return barcodeDataBit;
 	}
 
-	angular.module(APP_NAME + ".filters", [])
+	angular.module(appName + ".filters", [])
 		.filter("interpolate", ["version", function (version) {
 			return function (text) {
 				return String(text).replace(/\%VERSION\%/mg, version);
@@ -149,4 +149,4 @@
 			};
 		})
 	;
-})("sprtidApp", angular, moment);
+})(SprtId.AppName, angular, moment);

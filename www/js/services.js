@@ -1,7 +1,7 @@
-;(function (APP_NAME, angular, undefined) {
+;(function (appName, angular, undefined) {
 	'use strict';
 
-	angular.module(APP_NAME + '.services', [])
+	angular.module(appName + '.services', [])
 		.value('version', '0.1')
 		.service('CordovaService', ['$document', '$q', function ($document, $q) {
 			var d = $q.defer(),
@@ -25,4 +25,4 @@
 			}, 1500);
 		}])
 	;
-})("sprtidApp", angular);
+})(SprtId.AppName, angular);

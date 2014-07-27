@@ -4,7 +4,7 @@
 // "starter" is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of "requires"
 // "starter.controllers" is found in controllers.js
-;(function (APP_NAME, angular, cordova, StatusBar, undefined) {
+;(function (appName, angular, cordova, StatusBar, undefined) {
 	"use strict";
 
 	angular
@@ -14,12 +14,12 @@
 			// "http-auth-interceptor",
 			// "facebook",
 			"monospaced.qrcode",
-			APP_NAME + ".constants",
-			APP_NAME + ".filters",
-			APP_NAME + ".services",
-			APP_NAME + ".factories",
-			APP_NAME + ".directives",
-			APP_NAME + ".controllers"
+			appName + ".constants",
+			appName + ".filters",
+			appName + ".services",
+			appName + ".factories",
+			appName + ".directives",
+			appName + ".controllers"
 		])
 
 		.run(function ($ionicPlatform) {
@@ -184,4 +184,4 @@
 		}])
 	;
 
-})("sprtidApp", angular, window.cordova, window.StatusBar);
+})(SprtId.AppName, angular, window.cordova, window.StatusBar);

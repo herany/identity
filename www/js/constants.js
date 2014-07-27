@@ -1,4 +1,4 @@
-;(function (APP_NAME, angular, undefined) {
+;(function (appName, angular, undefined) {
 	"use strict";
 
 	var LogLevel = {
@@ -15,7 +15,7 @@
 	    wwwIndex = currentScriptPath.indexOf("/www/"),
 	    templatesPath = (wwwIndex >= 0 ? currentScriptPath.substring(0, wwwIndex + 5) : "/") + "templates/";
 
-	angular.module(APP_NAME + ".constants", [])
+	angular.module(appName + ".constants", [])
 		.constant("LogLevel", LogLevel)
 		.constant("ModelState", {
 			read: 1,
@@ -28,4 +28,4 @@
 			templatesPath: templatesPath
 		})
 	;
-})("sprtidApp", angular);
+})(SprtId.AppName, angular);

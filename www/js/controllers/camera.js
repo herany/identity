@@ -5,8 +5,6 @@
 			"$log",
 			"$cordovaCamera",
 			function ($scope, $log, $cordovaCamera) {
-				$log.info("CameraController", arguments);
-
 				var fnSuccess, fnError, fnNotify;
 
 				function setError (msg) {
@@ -20,19 +18,12 @@
 				setImageUri();
 
 				fnSuccess = function (imageUri) {
-					$log.log("CameraController#takePicture (success)", arguments);
-
 					setImageUri(imageUri);
 					setError(null);
 					$scope.$emit(Self.events.getImage, imageUri);
 				};
 				fnError = function (err) {
-					$log.log("CameraController#takePicture (failure)", arguments);
-
 					setError(err);
-				};
-				fnNotify = function () {
-					$log.log("CameraController#takePicture (notify)", arguments);
 				};
 
 				$scope.takePicture = function () {
@@ -45,7 +36,7 @@
 						mediaType: Camera.MediaType.PICTURE
 						// See all the possible Camera options from the Camera docs:
 						// https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md#cameraoptions
-					}).then(fnSuccess, fnError, fnNotify);
+					}).then(fnSuccess, fnError);
 				};
 
 				$scope.choosePicture = function () {
@@ -58,7 +49,7 @@
 						mediaType: Camera.MediaType.PICTURE
 						// See all the possible Camera options from the Camera docs:
 						// https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md#cameraoptions
-					}).then(fnSuccess, fnError, fnNotify);
+					}).then(fnSuccess, fnError);
 				};
 			}
 		];

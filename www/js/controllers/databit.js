@@ -1,43 +1,41 @@
-var DatabitControllerDefinition = [
-	"$scope",
-	"$log",
-	"$stateParams",
-	"DatabitService",
-	function ($scope, $log, $stateParams, DatabitService) {
-		"use strict";
-		$log.info("DatabitController", arguments);
+;(function (SprtId) { "use strict";
+	var Self = SprtId.Controllers.Databit = function () {
+		return [
+			"$scope",
+			"$log",
+			"$stateParams",
+			"DatabitService",
+			function ($scope, $log, $stateParams, DatabitService) {
+				$scope.ajaxing();
+				DatabitService.user($stateParams.id)
+					.then(function (data, status, headers, config) {
+						$scope.user = data;
+					}, function (data, status, headers, config) {
+						$scope.user = null;
+					})
+					.finally(function () {
+						$scope.ajaxing(true);
+					});
 
-		$scope.ajaxing();
-		DatabitService.user($stateParams.id).then(function (data, status, headers, config) {
-			console.log("DatabitService::login (success!)", data);
-			$scope.user = data;
-			$scope.ajaxing(true);
-		}, function (data, status, headers, config) {
-			console.log("DatabitService::login (error)", data, status);
-			$scope.user = null;
-			$scope.ajaxing(true);
-		});
+				$scope.save = function () {
+					var fnSuccess, fnError;
 
-		$scope.save = function () {
-			var fnSuccess, fnError, fnNotify;
+					fnSuccess = function (user) {
+						$scope.success = true;
+						$scope.setLoggedInUser(user);
+					};
+					fnError = function (message) {
+						$scope.error = message;
+					};
 
-			fnSuccess = function (user) {
-				$log.log("DatabitController::save ($q.resolve)", arguments);
-				$scope.success = true;
-				$scope.setLoggedInUser(user);
-				$scope.ajaxing(true);
-			};
-			fnError = function (message) {
-				$log.log("DatabitController::save ($q.reject)", arguments);
-				$scope.error = message;
-				$scope.ajaxing(true);
-			};
-			fnNotify = function () {
-				$log.log("DatabitController::save ($q.notify)", arguments);
-			};
-
-			$scope.ajaxing();
-			UserService.saveDatabit($scope.user.id, $scope.databit).then(fnSuccess, fnError, fnNotify);
-		};
-	}
-];
+					$scope.ajaxing();
+					UserService.saveDatabit($scope.user.id, $scope.databit)
+						.then(fnSuccess, fnError, fnNotify)
+						.finally(function () {
+							$scope.ajaxing(true);
+						});
+				};
+			}
+		];
+	};
+})(window.SprtId);

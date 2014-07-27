@@ -1,29 +1,26 @@
-;(function (APP_NAME, angular, undefined) {
+;(function (appName, angular, undefined) {
 	"use strict";
 
-	angular.module(APP_NAME + ".controllers", [])
-		.controller("AppController", AppControllerDefinition)
+	angular.module(appName + ".controllers", [])
+		.controller("AppController", SprtId.Controllers.App())
 
-		.controller("AuthController", AuthControllerDefinition)
-		.controller("BarcodeUserController", BarcodeUserControllerDefinition)
+		.controller("AuthController", SprtId.Controllers.Auth())
+		.controller("BarcodeUserController", SprtId.Controllers.BarcodeUser())
 		.controller("CameraController", SprtId.Controllers.Camera())
-		.controller("CheckinController", CheckinControllerDefinition)
-		.controller("CreateController", ["$scope", "$log", function ($scope, $log) {
-			$log.info("CreateController", arguments);
-		}])
-		// .controller("DatabitController", DatabitControllerDefinition)
-		// .controller("FacebookController", FacebookAuthControllerDefinition)
-		.controller("HomeController", HomeControllerDefinition)
-		.controller("LoginController", LoginAuthControllerDefinition)
-		.controller("LogoutController", LogoutAuthControllerDefinition)
-		.controller("ScanController", ScanControllerDefinition)
+		.controller("CheckinController", SprtId.Controllers.Checkin())
+		// .controller("DatabitController", SprtId.Controllers.Databit())
+		// .controller("FacebookController", SprtId.Controllers.FacebookAuth())
+		.controller("HomeController", SprtId.Controllers.Home())
+		.controller("LoginController", SprtId.Controllers.LoginAuth())
+		.controller("LogoutController", SprtId.Controllers.LogoutAuth())
+		.controller("ScanController", SprtId.Controllers.Scan())
 		.controller("SettingsController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("SettingsController", arguments);
 		}])
-		.controller("ShopController", ["$scope", "$log", function ($scope, $log) {
-			$log.info("ShopController", arguments);
-		}])
-		.controller("SignupController", SignupAuthControllerDefinition)
-		.controller("UserController", UserControllerDefinition)
+		// .controller("ShopController", ["$scope", "$log", function ($scope, $log) {
+		// 	$log.info("ShopController", arguments);
+		// }])
+		.controller("SignupController", SprtId.Controllers.SignupAuth())
+		.controller("UserController", SprtId.Controllers.User())
 	;
-})("sprtidApp", angular);
+})(SprtId.AppName, angular);
