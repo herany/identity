@@ -223,8 +223,13 @@ body.offline {
 	letter-spacing: $letter-spacing;
 	margin-right: -$letter-spacing;
 	text-transform: uppercase;
-	font-style: none;
+	font-family: $font-family-serif;
+	font-style: normal;
 	font-weight: normal;
+}
+
+pre.databit-barcode-barcode {
+	font-family: $font-family-serif;
 }
 
 .pane {

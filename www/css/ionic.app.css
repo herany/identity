@@ -8116,7 +8116,7 @@ input:checked + .checkbox-icon:after {
 /* line 37, ../lib/ionic/scss/_radio.scss */
 .item-radio input:checked ~ .item-content {
   /* style the item content when its checked */
-  background: #f7f7f7;
+  background: #081d31;
 }
 /* line 42, ../lib/ionic/scss/_radio.scss */
 .item-radio input:checked ~ .radio-icon {
@@ -10980,7 +10980,7 @@ a.button {
 /* line 34, ../../scss/ionic.app.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* line 42, ../../scss/ionic.app.scss */
@@ -11063,7 +11063,7 @@ body.offline .view .bar {
 /* line 109, ../../scss/ionic.app.scss */
 .databit-birthday .databit-birthday-age {
   font-size: 5em;
-  font-family: "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1em;
 }
 /* line 114, ../../scss/ionic.app.scss */
@@ -11330,17 +11330,23 @@ body.offline .view .bar {
   letter-spacing: 0.2em;
   margin-right: -0.2em;
   text-transform: uppercase;
-  font-style: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
   font-weight: normal;
 }
 
-/* line 230, ../../scss/ionic.app.scss */
+/* line 231, ../../scss/ionic.app.scss */
+pre.databit-barcode-barcode {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 235, ../../scss/ionic.app.scss */
 .pane {
   background-image: url("../img/backgrounds/faceoff.png");
   background-size: cover;
 }
 
-/* line 235, ../../scss/ionic.app.scss */
+/* line 240, ../../scss/ionic.app.scss */
 .banner {
   display: block;
   padding: 5px;
@@ -11351,7 +11357,7 @@ body.offline .view .bar {
   border-bottom: 1px solid #223547;
   background-color: #d4dadd;
 }
-/* line 247, ../../scss/ionic.app.scss */
+/* line 252, ../../scss/ionic.app.scss */
 .banner.error {
   text-align: center;
   border-color: #a85913;

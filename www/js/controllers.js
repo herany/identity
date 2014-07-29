@@ -13,6 +13,8 @@
 		.controller("HomeController", SprtId.Controllers.Home())
 		.controller("LoginController", SprtId.Controllers.LoginAuth())
 		.controller("LogoutController", SprtId.Controllers.LogoutAuth())
+		.controller("MembershipsController", SprtId.Controllers.Memberships())
+		.controller("PreregisterController", SprtId.Controllers.Preregister())
 		.controller("ScanController", SprtId.Controllers.Scan())
 		.controller("SettingsController", ["$scope", "$log", function ($scope, $log) {
 			$log.info("SettingsController", arguments);

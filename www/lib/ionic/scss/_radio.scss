@@ -36,7 +36,7 @@
 
   &:checked ~ .item-content {
     /* style the item content when its checked */
-    background: #f7f7f7;
+    background: $input-active-bg;
   }
 
   &:checked ~ .radio-icon {

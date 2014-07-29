@@ -1,0 +1,38 @@
+<div class="modal">
+	<!-- Modal header bar -->
+	<ion-header-bar class="bar-secondary">
+		<h1 class="title">Request Membership</h1>
+		<button class="button button-clear button-assertive" ng-click="cancelNewMembership()">Cancel</button>
+	</ion-header-bar>
+
+	<!-- Modal content area -->
+	<ion-content class="has-header" padding="true">
+		<div class="page-content padding">
+
+
+			<!-- add a message if no unrequested organizations -->
+
+
+			<form ng-submit="requestMembership(membership)">
+
+				<div class="item">
+					<ion-radio ng-repeat="o in organizations" ng-model="membership.organizationId" name="organization" ng-value="o.id">
+						{{ o.name }}
+						<!-- indicated pending, active, etc.  Disable if already requested -->
+					</ion-radio>
+				</div>
+
+				<label for="membership-member-id" class="item item-input">
+					<span class="input-label">Member Id</span>
+					<input type="text" id="membership-member-id" name="memberId" ng-model="membership.memberId" placeholder="ABC123" />
+				</label>
+
+				<div class="actions">
+					<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive">
+						Request Membership
+					</button>
+				</div>
+			</form>
+		</div>
+	</ion-content>
+</div>

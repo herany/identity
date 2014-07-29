@@ -578,7 +578,7 @@ html {
 /* line 34, ../../scss/sprtid.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   color: #ecf0f1;
 }

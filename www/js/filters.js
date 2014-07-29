@@ -148,5 +148,20 @@
 				return history;
 			};
 		})
+		.filter("getUserOrganizations", function () {
+			return function (user) {
+				var organizations = [];
+
+				if (!user || !user.memberships) { return []; }
+
+				angular.forEach(user.memberships, function (membership) {
+					if (!membership.noLongerActive) {
+						organizations.push(membership.organization);
+					}
+				}, organizations);
+
+				return organizations;
+			}
+		})
 	;
 })(SprtId.AppName, angular, moment);

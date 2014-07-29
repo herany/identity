@@ -61,6 +61,26 @@
 					}
 				})
 
+				.state("app.memberships", {
+					url: "/memberships",
+					views: {
+						"menuContent": {
+							templateUrl: "templates/memberships.html",
+							controller: "MembershipsController"
+						}
+					}
+				})
+
+				.state("app.preregister", {
+					url: "/preregister/:organizationId/:eventId",
+					views: {
+						"menuContent": {
+							templateUrl: "templates/preregister.html",
+							controller: "PreregisterController"
+						}
+					}
+				})
+
 				.state("app.checkin", {
 					url: "/checkin",
 					views: {

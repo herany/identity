@@ -111,7 +111,7 @@ $seriously-dark:  white;
 // ----- overrides -----
 $font-family-sans-serif:          "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-family-light-sans-serif:    "Roboto-Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-$font-family-serif:               "Roboto-Light", Georgia, "Times New Roman", Times, serif;
+$font-family-serif:               Georgia, "Times New Roman", Times, serif;
 
 $menu-bg:                         $seriously-light;
 $base-background-color:           $light;
@@ -144,6 +144,7 @@ $button-dark-border:              mix($dark, $light, 86.67%); // DD / FF
 $button-dark-active-bg:           mix($dark, $light, 98%); // FA / FF
 $button-dark-active-border:       mix($dark, $light, 80%); // CC / FF
 
+$input-active-bg:                 mix($light, $dark, 98%); // #f7f7f7;
 
 
 $bar-light-bg:                    $lighter;

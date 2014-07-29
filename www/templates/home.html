@@ -9,7 +9,7 @@
 			</div>
 			<div class="col col-67">
 				<h3>
-					Welcome to <em class='wordmark animated'>SPRT<b>ID</b></em><span ng-show="loggedIn()">, {{ user.firstName }}</span>
+					Welcome to <em class='wordmark'>SPRTID</em><span ng-show="loggedIn()">, {{ user.firstName }}</span>
 				</h3>
 				<p>
 					<em class='wordmark'>SPRTID</em> allows you to quickly check into your events.
@@ -24,23 +24,13 @@
 				</p>
 			</div>
 		</div>
-		<div class="row" ng-hide="loggedIn()">
-			<div class="col col-50">
-				<div class="tile tile-icon">
-					<a href="#/app/login" class="tile-content">
-						<span class="icon ion-log-in"></span>
-						<span class="label">Log In</span>
-					</a>
-				</div>
-			</div>
-			<div class="col col-50">
-				<div class="tile tile-icon">
-					<a href="#/app/signup" class="tile-content">
-						<span class="icon ion-log-in"></span>
-						<span class="label">Register</span>
-					</a>
-				</div>
-			</div>
+		<div ng-hide="loggedIn()">
+			<a class="button button-block button-balanced icon-left ion-log-in" ui-sref="app.login">
+				Log In
+			</a>
+			<a class="button button-block button-balanced icon-left ion-ios7-personadd" ui-sref="app.signup">
+				Sign Up
+			</a>
 		</div>
 
 		<sprtid-history user="user" ng-show="loggedIn()"></sprtid-history>

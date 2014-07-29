@@ -1,6 +1,8 @@
 todo:
-- preregister for an event
+- request organization membership
+- apply preregistration URL params (organizationId/eventId)
 - accept waiver
+  - user finger to sign: https://github.com/szimek/signature_pad - bower install signature_pad
 - add user (dependant)
 - launch camera immediately
 - Add Misc Data Bit
@@ -52,3 +54,4 @@ done:
 - pick picture from library
 - ajax indicator
 - bug: delete data bit response includes deleted databit
+- preregister for an event: list all events: pick one; [choose dependant]; "sign form"

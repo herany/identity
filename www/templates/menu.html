@@ -22,11 +22,19 @@
 				</ion-item>
 				<ion-item menu-close class="item-icon-left" ui-sref="app.signup" ng-hide="loggedIn()">
 					<i class="icon ion-log-in"></i>
-					Register
+					Sign Up
 				</ion-item>
 				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.profile" ng-show="loggedIn()">
 					<i class="icon ion-profile"></i>
 					{{ getUser() | fullName:'Profile' }}
+				</ion-item>
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.preregister" ng-show="loggedIn()">
+					<i class="icon ion-ios7-flag"></i>
+					Attend Event (Pre-register)
+				</ion-item>
+				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.memberships" ng-show="loggedIn()">
+					<i class="icon ion-ios7-people"></i>
+					Memberships
 				</ion-item>
 				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.checkin">
 					<i class="icon ion-compass"></i>
@@ -34,7 +42,7 @@
 				</ion-item>
 				<ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.scan">
 					<i class="icon ion-qrcode"></i>
-					Scan an Id
+					Scan Id
 				</ion-item>
 				<ion-item nav-clear menu-close class="item-icon-left assertive" ui-sref="app.logout" ng-show="loggedIn()">
 					<i class="icon ion-log-in"></i>
