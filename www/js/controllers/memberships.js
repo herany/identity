@@ -69,6 +69,7 @@
 							$scope.requestingOrganizations = true;
 							$scope.ajaxing(true);
 						});
+					$scope.membership = {};
 					$scope.membershipModal.show();
 				};
 
