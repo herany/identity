@@ -10,14 +10,23 @@
 				// if user has children, prompt for who is checking in
 
 				$scope.current = {};
-				$scope.getCurrentOrganization = function () {
-					return $scope.current.organization;
+				$scope.getCurrentOrganization = function (property, defaultValue) {
+					var o = $scope.current.organization;
+					if (o && property) {
+						return o[property] || defaultValue;
+					}
+					return o;
 				};
 				$scope.setCurrentOrganization = function (organization) {
 					$scope.current.organization = organization;
+
+					$scope.listEvents(organization); // what is best practice here?  should there be a $watch statement somewhere else?
 				};
 				$scope.hasCurrentOrganization = function (organization) {
 					return $scope.current.organization && $scope.current.organization.id;
+				};
+				$scope.hasOrganizations = function () {
+					return !!($scope.organizations && $scope.organizations.length);
 				};
 				$scope.getCurrentEvent = function () {
 					return $scope.current.event;
@@ -28,8 +37,15 @@
 				$scope.hasCurrentEvent = function (event) {
 					return $scope.current.event && $scope.current.event.id;
 				};
+				$scope.hasEvents = function () {
+					if (!$scope.hasCurrentOrganization()) { return; }
 
+					return !!($scope.events && $scope.events.length);
+				};
+
+				$scope.fetchingEvents = false;
 				$scope.listEvents = function (organization) {
+					$scope.fetchingEvents = true;
 					$scope.ajaxing();
 					EventService.list(organization.id)
 						.then(function (events) {
@@ -42,6 +58,7 @@
 						})
 						.finally(function () {
 							$scope.ajaxing(true);
+							$scope.fetchingEvents = false;
 						});
 				};
 

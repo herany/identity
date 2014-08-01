@@ -11362,10 +11362,5 @@ pre.databit-barcode-barcode {
   text-align: center;
   border-color: #a85913;
   background-color: #cf7323;
-  background-image: linear-gradient(0deg, #a85913, #a85913 50%, transparent 50%);
-  color: white;
-}
-/* line 67, ../lib/ionic/scss/_mixins.scss */
-.banner.error .title {
   color: white;
 }

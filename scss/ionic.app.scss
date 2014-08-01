@@ -251,6 +251,8 @@ pre.databit-barcode-barcode {
 
 	&.error {
 		text-align: center;
-		@include bar-style($bar-energized-bg, $bar-energized-border, $bar-energized-text);
+		border-color: $bar-energized-border;
+		background-color: $bar-energized-bg;
+		color: $bar-energized-text;
 	}
 }

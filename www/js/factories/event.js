@@ -6,17 +6,17 @@
 			"AppConfig",
 			function ($http, $q, AppConfig) {
 				var methods = {
-					list: function (organization) {
+					list: function (organizationId) {
 						var config, deferred;
 
 						deferred = $q.defer();
 
 						config = {
 							url: AppConfig.apiBaseUrl + "/v1/events",
-							data: {
-								organizationId: organization.id
-							},
-							method: "GET"
+							method: "GET",
+							params: {
+								organizationId: organizationId
+							}
 						};
 
 						$http(config)

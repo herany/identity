@@ -1,5 +1,5 @@
 todo:
-- request organization membership
+- preregister: indicate (and disable) events for which a user has already pre-registered
 - apply preregistration URL params (organizationId/eventId)
 - accept waiver
   - user finger to sign: https://github.com/szimek/signature_pad - bower install signature_pad
@@ -17,10 +17,11 @@ todo:
 - consider the offline state... write to localStorage for every data-daving operation. if/when online becomes available, send to server
 - do not require payment to add to profile... display a banner when additional "pay" data bits have been created (obv. hide those bits if !payment)
 - more ion icons (or icomoon)
+- memoize requests! (allow for localStorage or inMemory memoization)
 
 
 in progress:
-- Add Photo Data Bit
+- preregister: list only events belonging to an organization
 
 
 backlog:
@@ -51,7 +52,9 @@ done:
 - splashscreens
 - radioset (like button set)
 - display photo
+- Add Photo Data Bit
 - pick picture from library
 - ajax indicator
 - bug: delete data bit response includes deleted databit
 - preregister for an event: list all events: pick one; [choose dependant]; "sign form"
+- request organization membership

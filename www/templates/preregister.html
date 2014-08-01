@@ -8,17 +8,23 @@
 				<h2>Choose Organization</h2>
 				<!-- <sprtid-event ng-repeat="event in events" event="event" current="isCurrentEvent(event)"></sprtid-event> -->
 				<div class="item">
-					<ion-radio ng-repeat="o in organizations" ng-model="organizationId" name="organization" ng-value="o.id" ng-click="listEvents(o)">
+					<ion-radio ng-repeat="o in organizations" ng-model="organizationId" name="organization" ng-value="o.id" ng-click="setCurrentOrganization(o)">
 						{{ o.name }}
 					</ion-radio>
 				</div>
 			</div>
 		</div>
 
-		<div class="row" ng-hide="!organizations || !organizations.length">
-			<div class="col">
-				<h2>Choose Event</h2>
-				<div class="item">
+		<div ng-show="hasOrganizations()">
+			<h2>Choose Event</h2>
+			<div ng-show="fetchingEvents">
+				<em>requesting events for {{ getCurrentOrganization("name", "This organization") }}...</em>
+			</div>
+			<div ng-hide="fetchingEvents">
+				<div ng-show="hasEvents() === false" class="banner error">
+					{{ getCurrentOrganization("name", "This organization") }} has no upcoming events
+				</div>
+				<div ng-show="hasEvents()" class="item">
 					<!-- order events by date -->
 					<!-- indicate whether this event is in the past -->
 					<ion-radio ng-repeat="e in events" ng-model="eventId" name="event" ng-value="e.id" ng-click="setCurrentEvent(e)">
@@ -31,18 +37,24 @@
 		<!-- hide if already pre-registered -->
 
 		<form ng-submit="preregister()">
-			<div class="row" ng-show="hasCurrentEvent()">
-				<div class="col col-10">
-					<label class="checkbox">
-						<input type="checkbox" ng-model="accept">
-					</label>
+			<div ng-show="hasCurrentEvent()">
+				<div>
+					<p>
+						<em ng-show="!accept">Read &amp; accept the waiver to complete pre-registration.</em>
+					</p>
 				</div>
-				<div class="col col-90">
-					{{ current.event.waiver }}
+				<div class="row">
+					<div class="col col-10">
+						<label class="checkbox">
+							<input type="checkbox" ng-model="accept">
+						</label>
+					</div>
+					<div class="col col-90">
+						{{ current.event.waiver }}
+					</div>
 				</div>
 			</div>
 			<div class="actions">
-				<em ng-show="!accept">Read &amp; accept the waiver to complete pre-registration.</em>
 				<button type="submit" class="button icon-left ion-checkmark-circled button-block button-positive" ng-disabled="!accept">
 					Complete Pre-Registration
 				</button>
