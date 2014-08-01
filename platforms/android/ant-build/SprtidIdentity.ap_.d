@@ -141,6 +141,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/directives \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/directives.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/filters.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/helpers \
@@ -152,8 +153,16 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/databit.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/facebook_auth.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/home.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/memberships.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/preregister.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/scan.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/controllers/user.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/event.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/logger.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/organization.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/sprtidexceptionhandler.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/sprtidlog.js \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/factories/user.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/js/helpers/view_helpers.js \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower.json \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/lib/bower_components \
@@ -1760,9 +1769,11 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/home.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/login.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/logout.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/memberships.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/menu.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/preregister.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/profile.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/scan.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/settings.html \
@@ -1772,6 +1783,7 @@
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/forms/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/forms/_user.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals/databit.html \
+/Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/modals/memberships.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_barcode.html \
 /Users/pmn/code/personal/sprtid/identity/platforms/android/assets/www/templates/partials/_databit_birthday.html \

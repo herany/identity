@@ -22,8 +22,8 @@
 			write: 2
 		})
 		.constant("AppConfig", {
-			apiBaseUrl: "http://localhost:1212",
-			// apiBaseUrl: "http://sprtid-api.herokuapp.com",
+			// apiBaseUrl: "http://localhost:1212",
+			apiBaseUrl: "http://sprtid-api.herokuapp.com",
 			logLevel: LogLevel.warn,
 			templatesPath: templatesPath
 		})
