@@ -1,5 +1,25 @@
-// $font-family-headline: Matchbook, Impact, sans-serif;
-// $font-family-content: OpenSans, Helvetica, sans-serif;
+$padding-base-vertical:           2.0vw;
+$padding-base-horizontal:         4.0vw;
+$padding-large-vertical:          3.5vw;
+$padding-large-horizontal:        7.0vw;
+$padding-small-vertical:          1.75vw;
+$padding-small-horizontal:        3.5vw;
+
+$font-size-base-supported:        14px;
+$font-size-base:                  4.0vw;
+$font-size-large:                 $font-size-base * 1.25;
+$font-size-small:                 $font-size-base * 0.80;
+
+$item-font-size:                  $font-size-base * 1.25;
+$item-button-font-size:           $font-size-base * 1.4;
+
+@media all and (orientation: landscape) {
+	body,
+	.ionic-body {
+		font-size: $font-size-base-supported;
+		font-size: $font-size-base / 2;
+	}
+}
 
 
 $foreground: 1;

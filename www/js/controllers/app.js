@@ -84,14 +84,23 @@
 						$scope.ajaxing(true);
 					});
 
-				function gotoScanner () {
-					$state.go("app.scan");
+				function gotoCheckin () {
+					switch ($window.orientation) {
+						case 90:
+						case -90:
+							$state.go("app.checkin");
+							break;
+						case 0:
+						case 180:
+							$state.go("app.home");
+							break;
+					}
 				}
 				function cleanUp () {
-					$window.removeEventListener("orientationchange", gotoScanner, false);
+					$window.removeEventListener("orientationchange", gotoCheckin, false);
 				}
 
-				$window.addEventListener("orientationchange", gotoScanner, false);
+				$window.addEventListener("orientationchange", gotoCheckin, false);
 
 				var letsBeSmarterAboutThisSize = 0.75 * Math.min($window.innerWidth, $window.innerHeight);
 				$scope.getBarcodeSize = function () {

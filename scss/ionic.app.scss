@@ -85,7 +85,8 @@ textarea {
 }
 .databit-barcode-barcode {
 	text-align: center;
-	font-size: 2em;
+	font-size: $font-size-large;
+	line-height: 2;
 }
 .secondary-action {
 	float: right;

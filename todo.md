@@ -1,4 +1,9 @@
 todo:
+- offline view
+- oauth
+- error messaging
+- address databit
+- (*ask Tony*) databits
 - preregister: indicate (and disable) events for which a user has already pre-registered
 - apply preregistration URL params (organizationId/eventId)
 - accept waiver
@@ -18,10 +23,10 @@ todo:
 - do not require payment to add to profile... display a banner when additional "pay" data bits have been created (obv. hide those bits if !payment)
 - more ion icons (or icomoon)
 - memoize requests! (allow for localStorage or inMemory memoization)
+- memoize filters
 
 
 in progress:
-- preregister: list only events belonging to an organization
 
 
 backlog:
@@ -58,3 +63,4 @@ done:
 - bug: delete data bit response includes deleted databit
 - preregister for an event: list all events: pick one; [choose dependant]; "sign form"
 - request organization membership
+- preregister: list only events belonging to an organization

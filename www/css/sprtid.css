@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,49 +20,57 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 @font-face {
   font-family: 'Oswald';
   src: url("../fonts/Oswald/Oswald-Bold.ttf") format("truetype");
@@ -331,6 +339,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "\e624";
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_auth.scss */
 body.auth-screen {
   background-color: #95a5a6;
@@ -344,6 +360,14 @@ body.auth-screen #top-banner .location-icon {
   color: #95a5a6;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_checkin.scss */
 body.checkin-screen {
   background-color: #9b59b6;
@@ -357,6 +381,14 @@ body.checkin-screen #top-banner .location-icon {
   color: #9b59b6;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_create.scss */
 body.create-screen {
   background-color: #e67e22;
@@ -370,6 +402,14 @@ body.create-screen #top-banner .location-icon {
   color: #e67e22;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 3, ../../scss/pages/_home.scss */
 body.home-screen {
   min-height: 100%;
@@ -476,6 +516,14 @@ body.home-screen .navigation-link a .navigation-label {
   bottom: 5%;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 7, ../../scss/pages/_login.scss */
 body.login-screen,
 body.signup-screen {
@@ -492,6 +540,14 @@ body.signup-screen #top-banner .location-icon {
   color: #95a5a6;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_scan.scss */
 body.scan-screen {
   background-color: #2ecc71;
@@ -505,6 +561,14 @@ body.scan-screen #top-banner .location-icon {
   color: #2ecc71;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_settings.scss */
 body.settings-screen {
   background-color: #f1c40f;
@@ -518,6 +582,14 @@ body.settings-screen #top-banner .location-icon {
   color: #f1c40f;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 6, ../../scss/pages/_shop.scss */
 body.shop-screen {
   background-color: #3498db;
@@ -531,6 +603,14 @@ body.shop-screen #top-banner .location-icon {
   color: #3498db;
 }
 
+@media all and (orientation: landscape) {
+  /* line 18, ../../scss/_variables.scss */
+  body,
+  .ionic-body {
+    font-size: 14px;
+    font-size: 2vw;
+  }
+}
 /* line 8, ../../scss/pages/_user.scss */
 body.user-screen {
   background-color: #e74c3c;
