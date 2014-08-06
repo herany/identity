@@ -4,8 +4,7 @@
 			"$scope",
 			"$log",
 			function ($scope, $log) {
-				$scope.success = null;
-				$scope.error = "";
+				$scope.clearErrorMessage();
 				$scope.view = "signup";
 			}
 		];
@@ -28,14 +27,13 @@
 
 				$scope.login = function () {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.login($scope.auth)
 						.then(function (user) {
-							$scope.success = true;
 							$scope.setLoggedInUser(user);
 							$state.go("app.home", {}, {"location": "replace"});
 						}, function () {
-							$scope.success = false;
-							$scope.error = "Login Failed";
+							$scope.setErrorMessage("Login Failed");
 							$scope.setLoggedInUser(null);
 						})
 						.finally(function () {
@@ -57,6 +55,7 @@
 			"UserService",
 			function ($rootScope, $scope, $log, $state, UserService) {
 				$scope.ajaxing();
+				$scope.clearErrorMessage();
 				UserService.logout()
 					.then(function () {
 						$scope.setLoggedInUser(null);
@@ -93,13 +92,13 @@
 
 				$scope.signup = function () {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.signup($scope.auth)
 						.then(function () {
-							$scope.success = true;
 							$scope.setLoggedInUser(user);
 							$state.go("app.home", {}, {"location": "replace"});
 						}, function (message) {
-							$scope.error = message;
+							$scope.setErrorMessage(message);
 							$scope.setLoggedInUser(null);
 						})
 						.finally(function () {

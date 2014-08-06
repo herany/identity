@@ -7,11 +7,6 @@
 			function ($scope, $log, $cordovaCamera) {
 				var fnSuccess, fnError, fnNotify;
 
-				function setError (msg) {
-					$scope.error = msg;
-					$scope.success = !!$scope.error;
-				}
-
 				function setImageUri (imageUri) {
 					$scope.imageUri = imageUri;
 				}
@@ -19,14 +14,14 @@
 
 				fnSuccess = function (imageUri) {
 					setImageUri(imageUri);
-					setError(null);
 					$scope.$emit(Self.events.getImage, imageUri);
 				};
 				fnError = function (err) {
-					setError(err);
+					$scope.setErrorMessage(err);
 				};
 
 				$scope.takePicture = function () {
+					$scope.clearErrorMessage();
 					$cordovaCamera.getPicture({
 						quality: 75,
 						destinationType: Camera.DestinationType.FILE_URI,
@@ -40,6 +35,7 @@
 				};
 
 				$scope.choosePicture = function () {
+					$scope.clearErrorMessage();
 					$cordovaCamera.getPicture({
 						quality: 75,
 						destinationType: Camera.DestinationType.FILE_URI,

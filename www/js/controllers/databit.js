@@ -21,14 +21,14 @@
 					var fnSuccess, fnError;
 
 					fnSuccess = function (user) {
-						$scope.success = true;
 						$scope.setLoggedInUser(user);
 					};
 					fnError = function (message) {
-						$scope.error = message;
+						$scope.setErrorMessage(message);
 					};
 
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.saveDatabit($scope.user.id, $scope.databit)
 						.then(fnSuccess, fnError, fnNotify)
 						.finally(function () {

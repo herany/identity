@@ -7,10 +7,10 @@
 			<h2 ng-click="click()">scan stuff</h2>
 			<h3>{{ title }}</h3>
 			<div id="scan-results">
-				<div ng-show="success">
+				<div ng-hide="hasErrorMessage()">
 					<pre>{{ response }}</pre>
 				</div>
-				<div ng-hide="success">
+				<div ng-show="hasErrorMessage()">
 					<form ng-submit="scanBarcode()">
 						<div class="list">
 							<label for="barcode" class="item item-input">

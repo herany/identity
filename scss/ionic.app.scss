@@ -24,7 +24,8 @@ $ionicons-font-path: "../lib/bower_components/ionicons/fonts" !default;
 // Include all of Ionic
 @import "../www/lib/ionic/scss/ionic";
 
-@import '_fonts',
+@import '_errors',
+        '_fonts',
         '_tile';
 
 
@@ -249,11 +250,4 @@ pre.databit-barcode-barcode {
 	border-bottom: 1px solid $bar-default-border;
 
 	background-color: $bar-default-bg;
-
-	&.error {
-		text-align: center;
-		border-color: $bar-energized-border;
-		background-color: $bar-energized-bg;
-		color: $bar-energized-text;
-	}
 }

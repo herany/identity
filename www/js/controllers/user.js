@@ -42,10 +42,12 @@
 
 				if ($stateParams.id) {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.user($stateParams.id)
 						.then(function (user, status, headers, config) {
 							$scope.user = user;
 						}, function (message, status, headers, config) {
+							$scope.setErrorMessage(message);
 							$scope.user = null;
 						})
 						.finally(function () {
@@ -56,7 +58,6 @@
 				}
 
 				fnSuccess = function (user) {
-					$scope.success = true;
 					var u = $scope.getLoggedInUser();
 					if (u && user && u.id === user.id) {
 						$scope.setLoggedInUser(user);
@@ -64,9 +65,10 @@
 					$scope.user = user;
 				};
 				fnError = function (message) {
-					$scope.error = message;
+					$scope.setErrorMessage(message);
 				};
 
+				$scope.clearErrorMessage();
 				$scope.save = function () {
 					$scope.ajaxing();
 					UserService
@@ -99,6 +101,7 @@
 					fn = dataBit.type === "photo" ? UserService.saveDatabitWithImage : UserService.saveDatabit;
 
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					fn($scope.user.id, dataBit, formObj.imageUri)
 						.then(function () {
 							fnSuccess.apply(this, arguments);
@@ -126,6 +129,7 @@
 
 				$scope.editDatabit = function () {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.editDatabit($scope.user.id, $scope.databit)
 						.then(function () {
 							fnSuccess.apply(this, arguments);
@@ -139,6 +143,7 @@
 
 				$scope.deleteDatabit = function (databit) {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.deleteDatabit($scope.user.id, databit.id)
 						.then(function () {
 							fnSuccess.apply(this, arguments);
@@ -170,12 +175,12 @@
 			function ($scope, $log, $state, $stateParams, UserService) {
 				if ($stateParams.barcode) {
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.userByBarcode($stateParams.barcode)
 						.then(function (user, status, headers, config) {
 							$state.go("app.user", {id: user.id});
 						}, function (message, status, headers, config) {
-							$scope.success = false;
-							$scope.message = message;
+							$scope.setErrorMessage(message);
 						})
 						.finally(function () {
 							$scope.ajaxing(true);

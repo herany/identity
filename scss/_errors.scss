@@ -1,0 +1,35 @@
+@import 'compass/css3/transform';
+
+$error-bar-height: $bar-height !default;
+$error-bar-transition-duration: $transition-duration !default;
+
+.error-bar {
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 100%;
+	margin-top: -1 * $error-bar-height;
+	min-height: $error-bar-height;
+	line-height: $error-bar-height;
+
+	border-color: $bar-energized-border;
+	background-color: $bar-energized-bg;
+	color: $bar-energized-text;
+	text-align: center;
+	z-index: $z-index-bar + 1;
+
+	@include transition(margin-top $error-bar-transition-duration ease-in-out);
+	&.has-error-message {
+		margin-top: 0;
+	}
+
+	button {
+		margin-top: ($error-bar-height - $button-small-height) / 2;
+		margin-right: ($error-bar-height - $button-small-height) / 2;
+		float: right;
+	}
+}
+// Force no header
+.no-header {
+	top: 0;
+}

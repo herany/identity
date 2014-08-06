@@ -14,6 +14,20 @@
 				$scope.debug = function () {
 					$log.log($scope);
 				};
+
+				$scope.hasErrorMessage = function () {
+					return !!$scope.getErrorMessage();
+				};
+				$scope.setErrorMessage = function (errorMessage) {
+					$scope.errorMessage = errorMessage;
+				};
+				$scope.getErrorMessage = function () {
+					return $scope.errorMessage;
+				};
+				$scope.clearErrorMessage = function () {
+					$scope.errorMessage = null;
+				};
+
 				$scope.indicators = {
 					ajaxing: 0
 				};

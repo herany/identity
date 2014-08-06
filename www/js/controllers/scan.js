@@ -10,7 +10,6 @@
 			function($scope, $log, $state, $ionicPlatform, $cordovaBarcodeScanner, $location) {
 				$scope.title = "Scanning";
 				$scope.response = "";
-				$scope.success = null;
 				$scope.barcode = {code: null};
 
 				function gotoUser (barcodeOrUrl) {
@@ -20,8 +19,7 @@
 				$ionicPlatform.ready(function () {
 					if (cordova && cordova.plugins.barcodeScanner) { // this conditional exists due to a lack of null checking in ngCordova
 						$cordovaBarcodeScanner.scan().then(function (scanRespose) {
-							$scope.success = !!scanRespose;
-							if ($scope.success) {
+							if (scanRespose) {
 								$scope.title = "Success";
 								$scope.response = JSON.stringify(scanRespose);
 
@@ -31,14 +29,12 @@
 								// todo: handle error
 							}
 						}, function (scanRespose) {
-							$scope.success = false;
 							$scope.title = "Failure";
 							$scope.response = JSON.stringify(scanRespose);
 
 							if(!$scope.$$phase) { $scope.$digest(); }
 						});
 					} else {
-						$scope.success = false;
 						$scope.title = "Scanner Unavailable";
 					}
 				});

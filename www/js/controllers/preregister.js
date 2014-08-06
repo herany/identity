@@ -47,13 +47,12 @@
 				$scope.listEvents = function (organization) {
 					$scope.fetchingEvents = true;
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					EventService.list(organization.id)
 						.then(function (events) {
-							$scope.success = true;
 							$scope.events = events;
 						}, function (message) {
-							$scope.success = false;
-							$scope.error = message;
+							$scope.setErrorMessage(message);
 							$scope.events = null;
 						})
 						.finally(function () {
@@ -70,11 +69,12 @@
 					event = $scope.getCurrentEvent();
 
 					$scope.ajaxing();
+					$scope.clearErrorMessage();
 					UserService.preregister(user.id, organization.id, event.id)
 						.then(function () {
 
-						}, function () {
-
+						}, function (message) {
+							$scope.setErrorMessage(message);
 						})
 						.finally(function () {
 							$scope.ajaxing(true);
