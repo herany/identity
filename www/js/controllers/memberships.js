@@ -9,7 +9,7 @@
 			"UserService",
 			"OrganizationService",
 			function ($scope, $log, $filter, $ionicModal, AppConfig, UserService, OrganizationService) {
-				var user = $scope.getLoggedInUser();
+				var user = $scope.getCurrentUser();
 				$scope.memberships = user ? user.memberships : [];
 
 				// Create and load the Modal
@@ -24,7 +24,7 @@
 				$scope.requestMembership = function (membership) {
 					var user, organizations, organization;
 
-					user = $scope.getLoggedInUser();
+					user = $scope.getCurrentUser();
 					organizations = $filter("filter")($scope.organizations, {id: membership.organizationId}, true);
 
 					if (!organizations || !organizations.length) {

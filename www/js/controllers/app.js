@@ -9,8 +9,7 @@
 			"$cordovaNetwork",
 			"$cordovaSplashscreen",
 			"UserService",
-			"ModelState",
-			function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService, ModelState) {
+			function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService) {
 				$scope.debug = function () {
 					$log.log($scope);
 				};
@@ -29,6 +28,7 @@
 				};
 
 				$scope.indicators = {
+					offline: false,
 					ajaxing: 0
 				};
 
@@ -52,22 +52,6 @@
 					$log.debug("navigator.splashscreen is undefined");
 				}
 
-				$scope.editable = false;
-				$scope.modelState = ModelState.read;
-
-				if (navigator.connection) {
-					$scope.isOffline = $cordovaNetwork.isOffline();
-					var toggleOfflineIndicator = function () {
-						$scope.$apply(function () {
-							$scope.isOffline = $cordovaNetwork.isOffline();
-						});
-					};
-					document.addEventListener("online", toggleOfflineIndicator, false);
-					document.addEventListener("offline", toggleOfflineIndicator, false);
-				} else {
-					$log.debug("navigator.connection is undefined");
-				}
-
 				$scope.setTitle = function (title) {
 					$scope.title = title || "<em class='wordmark'>SPRTID</em>";
 				};
@@ -83,20 +67,33 @@
 					return $scope._loggedInUser && $scope._loggedInUser.id;
 				};
 
+				// current user will often be equal to logged in user, unless the logged in user is editing a dependant
+				$scope.current = $scope.current || {};
+				$scope.setCurrentUser = function (user) {
+					$scope.current.user = user;
+				};
+				$scope.getCurrentUser = function () {
+					return $scope.current.user || $scope.getLoggedInUser();
+				};
+				$scope.clearCurrentUser = function () {
+					$scope.current.user = null;
+				};
+
 				$scope.getPreviousTitle = function() {
 					return $ionicNavBarDelegate.getPreviousTitle();
 				};
 
-				$scope.ajaxing();
-				UserService.user()
-					.then(function (user) {
-						$scope.setLoggedInUser(user);
-					}, function (error) {
-						$scope.setLoggedInUser(null);
-					})
-					.finally(function () {
-						$scope.ajaxing(true);
-					});
+				function indicateOffline () {
+					if (navigator.connection) {
+						$scope.indicators.offline = $cordovaNetwork.isOffline();
+					} else { // probably in an in-browser emulator
+						$scope.indicators.offline = !navigator.onLine;
+					}
+				}
+				indicateOffline();
+				var toggleOfflineIndicator = function () {
+					$scope.$apply(indicateOffline);
+				};
 
 				function gotoCheckin () {
 					switch ($window.orientation) {
@@ -111,15 +108,30 @@
 					}
 				}
 				function cleanUp () {
+					$window.removeEventListener("online", toggleOfflineIndicator, false);
+					$window.removeEventListener("offline", toggleOfflineIndicator, false);
 					$window.removeEventListener("orientationchange", gotoCheckin, false);
 				}
 
+				$window.addEventListener("online", toggleOfflineIndicator, false);
+				$window.addEventListener("offline", toggleOfflineIndicator, false);
 				$window.addEventListener("orientationchange", gotoCheckin, false);
 
 				var letsBeSmarterAboutThisSize = 0.75 * Math.min($window.innerWidth, $window.innerHeight);
 				$scope.getBarcodeSize = function () {
 					return letsBeSmarterAboutThisSize;
 				};
+
+				$scope.ajaxing();
+				UserService.user()
+					.then(function (user) {
+						$scope.setLoggedInUser(user);
+					}, function (error) {
+						$scope.setLoggedInUser(null);
+					})
+					.finally(function () {
+						$scope.ajaxing(true);
+					});
 			}
 		];
 	};

@@ -11087,46 +11087,35 @@ textarea {
   float: right;
 }
 
-/* line 98, ../../scss/ionic.app.scss */
-body.offline .pane,
-body.offline .view {
-  background: #444444;
-}
-/* line 101, ../../scss/ionic.app.scss */
-body.offline .pane .bar,
-body.offline .view .bar {
-  background: #3d3d3d !important;
-}
-
-/* line 108, ../../scss/ionic.app.scss */
+/* line 96, ../../scss/ionic.app.scss */
 .databit-birthday {
   text-align: center;
 }
-/* line 111, ../../scss/ionic.app.scss */
+/* line 99, ../../scss/ionic.app.scss */
 .databit-birthday .databit-birthday-age {
   font-size: 5em;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1em;
 }
-/* line 116, ../../scss/ionic.app.scss */
+/* line 104, ../../scss/ionic.app.scss */
 .databit-birthday .databit-birthday-age span {
   font-size: 0.2em;
 }
-/* line 121, ../../scss/ionic.app.scss */
+/* line 109, ../../scss/ionic.app.scss */
 .databit-birthday .databit-birthday-birthday {
   margin-top: 25px;
   font-size: 2em;
   line-height: 1em;
 }
 
-/* line 128, ../../scss/ionic.app.scss */
+/* line 116, ../../scss/ionic.app.scss */
 .footnote {
   font-weight: normal;
   font-style: italic;
   text-align: right;
 }
 
-/* line 137, ../../scss/ionic.app.scss */
+/* line 125, ../../scss/ionic.app.scss */
 .radio-set {
   border-color: #223547;
   background-color: #04192e;
@@ -11135,7 +11124,7 @@ body.offline .view .bar {
   border-width: 1px 0 0 1px;
   padding: 0;
 }
-/* line 143, ../../scss/ionic.app.scss */
+/* line 131, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button {
   background-color: #031629;
   text-align: center;
@@ -11145,27 +11134,27 @@ body.offline .view .bar {
   border-style: solid;
   border-width: 0 1px 1px 0;
 }
-/* line 150, ../../scss/ionic.app.scss */
+/* line 138, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button:hover {
   cursor: pointer;
 }
-/* line 154, ../../scss/ionic.app.scss */
+/* line 142, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button input {
   position: absolute;
   left: -9999px;
 }
-/* line 158, ../../scss/ionic.app.scss */
+/* line 146, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button .radio-icon {
   display: block;
   font-size: 32px;
 }
-/* line 162, ../../scss/ionic.app.scss */
+/* line 150, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button .radio-content {
   display: block;
   padding-bottom: 5px;
   font-size: 75%;
 }
-/* line 169, ../../scss/ionic.app.scss */
+/* line 157, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button input:checked ~ .radio-icon,
 .radio-set .radio-set-button input:checked ~ .radio-content {
   background-color: #ecf0f1;
@@ -11173,193 +11162,193 @@ body.offline .view .bar {
 }
 
 @-webkit-keyframes rainbow-border-color {
-  /* line 194, ../../scss/ionic.app.scss */
+  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
 
-  /* line 195, ../../scss/ionic.app.scss */
+  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
 
-  /* line 196, ../../scss/ionic.app.scss */
+  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
 
 @-moz-keyframes rainbow-border-color {
-  /* line 194, ../../scss/ionic.app.scss */
+  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
 
-  /* line 195, ../../scss/ionic.app.scss */
+  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
 
-  /* line 196, ../../scss/ionic.app.scss */
+  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
 
 @-ms-keyframes rainbow-border-color {
-  /* line 194, ../../scss/ionic.app.scss */
+  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
 
-  /* line 195, ../../scss/ionic.app.scss */
+  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
 
-  /* line 196, ../../scss/ionic.app.scss */
+  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
 
 @keyframes rainbow-border-color {
-  /* line 194, ../../scss/ionic.app.scss */
+  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
 
-  /* line 195, ../../scss/ionic.app.scss */
+  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
 
-  /* line 196, ../../scss/ionic.app.scss */
+  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
 
-  /* line 197, ../../scss/ionic.app.scss */
+  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
 
 @-webkit-keyframes color {
-  /* line 200, ../../scss/ionic.app.scss */
+  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
 
-  /* line 201, ../../scss/ionic.app.scss */
+  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
 
-  /* line 203, ../../scss/ionic.app.scss */
+  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
 
 @-moz-keyframes color {
-  /* line 200, ../../scss/ionic.app.scss */
+  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
 
-  /* line 201, ../../scss/ionic.app.scss */
+  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
 
-  /* line 203, ../../scss/ionic.app.scss */
+  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
 
 @-ms-keyframes color {
-  /* line 200, ../../scss/ionic.app.scss */
+  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
 
-  /* line 201, ../../scss/ionic.app.scss */
+  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
 
-  /* line 203, ../../scss/ionic.app.scss */
+  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
 
 @keyframes color {
-  /* line 200, ../../scss/ionic.app.scss */
+  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
 
-  /* line 201, ../../scss/ionic.app.scss */
+  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
 
-  /* line 202, ../../scss/ionic.app.scss */
+  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
 
-  /* line 203, ../../scss/ionic.app.scss */
+  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
 
-/* line 206, ../../scss/ionic.app.scss */
+/* line 194, ../../scss/ionic.app.scss */
 .action-indicator-bar {
   border-bottom: 2px solid transparent;
 }
-/* line 212, ../../scss/ionic.app.scss */
+/* line 200, ../../scss/ionic.app.scss */
 .performing-action .action-indicator-bar, .action-indicator-bar.performing-action {
   border-bottom-color: red;
   -webkit-animation: rainbow-border-color 4s linear infinite;
   -moz-animation: rainbow-border-color 4s linear infinite;
   animation: rainbow-border-color 4s linear infinite;
 }
-/* line 216, ../../scss/ionic.app.scss */
+/* line 204, ../../scss/ionic.app.scss */
 .performing-action .action-indicator-bar .title, .action-indicator-bar.performing-action .title {
   color: red;
   -webkit-animation: color 4s linear infinite;
@@ -11367,7 +11356,7 @@ body.offline .view .bar {
   animation: color 4s linear infinite;
 }
 
-/* line 223, ../../scss/ionic.app.scss */
+/* line 211, ../../scss/ionic.app.scss */
 .wordmark {
   letter-spacing: 0.2em;
   margin-right: -0.2em;
@@ -11377,18 +11366,24 @@ body.offline .view .bar {
   font-weight: normal;
 }
 
-/* line 233, ../../scss/ionic.app.scss */
+/* line 221, ../../scss/ionic.app.scss */
 pre.databit-barcode-barcode {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 237, ../../scss/ionic.app.scss */
+/* line 225, ../../scss/ionic.app.scss */
 .pane {
   background-image: url("../img/backgrounds/faceoff.png");
   background-size: cover;
 }
 
-/* line 242, ../../scss/ionic.app.scss */
+/* line 232, ../../scss/ionic.app.scss */
+.offline .pane,
+.offline .view {
+  background-color: #1e1e1e;
+}
+
+/* line 241, ../../scss/ionic.app.scss */
 .banner {
   display: block;
   padding: 5px;

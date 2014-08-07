@@ -1,10 +1,8 @@
 todo:
 - offline view
 - oauth
-- error messaging
 - address databit
 - (*ask Tony*) databits
-- preregister: indicate (and disable) events for which a user has already pre-registered
 - apply preregistration URL params (organizationId/eventId)
 - accept waiver
   - user finger to sign: https://github.com/szimek/signature_pad - bower install signature_pad
@@ -64,3 +62,5 @@ done:
 - preregister for an event: list all events: pick one; [choose dependant]; "sign form"
 - request organization membership
 - preregister: list only events belonging to an organization
+- error messaging
+- preregister: only show events for which a user has not already pre-registered

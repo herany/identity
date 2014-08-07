@@ -27,7 +27,7 @@
 				<div ng-show="hasEvents()" class="item">
 					<!-- order events by date -->
 					<!-- indicate whether this event is in the past -->
-					<ion-radio ng-repeat="e in events" ng-model="eventId" name="event" ng-value="e.id" ng-click="setCurrentEvent(e)">
+					<ion-radio ng-repeat="e in unregisteredEvents" ng-model="eventId" name="event" ng-value="e.id" ng-click="setCurrentEvent(e)">
 						{{ e.name }}
 					</ion-radio>
 				</div>
@@ -38,10 +38,15 @@
 
 		<form ng-submit="preregister()">
 			<div ng-show="hasCurrentEvent()">
-				<div>
-					<p>
-						<em ng-show="!accept">Read &amp; accept the waiver to complete pre-registration.</em>
-					</p>
+				<div class="row">
+					<div class="col col-90 col-offset-10">
+						<p>
+							<em>
+								Read &amp; accept the waiver to complete pre-registration.
+								<span ng-show="!accept">Thanks!</span>
+							</em>
+						</p>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col col-10">

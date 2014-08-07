@@ -29,6 +29,17 @@
 
 		return barcodeDataBit;
 	}
+	function userHasRegistration (user, event) {
+		if (!event || !user || !user.registrations) { return false; }
+
+		for (var i = 0; i < user.registrations.length; i++) {
+			if (user.registrations[i] && user.registrations[i].eventId === event.id) {
+				return true;
+			}
+		}
+
+		return false;
+	}
 
 	angular.module(appName + ".filters", [])
 		.filter("interpolate", ["version", function (version) {
@@ -156,12 +167,32 @@
 
 				angular.forEach(user.memberships, function (membership) {
 					if (!membership.noLongerActive) {
-						organizations.push(membership.organization);
+						this.push(membership.organization);
 					}
 				}, organizations);
 
 				return organizations;
-			}
+			};
+		})
+		.filter("unregisteredEvents", function () {
+			return function (events, user) {
+				var unregisteredEvents = [];
+
+				if (!user || !user.registrations) { return events; }
+
+				angular.forEach(events, function (event) {
+					if (!userHasRegistration(user, event)) {
+						this.push(event);
+					}
+				}, unregisteredEvents);
+
+				return unregisteredEvents;
+			};
+		})
+		.filter("isUserRegistered", function () {
+			return function (event, user) {
+				return userHasRegistration(user, event);
+			};
 		})
 	;
 })(SprtId.AppName, angular, moment);

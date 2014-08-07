@@ -9,7 +9,7 @@
 			function ($scope, $log, UserService, EventService, $filter) {
 				// if user has children, prompt for who is checking in
 
-				$scope.current = {};
+				$scope.current = $scope.current || {};
 				$scope.getCurrentOrganization = function (property, defaultValue) {
 					var o = $scope.current.organization;
 					if (o && property) {
@@ -19,6 +19,7 @@
 				};
 				$scope.setCurrentOrganization = function (organization) {
 					$scope.current.organization = organization;
+					$scope.clearCurrentEvent();
 
 					$scope.listEvents(organization); // what is best practice here?  should there be a $watch statement somewhere else?
 				};
@@ -28,6 +29,9 @@
 				$scope.hasOrganizations = function () {
 					return !!($scope.organizations && $scope.organizations.length);
 				};
+				$scope.clearCurrentOrganization = function () {
+					$scope.current.organization = null;
+				};
 				$scope.getCurrentEvent = function () {
 					return $scope.current.event;
 				};
@@ -36,6 +40,9 @@
 				};
 				$scope.hasCurrentEvent = function (event) {
 					return $scope.current.event && $scope.current.event.id;
+				};
+				$scope.clearCurrentEvent = function () {
+					$scope.current.event = null;
 				};
 				$scope.hasEvents = function () {
 					if (!$scope.hasCurrentOrganization()) { return; }
@@ -51,9 +58,10 @@
 					EventService.list(organization.id)
 						.then(function (events) {
 							$scope.events = events;
+							$scope.unregisteredEvents = $filter("unregisteredEvents")(events, $scope.getCurrentUser())
 						}, function (message) {
 							$scope.setErrorMessage(message);
-							$scope.events = null;
+							$scope.unregisteredEvents = $scope.events = null;
 						})
 						.finally(function () {
 							$scope.ajaxing(true);
@@ -64,7 +72,7 @@
 				$scope.preregister = function () {
 					var user, organization, event;
 
-					user = $scope.getLoggedInUser();
+					user = $scope.getCurrentUser();
 					organization = $scope.getCurrentOrganization();
 					event = $scope.getCurrentEvent();
 
@@ -81,7 +89,7 @@
 						});
 				};
 
-				var user = $scope.getLoggedInUser();
+				var user = $scope.getCurrentUser();
 				$scope.organizations = user && user.memberships ? $filter("getUserOrganizations")(user) : [];
 				$scope.events = [];
 				// check state params, preset org/event

@@ -93,18 +93,6 @@ textarea {
 	float: right;
 }
 
-body.offline {
-	.pane,
-	.view {
-		background: $color-scheme-disabled-primary;
-
-		.bar {
-			background: $color-scheme-disabled-secondary !important;
-		}
-	}
-}
-
-
 .databit-birthday {
 	text-align: center;
 
@@ -237,6 +225,17 @@ pre.databit-barcode-barcode {
 .pane {
 	background-image: url('../img/backgrounds/faceoff.png');
 	background-size: cover;
+}
+
+.offline {
+	.pane,
+	.view {
+		background-color: $color-scheme-disabled-secondary;
+
+		// .bar {
+		// 	background-color: $color-scheme-disabled-primary !important;
+		// }
+	}
 }
 
 .banner {
