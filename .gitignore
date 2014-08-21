@@ -5,7 +5,8 @@ default.properties
 gen
 assets/www/cordova.js
 framework/assets/www/.tmp*
-local.properties
+platforms/android/local.properties
+platforms/android/CordovaLib/local.properties
 framework/lib
 proguard.cfg
 proguard.cfg
