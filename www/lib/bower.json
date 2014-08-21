@@ -7,6 +7,60 @@
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.15",
     "angular-touch": "~1.2.16",
-    "momentjs": "~2.6.0"
+    "angular-qrcode": "3.1.0",
+    "angular-http-auth": "1.2.1",
+    "momentjs": "~2.6.0",
+    "ngCordova": "0.1.2-alpha",
+    "ionicons": "1.5.2"
+  },
+  "preen": {
+    "ngCordova": [
+      "dist/*.js",
+      "bower.json"
+    ],
+    "qrcode-generator": [
+      "js/qrcode.js",
+      "bower.json"
+    ],
+    "momentjs": [
+      "moment.js", 
+      "min/moment.min.js",
+      "bower.json"
+    ],
+    "angular-touch": [
+      "*.js",
+      "bower.json"
+    ],
+    "angular-route": [
+      "*.js",
+      "bower.json"
+    ],
+    "angular-qrcode": [
+      "qrcode.js", 
+      "index.html",
+      "bower.json"
+    ],
+    "angular-mocks": [
+      "angular-mocks.js", 
+      "bower.json"
+    ],
+    "angular-loader": [
+      "*.js", 
+      "bower.json"
+    ],
+    "angular-http-auth": [
+      "src/http-auth-interceptor.js", 
+      "bower.json"
+    ],
+    "angular": [
+      "*.js", 
+      "*.css", 
+      "bower.json"
+    ],
+    "ionicons": [
+      "css/*", 
+      "fonts/*",
+      "bower.json"
+    ]
   }
 }
