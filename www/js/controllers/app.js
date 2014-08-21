@@ -84,8 +84,19 @@
 				};
 
 				function indicateOffline () {
-					if (navigator.connection) {
-						$scope.indicators.offline = $cordovaNetwork.isOffline();
+					if (navigator.connection) 
+					{
+						// (TODO): the isOffline() call below results in an error being thrown by the
+						// ngCordova plugin when app is started on an android device. Could be
+						// plugin bug, should be revisited.
+						// Temporary fix: bypass the plugin and do isOffline check ourselves
+						
+						//$scope.indicators.offline = $cordovaNetwork.isOffline();
+
+						var networkState = navigator.connection.type;
+      					$scope.indicators.offline = networkState === navigator.connection.UNKNOWN || 
+      												networkState === navigator.connection.NONE;
+
 					} else { // probably in an in-browser emulator
 						$scope.indicators.offline = !navigator.onLine;
 					}
