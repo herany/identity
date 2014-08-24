@@ -9,7 +9,8 @@
 			"$cordovaNetwork",
 			"$cordovaSplashscreen",
 			"UserService",
-			function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService) {
+			"OpenFB",
+			function ($scope, $log, $window, $ionicNavBarDelegate, $state, $cordovaNetwork, $cordovaSplashscreen, UserService, OpenFB) {
 				$scope.debug = function () {
 					$log.log($scope);
 				};
@@ -26,6 +27,24 @@
 				$scope.clearErrorMessage = function () {
 					$scope.errorMessage = null;
 				};
+
+				$scope.facebookLogin = function () {
+
+	            	OpenFB.login('email,read_stream').then(
+	                function () {
+	                    
+	                    $log.debug("Facebook login success.");
+	                    OpenFB.get('/me').success(function (fbuser) {
+	                    	$log.debug("fbuser: " + fbuser.name);
+	                    	$log.debug("fbuser: " + fbuser.email);
+	                    	
+	                    });
+	                },
+	                function () {
+	                    
+	                    $log.debug("Facebook login failed.");
+	                });
+        		};
 
 				$scope.indicators = {
 					offline: false,
