@@ -13,6 +13,7 @@
 			"ngCordova", // https://github.com/driftyco/ng-cordova.git
 			// "http-auth-interceptor",
 			// "facebook",
+			"openfb",
 			"monospaced.qrcode",
 			appName + ".constants",
 			appName + ".filters",
@@ -22,8 +23,12 @@
 			appName + ".controllers"
 		])
 
-		.run(function ($ionicPlatform) {
+		.run(function ($ionicPlatform, OpenFB) {
+
+			OpenFB.init('794477297265684', 'https://www.facebook.com/connect/login_success.html');
+
 			$ionicPlatform.ready(function () {
+
 				// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 				// for form inputs)
 				if (cordova && cordova.plugins.Keyboard) {
