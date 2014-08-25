@@ -1,0 +1,91 @@
+	<ion-view name="welcome" title="">
+		<ion-nav-buttons side="left">
+		 	<button class="button button-positive button-clear no-animation button-icon ion-arrow-left-c" ng-click="previous()" ng-if="slideIndex > 0 && slideIndex != 3"></button>
+		  <button class="button button-positive button-clear no-animation" ng-click="skipPreBoard()" ng-if="slideIndex == 3">Skip</button>
+		</ion-nav-buttons>
+		<ion-nav-buttons side="right"> 
+		  <button class="button button-positive button-clear no-animation" ng-click="submitPreBoard()" ng-if="slideIndex == 3">Done</button>
+		</ion-nav-buttons>
+		<ion-content class="has-header" padding="true">
+
+		<div class="row">
+		  <div class="col col-50 col-offset-25">
+			<img src="img/icon-identity-logo.png" width="100%" height="auto" />
+		  </div>
+		</div>
+
+		<ion-slide-box on-slide-changed="slideChanged(index)" show-pager="false">
+		  
+		  <ion-slide><!--Slide 0 -->
+			<p class="centered">SPRTID allows you to quickly check into your events.</p>
+				 <button class="button button-full button-positive" ng-click="next()">Get Started</button>
+		   <p class="centered">Already have account? <a  ui-sref="app.login">Sign in</a></p>
+		  </ion-slide>
+		  
+		  <ion-slide><!--Slide 1 -->
+			<p class="centered">SPRTID keeps you safe by securely sharing your info with:</p>
+			<div class="card">
+				<div class="item item-text-wrap">
+					<ul>
+					<li><i class="icon ion-checkmark-round"></i> Sports Organizers</li>
+					<li><i class="icon ion-checkmark-round"></i> Trainers</li>
+					<li><i class="icon ion-checkmark-round"></i> Paramedics</li>
+					</ul>
+				</div>
+			</div>
+			<button class="button button-full button-positive" ng-click="next()" >Continue</button>
+		  </ion-slide>
+		  
+		  <ion-slide><!--Slide 2 -->
+			<p class="centered">Create your SPRTID  by adding your information:</p>
+			<div class="card">
+				<div class="item item-text-wrap">
+					<ul>
+					<li><i class="icon ion-checkmark-round"></i> Name &amp; Photo</li>
+					<li><i class="icon ion-checkmark-round"></i> Emergency Contacts</li>
+					<li><i class="icon ion-checkmark-round"></i> Health Conditions &amp; Allergies</li>
+					</ul>
+				</div>
+			</div>
+			<button class="button button-full button-positive" ng-click="next()" >Continue</button>
+		  </ion-slide>
+
+		  <ion-slide><!--Slide 3 -->
+			<p class="centered">Setup Your #1 Emergency Contact</p>
+			<form ng-submit="preBoard()">
+				<div class="list">
+					<label for="name" class="item item-input">
+						<span class="input-label">Name</span>
+						<input type="text" id="name" name="name" ng-model="ice.name" />
+					</label>
+					<label for="relationship" class="item item-input item-select">
+						<span class="input-label">Relationship</span>
+						<select>
+						<option>Parent</option>
+						<option>Sibling</option>
+						<option>Grandparent</option>
+						<option>Aunt/Uncle</option>
+						<option>Cousin</option>
+						<option>Friend</option>
+						<option>Other</option>
+						</select>
+					</label>
+					<label for="number" class="item item-input">
+						<span class="input-label">Number</span>
+						<input type="password" id="number" name="number" ng-model="ice.number" />
+					</label>
+				</div>				
+			</form>
+		  </ion-slide>
+
+		  <ion-slide><!--Slide 4 -->
+			<p class="centered">We never post to your Facebook account.</p>
+			<a class="button button-block button-positive icon-left ion-social-facebook" ng-click="facebook()">Sign in with Facebook</a>
+			<a class="button button-block button-energized icon-left ion-email" ui-sref="app.signup">Sign in with email</a>
+			<a class="button button-block button-stable" ng-click="guest()">Continue as guest</a>
+		  </ion-slide>
+
+
+		</ion-slide-box>
+		</ion-content>
+	  </ion-view>

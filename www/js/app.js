@@ -27,7 +27,7 @@
 				// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 				// for form inputs)
 				if (cordova && cordova.plugins.Keyboard) {
-					cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+					//cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 				}
 				if (StatusBar) {
 					// org.apache.cordova.statusbar required
@@ -49,6 +49,16 @@
 					abstract: true,
 					templateUrl: "templates/menu.html",
 					controller: "AppController"
+				})
+				
+				.state("app.welcome", {
+					url: "/welcome",
+					views: {
+						"menuContent": {
+							templateUrl: "templates/welcome.html",
+							controller: "WelcomeController"
+						}
+					}
 				})
 
 				.state("app.home", {
@@ -154,7 +164,7 @@
 				.state("app.login", {
 					url: "/login",
 					views: {
-						"menuContent": {
+						"menuContent": { 
 							templateUrl: "templates/login.html",
 							controller: "LoginController"
 						}
@@ -192,7 +202,7 @@
 				})
 			;
 			// if none of the above states are matched, use this as the fallback
-			$urlRouterProvider.otherwise("/app/home");
+			$urlRouterProvider.otherwise("/app/welcome");
 
 			$provide.decorator("$log", function ($delegate, sprtidLog) {
 				return sprtidLog($delegate);

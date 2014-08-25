@@ -10,6 +10,7 @@
 		.controller("CheckinController", SprtId.Controllers.Checkin())
 		// .controller("DatabitController", SprtId.Controllers.Databit())
 		// .controller("FacebookController", SprtId.Controllers.FacebookAuth())
+		.controller("WelcomeController", SprtId.Controllers.Welcome())
 		.controller("HomeController", SprtId.Controllers.Home())
 		.controller("LoginController", SprtId.Controllers.LoginAuth())
 		.controller("LogoutController", SprtId.Controllers.LogoutAuth())

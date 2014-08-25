@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -15,7 +16,7 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -35,7 +36,6 @@ $dark:                            #444 !default;
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 15, ../lib/bower_components/ionicons/scss/_ionicons-font.scss */
 .ion, .ion-loading-a,
 .ion-loading-b,
@@ -680,65 +680,45 @@ $dark:                            #444 !default;
 }
 
 @-moz-keyframes spin {
-  /* line 12, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
-
-  /* line 13, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -moz-transform: rotate(359deg);
   }
 }
-
 @-webkit-keyframes spin {
-  /* line 16, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 17, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
-
 @-o-keyframes spin {
-  /* line 20, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -o-transform: rotate(0deg);
   }
-
-  /* line 21, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -o-transform: rotate(359deg);
   }
 }
-
 @-ms-keyframes spin {
-  /* line 24, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     -ms-transform: rotate(0deg);
   }
-
-  /* line 25, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
-
 @keyframes spin {
-  /* line 28, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   0% {
     transform: rotate(0deg);
   }
-
-  /* line 29, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
   100% {
     transform: rotate(359deg);
   }
 }
-
 /* line 44, ../lib/bower_components/ionicons/scss/_ionicons-animation.scss */
 .ion-loading-a {
   -webkit-animation-timing-function: steps(8, start);
@@ -748,3007 +728,3007 @@ $dark:                            #444 !default;
 
 /* line 609, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-alert:before {
-  content: "\f101";
+  content: "";
 }
 
 /* line 610, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-alert-circled:before {
-  content: "\f100";
+  content: "";
 }
 
 /* line 611, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-add:before {
-  content: "\f2c7";
+  content: "";
 }
 
 /* line 612, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-add-contact:before {
-  content: "\f2c6";
+  content: "";
 }
 
 /* line 613, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-alarm:before {
-  content: "\f2c8";
+  content: "";
 }
 
 /* line 614, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-archive:before {
-  content: "\f2c9";
+  content: "";
 }
 
 /* line 615, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-back:before {
-  content: "\f2ca";
+  content: "";
 }
 
 /* line 616, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-down-left:before {
-  content: "\f2cb";
+  content: "";
 }
 
 /* line 617, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-down-right:before {
-  content: "\f2cc";
+  content: "";
 }
 
 /* line 618, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-forward:before {
-  content: "\f30f";
+  content: "";
 }
 
 /* line 619, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-up-left:before {
-  content: "\f2cd";
+  content: "";
 }
 
 /* line 620, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-arrow-up-right:before {
-  content: "\f2ce";
+  content: "";
 }
 
 /* line 621, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-battery:before {
-  content: "\f2cf";
+  content: "";
 }
 
 /* line 622, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-book:before {
-  content: "\f2d0";
+  content: "";
 }
 
 /* line 623, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-calendar:before {
-  content: "\f2d1";
+  content: "";
 }
 
 /* line 624, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-call:before {
-  content: "\f2d2";
+  content: "";
 }
 
 /* line 625, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-camera:before {
-  content: "\f2d3";
+  content: "";
 }
 
 /* line 626, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-chat:before {
-  content: "\f2d4";
+  content: "";
 }
 
 /* line 627, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-checkmark:before {
-  content: "\f2d5";
+  content: "";
 }
 
 /* line 628, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-clock:before {
-  content: "\f2d6";
+  content: "";
 }
 
 /* line 629, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-close:before {
-  content: "\f2d7";
+  content: "";
 }
 
 /* line 630, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-contact:before {
-  content: "\f2d8";
+  content: "";
 }
 
 /* line 631, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-contacts:before {
-  content: "\f2d9";
+  content: "";
 }
 
 /* line 632, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-data:before {
-  content: "\f2da";
+  content: "";
 }
 
 /* line 633, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-developer:before {
-  content: "\f2db";
+  content: "";
 }
 
 /* line 634, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-display:before {
-  content: "\f2dc";
+  content: "";
 }
 
 /* line 635, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-download:before {
-  content: "\f2dd";
+  content: "";
 }
 
 /* line 636, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-drawer:before {
-  content: "\f310";
+  content: "";
 }
 
 /* line 637, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-dropdown:before {
-  content: "\f2de";
+  content: "";
 }
 
 /* line 638, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-earth:before {
-  content: "\f2df";
+  content: "";
 }
 
 /* line 639, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-folder:before {
-  content: "\f2e0";
+  content: "";
 }
 
 /* line 640, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-forums:before {
-  content: "\f2e1";
+  content: "";
 }
 
 /* line 641, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-friends:before {
-  content: "\f2e2";
+  content: "";
 }
 
 /* line 642, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-hand:before {
-  content: "\f2e3";
+  content: "";
 }
 
 /* line 643, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-image:before {
-  content: "\f2e4";
+  content: "";
 }
 
 /* line 644, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-inbox:before {
-  content: "\f2e5";
+  content: "";
 }
 
 /* line 645, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-information:before {
-  content: "\f2e6";
+  content: "";
 }
 
 /* line 646, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-keypad:before {
-  content: "\f2e7";
+  content: "";
 }
 
 /* line 647, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-lightbulb:before {
-  content: "\f2e8";
+  content: "";
 }
 
 /* line 648, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-locate:before {
-  content: "\f2e9";
+  content: "";
 }
 
 /* line 649, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-location:before {
-  content: "\f2ea";
+  content: "";
 }
 
 /* line 650, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-mail:before {
-  content: "\f2eb";
+  content: "";
 }
 
 /* line 651, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-microphone:before {
-  content: "\f2ec";
+  content: "";
 }
 
 /* line 652, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-mixer:before {
-  content: "\f2ed";
+  content: "";
 }
 
 /* line 653, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-more:before {
-  content: "\f2ee";
+  content: "";
 }
 
 /* line 654, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-note:before {
-  content: "\f2ef";
+  content: "";
 }
 
 /* line 655, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-playstore:before {
-  content: "\f2f0";
+  content: "";
 }
 
 /* line 656, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-printer:before {
-  content: "\f2f1";
+  content: "";
 }
 
 /* line 657, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-promotion:before {
-  content: "\f2f2";
+  content: "";
 }
 
 /* line 658, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-reminder:before {
-  content: "\f2f3";
+  content: "";
 }
 
 /* line 659, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-remove:before {
-  content: "\f2f4";
+  content: "";
 }
 
 /* line 660, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-search:before {
-  content: "\f2f5";
+  content: "";
 }
 
 /* line 661, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-send:before {
-  content: "\f2f6";
+  content: "";
 }
 
 /* line 662, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-settings:before {
-  content: "\f2f7";
+  content: "";
 }
 
 /* line 663, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-share:before {
-  content: "\f2f8";
+  content: "";
 }
 
 /* line 664, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-social:before {
-  content: "\f2fa";
+  content: "";
 }
 
 /* line 665, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-social-user:before {
-  content: "\f2f9";
+  content: "";
 }
 
 /* line 666, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-sort:before {
-  content: "\f2fb";
+  content: "";
 }
 
 /* line 667, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-stair-drawer:before {
-  content: "\f311";
+  content: "";
 }
 
 /* line 668, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-star:before {
-  content: "\f2fc";
+  content: "";
 }
 
 /* line 669, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-stopwatch:before {
-  content: "\f2fd";
+  content: "";
 }
 
 /* line 670, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-storage:before {
-  content: "\f2fe";
+  content: "";
 }
 
 /* line 671, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-back:before {
-  content: "\f2ff";
+  content: "";
 }
 
 /* line 672, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-home:before {
-  content: "\f300";
+  content: "";
 }
 
 /* line 673, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-system-windows:before {
-  content: "\f301";
+  content: "";
 }
 
 /* line 674, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-timer:before {
-  content: "\f302";
+  content: "";
 }
 
 /* line 675, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-trash:before {
-  content: "\f303";
+  content: "";
 }
 
 /* line 676, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-user-menu:before {
-  content: "\f312";
+  content: "";
 }
 
 /* line 677, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-volume:before {
-  content: "\f304";
+  content: "";
 }
 
 /* line 678, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-android-wifi:before {
-  content: "\f305";
+  content: "";
 }
 
 /* line 679, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-aperture:before {
-  content: "\f313";
+  content: "";
 }
 
 /* line 680, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-archive:before {
-  content: "\f102";
+  content: "";
 }
 
 /* line 681, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-a:before {
-  content: "\f103";
+  content: "";
 }
 
 /* line 682, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-b:before {
-  content: "\f104";
+  content: "";
 }
 
 /* line 683, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-down-c:before {
-  content: "\f105";
+  content: "";
 }
 
 /* line 684, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-expand:before {
-  content: "\f25e";
+  content: "";
 }
 
 /* line 685, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-down-left:before {
-  content: "\f25f";
+  content: "";
 }
 
 /* line 686, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-down-right:before {
-  content: "\f260";
+  content: "";
 }
 
 /* line 687, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-up-left:before {
-  content: "\f261";
+  content: "";
 }
 
 /* line 688, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-graph-up-right:before {
-  content: "\f262";
+  content: "";
 }
 
 /* line 689, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-a:before {
-  content: "\f106";
+  content: "";
 }
 
 /* line 690, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-b:before {
-  content: "\f107";
+  content: "";
 }
 
 /* line 691, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-left-c:before {
-  content: "\f108";
+  content: "";
 }
 
 /* line 692, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-move:before {
-  content: "\f263";
+  content: "";
 }
 
 /* line 693, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-resize:before {
-  content: "\f264";
+  content: "";
 }
 
 /* line 694, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-return-left:before {
-  content: "\f265";
+  content: "";
 }
 
 /* line 695, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-return-right:before {
-  content: "\f266";
+  content: "";
 }
 
 /* line 696, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-a:before {
-  content: "\f109";
+  content: "";
 }
 
 /* line 697, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-b:before {
-  content: "\f10a";
+  content: "";
 }
 
 /* line 698, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-right-c:before {
-  content: "\f10b";
+  content: "";
 }
 
 /* line 699, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-shrink:before {
-  content: "\f267";
+  content: "";
 }
 
 /* line 700, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-swap:before {
-  content: "\f268";
+  content: "";
 }
 
 /* line 701, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-a:before {
-  content: "\f10c";
+  content: "";
 }
 
 /* line 702, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-b:before {
-  content: "\f10d";
+  content: "";
 }
 
 /* line 703, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-arrow-up-c:before {
-  content: "\f10e";
+  content: "";
 }
 
 /* line 704, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-asterisk:before {
-  content: "\f314";
+  content: "";
 }
 
 /* line 705, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-at:before {
-  content: "\f10f";
+  content: "";
 }
 
 /* line 706, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bag:before {
-  content: "\f110";
+  content: "";
 }
 
 /* line 707, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-charging:before {
-  content: "\f111";
+  content: "";
 }
 
 /* line 708, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-empty:before {
-  content: "\f112";
+  content: "";
 }
 
 /* line 709, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-full:before {
-  content: "\f113";
+  content: "";
 }
 
 /* line 710, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-half:before {
-  content: "\f114";
+  content: "";
 }
 
 /* line 711, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-battery-low:before {
-  content: "\f115";
+  content: "";
 }
 
 /* line 712, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-beaker:before {
-  content: "\f269";
+  content: "";
 }
 
 /* line 713, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-beer:before {
-  content: "\f26a";
+  content: "";
 }
 
 /* line 714, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bluetooth:before {
-  content: "\f116";
+  content: "";
 }
 
 /* line 715, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bonfire:before {
-  content: "\f315";
+  content: "";
 }
 
 /* line 716, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bookmark:before {
-  content: "\f26b";
+  content: "";
 }
 
 /* line 717, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-briefcase:before {
-  content: "\f26c";
+  content: "";
 }
 
 /* line 718, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-bug:before {
-  content: "\f2be";
+  content: "";
 }
 
 /* line 719, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-calculator:before {
-  content: "\f26d";
+  content: "";
 }
 
 /* line 720, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-calendar:before {
-  content: "\f117";
+  content: "";
 }
 
 /* line 721, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-camera:before {
-  content: "\f118";
+  content: "";
 }
 
 /* line 722, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-card:before {
-  content: "\f119";
+  content: "";
 }
 
 /* line 723, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-cash:before {
-  content: "\f316";
+  content: "";
 }
 
 /* line 724, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbox:before {
-  content: "\f11b";
+  content: "";
 }
 
 /* line 725, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbox-working:before {
-  content: "\f11a";
+  content: "";
 }
 
 /* line 726, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatboxes:before {
-  content: "\f11c";
+  content: "";
 }
 
 /* line 727, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubble:before {
-  content: "\f11e";
+  content: "";
 }
 
 /* line 728, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubble-working:before {
-  content: "\f11d";
+  content: "";
 }
 
 /* line 729, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chatbubbles:before {
-  content: "\f11f";
+  content: "";
 }
 
 /* line 730, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark:before {
-  content: "\f122";
+  content: "";
 }
 
 /* line 731, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark-circled:before {
-  content: "\f120";
+  content: "";
 }
 
 /* line 732, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-checkmark-round:before {
-  content: "\f121";
+  content: "";
 }
 
 /* line 733, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-down:before {
-  content: "\f123";
+  content: "";
 }
 
 /* line 734, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-left:before {
-  content: "\f124";
+  content: "";
 }
 
 /* line 735, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-right:before {
-  content: "\f125";
+  content: "";
 }
 
 /* line 736, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-chevron-up:before {
-  content: "\f126";
+  content: "";
 }
 
 /* line 737, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-clipboard:before {
-  content: "\f127";
+  content: "";
 }
 
 /* line 738, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-clock:before {
-  content: "\f26e";
+  content: "";
 }
 
 /* line 739, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close:before {
-  content: "\f12a";
+  content: "";
 }
 
 /* line 740, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close-circled:before {
-  content: "\f128";
+  content: "";
 }
 
 /* line 741, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-close-round:before {
-  content: "\f129";
+  content: "";
 }
 
 /* line 742, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-closed-captioning:before {
-  content: "\f317";
+  content: "";
 }
 
 /* line 743, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-cloud:before {
-  content: "\f12b";
+  content: "";
 }
 
 /* line 744, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code:before {
-  content: "\f271";
+  content: "";
 }
 
 /* line 745, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code-download:before {
-  content: "\f26f";
+  content: "";
 }
 
 /* line 746, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-code-working:before {
-  content: "\f270";
+  content: "";
 }
 
 /* line 747, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-coffee:before {
-  content: "\f272";
+  content: "";
 }
 
 /* line 748, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-compass:before {
-  content: "\f273";
+  content: "";
 }
 
 /* line 749, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-compose:before {
-  content: "\f12c";
+  content: "";
 }
 
 /* line 750, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-connection-bars:before {
-  content: "\f274";
+  content: "";
 }
 
 /* line 751, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-contrast:before {
-  content: "\f275";
+  content: "";
 }
 
 /* line 752, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-cube:before {
-  content: "\f318";
+  content: "";
 }
 
 /* line 753, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-disc:before {
-  content: "\f12d";
+  content: "";
 }
 
 /* line 754, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-document:before {
-  content: "\f12f";
+  content: "";
 }
 
 /* line 755, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-document-text:before {
-  content: "\f12e";
+  content: "";
 }
 
 /* line 756, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-drag:before {
-  content: "\f130";
+  content: "";
 }
 
 /* line 757, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-earth:before {
-  content: "\f276";
+  content: "";
 }
 
 /* line 758, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-edit:before {
-  content: "\f2bf";
+  content: "";
 }
 
 /* line 759, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-egg:before {
-  content: "\f277";
+  content: "";
 }
 
 /* line 760, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eject:before {
-  content: "\f131";
+  content: "";
 }
 
 /* line 761, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-email:before {
-  content: "\f132";
+  content: "";
 }
 
 /* line 762, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eye:before {
-  content: "\f133";
+  content: "";
 }
 
 /* line 763, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-eye-disabled:before {
-  content: "\f306";
+  content: "";
 }
 
 /* line 764, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-female:before {
-  content: "\f278";
+  content: "";
 }
 
 /* line 765, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-filing:before {
-  content: "\f134";
+  content: "";
 }
 
 /* line 766, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-film-marker:before {
-  content: "\f135";
+  content: "";
 }
 
 /* line 767, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-fireball:before {
-  content: "\f319";
+  content: "";
 }
 
 /* line 768, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flag:before {
-  content: "\f279";
+  content: "";
 }
 
 /* line 769, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flame:before {
-  content: "\f31a";
+  content: "";
 }
 
 /* line 770, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flash:before {
-  content: "\f137";
+  content: "";
 }
 
 /* line 771, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flash-off:before {
-  content: "\f136";
+  content: "";
 }
 
 /* line 772, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-flask:before {
-  content: "\f138";
+  content: "";
 }
 
 /* line 773, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-folder:before {
-  content: "\f139";
+  content: "";
 }
 
 /* line 774, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-fork:before {
-  content: "\f27a";
+  content: "";
 }
 
 /* line 775, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-fork-repo:before {
-  content: "\f2c0";
+  content: "";
 }
 
 /* line 776, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-forward:before {
-  content: "\f13a";
+  content: "";
 }
 
 /* line 777, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-funnel:before {
-  content: "\f31b";
+  content: "";
 }
 
 /* line 778, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-game-controller-a:before {
-  content: "\f13b";
+  content: "";
 }
 
 /* line 779, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-game-controller-b:before {
-  content: "\f13c";
+  content: "";
 }
 
 /* line 780, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-gear-a:before {
-  content: "\f13d";
+  content: "";
 }
 
 /* line 781, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-gear-b:before {
-  content: "\f13e";
+  content: "";
 }
 
 /* line 782, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-grid:before {
-  content: "\f13f";
+  content: "";
 }
 
 /* line 783, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-hammer:before {
-  content: "\f27b";
+  content: "";
 }
 
 /* line 784, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-happy:before {
-  content: "\f31c";
+  content: "";
 }
 
 /* line 785, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-headphone:before {
-  content: "\f140";
+  content: "";
 }
 
 /* line 786, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-heart:before {
-  content: "\f141";
+  content: "";
 }
 
 /* line 787, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-heart-broken:before {
-  content: "\f31d";
+  content: "";
 }
 
 /* line 788, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help:before {
-  content: "\f143";
+  content: "";
 }
 
 /* line 789, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help-buoy:before {
-  content: "\f27c";
+  content: "";
 }
 
 /* line 790, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-help-circled:before {
-  content: "\f142";
+  content: "";
 }
 
 /* line 791, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-home:before {
-  content: "\f144";
+  content: "";
 }
 
 /* line 792, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icecream:before {
-  content: "\f27d";
+  content: "";
 }
 
 /* line 793, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icon-social-google-plus:before {
-  content: "\f146";
+  content: "";
 }
 
 /* line 794, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-icon-social-google-plus-outline:before {
-  content: "\f145";
+  content: "";
 }
 
 /* line 795, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-image:before {
-  content: "\f147";
+  content: "";
 }
 
 /* line 796, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-images:before {
-  content: "\f148";
+  content: "";
 }
 
 /* line 797, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-information:before {
-  content: "\f14a";
+  content: "";
 }
 
 /* line 798, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-information-circled:before {
-  content: "\f149";
+  content: "";
 }
 
 /* line 799, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ionic:before {
-  content: "\f14b";
+  content: "";
 }
 
 /* line 800, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-alarm:before {
-  content: "\f14d";
+  content: "";
 }
 
 /* line 801, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-alarm-outline:before {
-  content: "\f14c";
+  content: "";
 }
 
 /* line 802, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-albums:before {
-  content: "\f14f";
+  content: "";
 }
 
 /* line 803, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-albums-outline:before {
-  content: "\f14e";
+  content: "";
 }
 
 /* line 804, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-americanfootball:before {
-  content: "\f31f";
+  content: "";
 }
 
 /* line 805, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-americanfootball-outline:before {
-  content: "\f31e";
+  content: "";
 }
 
 /* line 806, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-analytics:before {
-  content: "\f321";
+  content: "";
 }
 
 /* line 807, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-analytics-outline:before {
-  content: "\f320";
+  content: "";
 }
 
 /* line 808, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-back:before {
-  content: "\f150";
+  content: "";
 }
 
 /* line 809, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-down:before {
-  content: "\f151";
+  content: "";
 }
 
 /* line 810, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-forward:before {
-  content: "\f152";
+  content: "";
 }
 
 /* line 811, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-left:before {
-  content: "\f153";
+  content: "";
 }
 
 /* line 812, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-right:before {
-  content: "\f154";
+  content: "";
 }
 
 /* line 813, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-down:before {
-  content: "\f27e";
+  content: "";
 }
 
 /* line 814, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-left:before {
-  content: "\f27f";
+  content: "";
 }
 
 /* line 815, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-right:before {
-  content: "\f280";
+  content: "";
 }
 
 /* line 816, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-thin-up:before {
-  content: "\f281";
+  content: "";
 }
 
 /* line 817, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-arrow-up:before {
-  content: "\f155";
+  content: "";
 }
 
 /* line 818, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-at:before {
-  content: "\f157";
+  content: "";
 }
 
 /* line 819, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-at-outline:before {
-  content: "\f156";
+  content: "";
 }
 
 /* line 820, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-barcode:before {
-  content: "\f323";
+  content: "";
 }
 
 /* line 821, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-barcode-outline:before {
-  content: "\f322";
+  content: "";
 }
 
 /* line 822, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-baseball:before {
-  content: "\f325";
+  content: "";
 }
 
 /* line 823, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-baseball-outline:before {
-  content: "\f324";
+  content: "";
 }
 
 /* line 824, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-basketball:before {
-  content: "\f327";
+  content: "";
 }
 
 /* line 825, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-basketball-outline:before {
-  content: "\f326";
+  content: "";
 }
 
 /* line 826, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bell:before {
-  content: "\f159";
+  content: "";
 }
 
 /* line 827, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bell-outline:before {
-  content: "\f158";
+  content: "";
 }
 
 /* line 828, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bolt:before {
-  content: "\f15b";
+  content: "";
 }
 
 /* line 829, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bolt-outline:before {
-  content: "\f15a";
+  content: "";
 }
 
 /* line 830, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bookmarks:before {
-  content: "\f15d";
+  content: "";
 }
 
 /* line 831, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-bookmarks-outline:before {
-  content: "\f15c";
+  content: "";
 }
 
 /* line 832, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-box:before {
-  content: "\f15f";
+  content: "";
 }
 
 /* line 833, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-box-outline:before {
-  content: "\f15e";
+  content: "";
 }
 
 /* line 834, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-briefcase:before {
-  content: "\f283";
+  content: "";
 }
 
 /* line 835, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-briefcase-outline:before {
-  content: "\f282";
+  content: "";
 }
 
 /* line 836, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-browsers:before {
-  content: "\f161";
+  content: "";
 }
 
 /* line 837, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-browsers-outline:before {
-  content: "\f160";
+  content: "";
 }
 
 /* line 838, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calculator:before {
-  content: "\f285";
+  content: "";
 }
 
 /* line 839, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calculator-outline:before {
-  content: "\f284";
+  content: "";
 }
 
 /* line 840, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calendar:before {
-  content: "\f163";
+  content: "";
 }
 
 /* line 841, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-calendar-outline:before {
-  content: "\f162";
+  content: "";
 }
 
 /* line 842, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-camera:before {
-  content: "\f165";
+  content: "";
 }
 
 /* line 843, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-camera-outline:before {
-  content: "\f164";
+  content: "";
 }
 
 /* line 844, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cart:before {
-  content: "\f167";
+  content: "";
 }
 
 /* line 845, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cart-outline:before {
-  content: "\f166";
+  content: "";
 }
 
 /* line 846, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatboxes:before {
-  content: "\f169";
+  content: "";
 }
 
 /* line 847, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatboxes-outline:before {
-  content: "\f168";
+  content: "";
 }
 
 /* line 848, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatbubble:before {
-  content: "\f16b";
+  content: "";
 }
 
 /* line 849, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-chatbubble-outline:before {
-  content: "\f16a";
+  content: "";
 }
 
 /* line 850, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark:before {
-  content: "\f16e";
+  content: "";
 }
 
 /* line 851, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark-empty:before {
-  content: "\f16c";
+  content: "";
 }
 
 /* line 852, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-checkmark-outline:before {
-  content: "\f16d";
+  content: "";
 }
 
 /* line 853, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-circle-filled:before {
-  content: "\f16f";
+  content: "";
 }
 
 /* line 854, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-circle-outline:before {
-  content: "\f170";
+  content: "";
 }
 
 /* line 855, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-clock:before {
-  content: "\f172";
+  content: "";
 }
 
 /* line 856, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-clock-outline:before {
-  content: "\f171";
+  content: "";
 }
 
 /* line 857, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close:before {
-  content: "\f2bc";
+  content: "";
 }
 
 /* line 858, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close-empty:before {
-  content: "\f2bd";
+  content: "";
 }
 
 /* line 859, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-close-outline:before {
-  content: "\f2bb";
+  content: "";
 }
 
 /* line 860, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud:before {
-  content: "\f178";
+  content: "";
 }
 
 /* line 861, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-download:before {
-  content: "\f174";
+  content: "";
 }
 
 /* line 862, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-download-outline:before {
-  content: "\f173";
+  content: "";
 }
 
 /* line 863, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-outline:before {
-  content: "\f175";
+  content: "";
 }
 
 /* line 864, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-upload:before {
-  content: "\f177";
+  content: "";
 }
 
 /* line 865, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloud-upload-outline:before {
-  content: "\f176";
+  content: "";
 }
 
 /* line 866, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy:before {
-  content: "\f17a";
+  content: "";
 }
 
 /* line 867, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-night:before {
-  content: "\f308";
+  content: "";
 }
 
 /* line 868, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-night-outline:before {
-  content: "\f307";
+  content: "";
 }
 
 /* line 869, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cloudy-outline:before {
-  content: "\f179";
+  content: "";
 }
 
 /* line 870, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cog:before {
-  content: "\f17c";
+  content: "";
 }
 
 /* line 871, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-cog-outline:before {
-  content: "\f17b";
+  content: "";
 }
 
 /* line 872, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-compose:before {
-  content: "\f17e";
+  content: "";
 }
 
 /* line 873, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-compose-outline:before {
-  content: "\f17d";
+  content: "";
 }
 
 /* line 874, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-contact:before {
-  content: "\f180";
+  content: "";
 }
 
 /* line 875, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-contact-outline:before {
-  content: "\f17f";
+  content: "";
 }
 
 /* line 876, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-copy:before {
-  content: "\f182";
+  content: "";
 }
 
 /* line 877, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-copy-outline:before {
-  content: "\f181";
+  content: "";
 }
 
 /* line 878, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-download:before {
-  content: "\f184";
+  content: "";
 }
 
 /* line 879, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-download-outline:before {
-  content: "\f183";
+  content: "";
 }
 
 /* line 880, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-drag:before {
-  content: "\f185";
+  content: "";
 }
 
 /* line 881, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-email:before {
-  content: "\f187";
+  content: "";
 }
 
 /* line 882, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-email-outline:before {
-  content: "\f186";
+  content: "";
 }
 
 /* line 883, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-expand:before {
-  content: "\f30d";
+  content: "";
 }
 
 /* line 884, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-eye:before {
-  content: "\f189";
+  content: "";
 }
 
 /* line 885, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-eye-outline:before {
-  content: "\f188";
+  content: "";
 }
 
 /* line 886, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-fastforward:before {
-  content: "\f18b";
+  content: "";
 }
 
 /* line 887, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-fastforward-outline:before {
-  content: "\f18a";
+  content: "";
 }
 
 /* line 888, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-filing:before {
-  content: "\f18d";
+  content: "";
 }
 
 /* line 889, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-filing-outline:before {
-  content: "\f18c";
+  content: "";
 }
 
 /* line 890, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-film:before {
-  content: "\f18f";
+  content: "";
 }
 
 /* line 891, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-film-outline:before {
-  content: "\f18e";
+  content: "";
 }
 
 /* line 892, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-flag:before {
-  content: "\f191";
+  content: "";
 }
 
 /* line 893, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-flag-outline:before {
-  content: "\f190";
+  content: "";
 }
 
 /* line 894, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-folder:before {
-  content: "\f193";
+  content: "";
 }
 
 /* line 895, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-folder-outline:before {
-  content: "\f192";
+  content: "";
 }
 
 /* line 896, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-football:before {
-  content: "\f329";
+  content: "";
 }
 
 /* line 897, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-football-outline:before {
-  content: "\f328";
+  content: "";
 }
 
 /* line 898, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-gear:before {
-  content: "\f195";
+  content: "";
 }
 
 /* line 899, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-gear-outline:before {
-  content: "\f194";
+  content: "";
 }
 
 /* line 900, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-glasses:before {
-  content: "\f197";
+  content: "";
 }
 
 /* line 901, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-glasses-outline:before {
-  content: "\f196";
+  content: "";
 }
 
 /* line 902, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-heart:before {
-  content: "\f199";
+  content: "";
 }
 
 /* line 903, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-heart-outline:before {
-  content: "\f198";
+  content: "";
 }
 
 /* line 904, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help:before {
-  content: "\f19c";
+  content: "";
 }
 
 /* line 905, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help-empty:before {
-  content: "\f19a";
+  content: "";
 }
 
 /* line 906, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-help-outline:before {
-  content: "\f19b";
+  content: "";
 }
 
 /* line 907, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-home:before {
-  content: "\f32b";
+  content: "";
 }
 
 /* line 908, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-home-outline:before {
-  content: "\f32a";
+  content: "";
 }
 
 /* line 909, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-infinite:before {
-  content: "\f19e";
+  content: "";
 }
 
 /* line 910, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-infinite-outline:before {
-  content: "\f19d";
+  content: "";
 }
 
 /* line 911, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information:before {
-  content: "\f1a1";
+  content: "";
 }
 
 /* line 912, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information-empty:before {
-  content: "\f19f";
+  content: "";
 }
 
 /* line 913, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-information-outline:before {
-  content: "\f1a0";
+  content: "";
 }
 
 /* line 914, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-ionic-outline:before {
-  content: "\f1a2";
+  content: "";
 }
 
 /* line 915, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-keypad:before {
-  content: "\f1a4";
+  content: "";
 }
 
 /* line 916, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-keypad-outline:before {
-  content: "\f1a3";
+  content: "";
 }
 
 /* line 917, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-lightbulb:before {
-  content: "\f287";
+  content: "";
 }
 
 /* line 918, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-lightbulb-outline:before {
-  content: "\f286";
+  content: "";
 }
 
 /* line 919, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-location:before {
-  content: "\f1a6";
+  content: "";
 }
 
 /* line 920, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-location-outline:before {
-  content: "\f1a5";
+  content: "";
 }
 
 /* line 921, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-locked:before {
-  content: "\f1a8";
+  content: "";
 }
 
 /* line 922, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-locked-outline:before {
-  content: "\f1a7";
+  content: "";
 }
 
 /* line 923, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-loop:before {
-  content: "\f32d";
+  content: "";
 }
 
 /* line 924, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-loop-strong:before {
-  content: "\f32c";
+  content: "";
 }
 
 /* line 925, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-medkit:before {
-  content: "\f289";
+  content: "";
 }
 
 /* line 926, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-medkit-outline:before {
-  content: "\f288";
+  content: "";
 }
 
 /* line 927, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic:before {
-  content: "\f1ab";
+  content: "";
 }
 
 /* line 928, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic-off:before {
-  content: "\f1a9";
+  content: "";
 }
 
 /* line 929, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-mic-outline:before {
-  content: "\f1aa";
+  content: "";
 }
 
 /* line 930, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus:before {
-  content: "\f1ae";
+  content: "";
 }
 
 /* line 931, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus-empty:before {
-  content: "\f1ac";
+  content: "";
 }
 
 /* line 932, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-minus-outline:before {
-  content: "\f1ad";
+  content: "";
 }
 
 /* line 933, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-monitor:before {
-  content: "\f1b0";
+  content: "";
 }
 
 /* line 934, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-monitor-outline:before {
-  content: "\f1af";
+  content: "";
 }
 
 /* line 935, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-moon:before {
-  content: "\f1b2";
+  content: "";
 }
 
 /* line 936, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-moon-outline:before {
-  content: "\f1b1";
+  content: "";
 }
 
 /* line 937, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-more:before {
-  content: "\f1b4";
+  content: "";
 }
 
 /* line 938, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-more-outline:before {
-  content: "\f1b3";
+  content: "";
 }
 
 /* line 939, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-musical-note:before {
-  content: "\f1b5";
+  content: "";
 }
 
 /* line 940, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-musical-notes:before {
-  content: "\f1b6";
+  content: "";
 }
 
 /* line 941, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-navigate:before {
-  content: "\f1b8";
+  content: "";
 }
 
 /* line 942, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-navigate-outline:before {
-  content: "\f1b7";
+  content: "";
 }
 
 /* line 943, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paper:before {
-  content: "\f32f";
+  content: "";
 }
 
 /* line 944, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paper-outline:before {
-  content: "\f32e";
+  content: "";
 }
 
 /* line 945, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paperplane:before {
-  content: "\f1ba";
+  content: "";
 }
 
 /* line 946, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paperplane-outline:before {
-  content: "\f1b9";
+  content: "";
 }
 
 /* line 947, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-partlysunny:before {
-  content: "\f1bc";
+  content: "";
 }
 
 /* line 948, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-partlysunny-outline:before {
-  content: "\f1bb";
+  content: "";
 }
 
 /* line 949, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pause:before {
-  content: "\f1be";
+  content: "";
 }
 
 /* line 950, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pause-outline:before {
-  content: "\f1bd";
+  content: "";
 }
 
 /* line 951, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paw:before {
-  content: "\f331";
+  content: "";
 }
 
 /* line 952, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-paw-outline:before {
-  content: "\f330";
+  content: "";
 }
 
 /* line 953, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-people:before {
-  content: "\f1c0";
+  content: "";
 }
 
 /* line 954, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-people-outline:before {
-  content: "\f1bf";
+  content: "";
 }
 
 /* line 955, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-person:before {
-  content: "\f1c2";
+  content: "";
 }
 
 /* line 956, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-person-outline:before {
-  content: "\f1c1";
+  content: "";
 }
 
 /* line 957, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-personadd:before {
-  content: "\f1c4";
+  content: "";
 }
 
 /* line 958, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-personadd-outline:before {
-  content: "\f1c3";
+  content: "";
 }
 
 /* line 959, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-photos:before {
-  content: "\f1c6";
+  content: "";
 }
 
 /* line 960, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-photos-outline:before {
-  content: "\f1c5";
+  content: "";
 }
 
 /* line 961, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pie:before {
-  content: "\f28b";
+  content: "";
 }
 
 /* line 962, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pie-outline:before {
-  content: "\f28a";
+  content: "";
 }
 
 /* line 963, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-play:before {
-  content: "\f1c8";
+  content: "";
 }
 
 /* line 964, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-play-outline:before {
-  content: "\f1c7";
+  content: "";
 }
 
 /* line 965, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus:before {
-  content: "\f1cb";
+  content: "";
 }
 
 /* line 966, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus-empty:before {
-  content: "\f1c9";
+  content: "";
 }
 
 /* line 967, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-plus-outline:before {
-  content: "\f1ca";
+  content: "";
 }
 
 /* line 968, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetag:before {
-  content: "\f28d";
+  content: "";
 }
 
 /* line 969, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetag-outline:before {
-  content: "\f28c";
+  content: "";
 }
 
 /* line 970, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetags:before {
-  content: "\f333";
+  content: "";
 }
 
 /* line 971, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pricetags-outline:before {
-  content: "\f332";
+  content: "";
 }
 
 /* line 972, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-printer:before {
-  content: "\f1cd";
+  content: "";
 }
 
 /* line 973, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-printer-outline:before {
-  content: "\f1cc";
+  content: "";
 }
 
 /* line 974, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pulse:before {
-  content: "\f335";
+  content: "";
 }
 
 /* line 975, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-pulse-strong:before {
-  content: "\f334";
+  content: "";
 }
 
 /* line 976, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rainy:before {
-  content: "\f1cf";
+  content: "";
 }
 
 /* line 977, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rainy-outline:before {
-  content: "\f1ce";
+  content: "";
 }
 
 /* line 978, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-recording:before {
-  content: "\f1d1";
+  content: "";
 }
 
 /* line 979, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-recording-outline:before {
-  content: "\f1d0";
+  content: "";
 }
 
 /* line 980, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-redo:before {
-  content: "\f1d3";
+  content: "";
 }
 
 /* line 981, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-redo-outline:before {
-  content: "\f1d2";
+  content: "";
 }
 
 /* line 982, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh:before {
-  content: "\f1d6";
+  content: "";
 }
 
 /* line 983, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh-empty:before {
-  content: "\f1d4";
+  content: "";
 }
 
 /* line 984, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-refresh-outline:before {
-  content: "\f1d5";
+  content: "";
 }
 
 /* line 985, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-reload:before, .ion-ios7-reloading:before {
-  content: "\f28e";
+  content: "";
 }
 
 /* line 986, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-reverse-camera:before {
-  content: "\f337";
+  content: "";
 }
 
 /* line 987, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-reverse-camera-outline:before {
-  content: "\f336";
+  content: "";
 }
 
 /* line 988, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rewind:before {
-  content: "\f1d8";
+  content: "";
 }
 
 /* line 989, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-rewind-outline:before {
-  content: "\f1d7";
+  content: "";
 }
 
 /* line 990, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-search:before {
-  content: "\f1da";
+  content: "";
 }
 
 /* line 991, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-search-strong:before {
-  content: "\f1d9";
+  content: "";
 }
 
 /* line 992, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-settings:before {
-  content: "\f339";
+  content: "";
 }
 
 /* line 993, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-settings-strong:before {
-  content: "\f338";
+  content: "";
 }
 
 /* line 994, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-shrink:before {
-  content: "\f30e";
+  content: "";
 }
 
 /* line 995, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipbackward:before {
-  content: "\f1dc";
+  content: "";
 }
 
 /* line 996, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipbackward-outline:before {
-  content: "\f1db";
+  content: "";
 }
 
 /* line 997, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipforward:before {
-  content: "\f1de";
+  content: "";
 }
 
 /* line 998, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-skipforward-outline:before {
-  content: "\f1dd";
+  content: "";
 }
 
 /* line 999, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-snowy:before {
-  content: "\f309";
+  content: "";
 }
 
 /* line 1000, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-speedometer:before {
-  content: "\f290";
+  content: "";
 }
 
 /* line 1001, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-speedometer-outline:before {
-  content: "\f28f";
+  content: "";
 }
 
 /* line 1002, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-star:before {
-  content: "\f1e0";
+  content: "";
 }
 
 /* line 1003, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-star-half:before {
-  content: "\f33a";
+  content: "";
 }
 
 /* line 1004, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-star-outline:before {
-  content: "\f1df";
+  content: "";
 }
 
 /* line 1005, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-stopwatch:before {
-  content: "\f1e2";
+  content: "";
 }
 
 /* line 1006, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-stopwatch-outline:before {
-  content: "\f1e1";
+  content: "";
 }
 
 /* line 1007, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-sunny:before {
-  content: "\f1e4";
+  content: "";
 }
 
 /* line 1008, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-sunny-outline:before {
-  content: "\f1e3";
+  content: "";
 }
 
 /* line 1009, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-telephone:before {
-  content: "\f1e6";
+  content: "";
 }
 
 /* line 1010, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-telephone-outline:before {
-  content: "\f1e5";
+  content: "";
 }
 
 /* line 1011, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-tennisball:before {
-  content: "\f33c";
+  content: "";
 }
 
 /* line 1012, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-tennisball-outline:before {
-  content: "\f33b";
+  content: "";
 }
 
 /* line 1013, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-thunderstorm:before {
-  content: "\f1e8";
+  content: "";
 }
 
 /* line 1014, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-thunderstorm-outline:before {
-  content: "\f1e7";
+  content: "";
 }
 
 /* line 1015, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-time:before {
-  content: "\f292";
+  content: "";
 }
 
 /* line 1016, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-time-outline:before {
-  content: "\f291";
+  content: "";
 }
 
 /* line 1017, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-timer:before {
-  content: "\f1ea";
+  content: "";
 }
 
 /* line 1018, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-timer-outline:before {
-  content: "\f1e9";
+  content: "";
 }
 
 /* line 1019, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-toggle:before {
-  content: "\f33e";
+  content: "";
 }
 
 /* line 1020, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-toggle-outline:before {
-  content: "\f33d";
+  content: "";
 }
 
 /* line 1021, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-trash:before {
-  content: "\f1ec";
+  content: "";
 }
 
 /* line 1022, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-trash-outline:before {
-  content: "\f1eb";
+  content: "";
 }
 
 /* line 1023, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-undo:before {
-  content: "\f1ee";
+  content: "";
 }
 
 /* line 1024, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-undo-outline:before {
-  content: "\f1ed";
+  content: "";
 }
 
 /* line 1025, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-unlocked:before {
-  content: "\f1f0";
+  content: "";
 }
 
 /* line 1026, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-unlocked-outline:before {
-  content: "\f1ef";
+  content: "";
 }
 
 /* line 1027, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-upload:before {
-  content: "\f1f2";
+  content: "";
 }
 
 /* line 1028, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-upload-outline:before {
-  content: "\f1f1";
+  content: "";
 }
 
 /* line 1029, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-videocam:before {
-  content: "\f1f4";
+  content: "";
 }
 
 /* line 1030, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-videocam-outline:before {
-  content: "\f1f3";
+  content: "";
 }
 
 /* line 1031, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-volume-high:before {
-  content: "\f1f5";
+  content: "";
 }
 
 /* line 1032, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-volume-low:before {
-  content: "\f1f6";
+  content: "";
 }
 
 /* line 1033, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-wineglass:before {
-  content: "\f294";
+  content: "";
 }
 
 /* line 1034, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-wineglass-outline:before {
-  content: "\f293";
+  content: "";
 }
 
 /* line 1035, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-world:before {
-  content: "\f1f8";
+  content: "";
 }
 
 /* line 1036, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ios7-world-outline:before {
-  content: "\f1f7";
+  content: "";
 }
 
 /* line 1037, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ipad:before {
-  content: "\f1f9";
+  content: "";
 }
 
 /* line 1038, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-iphone:before {
-  content: "\f1fa";
+  content: "";
 }
 
 /* line 1039, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ipod:before {
-  content: "\f1fb";
+  content: "";
 }
 
 /* line 1040, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-jet:before {
-  content: "\f295";
+  content: "";
 }
 
 /* line 1041, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-key:before {
-  content: "\f296";
+  content: "";
 }
 
 /* line 1042, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-knife:before {
-  content: "\f297";
+  content: "";
 }
 
 /* line 1043, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-laptop:before {
-  content: "\f1fc";
+  content: "";
 }
 
 /* line 1044, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-leaf:before {
-  content: "\f1fd";
+  content: "";
 }
 
 /* line 1045, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-levels:before {
-  content: "\f298";
+  content: "";
 }
 
 /* line 1046, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-lightbulb:before {
-  content: "\f299";
+  content: "";
 }
 
 /* line 1047, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-link:before {
-  content: "\f1fe";
+  content: "";
 }
 
 /* line 1048, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-a:before, .ion-loading-a:before {
-  content: "\f29a";
+  content: "";
 }
 
 /* line 1049, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-b:before, .ion-loading-b:before {
-  content: "\f29b";
+  content: "";
 }
 
 /* line 1050, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-c:before, .ion-loading-c:before {
-  content: "\f29c";
+  content: "";
 }
 
 /* line 1051, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-load-d:before, .ion-loading-d:before {
-  content: "\f29d";
+  content: "";
 }
 
 /* line 1052, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-location:before {
-  content: "\f1ff";
+  content: "";
 }
 
 /* line 1053, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-locked:before {
-  content: "\f200";
+  content: "";
 }
 
 /* line 1054, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-log-in:before {
-  content: "\f29e";
+  content: "";
 }
 
 /* line 1055, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-log-out:before {
-  content: "\f29f";
+  content: "";
 }
 
 /* line 1056, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-loop:before, .ion-looping:before {
-  content: "\f201";
+  content: "";
 }
 
 /* line 1057, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-magnet:before {
-  content: "\f2a0";
+  content: "";
 }
 
 /* line 1058, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-male:before {
-  content: "\f2a1";
+  content: "";
 }
 
 /* line 1059, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-man:before {
-  content: "\f202";
+  content: "";
 }
 
 /* line 1060, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-map:before {
-  content: "\f203";
+  content: "";
 }
 
 /* line 1061, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-medkit:before {
-  content: "\f2a2";
+  content: "";
 }
 
 /* line 1062, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-merge:before {
-  content: "\f33f";
+  content: "";
 }
 
 /* line 1063, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-a:before {
-  content: "\f204";
+  content: "";
 }
 
 /* line 1064, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-b:before {
-  content: "\f205";
+  content: "";
 }
 
 /* line 1065, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mic-c:before {
-  content: "\f206";
+  content: "";
 }
 
 /* line 1066, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus:before {
-  content: "\f209";
+  content: "";
 }
 
 /* line 1067, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus-circled:before {
-  content: "\f207";
+  content: "";
 }
 
 /* line 1068, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-minus-round:before {
-  content: "\f208";
+  content: "";
 }
 
 /* line 1069, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-model-s:before {
-  content: "\f2c1";
+  content: "";
 }
 
 /* line 1070, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-monitor:before {
-  content: "\f20a";
+  content: "";
 }
 
 /* line 1071, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-more:before {
-  content: "\f20b";
+  content: "";
 }
 
 /* line 1072, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-mouse:before {
-  content: "\f340";
+  content: "";
 }
 
 /* line 1073, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-music-note:before {
-  content: "\f20c";
+  content: "";
 }
 
 /* line 1074, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navicon:before {
-  content: "\f20e";
+  content: "";
 }
 
 /* line 1075, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navicon-round:before {
-  content: "\f20d";
+  content: "";
 }
 
 /* line 1076, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-navigate:before {
-  content: "\f2a3";
+  content: "";
 }
 
 /* line 1077, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-network:before {
-  content: "\f341";
+  content: "";
 }
 
 /* line 1078, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-no-smoking:before {
-  content: "\f2c2";
+  content: "";
 }
 
 /* line 1079, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-nuclear:before {
-  content: "\f2a4";
+  content: "";
 }
 
 /* line 1080, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-outlet:before {
-  content: "\f342";
+  content: "";
 }
 
 /* line 1081, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-paper-airplane:before {
-  content: "\f2c3";
+  content: "";
 }
 
 /* line 1082, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-paperclip:before {
-  content: "\f20f";
+  content: "";
 }
 
 /* line 1083, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pause:before {
-  content: "\f210";
+  content: "";
 }
 
 /* line 1084, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person:before {
-  content: "\f213";
+  content: "";
 }
 
 /* line 1085, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person-add:before {
-  content: "\f211";
+  content: "";
 }
 
 /* line 1086, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-person-stalker:before {
-  content: "\f212";
+  content: "";
 }
 
 /* line 1087, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pie-graph:before {
-  content: "\f2a5";
+  content: "";
 }
 
 /* line 1088, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pin:before {
-  content: "\f2a6";
+  content: "";
 }
 
 /* line 1089, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pinpoint:before {
-  content: "\f2a7";
+  content: "";
 }
 
 /* line 1090, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pizza:before {
-  content: "\f2a8";
+  content: "";
 }
 
 /* line 1091, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plane:before {
-  content: "\f214";
+  content: "";
 }
 
 /* line 1092, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-planet:before {
-  content: "\f343";
+  content: "";
 }
 
 /* line 1093, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-play:before {
-  content: "\f215";
+  content: "";
 }
 
 /* line 1094, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-playstation:before {
-  content: "\f30a";
+  content: "";
 }
 
 /* line 1095, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus:before {
-  content: "\f218";
+  content: "";
 }
 
 /* line 1096, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus-circled:before {
-  content: "\f216";
+  content: "";
 }
 
 /* line 1097, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-plus-round:before {
-  content: "\f217";
+  content: "";
 }
 
 /* line 1098, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-podium:before {
-  content: "\f344";
+  content: "";
 }
 
 /* line 1099, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pound:before {
-  content: "\f219";
+  content: "";
 }
 
 /* line 1100, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-power:before {
-  content: "\f2a9";
+  content: "";
 }
 
 /* line 1101, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pricetag:before {
-  content: "\f2aa";
+  content: "";
 }
 
 /* line 1102, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pricetags:before {
-  content: "\f2ab";
+  content: "";
 }
 
 /* line 1103, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-printer:before {
-  content: "\f21a";
+  content: "";
 }
 
 /* line 1104, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-pull-request:before {
-  content: "\f345";
+  content: "";
 }
 
 /* line 1105, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-qr-scanner:before {
-  content: "\f346";
+  content: "";
 }
 
 /* line 1106, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-quote:before {
-  content: "\f347";
+  content: "";
 }
 
 /* line 1107, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-radio-waves:before {
-  content: "\f2ac";
+  content: "";
 }
 
 /* line 1108, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-record:before {
-  content: "\f21b";
+  content: "";
 }
 
 /* line 1109, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-refresh:before, .ion-refreshing:before {
-  content: "\f21c";
+  content: "";
 }
 
 /* line 1110, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-reply:before {
-  content: "\f21e";
+  content: "";
 }
 
 /* line 1111, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-reply-all:before {
-  content: "\f21d";
+  content: "";
 }
 
 /* line 1112, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ribbon-a:before {
-  content: "\f348";
+  content: "";
 }
 
 /* line 1113, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-ribbon-b:before {
-  content: "\f349";
+  content: "";
 }
 
 /* line 1114, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-sad:before {
-  content: "\f34a";
+  content: "";
 }
 
 /* line 1115, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-scissors:before {
-  content: "\f34b";
+  content: "";
 }
 
 /* line 1116, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-search:before {
-  content: "\f21f";
+  content: "";
 }
 
 /* line 1117, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-settings:before {
-  content: "\f2ad";
+  content: "";
 }
 
 /* line 1118, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-share:before {
-  content: "\f220";
+  content: "";
 }
 
 /* line 1119, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-shuffle:before {
-  content: "\f221";
+  content: "";
 }
 
 /* line 1120, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-skip-backward:before {
-  content: "\f222";
+  content: "";
 }
 
 /* line 1121, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-skip-forward:before {
-  content: "\f223";
+  content: "";
 }
 
 /* line 1122, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-android:before {
-  content: "\f225";
+  content: "";
 }
 
 /* line 1123, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-android-outline:before {
-  content: "\f224";
+  content: "";
 }
 
 /* line 1124, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-apple:before {
-  content: "\f227";
+  content: "";
 }
 
 /* line 1125, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-apple-outline:before {
-  content: "\f226";
+  content: "";
 }
 
 /* line 1126, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-bitcoin:before {
-  content: "\f2af";
+  content: "";
 }
 
 /* line 1127, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-bitcoin-outline:before {
-  content: "\f2ae";
+  content: "";
 }
 
 /* line 1128, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-buffer:before {
-  content: "\f229";
+  content: "";
 }
 
 /* line 1129, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-buffer-outline:before {
-  content: "\f228";
+  content: "";
 }
 
 /* line 1130, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-designernews:before {
-  content: "\f22b";
+  content: "";
 }
 
 /* line 1131, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-designernews-outline:before {
-  content: "\f22a";
+  content: "";
 }
 
 /* line 1132, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dribbble:before {
-  content: "\f22d";
+  content: "";
 }
 
 /* line 1133, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dribbble-outline:before {
-  content: "\f22c";
+  content: "";
 }
 
 /* line 1134, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dropbox:before {
-  content: "\f22f";
+  content: "";
 }
 
 /* line 1135, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-dropbox-outline:before {
-  content: "\f22e";
+  content: "";
 }
 
 /* line 1136, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-facebook:before {
-  content: "\f231";
+  content: "";
 }
 
 /* line 1137, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-facebook-outline:before {
-  content: "\f230";
+  content: "";
 }
 
 /* line 1138, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-foursquare:before {
-  content: "\f34d";
+  content: "";
 }
 
 /* line 1139, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-foursquare-outline:before {
-  content: "\f34c";
+  content: "";
 }
 
 /* line 1140, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-freebsd-devil:before {
-  content: "\f2c4";
+  content: "";
 }
 
 /* line 1141, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-github:before {
-  content: "\f233";
+  content: "";
 }
 
 /* line 1142, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-github-outline:before {
-  content: "\f232";
+  content: "";
 }
 
 /* line 1143, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-google:before {
-  content: "\f34f";
+  content: "";
 }
 
 /* line 1144, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-google-outline:before {
-  content: "\f34e";
+  content: "";
 }
 
 /* line 1145, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-googleplus:before {
-  content: "\f235";
+  content: "";
 }
 
 /* line 1146, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-googleplus-outline:before {
-  content: "\f234";
+  content: "";
 }
 
 /* line 1147, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-hackernews:before {
-  content: "\f237";
+  content: "";
 }
 
 /* line 1148, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-hackernews-outline:before {
-  content: "\f236";
+  content: "";
 }
 
 /* line 1149, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-instagram:before {
-  content: "\f351";
+  content: "";
 }
 
 /* line 1150, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-instagram-outline:before {
-  content: "\f350";
+  content: "";
 }
 
 /* line 1151, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-linkedin:before {
-  content: "\f239";
+  content: "";
 }
 
 /* line 1152, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-linkedin-outline:before {
-  content: "\f238";
+  content: "";
 }
 
 /* line 1153, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-pinterest:before {
-  content: "\f2b1";
+  content: "";
 }
 
 /* line 1154, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-pinterest-outline:before {
-  content: "\f2b0";
+  content: "";
 }
 
 /* line 1155, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-reddit:before {
-  content: "\f23b";
+  content: "";
 }
 
 /* line 1156, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-reddit-outline:before {
-  content: "\f23a";
+  content: "";
 }
 
 /* line 1157, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-rss:before {
-  content: "\f23d";
+  content: "";
 }
 
 /* line 1158, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-rss-outline:before {
-  content: "\f23c";
+  content: "";
 }
 
 /* line 1159, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-skype:before {
-  content: "\f23f";
+  content: "";
 }
 
 /* line 1160, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-skype-outline:before {
-  content: "\f23e";
+  content: "";
 }
 
 /* line 1161, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tumblr:before {
-  content: "\f241";
+  content: "";
 }
 
 /* line 1162, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tumblr-outline:before {
-  content: "\f240";
+  content: "";
 }
 
 /* line 1163, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-tux:before {
-  content: "\f2c5";
+  content: "";
 }
 
 /* line 1164, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-twitter:before {
-  content: "\f243";
+  content: "";
 }
 
 /* line 1165, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-twitter-outline:before {
-  content: "\f242";
+  content: "";
 }
 
 /* line 1166, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-usd:before {
-  content: "\f353";
+  content: "";
 }
 
 /* line 1167, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-usd-outline:before {
-  content: "\f352";
+  content: "";
 }
 
 /* line 1168, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-vimeo:before {
-  content: "\f245";
+  content: "";
 }
 
 /* line 1169, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-vimeo-outline:before {
-  content: "\f244";
+  content: "";
 }
 
 /* line 1170, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-windows:before {
-  content: "\f247";
+  content: "";
 }
 
 /* line 1171, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-windows-outline:before {
-  content: "\f246";
+  content: "";
 }
 
 /* line 1172, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-wordpress:before {
-  content: "\f249";
+  content: "";
 }
 
 /* line 1173, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-wordpress-outline:before {
-  content: "\f248";
+  content: "";
 }
 
 /* line 1174, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-yahoo:before {
-  content: "\f24b";
+  content: "";
 }
 
 /* line 1175, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-yahoo-outline:before {
-  content: "\f24a";
+  content: "";
 }
 
 /* line 1176, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-youtube:before {
-  content: "\f24d";
+  content: "";
 }
 
 /* line 1177, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-social-youtube-outline:before {
-  content: "\f24c";
+  content: "";
 }
 
 /* line 1178, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-speakerphone:before {
-  content: "\f2b2";
+  content: "";
 }
 
 /* line 1179, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-speedometer:before {
-  content: "\f2b3";
+  content: "";
 }
 
 /* line 1180, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-spoon:before {
-  content: "\f2b4";
+  content: "";
 }
 
 /* line 1181, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-star:before {
-  content: "\f24e";
+  content: "";
 }
 
 /* line 1182, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-stats-bars:before {
-  content: "\f2b5";
+  content: "";
 }
 
 /* line 1183, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-steam:before {
-  content: "\f30b";
+  content: "";
 }
 
 /* line 1184, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-stop:before {
-  content: "\f24f";
+  content: "";
 }
 
 /* line 1185, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thermometer:before {
-  content: "\f2b6";
+  content: "";
 }
 
 /* line 1186, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thumbsdown:before {
-  content: "\f250";
+  content: "";
 }
 
 /* line 1187, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-thumbsup:before {
-  content: "\f251";
+  content: "";
 }
 
 /* line 1188, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-toggle:before {
-  content: "\f355";
+  content: "";
 }
 
 /* line 1189, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-toggle-filled:before {
-  content: "\f354";
+  content: "";
 }
 
 /* line 1190, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-trash-a:before {
-  content: "\f252";
+  content: "";
 }
 
 /* line 1191, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-trash-b:before {
-  content: "\f253";
+  content: "";
 }
 
 /* line 1192, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-trophy:before {
-  content: "\f356";
+  content: "";
 }
 
 /* line 1193, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-umbrella:before {
-  content: "\f2b7";
+  content: "";
 }
 
 /* line 1194, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-university:before {
-  content: "\f357";
+  content: "";
 }
 
 /* line 1195, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-unlocked:before {
-  content: "\f254";
+  content: "";
 }
 
 /* line 1196, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-upload:before {
-  content: "\f255";
+  content: "";
 }
 
 /* line 1197, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-usb:before {
-  content: "\f2b8";
+  content: "";
 }
 
 /* line 1198, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-videocamera:before {
-  content: "\f256";
+  content: "";
 }
 
 /* line 1199, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-high:before {
-  content: "\f257";
+  content: "";
 }
 
 /* line 1200, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-low:before {
-  content: "\f258";
+  content: "";
 }
 
 /* line 1201, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-medium:before {
-  content: "\f259";
+  content: "";
 }
 
 /* line 1202, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-volume-mute:before {
-  content: "\f25a";
+  content: "";
 }
 
 /* line 1203, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wand:before {
-  content: "\f358";
+  content: "";
 }
 
 /* line 1204, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-waterdrop:before {
-  content: "\f25b";
+  content: "";
 }
 
 /* line 1205, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wifi:before {
-  content: "\f25c";
+  content: "";
 }
 
 /* line 1206, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wineglass:before {
-  content: "\f2b9";
+  content: "";
 }
 
 /* line 1207, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-woman:before {
-  content: "\f25d";
+  content: "";
 }
 
 /* line 1208, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-wrench:before {
-  content: "\f2ba";
+  content: "";
 }
 
 /* line 1209, ../lib/bower_components/ionicons/scss/_ionicons-icons.scss */
 .ion-xbox:before {
-  content: "\f30c";
+  content: "";
 }
 
 /**
@@ -3764,7 +3744,7 @@ $dark:                            #444 !default;
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-/* line 28, ../lib/ionic/scss/_reset.scss */
+/* line 16, ../lib/ionic/scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3796,7 +3776,7 @@ blockquote, q {
   quotes: none;
 }
 
-/* line 44, ../lib/ionic/scss/_reset.scss */
+/* line 43, ../lib/ionic/scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -3816,7 +3796,7 @@ audio:not([controls]) {
 /**
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 64, ../lib/ionic/scss/_reset.scss */
+/* line 63, ../lib/ionic/scss/_reset.scss */
 [hidden],
 template {
   display: none;
@@ -3862,7 +3842,7 @@ body {
 /**
  * Remove default outlines.
  */
-/* line 109, ../lib/ionic/scss/_reset.scss */
+/* line 103, ../lib/ionic/scss/_reset.scss */
 a,
 button,
 :focus,
@@ -3879,7 +3859,7 @@ a:hover {
 /* line 117, ../lib/ionic/scss/_reset.scss */
 a {
   -webkit-user-drag: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
 /* line 122, ../lib/ionic/scss/_reset.scss */
@@ -3893,7 +3873,7 @@ a[href]:hover {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 137, ../lib/ionic/scss/_reset.scss */
+/* line 136, ../lib/ionic/scss/_reset.scss */
 b,
 strong {
   font-weight: bold;
@@ -3920,7 +3900,7 @@ hr {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 167, ../lib/ionic/scss/_reset.scss */
+/* line 164, ../lib/ionic/scss/_reset.scss */
 code,
 kbd,
 pre,
@@ -3956,7 +3936,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 201, ../lib/ionic/scss/_reset.scss */
+/* line 200, ../lib/ionic/scss/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -4004,7 +3984,7 @@ legend {
  * 4. Remove any default :focus styles
  * 5. Make sure webkit font smoothing is being inherited
  */
-/* line 247, ../lib/ionic/scss/_reset.scss */
+/* line 244, ../lib/ionic/scss/_reset.scss */
 button,
 input,
 select,
@@ -4029,7 +4009,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `importnt` in
  * the UA stylesheet.
  */
-/* line 263, ../lib/ionic/scss/_reset.scss */
+/* line 262, ../lib/ionic/scss/_reset.scss */
 button,
 input {
   line-height: normal;
@@ -4041,7 +4021,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 275, ../lib/ionic/scss/_reset.scss */
+/* line 274, ../lib/ionic/scss/_reset.scss */
 button,
 select {
   text-transform: none;
@@ -4054,7 +4034,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *  `input` and others.
  */
-/* line 290, ../lib/ionic/scss/_reset.scss */
+/* line 287, ../lib/ionic/scss/_reset.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -4068,7 +4048,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 300, ../lib/ionic/scss/_reset.scss */
+/* line 299, ../lib/ionic/scss/_reset.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -4093,7 +4073,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 323, ../lib/ionic/scss/_reset.scss */
+/* line 322, ../lib/ionic/scss/_reset.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -4102,7 +4082,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 332, ../lib/ionic/scss/_reset.scss */
+/* line 331, ../lib/ionic/scss/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
@@ -4142,7 +4122,7 @@ table {
  * Scaffolding
  * --------------------------------------------------
  */
-/* line 9, ../lib/ionic/scss/_scaffolding.scss */
+/* line 7, ../lib/ionic/scss/_scaffolding.scss */
 *,
 *:before,
 *:after {
@@ -4158,7 +4138,7 @@ html {
   touch-action: none;
 }
 
-/* line 20, ../lib/ionic/scss/_scaffolding.scss */
+/* line 19, ../lib/ionic/scss/_scaffolding.scss */
 body,
 .ionic-body {
   -webkit-touch-callout: none;
@@ -4167,7 +4147,7 @@ body,
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4190,7 +4170,7 @@ body,
   -webkit-user-drag: none;
 }
 
-/* line 47, ../lib/ionic/scss/_scaffolding.scss */
+/* line 46, ../lib/ionic/scss/_scaffolding.scss */
 body.grade-b,
 body.grade-c {
   text-rendering: auto;
@@ -4291,7 +4271,7 @@ body.grade-c {
   opacity: 0;
 }
 
-/* line 135, ../lib/ionic/scss/_scaffolding.scss */
+/* line 134, ../lib/ionic/scss/_scaffolding.scss */
 .grade-b .scroll-bar-indicator,
 .grade-c .scroll-bar-indicator {
   border-radius: 0;
@@ -4306,53 +4286,37 @@ body.grade-c {
 }
 
 @keyframes refresh-spin {
-  /* line 146, ../lib/ionic/scss/_scaffolding.scss */
   0% {
     transform: translate3d(0, 0, 0) rotate(0);
   }
-
-  /* line 147, ../lib/ionic/scss/_scaffolding.scss */
   100% {
     transform: translate3d(0, 0, 0) rotate(-180deg);
   }
 }
-
 @-webkit-keyframes refresh-spin {
-  /* line 151, ../lib/ionic/scss/_scaffolding.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(0);
   }
-
-  /* line 152, ../lib/ionic/scss/_scaffolding.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0) rotate(-180deg);
   }
 }
-
 @keyframes refresh-spin-back {
-  /* line 156, ../lib/ionic/scss/_scaffolding.scss */
   0% {
     transform: translate3d(0, 0, 0) rotate(-180deg);
   }
-
-  /* line 157, ../lib/ionic/scss/_scaffolding.scss */
   100% {
     transform: translate3d(0, 0, 0) rotate(0);
   }
 }
-
 @-webkit-keyframes refresh-spin-back {
-  /* line 161, ../lib/ionic/scss/_scaffolding.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(-180deg);
   }
-
-  /* line 162, ../lib/ionic/scss/_scaffolding.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0) rotate(0);
   }
 }
-
 /* line 166, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher {
   position: absolute;
@@ -4373,7 +4337,7 @@ body.grade-c {
   text-align: center;
   font-size: 30px;
 }
-/* line 186, ../lib/ionic/scss/_scaffolding.scss */
+/* line 185, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher .ionic-refresher-content .text-refreshing,
 .scroll-refresher .ionic-refresher-content .text-pulling {
   font-size: 16px;
@@ -4383,7 +4347,7 @@ body.grade-c {
 .scroll-refresher .ionic-refresher-content.ionic-refresher-with-text {
   bottom: 10px;
 }
-/* line 196, ../lib/ionic/scss/_scaffolding.scss */
+/* line 195, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher .icon-refreshing,
 .scroll-refresher .icon-pulling {
   width: 100%;
@@ -4409,7 +4373,7 @@ body.grade-c {
   -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
   transform: translate3d(0, 0, 0) rotate(0deg);
 }
-/* line 212, ../lib/ionic/scss/_scaffolding.scss */
+/* line 211, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher .icon-refreshing,
 .scroll-refresher .text-refreshing {
   display: none;
@@ -4428,12 +4392,12 @@ body.grade-c {
   -webkit-transform: translate3d(0, 0, 0) rotate(-180deg);
   transform: translate3d(0, 0, 0) rotate(-180deg);
 }
-/* line 227, ../lib/ionic/scss/_scaffolding.scss */
+/* line 226, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher.active.refreshing .icon-pulling,
 .scroll-refresher.active.refreshing .text-pulling {
   display: none;
 }
-/* line 231, ../lib/ionic/scss/_scaffolding.scss */
+/* line 230, ../lib/ionic/scss/_scaffolding.scss */
 .scroll-refresher.active.refreshing .icon-refreshing,
 .scroll-refresher.active.refreshing .text-refreshing {
   display: block;
@@ -4518,7 +4482,7 @@ ion-infinite-scroll.active .scroll-infinite {
   bottom: 44px;
 }
 
-/* line 309, ../lib/ionic/scss/_scaffolding.scss */
+/* line 308, ../lib/ionic/scss/_scaffolding.scss */
 .has-tabs,
 .bar-footer.has-tabs {
   bottom: 49px;
@@ -4542,7 +4506,7 @@ ion-infinite-scroll.active .scroll-infinite {
   z-index: 1;
 }
 
-/* line 326, ../lib/ionic/scss/_scaffolding.scss */
+/* line 325, ../lib/ionic/scss/_scaffolding.scss */
 .pane,
 .view {
   position: absolute;
@@ -4590,7 +4554,7 @@ cite {
   text-align: center;
 }
 
-/* line 35, ../lib/ionic/scss/_type.scss */
+/* line 34, ../lib/ionic/scss/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #ecf0f1;
@@ -4605,7 +4569,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   line-height: 1;
 }
 
-/* line 49, ../lib/ionic/scss/_type.scss */
+/* line 47, ../lib/ionic/scss/_type.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3 {
@@ -4618,7 +4582,7 @@ h2:first-child, .h2:first-child,
 h3:first-child, .h3:first-child {
   margin-top: 0;
 }
-/* line 59, ../lib/ionic/scss/_type.scss */
+/* line 57, ../lib/ionic/scss/_type.scss */
 h1 + h1, h1 + .h1,
 h1 + h2, h1 + .h2,
 h1 + h3, h1 + .h3, .h1 + h1, .h1 + .h1,
@@ -4643,7 +4607,7 @@ h3 + .h3, .h3 + h1, .h3 + .h1,
   margin-top: 2.5vw;
 }
 
-/* line 66, ../lib/ionic/scss/_type.scss */
+/* line 64, ../lib/ionic/scss/_type.scss */
 h4, .h4,
 h5, .h5,
 h6, .h6 {
@@ -4691,7 +4655,7 @@ h2 small, .h2 small {
   font-size: 5vw;
 }
 
-/* line 81, ../lib/ionic/scss/_type.scss */
+/* line 80, ../lib/ionic/scss/_type.scss */
 h3 small, .h3 small,
 h4 small, .h4 small {
   font-size: 4vw;
@@ -4702,7 +4666,7 @@ dl {
   margin-bottom: 5vw;
 }
 
-/* line 91, ../lib/ionic/scss/_type.scss */
+/* line 90, ../lib/ionic/scss/_type.scss */
 dt,
 dd {
   line-height: 1.42857;
@@ -4739,7 +4703,7 @@ blockquote small:before {
   content: '\2014 \00A0';
 }
 
-/* line 133, ../lib/ionic/scss/_type.scss */
+/* line 130, ../lib/ionic/scss/_type.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -4785,7 +4749,7 @@ a.subdued:last-child {
   z-index: 11;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 /* line 16, ../lib/ionic/scss/_action-sheet.scss */
 .action-sheet-backdrop.active {
@@ -4988,77 +4952,77 @@ a.subdued:last-child {
   border-color: #b2b2b2;
   background-color: #86979a;
   background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
-  color: #444444;
+  color: #444;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-stable .title {
-  color: #444444;
+  color: #444;
 }
 /* line 75, ../lib/ionic/scss/_bar.scss */
 .bar.bar-positive {
   border-color: #1d6fa5;
   background-color: #2f8bc9;
   background-image: linear-gradient(0deg, #1d6fa5, #1d6fa5 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-positive .title {
-  color: white;
+  color: #fff;
 }
 /* line 78, ../lib/ionic/scss/_bar.scss */
 .bar.bar-calm {
   border-color: #7abad4;
   background-color: #a2c4d4;
   background-image: linear-gradient(0deg, #7abad4, #7abad4 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-calm .title {
-  color: white;
+  color: #fff;
 }
 /* line 81, ../lib/ionic/scss/_bar.scss */
 .bar.bar-assertive {
   border-color: #bf2718;
   background-color: #d0463a;
   background-image: linear-gradient(0deg, #bf2718, #bf2718 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-assertive .title {
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_bar.scss */
 .bar.bar-balanced {
   border-color: #208e4e;
   background-color: #29ba6a;
   background-image: linear-gradient(0deg, #208e4e, #208e4e 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-balanced .title {
-  color: white;
+  color: #fff;
 }
 /* line 87, ../lib/ionic/scss/_bar.scss */
 .bar.bar-energized {
   border-color: #a85913;
   background-color: #cf7323;
   background-image: linear-gradient(0deg, #a85913, #a85913 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-energized .title {
-  color: white;
+  color: #fff;
 }
 /* line 90, ../lib/ionic/scss/_bar.scss */
 .bar.bar-royal {
   border-color: #713b87;
   background-color: #8b52a8;
   background-image: linear-gradient(0deg, #713b87, #713b87 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 67, ../lib/ionic/scss/_mixins.scss */
 .bar.bar-royal .title {
-  color: white;
+  color: #fff;
 }
 /* line 93, ../lib/ionic/scss/_bar.scss */
 .bar.bar-dark {
@@ -5110,7 +5074,7 @@ a.subdued:last-child {
   font-size: 13px;
   line-height: 32px;
 }
-/* line 147, ../lib/ionic/scss/_bar.scss */
+/* line 143, ../lib/ionic/scss/_bar.scss */
 .bar .button.button-icon:before,
 .bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
   padding-right: 2px;
@@ -5122,7 +5086,7 @@ a.subdued:last-child {
 .bar .button.button-icon {
   font-size: 17px;
 }
-/* line 159, ../lib/ionic/scss/_bar.scss */
+/* line 156, ../lib/ionic/scss/_bar.scss */
 .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
   vertical-align: top;
   font-size: 32px;
@@ -5135,33 +5099,33 @@ a.subdued:last-child {
   font-weight: 300;
   font-size: 17px;
 }
-/* line 174, ../lib/ionic/scss/_bar.scss */
+/* line 171, ../lib/ionic/scss/_bar.scss */
 .bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before {
   font-size: 32px;
   line-height: 32px;
 }
-/* line 181, ../lib/ionic/scss/_bar.scss */
+/* line 180, ../lib/ionic/scss/_bar.scss */
 .bar .button.back-button.active, .bar .button.back-button.activated {
   opacity: 1;
 }
-/* line 187, ../lib/ionic/scss/_bar.scss */
+/* line 186, ../lib/ionic/scss/_bar.scss */
 .bar .button-bar > .button,
 .bar .buttons > .button {
   min-height: 31px;
   line-height: 32px;
 }
-/* line 193, ../lib/ionic/scss/_bar.scss */
+/* line 192, ../lib/ionic/scss/_bar.scss */
 .bar .button-bar + .button,
 .bar .button + .button-bar {
   margin-left: 5px;
 }
-/* line 200, ../lib/ionic/scss/_bar.scss */
+/* line 198, ../lib/ionic/scss/_bar.scss */
 .bar .buttons,
 .bar .buttons.left-buttons,
 .bar .buttons.right-buttons {
   display: inherit;
 }
-/* line 208, ../lib/ionic/scss/_bar.scss */
+/* line 204, ../lib/ionic/scss/_bar.scss */
 .bar .title + .button:last-child,
 .bar > .button + .button:last-child,
 .bar > .button.pull-right,
@@ -5184,7 +5148,7 @@ a.subdued:last-child {
   color: #b2bac0;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-light .button.active, .bar-light .button.activated {
   border-color: #324355;
   background-color: #081d31;
@@ -5208,14 +5172,14 @@ a.subdued:last-child {
 .bar-stable .button {
   border-color: #b2b2b2;
   background-color: #86979a;
-  color: #444444;
+  color: #444;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-stable .button:hover {
-  color: #444444;
+  color: #444;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-stable .button.active, .bar-stable .button.activated {
   border-color: #a2a2a2;
   background-color: #e5e5e5;
@@ -5226,7 +5190,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: #444444;
+  color: #444;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5239,14 +5203,14 @@ a.subdued:last-child {
 .bar-positive .button {
   border-color: #1d6fa5;
   background-color: #2f8bc9;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-positive .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-positive .button.active, .bar-positive .button.activated {
   border-color: #1d6fa5;
   background-color: #1d6fa5;
@@ -5257,7 +5221,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5270,14 +5234,14 @@ a.subdued:last-child {
 .bar-calm .button {
   border-color: #7abad4;
   background-color: #a2c4d4;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-calm .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-calm .button.active, .bar-calm .button.activated {
   border-color: #7abad4;
   background-color: #7abad4;
@@ -5288,7 +5252,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5301,14 +5265,14 @@ a.subdued:last-child {
 .bar-assertive .button {
   border-color: #bf2718;
   background-color: #d0463a;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-assertive .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-assertive .button.active, .bar-assertive .button.activated {
   border-color: #bf2718;
   background-color: #bf2718;
@@ -5319,7 +5283,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5332,14 +5296,14 @@ a.subdued:last-child {
 .bar-balanced .button {
   border-color: #208e4e;
   background-color: #29ba6a;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-balanced .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-balanced .button.active, .bar-balanced .button.activated {
   border-color: #208e4e;
   background-color: #208e4e;
@@ -5350,7 +5314,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5363,14 +5327,14 @@ a.subdued:last-child {
 .bar-energized .button {
   border-color: #a85913;
   background-color: #cf7323;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-energized .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-energized .button.active, .bar-energized .button.activated {
   border-color: #a85913;
   background-color: #a85913;
@@ -5381,7 +5345,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5394,14 +5358,14 @@ a.subdued:last-child {
 .bar-royal .button {
   border-color: #713b87;
   background-color: #8b52a8;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .bar-royal .button:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-royal .button.active, .bar-royal .button.activated {
   border-color: #713b87;
   background-color: #713b87;
@@ -5412,7 +5376,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5432,7 +5396,7 @@ a.subdued:last-child {
   color: #3e4e5e;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .bar-dark .button.active, .bar-dark .button.activated {
   border-color: #bdc5ca;
   background-color: #e7ebed;
@@ -5443,7 +5407,7 @@ a.subdued:last-child {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 /* line 34, ../lib/ionic/scss/_mixins.scss */
@@ -5518,7 +5482,7 @@ a.subdued:last-child {
   border-color: #b2b2b2;
   background-color: #95a5a6;
   background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
-  color: #444444;
+  color: #444;
   position: absolute;
   bottom: 0;
   z-index: 5;
@@ -5531,7 +5495,7 @@ a.subdued:last-child {
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs .tab-item .badge {
-  background-color: #444444;
+  background-color: #444;
   color: #95a5a6;
 }
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -5547,7 +5511,7 @@ a.subdued:last-child {
 }
 
 /* Allow parent element of tabs to define color, or just the tab itself */
-/* line 47, ../lib/ionic/scss/_tabs.scss */
+/* line 46, ../lib/ionic/scss/_tabs.scss */
 .tabs-light > .tabs,
 .tabs.tabs-light {
   border-color: #223547;
@@ -5562,112 +5526,112 @@ a.subdued:last-child {
   color: #04192e;
 }
 
-/* line 52, ../lib/ionic/scss/_tabs.scss */
+/* line 51, ../lib/ionic/scss/_tabs.scss */
 .tabs-stable > .tabs,
 .tabs.tabs-stable {
   border-color: #b2b2b2;
   background-color: #95a5a6;
   background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
-  color: #444444;
+  color: #444;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-stable > .tabs .tab-item .badge,
 .tabs.tabs-stable .tab-item .badge {
-  background-color: #444444;
+  background-color: #444;
   color: #95a5a6;
 }
 
-/* line 57, ../lib/ionic/scss/_tabs.scss */
+/* line 56, ../lib/ionic/scss/_tabs.scss */
 .tabs-positive > .tabs,
 .tabs.tabs-positive {
   border-color: #1d6fa5;
   background-color: #3498db;
   background-image: linear-gradient(0deg, #1d6fa5, #1d6fa5 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-positive > .tabs .tab-item .badge,
 .tabs.tabs-positive .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #3498db;
 }
 
-/* line 62, ../lib/ionic/scss/_tabs.scss */
+/* line 61, ../lib/ionic/scss/_tabs.scss */
 .tabs-calm > .tabs,
 .tabs.tabs-calm {
   border-color: #7abad4;
   background-color: #b4d8e7;
   background-image: linear-gradient(0deg, #7abad4, #7abad4 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-calm > .tabs .tab-item .badge,
 .tabs.tabs-calm .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #b4d8e7;
 }
 
-/* line 67, ../lib/ionic/scss/_tabs.scss */
+/* line 66, ../lib/ionic/scss/_tabs.scss */
 .tabs-assertive > .tabs,
 .tabs.tabs-assertive {
   border-color: #bf2718;
   background-color: #e74c3c;
   background-image: linear-gradient(0deg, #bf2718, #bf2718 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-assertive > .tabs .tab-item .badge,
 .tabs.tabs-assertive .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #e74c3c;
 }
 
-/* line 72, ../lib/ionic/scss/_tabs.scss */
+/* line 71, ../lib/ionic/scss/_tabs.scss */
 .tabs-balanced > .tabs,
 .tabs.tabs-balanced {
   border-color: #208e4e;
   background-color: #2ecc71;
   background-image: linear-gradient(0deg, #208e4e, #208e4e 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-balanced > .tabs .tab-item .badge,
 .tabs.tabs-balanced .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #2ecc71;
 }
 
-/* line 77, ../lib/ionic/scss/_tabs.scss */
+/* line 76, ../lib/ionic/scss/_tabs.scss */
 .tabs-energized > .tabs,
 .tabs.tabs-energized {
   border-color: #a85913;
   background-color: #e67e22;
   background-image: linear-gradient(0deg, #a85913, #a85913 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-energized > .tabs .tab-item .badge,
 .tabs.tabs-energized .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #e67e22;
 }
 
-/* line 82, ../lib/ionic/scss/_tabs.scss */
+/* line 81, ../lib/ionic/scss/_tabs.scss */
 .tabs-royal > .tabs,
 .tabs.tabs-royal {
   border-color: #713b87;
   background-color: #9b59b6;
   background-image: linear-gradient(0deg, #713b87, #713b87 50%, transparent 50%);
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_mixins.scss */
 .tabs-royal > .tabs .tab-item .badge,
 .tabs.tabs-royal .tab-item .badge {
-  background-color: white;
+  background-color: #fff;
   color: #9b59b6;
 }
 
-/* line 87, ../lib/ionic/scss/_tabs.scss */
+/* line 86, ../lib/ionic/scss/_tabs.scss */
 .tabs-dark > .tabs,
 .tabs.tabs-dark {
   border-color: #cdd3d7;
@@ -5684,7 +5648,7 @@ a.subdued:last-child {
 
 /* Allow parent element to have tabs-top */
 /* If you change this, change platform.scss as well */
-/* line 95, ../lib/ionic/scss/_tabs.scss */
+/* line 94, ../lib/ionic/scss/_tabs.scss */
 .tabs-top > .tabs,
 .tabs.tabs-top {
   top: 44px;
@@ -5720,13 +5684,13 @@ a.subdued:last-child {
   cursor: pointer;
 }
 
-/* line 128, ../lib/ionic/scss/_tabs.scss */
+/* line 127, ../lib/ionic/scss/_tabs.scss */
 .tabs-item-hide > .tabs,
 .tabs.tabs-item-hide {
   display: none;
 }
 
-/* line 135, ../lib/ionic/scss/_tabs.scss */
+/* line 132, ../lib/ionic/scss/_tabs.scss */
 .tabs-icon-top > .tabs .tab-item,
 .tabs-icon-top.tabs .tab-item,
 .tabs-icon-bottom > .tabs .tab-item,
@@ -5743,7 +5707,7 @@ a.subdued:last-child {
   font-size: 32px;
 }
 
-/* line 150, ../lib/ionic/scss/_tabs.scss */
+/* line 147, ../lib/ionic/scss/_tabs.scss */
 .tabs-icon-left.tabs .tab-item,
 .tabs-icon-left > .tabs .tab-item,
 .tabs-icon-right.tabs .tab-item,
@@ -5767,19 +5731,19 @@ a.subdued:last-child {
   line-height: 49px;
 }
 
-/* line 165, ../lib/ionic/scss/_tabs.scss */
+/* line 164, ../lib/ionic/scss/_tabs.scss */
 .tabs-icon-left > .tabs .tab-item .icon,
 .tabs-icon-left.tabs .tab-item .icon {
   padding-right: 3px;
 }
 
-/* line 170, ../lib/ionic/scss/_tabs.scss */
+/* line 169, ../lib/ionic/scss/_tabs.scss */
 .tabs-icon-right > .tabs .tab-item .icon,
 .tabs-icon-right.tabs .tab-item .icon {
   padding-left: 3px;
 }
 
-/* line 175, ../lib/ionic/scss/_tabs.scss */
+/* line 174, ../lib/ionic/scss/_tabs.scss */
 .tabs-icon-only > .tabs .icon,
 .tabs-icon-only.tabs .icon {
   line-height: inherit;
@@ -5804,7 +5768,7 @@ a.subdued:last-child {
 
 /* Navigational tab */
 /* Active state for tab */
-/* line 199, ../lib/ionic/scss/_tabs.scss */
+/* line 197, ../lib/ionic/scss/_tabs.scss */
 .tab-item.tab-item-active,
 .tab-item.active,
 .tab-item.activated {
@@ -5880,7 +5844,7 @@ a.subdued:last-child {
   position: relative;
 }
 
-/* line 241, ../lib/ionic/scss/_tabs.scss */
+/* line 240, ../lib/ionic/scss/_tabs.scss */
 .tab-item.disabled,
 .tab-item[disabled] {
   opacity: .4;
@@ -5914,13 +5878,13 @@ a.subdued:last-child {
   box-shadow: -1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 28, ../lib/ionic/scss/_menu.scss */
+/* line 27, ../lib/ionic/scss/_menu.scss */
 .menu-open .menu-content .pane,
 .menu-open .menu-content .scroll-content {
   pointer-events: none;
 }
 
-/* line 33, ../lib/ionic/scss/_menu.scss */
+/* line 32, ../lib/ionic/scss/_menu.scss */
 .grade-b .menu-content,
 .grade-c .menu-content {
   -webkit-box-sizing: content-box;
@@ -5966,7 +5930,7 @@ a.subdued:last-child {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 /* line 18, ../lib/ionic/scss/_modal.scss */
 .modal-backdrop.active {
@@ -6005,7 +5969,7 @@ a.subdued:last-child {
 .modal-open {
   pointer-events: none;
 }
-/* line 55, ../lib/ionic/scss/_modal.scss */
+/* line 54, ../lib/ionic/scss/_modal.scss */
 .modal-open .modal,
 .modal-open .modal-backdrop {
   pointer-events: auto;
@@ -6200,7 +6164,7 @@ a.subdued:last-child {
 .item p {
   color: #666;
 }
-/* line 47, ../lib/ionic/scss/_items.scss */
+/* line 41, ../lib/ionic/scss/_items.scss */
 .item h1:last-child,
 .item h2:last-child,
 .item h3:last-child,
@@ -6244,43 +6208,43 @@ a.subdued:last-child {
 .item.item-stable {
   border-color: #b2b2b2;
   background-color: #95a5a6;
-  color: #444444;
+  color: #444;
 }
 /* line 75, ../lib/ionic/scss/_items.scss */
 .item.item-positive {
   border-color: #1d6fa5;
   background-color: #3498db;
-  color: white;
+  color: #fff;
 }
 /* line 78, ../lib/ionic/scss/_items.scss */
 .item.item-calm {
   border-color: #7abad4;
   background-color: #b4d8e7;
-  color: white;
+  color: #fff;
 }
 /* line 81, ../lib/ionic/scss/_items.scss */
 .item.item-assertive {
   border-color: #bf2718;
   background-color: #e74c3c;
-  color: white;
+  color: #fff;
 }
 /* line 84, ../lib/ionic/scss/_items.scss */
 .item.item-balanced {
   border-color: #208e4e;
   background-color: #2ecc71;
-  color: white;
+  color: #fff;
 }
 /* line 87, ../lib/ionic/scss/_items.scss */
 .item.item-energized {
   border-color: #a85913;
   background-color: #e67e22;
-  color: white;
+  color: #fff;
 }
 /* line 90, ../lib/ionic/scss/_items.scss */
 .item.item-royal {
   border-color: #713b87;
   background-color: #9b59b6;
-  color: white;
+  color: #fff;
 }
 /* line 93, ../lib/ionic/scss/_items.scss */
 .item.item-dark {
@@ -6293,7 +6257,7 @@ a.subdued:last-child {
   cursor: pointer;
 }
 
-/* line 109, ../lib/ionic/scss/_items.scss */
+/* line 104, ../lib/ionic/scss/_items.scss */
 .item.active,
 .item.activated,
 .item-complex.active .item-content,
@@ -6394,7 +6358,7 @@ a.subdued:last-child {
   background-color: #e7ebed;
 }
 
-/* line 158, ../lib/ionic/scss/_items.scss */
+/* line 143, ../lib/ionic/scss/_items.scss */
 .item,
 .item h1,
 .item h2,
@@ -6421,7 +6385,7 @@ a.item {
   color: inherit;
   text-decoration: none;
 }
-/* line 170, ../lib/ionic/scss/_items.scss */
+/* line 169, ../lib/ionic/scss/_items.scss */
 a.item:hover, a.item:focus {
   text-decoration: none;
 }
@@ -6435,14 +6399,14 @@ a.item:hover, a.item:focus {
  * Basically .item-complex removes any default settings which
  * .item added, so that .item-content looks them as just .item.
  */
-/* line 188, ../lib/ionic/scss/_items.scss */
+/* line 186, ../lib/ionic/scss/_items.scss */
 .item-complex,
 a.item.item-complex,
 button.item.item-complex {
   padding: 0;
 }
 
-/* line 192, ../lib/ionic/scss/_items.scss */
+/* line 191, ../lib/ionic/scss/_items.scss */
 .item-complex .item-content,
 .item-radio .item-content {
   position: relative;
@@ -6459,7 +6423,7 @@ a.item-content {
   text-decoration: none;
 }
 
-/* line 223, ../lib/ionic/scss/_items.scss */
+/* line 206, ../lib/ionic/scss/_items.scss */
 .item-text-wrap .item,
 .item-text-wrap .item-content,
 .item-text-wrap,
@@ -6482,7 +6446,7 @@ a.item-content {
   white-space: normal;
 }
 
-/* line 234, ../lib/ionic/scss/_items.scss */
+/* line 227, ../lib/ionic/scss/_items.scss */
 .item-complex.item-text-wrap,
 .item-complex.item-text-wrap h1,
 .item-complex.item-text-wrap h2,
@@ -6499,7 +6463,7 @@ a.item-content {
  * Item Icons
  * --------------------------------------------------
  */
-/* line 246, ../lib/ionic/scss/_items.scss */
+/* line 245, ../lib/ionic/scss/_items.scss */
 .item-icon-left .icon,
 .item-icon-right .icon {
   display: -webkit-box;
@@ -6574,16 +6538,16 @@ a.item-content {
   right: auto;
 }
 
-/* line 301, ../lib/ionic/scss/_items.scss */
+/* line 300, ../lib/ionic/scss/_items.scss */
 .item-icon-left.item-icon-right .icon:last-child,
 .item-icon-left .item-delete .icon {
   left: auto;
 }
 
-/* line 306, ../lib/ionic/scss/_items.scss */
+/* line 305, ../lib/ionic/scss/_items.scss */
 .item-icon-left .icon-accessory,
 .item-icon-right .icon-accessory {
-  color: #cccccc;
+  color: #ccc;
   font-size: 16px;
 }
 
@@ -6607,7 +6571,7 @@ a.item-content {
   padding-left: 68px;
 }
 
-/* line 329, ../lib/ionic/scss/_items.scss */
+/* line 328, ../lib/ionic/scss/_items.scss */
 .item-button-left > .button,
 .item-button-left .item-content > .button {
   display: -webkit-box;
@@ -6646,14 +6610,14 @@ a.item-content {
   line-height: 32px;
 }
 
-/* line 357, ../lib/ionic/scss/_items.scss */
+/* line 355, ../lib/ionic/scss/_items.scss */
 .item-button-right,
 a.item.item-button-right,
 button.item.item-button-right {
   padding-right: 75px;
 }
 
-/* line 364, ../lib/ionic/scss/_items.scss */
+/* line 361, ../lib/ionic/scss/_items.scss */
 .item-button-right > .button,
 .item-button-right .item-content > .button,
 .item-button-right > .buttons,
@@ -6699,7 +6663,7 @@ button.item.item-button-right {
   line-height: 32px;
 }
 
-/* line 398, ../lib/ionic/scss/_items.scss */
+/* line 395, ../lib/ionic/scss/_items.scss */
 .item-avatar,
 .item-avatar .item-content,
 .item-avatar-left,
@@ -6707,7 +6671,7 @@ button.item.item-button-right {
   padding-left: 70px;
   min-height: 70px;
 }
-/* line 403, ../lib/ionic/scss/_items.scss */
+/* line 402, ../lib/ionic/scss/_items.scss */
 .item-avatar > img:first-child,
 .item-avatar .item-image,
 .item-avatar .item-content > img:first-child,
@@ -6725,13 +6689,13 @@ button.item.item-button-right {
   border-radius: 4px;
 }
 
-/* line 415, ../lib/ionic/scss/_items.scss */
+/* line 414, ../lib/ionic/scss/_items.scss */
 .item-avatar-right,
 .item-avatar-right .item-content {
   padding-right: 70px;
   min-height: 70px;
 }
-/* line 420, ../lib/ionic/scss/_items.scss */
+/* line 419, ../lib/ionic/scss/_items.scss */
 .item-avatar-right > img:first-child,
 .item-avatar-right .item-image,
 .item-avatar-right .item-content > img:first-child,
@@ -6745,13 +6709,13 @@ button.item.item-button-right {
   border-radius: 4px;
 }
 
-/* line 436, ../lib/ionic/scss/_items.scss */
+/* line 435, ../lib/ionic/scss/_items.scss */
 .item-thumbnail-left,
 .item-thumbnail-left .item-content {
   padding-left: 105px;
   min-height: 100px;
 }
-/* line 441, ../lib/ionic/scss/_items.scss */
+/* line 440, ../lib/ionic/scss/_items.scss */
 .item-thumbnail-left > img:first-child,
 .item-thumbnail-left .item-image,
 .item-thumbnail-left .item-content > img:first-child,
@@ -6764,20 +6728,20 @@ button.item.item-button-right {
   width: 100%;
 }
 
-/* line 452, ../lib/ionic/scss/_items.scss */
+/* line 450, ../lib/ionic/scss/_items.scss */
 .item-avatar.item-complex,
 .item-avatar-left.item-complex,
 .item-thumbnail-left.item-complex {
   padding-left: 0;
 }
 
-/* line 457, ../lib/ionic/scss/_items.scss */
+/* line 456, ../lib/ionic/scss/_items.scss */
 .item-thumbnail-right,
 .item-thumbnail-right .item-content {
   padding-right: 105px;
   min-height: 100px;
 }
-/* line 462, ../lib/ionic/scss/_items.scss */
+/* line 461, ../lib/ionic/scss/_items.scss */
 .item-thumbnail-right > img:first-child,
 .item-thumbnail-right .item-image,
 .item-thumbnail-right .item-content > img:first-child,
@@ -6790,7 +6754,7 @@ button.item.item-button-right {
   width: 100%;
 }
 
-/* line 472, ../lib/ionic/scss/_items.scss */
+/* line 471, ../lib/ionic/scss/_items.scss */
 .item-avatar-right.item-complex,
 .item-thumbnail-right.item-complex {
   padding-right: 0;
@@ -6837,7 +6801,7 @@ button.item.item-button-right {
   font-size: 14px;
 }
 
-/* line 534, ../lib/ionic/scss/_items.scss */
+/* line 533, ../lib/ionic/scss/_items.scss */
 .item-left-editable .item-content,
 .item-right-editable .item-content {
   -webkit-transition-duration: 250ms;
@@ -6872,7 +6836,7 @@ button.item.item-button-right {
   transition-property: transform, margin-right;
 }
 
-/* line 561, ../lib/ionic/scss/_items.scss */
+/* line 560, ../lib/ionic/scss/_items.scss */
 .list-left-editing .item-left-editable .item-content,
 .item-left-editing.item-left-editable .item-content {
   -webkit-transform: translate3d(50px, 0, 0);
@@ -6880,7 +6844,7 @@ button.item.item-button-right {
   transform: translate3d(50px, 0, 0);
 }
 
-/* line 567, ../lib/ionic/scss/_items.scss */
+/* line 566, ../lib/ionic/scss/_items.scss */
 .list-right-editing .item-right-editable .item-content,
 .item-right-editing.item-right-editable .item-content {
   margin-right: 50px;
@@ -6924,7 +6888,7 @@ button.item.item-button-right {
   height: 100%;
 }
 
-/* line 601, ../lib/ionic/scss/_items.scss */
+/* line 600, ../lib/ionic/scss/_items.scss */
 .list-left-editing .item-left-edit,
 .item-left-editing .item-left-edit {
   -webkit-transform: translate3d(8px, 0, 0);
@@ -7004,7 +6968,7 @@ button.item.item-button-right {
   opacity: 0.7;
 }
 
-/* line 676, ../lib/ionic/scss/_items.scss */
+/* line 675, ../lib/ionic/scss/_items.scss */
 .item-left-edit.item-delete,
 .item-right-edit.item-reorder {
   opacity: 1;
@@ -7014,7 +6978,7 @@ button.item.item-button-right {
 .item-right-edit.item-reorder.ng-hide {
   opacity: 0;
 }
-/* line 682, ../lib/ionic/scss/_items.scss */
+/* line 681, ../lib/ionic/scss/_items.scss */
 .item-left-edit.item-delete.ng-hide-add, .item-left-edit.item-delete.ng-hide-remove,
 .item-right-edit.item-reorder.ng-hide-add,
 .item-right-edit.item-reorder.ng-hide-remove {
@@ -7067,7 +7031,7 @@ button.item.item-button-right {
   margin-top: 20px;
   padding: 5px 15px;
   background-color: transparent;
-  color: #222222;
+  color: #222;
   font-weight: bold;
 }
 
@@ -7082,7 +7046,7 @@ button.item.item-button-right {
  * --------------------------------------------------
  * A card and list-inset are close to the same thing, except a card as a box shadow.
  */
-/* line 46, ../lib/ionic/scss/_list.scss */
+/* line 45, ../lib/ionic/scss/_list.scss */
 .card,
 .list-inset {
   overflow: hidden;
@@ -7127,13 +7091,13 @@ button.item.item-button-right {
   border-bottom-left-radius: 2px;
 }
 
-/* line 84, ../lib/ionic/scss/_list.scss */
+/* line 83, ../lib/ionic/scss/_list.scss */
 .card .item:last-child,
 .list-inset .item:last-child {
   margin-bottom: -1px;
 }
 
-/* line 91, ../lib/ionic/scss/_list.scss */
+/* line 88, ../lib/ionic/scss/_list.scss */
 .card .item,
 .list-inset .item,
 .padding > .list .item,
@@ -7187,43 +7151,43 @@ button.item.item-button-right {
 .tabs .tab-item .badge.badge-stable,
 .badge.badge-stable {
   background-color: #95a5a6;
-  color: #444444;
+  color: #444;
 }
 /* line 35, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-positive,
 .badge.badge-positive {
   background-color: #3498db;
-  color: white;
+  color: #fff;
 }
 /* line 38, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-calm,
 .badge.badge-calm {
   background-color: #b4d8e7;
-  color: white;
+  color: #fff;
 }
 /* line 41, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-assertive,
 .badge.badge-assertive {
   background-color: #e74c3c;
-  color: white;
+  color: #fff;
 }
 /* line 44, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-balanced,
 .badge.badge-balanced {
   background-color: #2ecc71;
-  color: white;
+  color: #fff;
 }
 /* line 47, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-energized,
 .badge.badge-energized {
   background-color: #e67e22;
-  color: white;
+  color: #fff;
 }
 /* line 50, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-royal,
 .badge.badge-royal {
   background-color: #9b59b6;
-  color: white;
+  color: #fff;
 }
 /* line 53, ../lib/ionic/scss/_badge.scss */
 .tabs .tab-item .badge.badge-dark,
@@ -7328,7 +7292,7 @@ button.item.item-button-right {
   overflow-y: auto;
   width: 320px;
   height: 100%;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eee;
 }
 @media all and (max-width: 568px) {
   /* line 14, ../lib/ionic/scss/_split-pane.scss */
@@ -7373,7 +7337,7 @@ legend small {
   font-size: 1.07143;
 }
 
-/* line 33, ../lib/ionic/scss/_form.scss */
+/* line 29, ../lib/ionic/scss/_form.scss */
 label,
 input,
 button,
@@ -7384,7 +7348,7 @@ textarea {
   line-height: 1.42857;
 }
 
-/* line 39, ../lib/ionic/scss/_form.scss */
+/* line 36, ../lib/ionic/scss/_form.scss */
 input,
 button,
 select,
@@ -7409,7 +7373,7 @@ textarea {
   overflow: hidden;
   padding: 6px 0 5px 8px;
 }
-/* line 55, ../lib/ionic/scss/_form.scss */
+/* line 54, ../lib/ionic/scss/_form.scss */
 .item-input input,
 .item-input textarea {
   -webkit-border-radius: 0;
@@ -7563,7 +7527,7 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 148, ../lib/ionic/scss/_form.scss */
+/* line 146, ../lib/ionic/scss/_form.scss */
 .item-stacked-label input,
 .item-stacked-label textarea {
   -webkit-border-radius: 2px;
@@ -7580,7 +7544,7 @@ textarea {
   height: 12.4vw;
 }
 
-/* line 178, ../lib/ionic/scss/_form.scss */
+/* line 164, ../lib/ionic/scss/_form.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -7605,7 +7569,7 @@ input[type="color"] {
   line-height: 6vw;
 }
 
-/* line 194, ../lib/ionic/scss/_form.scss */
+/* line 190, ../lib/ionic/scss/_form.scss */
 .platform-ios input[type="datetime-local"],
 .platform-ios input[type="date"],
 .platform-ios input[type="month"],
@@ -7619,7 +7583,7 @@ input[type="color"] {
   padding-top: 8px;
 }
 
-/* line 200, ../lib/ionic/scss/_form.scss */
+/* line 199, ../lib/ionic/scss/_form.scss */
 input,
 textarea {
   width: 100%;
@@ -7630,7 +7594,7 @@ textarea {
   height: auto;
 }
 
-/* line 224, ../lib/ionic/scss/_form.scss */
+/* line 210, ../lib/ionic/scss/_form.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -7649,14 +7613,14 @@ input[type="color"] {
   border: 0;
 }
 
-/* line 230, ../lib/ionic/scss/_form.scss */
+/* line 229, ../lib/ionic/scss/_form.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0;
   line-height: normal;
 }
 
-/* line 242, ../lib/ionic/scss/_form.scss */
+/* line 236, ../lib/ionic/scss/_form.scss */
 input[type="file"],
 input[type="image"],
 input[type="submit"],
@@ -7672,7 +7636,7 @@ input[type="file"] {
   line-height: 11vw;
 }
 
-/* line 254, ../lib/ionic/scss/_form.scss */
+/* line 252, ../lib/ionic/scss/_form.scss */
 .previous-input-focus,
 .cloned-text-input + input,
 .cloned-text-input + textarea {
@@ -7697,7 +7661,7 @@ textarea::-webkit-input-placeholder {
   color: #3e4e5e;
 }
 
-/* line 278, ../lib/ionic/scss/_form.scss */
+/* line 273, ../lib/ionic/scss/_form.scss */
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -7708,7 +7672,7 @@ select[readonly] {
   cursor: not-allowed;
 }
 
-/* line 286, ../lib/ionic/scss/_form.scss */
+/* line 283, ../lib/ionic/scss/_form.scss */
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
 input[type="radio"][readonly],
@@ -7727,83 +7691,83 @@ input[type="checkbox"][readonly] {
   padding: 7px 7px;
   cursor: pointer;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox input:before, .checkbox .checkbox-icon:before {
   border-color: #3498db;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
   background: #3498db;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-light input:before, .checkbox.checkbox-light .checkbox-icon:before {
   border-color: #223547;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-light input:checked:before, .checkbox.checkbox-light input:checked + .checkbox-icon:before {
   background: #223547;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-stable input:before, .checkbox.checkbox-stable .checkbox-icon:before {
   border-color: #b2b2b2;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-stable input:checked:before, .checkbox.checkbox-stable input:checked + .checkbox-icon:before {
   background: #b2b2b2;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-positive input:before, .checkbox.checkbox-positive .checkbox-icon:before {
   border-color: #3498db;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-positive input:checked:before, .checkbox.checkbox-positive input:checked + .checkbox-icon:before {
   background: #3498db;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-calm input:before, .checkbox.checkbox-calm .checkbox-icon:before {
   border-color: #b4d8e7;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-calm input:checked:before, .checkbox.checkbox-calm input:checked + .checkbox-icon:before {
   background: #b4d8e7;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-assertive input:before, .checkbox.checkbox-assertive .checkbox-icon:before {
   border-color: #e74c3c;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-assertive input:checked:before, .checkbox.checkbox-assertive input:checked + .checkbox-icon:before {
   background: #e74c3c;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-balanced input:before, .checkbox.checkbox-balanced .checkbox-icon:before {
   border-color: #2ecc71;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-balanced input:checked:before, .checkbox.checkbox-balanced input:checked + .checkbox-icon:before {
   background: #2ecc71;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-energized input:before, .checkbox.checkbox-energized .checkbox-icon:before {
   border-color: #e67e22;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-energized input:checked:before, .checkbox.checkbox-energized input:checked + .checkbox-icon:before {
   background: #e67e22;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-royal input:before, .checkbox.checkbox-royal .checkbox-icon:before {
   border-color: #9b59b6;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-royal input:checked:before, .checkbox.checkbox-royal input:checked + .checkbox-icon:before {
   background: #9b59b6;
 }
-/* line 130, ../lib/ionic/scss/_mixins.scss */
+/* line 129, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-dark input:before, .checkbox.checkbox-dark .checkbox-icon:before {
   border-color: #ecf0f1;
 }
-/* line 136, ../lib/ionic/scss/_mixins.scss */
+/* line 135, ../lib/ionic/scss/_mixins.scss */
 .checkbox.checkbox-dark input:checked:before, .checkbox.checkbox-dark input:checked + .checkbox-icon:before {
   background: #ecf0f1;
 }
@@ -7813,7 +7777,7 @@ input[type="checkbox"][readonly] {
   display: none !important;
 }
 
-/* line 50, ../lib/ionic/scss/_checkbox.scss */
+/* line 49, ../lib/ionic/scss/_checkbox.scss */
 .checkbox input,
 .checkbox-icon {
   position: relative;
@@ -7839,13 +7803,13 @@ input[type="checkbox"][readonly] {
   transition: background-color 20ms ease-in-out;
 }
 
-/* line 75, ../lib/ionic/scss/_checkbox.scss */
+/* line 74, ../lib/ionic/scss/_checkbox.scss */
 .checkbox input:checked:before,
 input:checked + .checkbox-icon:before {
   border-width: 2px;
 }
 
-/* line 81, ../lib/ionic/scss/_checkbox.scss */
+/* line 80, ../lib/ionic/scss/_checkbox.scss */
 .checkbox input:after,
 .checkbox-icon:after {
   -webkit-transition: opacity 0.05s ease-in-out;
@@ -7867,7 +7831,7 @@ input:checked + .checkbox-icon:before {
   opacity: 0;
 }
 
-/* line 98, ../lib/ionic/scss/_checkbox.scss */
+/* line 97, ../lib/ionic/scss/_checkbox.scss */
 .grade-c .checkbox input:after,
 .grade-c .checkbox-icon:after {
   -webkit-transform: rotate(0);
@@ -7882,7 +7846,7 @@ input:checked + .checkbox-icon:before {
   font-size: 20px;
 }
 
-/* line 111, ../lib/ionic/scss/_checkbox.scss */
+/* line 110, ../lib/ionic/scss/_checkbox.scss */
 .checkbox input:checked:after,
 input:checked + .checkbox-icon:after {
   opacity: 1;
@@ -7913,7 +7877,7 @@ input:checked + .checkbox-icon:after {
   padding-left: 15px;
 }
 
-/* line 141, ../lib/ionic/scss/_checkbox.scss */
+/* line 140, ../lib/ionic/scss/_checkbox.scss */
 .item-checkbox-right .checkbox input,
 .item-checkbox-right .checkbox-icon {
   float: right;
@@ -8058,7 +8022,7 @@ input:checked + .checkbox-icon:after {
   box-shadow: none;
 }
 
-/* line 113, ../lib/ionic/scss/_toggle.scss */
+/* line 112, ../lib/ionic/scss/_toggle.scss */
 .item-toggle,
 .item-toggle.item-complex .item-content {
   padding-right: 99px;
@@ -8131,24 +8095,20 @@ input:checked + .checkbox-icon:after {
   visibility: visible;
 }
 
-/* line 51, ../lib/ionic/scss/_radio.scss */
+/* line 50, ../lib/ionic/scss/_radio.scss */
 .platform-android.grade-b .item-radio,
 .platform-android.grade-c .item-radio {
   -webkit-animation: androidCheckedbugfix infinite 1s;
 }
 
 @-webkit-keyframes androidCheckedbugfix {
-  /* line 55, ../lib/ionic/scss/_radio.scss */
   from {
     padding: 0;
   }
-
-  /* line 56, ../lib/ionic/scss/_radio.scss */
   to {
     padding: 0;
   }
 }
-
 /**
  * Range
  * --------------------------------------------------
@@ -8350,14 +8310,14 @@ input[type="range"]::-webkit-slider-thumb:after {
   width: 0;
   height: 0;
   border-top: 5px solid;
-  border-right: 5px solid rgba(0, 0, 0, 0);
-  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
   color: #999;
   content: "";
   pointer-events: none;
 }
 
-/* line 60, ../lib/ionic/scss/_select.scss */
+/* line 59, ../lib/ionic/scss/_select.scss */
 select[multiple], select[size] {
   height: auto;
 }
@@ -8381,7 +8341,7 @@ progress {
 .button {
   border-color: #b2b2b2;
   background-color: #95a5a6;
-  color: #444444;
+  color: #444;
   position: relative;
   display: inline-block;
   margin: 0;
@@ -8400,10 +8360,10 @@ progress {
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button:hover {
-  color: #444444;
+  color: #444;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.active, .button.activated {
   border-color: #a2a2a2;
   background-color: #e5e5e5;
@@ -8423,7 +8383,7 @@ progress {
   vertical-align: top;
   pointer-events: none;
 }
-/* line 50, ../lib/ionic/scss/_button.scss */
+/* line 47, ../lib/ionic/scss/_button.scss */
 .button .icon:before, .button.icon:before, .button.icon-left:before, .button.icon-right:before {
   display: inline-block;
   padding: 0 0 1px 0;
@@ -8460,7 +8420,7 @@ progress {
   color: #b2bac0;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-light.active, .button.button-light.activated {
   border-color: #324355;
   background-color: #081d31;
@@ -8484,7 +8444,7 @@ progress {
   background: transparent;
   color: #223547;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-light.button-outline.active, .button.button-light.button-outline.activated {
   background-color: #223547;
   box-shadow: none;
@@ -8494,14 +8454,14 @@ progress {
 .button.button-stable {
   border-color: #b2b2b2;
   background-color: #95a5a6;
-  color: #444444;
+  color: #444;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-stable:hover {
-  color: #444444;
+  color: #444;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-stable.active, .button.button-stable.activated {
   border-color: #a2a2a2;
   background-color: #e5e5e5;
@@ -8525,7 +8485,7 @@ progress {
   background: transparent;
   color: #b2b2b2;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-stable.button-outline.active, .button.button-stable.button-outline.activated {
   background-color: #b2b2b2;
   box-shadow: none;
@@ -8535,14 +8495,14 @@ progress {
 .button.button-positive {
   border-color: #1d6fa5;
   background-color: #3498db;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-positive:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-positive.active, .button.button-positive.activated {
   border-color: #1d6fa5;
   background-color: #1d6fa5;
@@ -8566,7 +8526,7 @@ progress {
   background: transparent;
   color: #3498db;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-positive.button-outline.active, .button.button-positive.button-outline.activated {
   background-color: #3498db;
   box-shadow: none;
@@ -8576,14 +8536,14 @@ progress {
 .button.button-calm {
   border-color: #7abad4;
   background-color: #b4d8e7;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-calm:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-calm.active, .button.button-calm.activated {
   border-color: #7abad4;
   background-color: #7abad4;
@@ -8607,7 +8567,7 @@ progress {
   background: transparent;
   color: #b4d8e7;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-calm.button-outline.active, .button.button-calm.button-outline.activated {
   background-color: #b4d8e7;
   box-shadow: none;
@@ -8617,14 +8577,14 @@ progress {
 .button.button-assertive {
   border-color: #bf2718;
   background-color: #e74c3c;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-assertive:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-assertive.active, .button.button-assertive.activated {
   border-color: #bf2718;
   background-color: #bf2718;
@@ -8648,7 +8608,7 @@ progress {
   background: transparent;
   color: #e74c3c;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-assertive.button-outline.active, .button.button-assertive.button-outline.activated {
   background-color: #e74c3c;
   box-shadow: none;
@@ -8658,14 +8618,14 @@ progress {
 .button.button-balanced {
   border-color: #208e4e;
   background-color: #2ecc71;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-balanced:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-balanced.active, .button.button-balanced.activated {
   border-color: #208e4e;
   background-color: #208e4e;
@@ -8689,7 +8649,7 @@ progress {
   background: transparent;
   color: #2ecc71;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-balanced.button-outline.active, .button.button-balanced.button-outline.activated {
   background-color: #2ecc71;
   box-shadow: none;
@@ -8699,14 +8659,14 @@ progress {
 .button.button-energized {
   border-color: #a85913;
   background-color: #e67e22;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-energized:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-energized.active, .button.button-energized.activated {
   border-color: #a85913;
   background-color: #a85913;
@@ -8730,7 +8690,7 @@ progress {
   background: transparent;
   color: #e67e22;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-energized.button-outline.active, .button.button-energized.button-outline.activated {
   background-color: #e67e22;
   box-shadow: none;
@@ -8740,14 +8700,14 @@ progress {
 .button.button-royal {
   border-color: #713b87;
   background-color: #9b59b6;
-  color: white;
+  color: #fff;
 }
 /* line 11, ../lib/ionic/scss/_mixins.scss */
 .button.button-royal:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-royal.active, .button.button-royal.activated {
   border-color: #713b87;
   background-color: #713b87;
@@ -8771,7 +8731,7 @@ progress {
   background: transparent;
   color: #9b59b6;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-royal.button-outline.active, .button.button-royal.button-outline.activated {
   background-color: #9b59b6;
   box-shadow: none;
@@ -8788,7 +8748,7 @@ progress {
   color: #3e4e5e;
   text-decoration: none;
 }
-/* line 16, ../lib/ionic/scss/_mixins.scss */
+/* line 15, ../lib/ionic/scss/_mixins.scss */
 .button.button-dark.active, .button.button-dark.activated {
   border-color: #bdc5ca;
   background-color: #e7ebed;
@@ -8812,7 +8772,7 @@ progress {
   background: transparent;
   color: #ecf0f1;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button.button-dark.button-outline.active, .button.button-dark.button-outline.activated {
   background-color: #ecf0f1;
   box-shadow: none;
@@ -8827,7 +8787,7 @@ progress {
   font-size: 12px;
   line-height: 26px;
 }
-/* line 139, ../lib/ionic/scss/_button.scss */
+/* line 136, ../lib/ionic/scss/_button.scss */
 .button-small .icon:before, .button-small.icon:before, .button-small.icon-left:before, .button-small.icon-right:before {
   font-size: 16px;
   line-height: 19px;
@@ -8842,7 +8802,7 @@ progress {
   font-size: 20px;
   line-height: 53px;
 }
-/* line 156, ../lib/ionic/scss/_button.scss */
+/* line 153, ../lib/ionic/scss/_button.scss */
 .button-large .icon:before, .button-large.icon:before, .button-large.icon-left:before, .button-large.icon-right:before {
   padding-bottom: 2px;
   font-size: 32px;
@@ -8859,14 +8819,14 @@ progress {
   border-color: transparent;
   background: none;
 }
-/* line 171, ../lib/ionic/scss/_button.scss */
+/* line 170, ../lib/ionic/scss/_button.scss */
 .button-icon.button.active, .button-icon.button.activated {
   border-color: transparent;
   background: none;
   box-shadow: none;
   opacity: 0.3;
 }
-/* line 179, ../lib/ionic/scss/_button.scss */
+/* line 178, ../lib/ionic/scss/_button.scss */
 .button-icon .icon:before, .button-icon.icon:before {
   font-size: 32px;
 }
@@ -8894,7 +8854,7 @@ progress {
   border-color: transparent;
   background: none;
 }
-/* line 194, ../lib/ionic/scss/_button.scss */
+/* line 193, ../lib/ionic/scss/_button.scss */
 .button-clear.active, .button-clear.activated {
   opacity: 0.3;
 }
@@ -8913,7 +8873,7 @@ progress {
   background: transparent;
   color: #b2b2b2;
 }
-/* line 49, ../lib/ionic/scss/_mixins.scss */
+/* line 48, ../lib/ionic/scss/_mixins.scss */
 .button-outline.button-outline.active, .button-outline.button-outline.activated {
   background-color: #b2b2b2;
   box-shadow: none;
@@ -8935,7 +8895,7 @@ progress {
   clear: both;
 }
 
-/* line 220, ../lib/ionic/scss/_button.scss */
+/* line 219, ../lib/ionic/scss/_button.scss */
 .button-full,
 .button-full > .button {
   display: block;
@@ -8946,7 +8906,7 @@ progress {
   border-radius: 0;
 }
 
-/* line 232, ../lib/ionic/scss/_button.scss */
+/* line 229, ../lib/ionic/scss/_button.scss */
 button.button-block,
 button.button-full,
 .button-full > button.button,
@@ -8959,7 +8919,7 @@ a.button {
   text-decoration: none;
 }
 
-/* line 241, ../lib/ionic/scss/_button.scss */
+/* line 240, ../lib/ionic/scss/_button.scss */
 .button.disabled,
 .button[disabled] {
   opacity: .4;
@@ -8993,7 +8953,7 @@ a.button {
   width: auto;
   *zoom: 1;
 }
-/* line 160, ../lib/ionic/scss/_mixins.scss */
+/* line 159, ../lib/ionic/scss/_mixins.scss */
 .button-bar.button-bar-inline:before, .button-bar.button-bar-inline:after {
   display: table;
   content: "";
@@ -9028,7 +8988,7 @@ a.button {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 43, ../lib/ionic/scss/_button-bar.scss */
+/* line 42, ../lib/ionic/scss/_button-bar.scss */
 .button-bar > .button:before,
 .button-bar > .button .icon:before {
   line-height: 44px;
@@ -9055,506 +9015,344 @@ a.button {
  * --------------------------------------------------
  */
 @-webkit-keyframes slideInUp {
-  /* line 22, ../lib/ionic/scss/_animations.scss */
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
   }
-
-  /* line 23, ../lib/ionic/scss/_animations.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
   }
 }
-
 @-moz-keyframes slideInUp {
-  /* line 26, ../lib/ionic/scss/_animations.scss */
   0% {
     -moz-transform: translate3d(0, 100%, 0);
   }
-
-  /* line 27, ../lib/ionic/scss/_animations.scss */
   100% {
     -moz-transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInUp {
-  /* line 30, ../lib/ionic/scss/_animations.scss */
   0% {
     transform: translate3d(0, 100%, 0);
   }
-
-  /* line 31, ../lib/ionic/scss/_animations.scss */
   100% {
     transform: translate3d(0, 0, 0);
   }
 }
-
 @-webkit-keyframes slideOutUp {
-  /* line 39, ../lib/ionic/scss/_animations.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
   }
-
-  /* line 40, ../lib/ionic/scss/_animations.scss */
   100% {
     -webkit-transform: translate3d(0, 100%, 0);
   }
 }
-
 @-moz-keyframes slideOutUp {
-  /* line 43, ../lib/ionic/scss/_animations.scss */
   0% {
     -moz-transform: translate3d(0, 0, 0);
   }
-
-  /* line 44, ../lib/ionic/scss/_animations.scss */
   100% {
     -moz-transform: translate3d(0, 100%, 0);
   }
 }
-
 @keyframes slideOutUp {
-  /* line 47, ../lib/ionic/scss/_animations.scss */
   0% {
     transform: translate3d(0, 0, 0);
   }
-
-  /* line 48, ../lib/ionic/scss/_animations.scss */
   100% {
     transform: translate3d(0, 100%, 0);
   }
 }
-
 @-webkit-keyframes slideInFromLeft {
-  /* line 56, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: translate3d(-100%, 0, 0);
   }
-
-  /* line 57, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: translate3d(0, 0, 0);
   }
 }
-
 @-moz-keyframes slideInFromLeft {
-  /* line 60, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: translateX(-100%);
   }
-
-  /* line 61, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: translateX(0);
   }
 }
-
 @keyframes slideInFromLeft {
-  /* line 64, ../lib/ionic/scss/_animations.scss */
   from {
     transform: translateX(-100%);
   }
-
-  /* line 65, ../lib/ionic/scss/_animations.scss */
   to {
     transform: translateX(0);
   }
 }
-
 @-webkit-keyframes slideInFromRight {
-  /* line 73, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: translate3d(100%, 0, 0);
   }
-
-  /* line 74, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: translate3d(0, 0, 0);
   }
 }
-
 @-moz-keyframes slideInFromRight {
-  /* line 77, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: translateX(100%);
   }
-
-  /* line 78, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: translateX(0);
   }
 }
-
 @keyframes slideInFromRight {
-  /* line 81, ../lib/ionic/scss/_animations.scss */
   from {
     transform: translateX(100%);
   }
-
-  /* line 82, ../lib/ionic/scss/_animations.scss */
   to {
     transform: translateX(0);
   }
 }
-
 @-webkit-keyframes slideOutToLeft {
-  /* line 90, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: translate3d(0, 0, 0);
   }
-
-  /* line 91, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: translate3d(-100%, 0, 0);
   }
 }
-
 @-moz-keyframes slideOutToLeft {
-  /* line 94, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: translateX(0);
   }
-
-  /* line 95, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: translateX(-100%);
   }
 }
-
 @keyframes slideOutToLeft {
-  /* line 98, ../lib/ionic/scss/_animations.scss */
   from {
     transform: translateX(0);
   }
-
-  /* line 99, ../lib/ionic/scss/_animations.scss */
   to {
     transform: translateX(-100%);
   }
 }
-
 @-webkit-keyframes slideOutToRight {
-  /* line 107, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: translate3d(0, 0, 0);
   }
-
-  /* line 108, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: translate3d(100%, 0, 0);
   }
 }
-
 @-moz-keyframes slideOutToRight {
-  /* line 111, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: translateX(0);
   }
-
-  /* line 112, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: translateX(100%);
   }
 }
-
 @keyframes slideOutToRight {
-  /* line 115, ../lib/ionic/scss/_animations.scss */
   from {
     transform: translateX(0);
   }
-
-  /* line 116, ../lib/ionic/scss/_animations.scss */
   to {
     transform: translateX(100%);
   }
 }
-
 @-webkit-keyframes fadeOut {
-  /* line 124, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 1;
   }
-
-  /* line 125, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 0;
   }
 }
-
 @-moz-keyframes fadeOut {
-  /* line 128, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 1;
   }
-
-  /* line 129, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 0;
   }
 }
-
 @keyframes fadeOut {
-  /* line 132, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 1;
   }
-
-  /* line 133, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 0;
   }
 }
-
 @-webkit-keyframes fadeIn {
-  /* line 141, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 0;
   }
-
-  /* line 142, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 1;
   }
 }
-
 @-moz-keyframes fadeIn {
-  /* line 145, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 0;
   }
-
-  /* line 146, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
-  /* line 149, ../lib/ionic/scss/_animations.scss */
   from {
     opacity: 0;
   }
-
-  /* line 150, ../lib/ionic/scss/_animations.scss */
   to {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeInHalf {
-  /* line 158, ../lib/ionic/scss/_animations.scss */
   from {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
-
-  /* line 159, ../lib/ionic/scss/_animations.scss */
   to {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
 @-moz-keyframes fadeInHalf {
-  /* line 162, ../lib/ionic/scss/_animations.scss */
   from {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
-
-  /* line 163, ../lib/ionic/scss/_animations.scss */
   to {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
 @keyframes fadeInHalf {
-  /* line 166, ../lib/ionic/scss/_animations.scss */
   from {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
-
-  /* line 167, ../lib/ionic/scss/_animations.scss */
   to {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
 @-webkit-keyframes fadeOutHalf {
-  /* line 175, ../lib/ionic/scss/_animations.scss */
   from {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-  /* line 176, ../lib/ionic/scss/_animations.scss */
   to {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 }
-
 @-moz-keyframes fadeOutHalf {
-  /* line 179, ../lib/ionic/scss/_animations.scss */
   from {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-  /* line 180, ../lib/ionic/scss/_animations.scss */
   to {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 }
-
 @keyframes fadeOutHalf {
-  /* line 183, ../lib/ionic/scss/_animations.scss */
   from {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-  /* line 184, ../lib/ionic/scss/_animations.scss */
   to {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 }
-
 @-webkit-keyframes scaleOut {
-  /* line 192, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: scale(1);
     opacity: 1;
   }
-
-  /* line 193, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: scale(0.8);
     opacity: 0;
   }
 }
-
 @-moz-keyframes scaleOut {
-  /* line 196, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: scale(1);
     opacity: 1;
   }
-
-  /* line 197, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: scale(0.8);
     opacity: 0;
   }
 }
-
 @keyframes scaleOut {
-  /* line 200, ../lib/ionic/scss/_animations.scss */
   from {
     transform: scale(1);
     opacity: 1;
   }
-
-  /* line 201, ../lib/ionic/scss/_animations.scss */
   to {
     transform: scale(0.8);
     opacity: 0;
   }
 }
-
 @-webkit-keyframes scaleIn {
-  /* line 209, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: scale(0);
   }
-
-  /* line 210, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: scale(1);
   }
 }
-
 @-moz-keyframes scaleIn {
-  /* line 213, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: scale(0);
   }
-
-  /* line 214, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: scale(1);
   }
 }
-
 @keyframes scaleIn {
-  /* line 217, ../lib/ionic/scss/_animations.scss */
   from {
     transform: scale(0);
   }
-
-  /* line 218, ../lib/ionic/scss/_animations.scss */
   to {
     transform: scale(1);
   }
 }
-
 @-webkit-keyframes superScaleIn {
-  /* line 226, ../lib/ionic/scss/_animations.scss */
   from {
     -webkit-transform: scale(1.2);
     opacity: 0;
   }
-
-  /* line 227, ../lib/ionic/scss/_animations.scss */
   to {
     -webkit-transform: scale(1);
     opacity: 1;
   }
 }
-
 @-moz-keyframes superScaleIn {
-  /* line 230, ../lib/ionic/scss/_animations.scss */
   from {
     -moz-transform: scale(1.2);
     opacity: 0;
   }
-
-  /* line 231, ../lib/ionic/scss/_animations.scss */
   to {
     -moz-transform: scale(1);
     opacity: 1;
   }
 }
-
 @keyframes superScaleIn {
-  /* line 234, ../lib/ionic/scss/_animations.scss */
   from {
     transform: scale(1.2);
     opacity: 0;
   }
-
-  /* line 235, ../lib/ionic/scss/_animations.scss */
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes spin {
-  /* line 242, ../lib/ionic/scss/_animations.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @-moz-keyframes spin {
-  /* line 245, ../lib/ionic/scss/_animations.scss */
   100% {
     -moz-transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
-  /* line 248, ../lib/ionic/scss/_animations.scss */
   100% {
     transform: rotate(360deg);
   }
 }
-
 /* line 252, ../lib/ionic/scss/_animations.scss */
 .no-animation > .ng-enter, .no-animation.ng-enter, .no-animation > .ng-leave, .no-animation.ng-leave {
   -webkit-transition: none;
@@ -9585,7 +9383,7 @@ a.button {
  * NEW content slides IN from the RIGHT, OLD slides OUT to the LEFT
  * Reverse: NEW content slides IN from the LEFT, OLD slides OUT to the RIGHT
  */
-/* line 284, ../lib/ionic/scss/_animations.scss */
+/* line 283, ../lib/ionic/scss/_animations.scss */
 .slide-left-right > .ng-enter, .slide-left-right.ng-enter,
 .slide-left-right > .ng-leave, .slide-left-right.ng-leave,
 .slide-right-left.reverse > .ng-enter,
@@ -9676,7 +9474,7 @@ a.button {
  * iOS7 style slide left to right
  * --------------------------------------------------
  */
-/* line 341, ../lib/ionic/scss/_animations.scss */
+/* line 340, ../lib/ionic/scss/_animations.scss */
 .slide-left-right-ios7 > .ng-enter, .slide-left-right-ios7.ng-enter,
 .slide-left-right-ios7 > .ng-leave, .slide-left-right-ios7.ng-leave,
 .slide-right-left-ios7.reverse > .ng-enter,
@@ -10028,7 +9826,7 @@ a.button {
   transform: translate3d(0, 100%, 0);
 }
 
-/* line 514, ../lib/ionic/scss/_animations.scss */
+/* line 513, ../lib/ionic/scss/_animations.scss */
 .slide-in-up.ng-enter,
 .slide-in-up > .ng-enter {
   -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
@@ -10036,7 +9834,7 @@ a.button {
   transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
 }
 
-/* line 518, ../lib/ionic/scss/_animations.scss */
+/* line 517, ../lib/ionic/scss/_animations.scss */
 .slide-in-up.ng-enter-active,
 .slide-in-up > .ng-enter-active {
   -webkit-transform: translate3d(0, 0, 0);
@@ -10044,7 +9842,7 @@ a.button {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 523, ../lib/ionic/scss/_animations.scss */
+/* line 522, ../lib/ionic/scss/_animations.scss */
 .slide-in-up.ng-leave,
 .slide-in-up > .ng-leave {
   -webkit-transition: all ease-in-out 250ms;
@@ -10104,7 +9902,7 @@ a.button {
   -moz-transform: translate3d(30%, 0, 0);
   transform: translate3d(30%, 0, 0);
 }
-/* line 566, ../lib/ionic/scss/_animations.scss */
+/* line 565, ../lib/ionic/scss/_animations.scss */
 .nav-title-slide-ios7:not(.no-animation) .button.back-button.ng-hide-add, .nav-title-slide-ios7:not(.no-animation) .button.back-button.ng-hide-remove {
   display: block !important;
 }
@@ -10112,7 +9910,7 @@ a.button {
 .nav-title-slide-ios7:not(.no-animation) .button.back-button.ng-hide-add {
   position: absolute;
 }
-/* line 574, ../lib/ionic/scss/_animations.scss */
+/* line 573, ../lib/ionic/scss/_animations.scss */
 .nav-title-slide-ios7 > .ng-enter, .nav-title-slide-ios7.ng-enter,
 .nav-title-slide-ios7 > .ng-leave, .nav-title-slide-ios7.ng-leave {
   -webkit-transition: all 250ms;
@@ -10144,7 +9942,7 @@ a.button {
   transform: translate3d(-30%, 0, 0);
   opacity: 0;
 }
-/* line 594, ../lib/ionic/scss/_animations.scss */
+/* line 593, ../lib/ionic/scss/_animations.scss */
 .nav-title-slide-ios7.reverse > .ng-enter, .nav-title-slide-ios7.reverse.ng-enter,
 .nav-title-slide-ios7.reverse > .ng-leave, .nav-title-slide-ios7.reverse.ng-leave {
   -webkit-transition: all ease-in-out 250ms;
@@ -10529,7 +10327,7 @@ a.button {
   opacity: 0;
 }
 
-/* line 14, ../lib/ionic/scss/_util.scss */
+/* line 13, ../lib/ionic/scss/_util.scss */
 .grade-b .opacity-hide,
 .grade-c .opacity-hide {
   opacity: 1;
@@ -10556,7 +10354,7 @@ a.button {
   display: none;
 }
 
-/* line 33, ../lib/ionic/scss/_util.scss */
+/* line 32, ../lib/ionic/scss/_util.scss */
 .keyboard-open .tabs.hide-on-keyboard-open + .pane .has-tabs,
 .keyboard-open .bar-footer.hide-on-keyboard-open + .pane .has-footer {
   bottom: 0;
@@ -10584,7 +10382,7 @@ a.button {
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-drag: none;
   -ms-touch-action: none;
@@ -10619,7 +10417,7 @@ a.button {
 .clearfix {
   *zoom: 1;
 }
-/* line 86, ../lib/ionic/scss/_util.scss */
+/* line 85, ../lib/ionic/scss/_util.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
@@ -10639,25 +10437,25 @@ a.button {
   padding: 10px;
 }
 
-/* line 108, ../lib/ionic/scss/_util.scss */
+/* line 107, ../lib/ionic/scss/_util.scss */
 .padding-top,
 .padding-vertical {
   padding-top: 10px;
 }
 
-/* line 113, ../lib/ionic/scss/_util.scss */
+/* line 112, ../lib/ionic/scss/_util.scss */
 .padding-right,
 .padding-horizontal {
   padding-right: 10px;
 }
 
-/* line 118, ../lib/ionic/scss/_util.scss */
+/* line 117, ../lib/ionic/scss/_util.scss */
 .padding-bottom,
 .padding-vertical {
   padding-bottom: 10px;
 }
 
-/* line 123, ../lib/ionic/scss/_util.scss */
+/* line 122, ../lib/ionic/scss/_util.scss */
 .padding-left,
 .padding-horizontal {
   padding-left: 10px;
@@ -10831,12 +10629,12 @@ a.button {
 .platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
   margin-top: 20px;
 }
-/* line 25, ../lib/ionic/scss/_platform.scss */
+/* line 24, ../lib/ionic/scss/_platform.scss */
 .platform-ios7.platform-cordova:not(.fullscreen) .tabs-top > .tabs,
 .platform-ios7.platform-cordova:not(.fullscreen) .tabs.tabs-top {
   top: 64px;
 }
-/* line 30, ../lib/ionic/scss/_platform.scss */
+/* line 29, ../lib/ionic/scss/_platform.scss */
 .platform-ios7.platform-cordova:not(.fullscreen) .has-header,
 .platform-ios7.platform-cordova:not(.fullscreen) .bar-subheader {
   top: 64px;
@@ -10881,7 +10679,7 @@ a.button {
   line-height: 44px;
   border-color: #a85913;
   background-color: #cf7323;
-  color: white;
+  color: #fff;
   text-align: center;
   z-index: 11;
   -webkit-transition: margin-top 250ms ease-in-out;
@@ -10908,63 +10706,54 @@ a.button {
   font-family: 'Oswald';
   src: url("../fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 /* line 4, ../../scss/_tile.scss */
 .tile.tile-icon {
   position: relative;
@@ -10985,7 +10774,7 @@ a.button {
   color: #04192e;
   text-decoration: none;
 }
-/* line 23, ../../scss/_tile.scss */
+/* line 22, ../../scss/_tile.scss */
 .tile.tile-icon .tile-content:hover, .tile.tile-icon .tile-content:active {
   background: #d4dadd;
   color: #04192e;
@@ -11000,15 +10789,14 @@ a.button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   font-size: 64px;
   font-size: 25vw;
 }
-/* line 44, ../../scss/_tile.scss */
+/* line 43, ../../scss/_tile.scss */
 .tile.tile-icon .tile-content label,
 .tile.tile-icon .tile-content .label {
   position: absolute;
@@ -11018,13 +10806,13 @@ a.button {
   text-align: center;
 }
 
-/* line 35, ../../scss/ionic.app.scss */
+/* line 34, ../../scss/ionic.app.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 43, ../../scss/ionic.app.scss */
+/* line 40, ../../scss/ionic.app.scss */
 input,
 select,
 option,
@@ -11046,7 +10834,7 @@ textarea {
   font-family: monospace;
   font-weight: lighter;
 }
-/* line 63, ../../scss/ionic.app.scss */
+/* line 62, ../../scss/ionic.app.scss */
 .logo:before, .logo:after {
   content: "";
   position: absolute;
@@ -11154,7 +10942,7 @@ textarea {
   padding-bottom: 5px;
   font-size: 75%;
 }
-/* line 157, ../../scss/ionic.app.scss */
+/* line 156, ../../scss/ionic.app.scss */
 .radio-set .radio-set-button input:checked ~ .radio-icon,
 .radio-set .radio-set-button input:checked ~ .radio-content {
   background-color: #ecf0f1;
@@ -11162,186 +10950,122 @@ textarea {
 }
 
 @-webkit-keyframes rainbow-border-color {
-  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
-
-  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
-
-  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
-
-  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
-
 @-moz-keyframes rainbow-border-color {
-  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
-
-  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
-
-  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
-
-  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
-
 @-ms-keyframes rainbow-border-color {
-  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
-
-  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
-
-  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
-
-  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
-
 @keyframes rainbow-border-color {
-  /* line 182, ../../scss/ionic.app.scss */
   0% {
     border-color: red;
   }
-
-  /* line 183, ../../scss/ionic.app.scss */
   33% {
     border-color: lime;
   }
-
-  /* line 184, ../../scss/ionic.app.scss */
   67% {
     border-color: blue;
   }
-
-  /* line 185, ../../scss/ionic.app.scss */
   100% {
     border-color: red;
   }
 }
-
 @-webkit-keyframes color {
-  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
-
-  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
-
-  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
-
-  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
-
 @-moz-keyframes color {
-  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
-
-  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
-
-  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
-
-  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
-
 @-ms-keyframes color {
-  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
-
-  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
-
-  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
-
-  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
-
 @keyframes color {
-  /* line 188, ../../scss/ionic.app.scss */
   0% {
     color: red;
   }
-
-  /* line 189, ../../scss/ionic.app.scss */
   33% {
     color: lime;
   }
-
-  /* line 190, ../../scss/ionic.app.scss */
   67% {
     color: blue;
   }
-
-  /* line 191, ../../scss/ionic.app.scss */
   100% {
     color: red;
   }
 }
-
 /* line 194, ../../scss/ionic.app.scss */
 .action-indicator-bar {
   border-bottom: 2px solid transparent;
 }
-/* line 200, ../../scss/ionic.app.scss */
+/* line 199, ../../scss/ionic.app.scss */
 .performing-action .action-indicator-bar, .action-indicator-bar.performing-action {
   border-bottom-color: red;
   -webkit-animation: rainbow-border-color 4s linear infinite;
@@ -11377,7 +11101,7 @@ pre.databit-barcode-barcode {
   background-size: cover;
 }
 
-/* line 232, ../../scss/ionic.app.scss */
+/* line 231, ../../scss/ionic.app.scss */
 .offline .pane,
 .offline .view {
   background-color: #1e1e1e;

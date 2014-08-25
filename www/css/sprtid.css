@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,51 +20,51 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -75,272 +75,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: 'Oswald';
   src: url("../fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?b873iv");
-  src: url("../fonts/icomoon.eot?#iefixb873iv") format("embedded-opentype"), url("../fonts/icomoon.woff?b873iv") format("woff"), url("../fonts/icomoon.ttf?b873iv") format("truetype"), url("../fonts/icomoon.svg?b873iv#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line 12, ../../scss/_icomoon.scss */
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 26, ../../scss/_icomoon.scss */
-.icon-sprtid-logo:before {
-  content: "\e600";
-}
-
-/* line 29, ../../scss/_icomoon.scss */
-.icon-sprtid-app-icon:before {
-  content: "\e601";
-}
-
-/* line 32, ../../scss/_icomoon.scss */
-.icon-home:before {
-  content: "\e602";
-}
-
-/* line 35, ../../scss/_icomoon.scss */
-.icon-pencil:before {
-  content: "\e603";
-}
-
-/* line 38, ../../scss/_icomoon.scss */
-.icon-image:before {
-  content: "\e604";
-}
-
-/* line 41, ../../scss/_icomoon.scss */
-.icon-camera:before {
-  content: "\e605";
-}
-
-/* line 44, ../../scss/_icomoon.scss */
-.icon-file:before {
-  content: "\e606";
-}
-
-/* line 47, ../../scss/_icomoon.scss */
-.icon-qrcode:before {
-  content: "\e607";
-}
-
-/* line 50, ../../scss/_icomoon.scss */
-.icon-cart:before {
-  content: "\e608";
-}
-
-/* line 53, ../../scss/_icomoon.scss */
-.icon-credit:before {
-  content: "\e609";
-}
-
-/* line 56, ../../scss/_icomoon.scss */
-.icon-phone:before {
-  content: "\e60a";
-}
-
-/* line 59, ../../scss/_icomoon.scss */
-.icon-address-book:before {
-  content: "\e60b";
-}
-
-/* line 62, ../../scss/_icomoon.scss */
-.icon-compass:before {
-  content: "\e60c";
-}
-
-/* line 65, ../../scss/_icomoon.scss */
-.icon-map:before {
-  content: "\e60d";
-}
-
-/* line 68, ../../scss/_icomoon.scss */
-.icon-mobile:before {
-  content: "\e60e";
-}
-
-/* line 71, ../../scss/_icomoon.scss */
-.icon-disk:before {
-  content: "\e60f";
-}
-
-/* line 74, ../../scss/_icomoon.scss */
-.icon-user:before {
-  content: "\e610";
-}
-
-/* line 77, ../../scss/_icomoon.scss */
-.icon-lock:before {
-  content: "\e611";
-}
-
-/* line 80, ../../scss/_icomoon.scss */
-.icon-unlocked:before {
-  content: "\e612";
-}
-
-/* line 83, ../../scss/_icomoon.scss */
-.icon-cog:before {
-  content: "\e613";
-}
-
-/* line 86, ../../scss/_icomoon.scss */
-.icon-aid:before {
-  content: "\e614";
-}
-
-/* line 89, ../../scss/_icomoon.scss */
-.icon-remove:before {
-  content: "\e615";
-}
-
-/* line 92, ../../scss/_icomoon.scss */
-.icon-info:before {
-  content: "\e616";
-}
-
-/* line 95, ../../scss/_icomoon.scss */
-.icon-cancel-circle:before {
-  content: "\e617";
-}
-
-/* line 98, ../../scss/_icomoon.scss */
-.icon-checkmark-circle:before {
-  content: "\e618";
-}
-
-/* line 101, ../../scss/_icomoon.scss */
-.icon-mail:before {
-  content: "\e619";
-}
-
-/* line 104, ../../scss/_icomoon.scss */
-.icon-googleplus:before {
-  content: "\e61a";
-}
-
-/* line 107, ../../scss/_icomoon.scss */
-.icon-facebook:before {
-  content: "\e61b";
-}
-
-/* line 110, ../../scss/_icomoon.scss */
-.icon-instagram:before {
-  content: "\e61c";
-}
-
-/* line 113, ../../scss/_icomoon.scss */
-.icon-twitter:before {
-  content: "\e61d";
-}
-
-/* line 116, ../../scss/_icomoon.scss */
-.icon-paypal:before {
-  content: "\e61e";
-}
-
-/* line 119, ../../scss/_icomoon.scss */
-.icon-trash:before {
-  content: "\e61f";
-}
-
-/* line 122, ../../scss/_icomoon.scss */
-.icon-user2:before {
-  content: "\e620";
-}
-
-/* line 125, ../../scss/_icomoon.scss */
-.icon-settings:before {
-  content: "\e621";
-}
-
-/* line 128, ../../scss/_icomoon.scss */
-.icon-camera2:before {
-  content: "\e622";
-}
-
-/* line 131, ../../scss/_icomoon.scss */
-.icon-phone2:before {
-  content: "\e623";
-}
-
-/* line 134, ../../scss/_icomoon.scss */
-.icon-shop:before {
-  content: "\e624";
-}
-
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -361,7 +145,7 @@ body.auth-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -382,7 +166,7 @@ body.checkin-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -403,7 +187,7 @@ body.create-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -517,14 +301,14 @@ body.home-screen .navigation-link a .navigation-label {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
     font-size: 2vw;
   }
 }
-/* line 7, ../../scss/pages/_login.scss */
+/* line 6, ../../scss/pages/_login.scss */
 body.login-screen,
 body.signup-screen {
   background-color: #95a5a6;
@@ -541,7 +325,7 @@ body.signup-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -562,7 +346,7 @@ body.scan-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -583,7 +367,7 @@ body.settings-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -604,7 +388,7 @@ body.shop-screen #top-banner .location-icon {
 }
 
 @media all and (orientation: landscape) {
-  /* line 18, ../../scss/_variables.scss */
+  /* line 17, ../../scss/_variables.scss */
   body,
   .ionic-body {
     font-size: 14px;
@@ -638,7 +422,7 @@ body.user-screen .page-content .user-name {
   line-height: 1em;
 }
 
-/* line 19, ../../scss/sprtid.scss */
+/* line 18, ../../scss/sprtid.scss */
 html,
 body {
   min-height: 100%;
@@ -655,10 +439,10 @@ html {
   height: 100%;
 }
 
-/* line 34, ../../scss/sprtid.scss */
+/* line 33, ../../scss/sprtid.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
   color: #ecf0f1;
 }
@@ -686,41 +470,41 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 
 /* line 62, ../../scss/sprtid.scss */
 h1, .h1 {
-  line-height: 95px;
-  font-size: 95px;
+  line-height: 52px;
+  font-size: 52px;
 }
 
 /* line 62, ../../scss/sprtid.scss */
 h2, .h2 {
-  line-height: 82px;
-  font-size: 82px;
-}
-
-/* line 62, ../../scss/sprtid.scss */
-h3, .h3 {
-  line-height: 70px;
-  font-size: 70px;
-}
-
-/* line 62, ../../scss/sprtid.scss */
-h4, .h4 {
-  line-height: 57px;
-  font-size: 57px;
-}
-
-/* line 62, ../../scss/sprtid.scss */
-h5, .h5 {
   line-height: 44px;
   font-size: 44px;
 }
 
 /* line 62, ../../scss/sprtid.scss */
-h6, .h6 {
-  line-height: 32px;
-  font-size: 32px;
+h3, .h3 {
+  line-height: 37px;
+  font-size: 37px;
 }
 
-/* line 69, ../../scss/sprtid.scss */
+/* line 62, ../../scss/sprtid.scss */
+h4, .h4 {
+  line-height: 29px;
+  font-size: 29px;
+}
+
+/* line 62, ../../scss/sprtid.scss */
+h5, .h5 {
+  line-height: 21px;
+  font-size: 21px;
+}
+
+/* line 62, ../../scss/sprtid.scss */
+h6, .h6 {
+  line-height: 14px;
+  font-size: 14px;
+}
+
+/* line 68, ../../scss/sprtid.scss */
 a,
 button {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -747,20 +531,19 @@ button {
   left: -25px;
   width: auto;
   color: #04192e;
-  font-size: 208px;
+  font-size: 160px;
   z-index: 0;
-  -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
 /* line 100, ../../scss/sprtid.scss */
 #top-banner .navigation-location {
   position: relative;
   display: block;
-  font-size: 108px;
-  line-height: 108px;
+  font-size: 60px;
+  line-height: 60px;
   padding-top: 25px;
   padding-right: 25px;
   text-align: right;
@@ -772,7 +555,7 @@ button {
   left: 25px;
   top: 25px;
   color: #ecf0f1;
-  font-size: 72px;
+  font-size: 40px;
   text-decoration: none;
   text-align: center;
   z-index: 2;
@@ -799,4 +582,22 @@ button {
 /* line 129, ../../scss/sprtid.scss */
 #footer-navigation .navigation-link {
   float: left;
+}
+
+/*RG Style Recomendations*/
+/* line 135, ../../scss/sprtid.scss */
+.bar-header {
+  background: none !important;
+  border: none !important;
+}
+
+/* line 140, ../../scss/sprtid.scss */
+.card .item {
+  background: #fff;
+  color: #666;
+}
+
+/* line 145, ../../scss/sprtid.scss */
+p.centered {
+  text-align: center;
 }

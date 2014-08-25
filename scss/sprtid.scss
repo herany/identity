@@ -4,7 +4,7 @@
 @import '_mixins';
 
 @import '_fonts',
-        '_icomoon',
+        /*'_icomoon',*/
         'pages/_auth',
         'pages/_checkin',
         'pages/_create',
@@ -32,7 +32,7 @@ html {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: $font-family-serif;
+	font-family: $font-family-sans-serif;
 	text-transform: uppercase;
 	color: $color-scheme-foreground-primary;
 
@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6,
 		color: $color-scheme-foreground-primary;
 	}
 }
-$h1-font-size: 108px; // this was just for the presentaiton I did
-$h6-font-size: 32px;
+$h1-font-size: 60px; // this was just for the presentaiton I did
+$h6-font-size: 14px;
 
 $hmax: 6;
 @for $i from 1 through $hmax {
@@ -129,4 +129,19 @@ $top-banner-height: $top-banner-font-size + 2 * $default-spacing;
 	.navigation-link {
 		float: left;
 	}
+}
+
+/*RG Style Recomendations*/
+.bar-header {
+	background: none !important;
+	border: none !important;
+}
+
+.card .item {
+	background:#fff;
+	color:#666;
+}
+
+p.centered {
+	text-align:center;
 }
